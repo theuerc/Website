@@ -33,7 +33,7 @@
       }
 
       .bg {
-        @apply fill-divider-light;
+        @apply fill-sub;
       }
       .text {
         @apply fill-card;
@@ -56,8 +56,8 @@
   <path
     d="M0.942383 0.309082H42.4083V41.3091H0.942383V0.309082Z"
     class="{isDark
-      ? `fill-black ${notDarkWhenDark ? 'dark:fill-divider-light' : ''}`
-      : 'fill-sub dark:fill-divider-light'} bg"
+      ? `fill-black ${notDarkWhenDark ? 'dark:fill-sub' : ''}`
+      : 'fill-sub'} bg"
   />
   <path
     d="M5.45605 33.6216H21.0058V36.1841H5.45605V33.6216Z"
