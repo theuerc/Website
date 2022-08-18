@@ -31,7 +31,7 @@
   const otherSubject = "Other";
   const subjects = [
     "Question",
-    "Issue",
+    "Technical Support",
     "Billing",
     studentUnlimitedSubject,
     selfHostingSubject,
