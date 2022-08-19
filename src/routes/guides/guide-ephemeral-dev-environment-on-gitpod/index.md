@@ -62,7 +62,7 @@ You can read more about `.gitpod.yml` in [docs: config gitpod file](https://www.
 2. Create a `.gitpod.yml` in the root directory of your project, e.g. `touch .gitpod.yml`
    > Tip: Instead of manually creating the `gitpod.yml`, type `gp init` in the terminal of your Gitpod workspace. (`gp` is a CLI for Gitpod included in all Gitpod workspaces)
 3. For Gitpod to detect configuration changes, push and commit your `gitpod.yml`.
-4. Now open your project in a new workspace by prefixing your repo URL with `https://gitpod.io/#{REPO_URL}` or using the Gitpod extension.
+4. Now open your project in a new workspace by prefixing your repo URL with `gitpod.io/#{your-repository-url}` or using the Gitpod extension.
 
 You can read more about `.gitpod.yml` in the [configure](https://www.gitpod.io/docs/config-gitpod-file) documentation. For information about the `.gitpod.yml` file properties see the [`.gitpod.yml` reference documentation](https://www.gitpod.io/docs/references/gitpod-yml).
 
