@@ -92,7 +92,7 @@ export const MENU: MenuEntry[] = [
   ]),
   M("Gitpod Self-Hosted", "self-hosted/latest", [
     M("Installation Guides", "self-hosted/latest/installation-guides", [
-      M("Local Preview", "self-hosted/latest/local-preview", [], "alpha"),
+      M("Local Preview", "self-hosted/latest/local-preview", [], "beta"),
       M("Getting Started", "self-hosted/latest/getting-started"),
       M(
         "Reference Architectures",
