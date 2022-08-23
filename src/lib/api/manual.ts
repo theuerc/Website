@@ -35,12 +35,13 @@ export const submitFeedback = async (body: Feedback) => {
   }
   const isSavedInSheet = await saveFeedbackInSheet({
     sheetTitle: feedbackTypetoSheetTitle[body.type],
-    data: [new Date(), body.emotion, body.url, body.note],
+    data: [new Date(), body.emotion, body.url, body.note, body.email],
   });
   const isSentToSlack = await sendFeedbackToSlack(`${
     body.type.charAt(0).toUpperCase() + body.type.slice(1)
   } feedback: ${emotionSlackEmojiMap[body.emotion]}
 Link: ${body.url}
+${body.email ? `Email: ${body.email}` : ""}
 Note: ${body.note ? body.note : "N/A"}`);
 
   const statusCode = isSavedInSheet && isSentToSlack ? 201 : 500;
