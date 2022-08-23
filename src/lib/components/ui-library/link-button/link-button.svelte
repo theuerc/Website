@@ -54,6 +54,7 @@
   "
   class:text-center={textAlign === "center"}
   class:text-left={textAlign === "left"}
+  target={href.includes("https://") ? "_blank" : ""}
   {...$$restProps}
 >
   <slot name="image" />

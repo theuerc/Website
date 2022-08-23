@@ -15,6 +15,7 @@
   import { codespacesComparison } from "$lib/contents/codespaces";
   import { openSourceFeature } from "$lib/contents/jetbrains-space";
   import idesSvelte from "$lib/components/svgs/ides.svelte";
+  import FeatureBoxes from "$lib/components/vs/feature-boxes.svelte";
 </script>
 
 <style lang="postcss">
@@ -24,10 +25,6 @@
     @media (max-width: 972px) {
       @apply mb-x-large;
     }
-  }
-
-  .feature-boxes > :global(div:first-child) :global(.feature-box) {
-    @apply mb-x-small !important;
   }
 </style>
 
@@ -47,7 +44,7 @@
   tight={true}
 />
 
-<div class="feature-boxes">
+<FeatureBoxes>
   <FeatureBox
     feature={{
       title: "Your environment, your tools, your&nbsp;craft",
@@ -67,7 +64,7 @@
         "Price comparison for a developer working 5h per day, 21 per month with 8 core CPUs and 12GB RAM. Last verified 3 Sep 2021. Sources: <a href='/pricing'>Gitpod</a>, <a href='https://github.com/features/codespaces' target='_blank'>GitHub Codespaces</a>.",
     }}
   />
-</div>
+</FeatureBoxes>
 
 <Section>
   <FeatureTable tableData={codespacesComparison} />
