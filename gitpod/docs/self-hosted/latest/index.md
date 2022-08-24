@@ -29,6 +29,8 @@ The [Local Preview](./latest/local-preview) provides a way to run Gitpod Self-Ho
 
 ## Prerequisites to Install Gitpod Self-Hosted
 
+> **Note:** Gitpod is not just a simple Kubernetes application like a web shop app. It is more of an infrastructure tool comparable to a build system that heavily makes use of Kubernetes internals to build and deploy images, control Kubernetes containers (the workspaces) and more. This is why it needs more permissions in Kubernetes than a simple web app.
+
 - **Kubernetes expertise** <br />
   Gitpod is a Kubernetes application that makes heavy use of various Kubernetes features. It is highly recommended to have sufficient Kubernetes experience in order to install Gitpod. These docs expect that you are able to create and maintain a Kubernetes cluster that meets our [requirements](./latest/cluster-set-up) on your own.
 
