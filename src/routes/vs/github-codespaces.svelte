@@ -62,6 +62,7 @@
 </FeatureBoxes>
 
 <Section>
+  <h2 class="text-center mb-x-small md:mb-small">Compare features</h2>
   <FeatureTable tableData={codespacesComparison} />
 </Section>
 
