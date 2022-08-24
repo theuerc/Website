@@ -39,6 +39,10 @@ Unpacking the above command:
 
 ## 2. Accessing Gitpod
 
+> **Note:** It usually takes around 5 minutes to go from the `starting Gitpod` status to `Gitpod is running`. Among other things, this will depend on the speed of your internet connection. Once Gitpod is ready, it will look as follows:
+
+![gitpod is ready](../../static/images/docs/self-hosted/local-preview-ready.png)
+
 As this is a self-signed instance of Gitpod, the Gitpod root CA cert has to be imported into your browser manually to access the full functionality of Gitpod. The certificate can be retrieved by running the following:
 
 ```bash
@@ -82,7 +86,7 @@ This certificate is saved at `$HOME/gitpod-ca.crt` and can then be loaded into y
 
 <br/>
 
-Once the certificate is loaded, the URL to access the Gitpod instance would be `https://preview.gitpod-self-hosted.com` unless the `DOMAIN` environment is overridden in which case the same has to be used.
+Once the certificate is loaded and Gitpod is ready, the URL to access the Gitpod instance would be `https://preview.gitpod-self-hosted.com` unless the `DOMAIN` environment is overridden in which case the same has to be used.
 
 You should be greeted by the following screen:
 
