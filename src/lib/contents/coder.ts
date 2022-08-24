@@ -1,5 +1,5 @@
 import Opensource from "$lib/components/svgs/opensource.svelte";
-import type { Feature } from "$lib/types/feature.type";
+import type { Feature, verticalFeature } from "$lib/types/feature.type";
 import awsSvelte from "$lib/components/svgs/aws.svelte";
 import githubMarkSvelte from "$lib/components/svgs/github-mark.svelte";
 import type {
@@ -19,6 +19,16 @@ export const availableAsSaaSSelfHostedFeature: Feature = {
     "Works just as smoothly with GitHub, GitLab and Bitbucket",
   ],
   previewComponent: Opensource,
+};
+
+export const enhancedIDEFeature: verticalFeature = {
+  title: "Enhanced IDE experience",
+  paragraph:
+    "Control your Gitpod experience with our custom VS Code and JetBrains Gateway extensions that integrate with your localhost environment, manage workspaces, and more",
+  moreButton: {
+    href: "https://gitpod.io/workspaces/",
+    text: "Try Now",
+  },
 };
 
 const toc: FeatureTableToc[] = [

@@ -15,18 +15,15 @@
   import FeatureTable from "$lib/components/ui-library/feature-table/feature-table.svelte";
   import LinkButton from "$lib/components/ui-library/link-button/link-button.svelte";
   import VerticalFeature from "$lib/components/vertical-feature.svelte";
+  import Combined from "$lib/components/vs/combined.svelte";
   import FeatureBoxes from "$lib/components/vs/feature-boxes.svelte";
   import {
     availableAsSaaSSelfHostedFeature,
     comparison,
+    enhancedIDEFeature,
   } from "$lib/contents/coder";
+  import { carbonNeutralFeature } from "$lib/contents/home/features";
 </script>
-
-<style lang="postcss">
-  .combined :global(.feature-box) {
-    @apply mb-x-small !important;
-  }
-</style>
 
 <OpenGraph
   data={{
@@ -101,48 +98,11 @@
   text="Spin up an example workspace now, just link your git provider"
 />
 
-<Section>
-  <div class="combined">
-    <FeatureBox feature={availableAsSaaSSelfHostedFeature} />
-    <div
-      class="flex flex-wrap lg:flex-nowrap justify-center gap-micro lg:gap-small max-w-7xl mx-auto"
-    >
-      <VerticalFeature
-        verticalFeatureData={{
-          title: "Enhanced IDE experience",
-          paragraph:
-            "Control your Gitpod experience with our custom VS Code and JetBrains Gateway extensions that integrate with your localhost environment, manage workspaces, and more",
-        }}
-        fullWidth={true}
-      >
-        <LinkButton
-          href="https://gitpod.io"
-          variant="primary"
-          slot="content"
-          class="mt-x-small"
-        >
-          Try now
-        </LinkButton>
-      </VerticalFeature>
-      <VerticalFeature
-        verticalFeatureData={{
-          title: "Code in a carbon-neutral workspace",
-          paragraph:
-            "Not only is Gitpod more resource-efficient but it also runs on 100% carbon-neutral cloud servers (GCP). All the power, with a lower cost to our planet.",
-        }}
-        fullWidth={true}
-      >
-        <LinkButton
-          href="https://cloud.google.com/sustainability"
-          variant="secondary"
-          slot="content"
-          class="mt-x-small"
-        >
-          More on GCP carbon neutral
-        </LinkButton>
-      </VerticalFeature>
-    </div>
-  </div>
-</Section>
+<Combined>
+  <FeatureBox feature={availableAsSaaSSelfHostedFeature} slot="top" />
+  {#each [enhancedIDEFeature, carbonNeutralFeature] as verticalFeatureData}
+    <VerticalFeature {verticalFeatureData} fullWidth={true} headingLevel="h2" />
+  {/each}
+</Combined>
 
 <Explore />

@@ -1,10 +1,14 @@
 <script lang="ts">
   import Card from "$lib/components/ui-library/card";
   import type { verticalFeature } from "../types/feature.type";
+  import LinkButton from "./ui-library/link-button/link-button.svelte";
   export let verticalFeatureData: verticalFeature;
   export let fullWidth: boolean = false;
   let className: string = "";
   export { className as class };
+  export let headingLevel: "h2" | "h3" = "h3";
+  const headingClassNames =
+    "text-h4 leading-[125%] font-semibold text-important mb-micro text-left";
 </script>
 
 <Card
@@ -24,12 +28,26 @@
     </div>
   {/if}
   <div>
-    <h3
-      class="text-h4 leading-[125%] font-semibold text-important mb-micro text-left"
-    >
-      {verticalFeatureData.title}
-    </h3>
+    {#if headingLevel === "h3"}
+      <h3 class={headingClassNames}>
+        {verticalFeatureData.title}
+      </h3>
+    {:else}
+      <h2 class={headingClassNames}>
+        {verticalFeatureData.title}
+      </h2>
+    {/if}
     <p class="text-large">{@html verticalFeatureData.paragraph}</p>
     <slot name="content" />
+    {#if verticalFeatureData.moreButton}
+      <LinkButton
+        href={verticalFeatureData.moreButton.href}
+        size="medium"
+        variant={verticalFeatureData.moreButton.type || "primary"}
+        class="mt-x-small"
+      >
+        {verticalFeatureData.moreButton.text}
+      </LinkButton>
+    {/if}
   </div>
 </Card>
