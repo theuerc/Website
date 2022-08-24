@@ -352,10 +352,10 @@ managedNodeGroups:
     maxSize: 50
     maxPodsPerNode: 110
     disableIMDSv1: false
-    volumeSize: 300
+    volumeSize: 360
     volumeType: gp3
-    volumeIOPS: 6000
-    volumeThroughput: 500
+    volumeIOPS: 16000
+    volumeThroughput: 1000
     ebsOptimized: true
     privateNetworking: true
     propagateASGTags: true
