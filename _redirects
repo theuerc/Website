@@ -40,7 +40,8 @@ https://community.gitpod.io/* https://www.gitpod.io/chat 301!
 /docs/60_dashboard /docs/dashboard 301
 /docs/70_subscription /docs/subscription 301
 /docs/80_release_notes /docs/release-notes 301
-/docs/bash-in-gitpod /docs/languages/bash 301
+/docs/bash-in-gitpod /docs 301
+/docs/languages/bash /docs 301
 /docs/changelog /changelog 301
 /docs/configuration /docs/configure 301
 /docs/cpp-in-gitpod /docs/languages/cpp 301
