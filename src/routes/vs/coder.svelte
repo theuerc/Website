@@ -3,6 +3,7 @@
 </script>
 
 <script lang="ts">
+  import ButtonsWrapper from "$lib/components/buttons-wrapper.svelte";
   import CalloutSecondary from "$lib/components/callout-secondary.svelte";
   import Explore from "$lib/components/explore.svelte";
 
@@ -40,13 +41,18 @@
   tight={true}
   textClassNames="max-w-2xl text-large mx-auto"
 >
-  <LinkButton
-    href="https://gitpod.io/workspaces"
-    variant="primary"
-    size="large"
-    slot="content"
-    class="mt-x-small">Try now</LinkButton
-  >
+  <ButtonsWrapper slot="content" class="mt-x-small justify-center">
+    <LinkButton
+      href="https://gitpod.io/workspaces"
+      variant="primary"
+      size="large"
+    >
+      Try now
+    </LinkButton>
+    <LinkButton variant="cta" size="large" href="/contact/sales?get-a-demo">
+      Get a demo
+    </LinkButton>
+  </ButtonsWrapper>
 </Header>
 
 <FeatureBoxes>
