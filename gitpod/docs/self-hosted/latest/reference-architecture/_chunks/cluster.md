@@ -129,7 +129,7 @@ gcloud container node-pools \
     create "workload-services" \
     --cluster="${CLUSTER_NAME}" \
     --disk-type="pd-ssd" \
-    --disk-size="100GB" \
+    --disk-size="360GB" \
     --image-type="UBUNTU_CONTAINERD" \
     --machine-type="n2d-standard-4" \
     --num-nodes=1 \
