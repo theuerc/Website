@@ -18,6 +18,7 @@
   import { tick } from "svelte";
   import { scrollToElement } from "../../lib/utils/helpers";
   import SubmissionSuccess from "$lib/components/submission-success.svelte";
+  import { trackEvent, trackIdentity } from "$lib/components/segment.svelte";
 
   const formData: Form = {
     name: {
@@ -74,6 +75,27 @@
     }
 
     isSubmissionInProgress = true;
+
+    trackIdentity(
+      {
+        name_untrusted: formData.name.value,
+        email_untrusted: formData.email.value,
+      },
+      true
+    );
+
+    trackEvent(
+      "message_submitted",
+      {
+        full_name: formData.name.value,
+        email: formData.email.value,
+        company: formData.company.value,
+        company_engineers: formData.noOfEngineers.value,
+        infrastructure: formData.cloudInfrastructure.value,
+        message: formData.message.value,
+      },
+      true
+    );
 
     const email: Email = {
       toType: "community-license",
