@@ -10,7 +10,7 @@ title: Private Registries
 
 # Using private image registries with Gitpod Self-Hosted
 
-This guide outlines the considerations to take when using images for workspaces that originate from private image registries that are not already configured in the KOTS installation UI. This is useful when, for example, you want to pull base images from a different registry than you want to push built images to.
+This guide outlines the considerations to take when using images for workspaces that originate from private image registries that are not stored in the image registry already configured in the KOTS Installation UI. This is useful when, for example, you want to pull private base images from one registry and then store the built images in another.
 
 Please refer to the [Docker image documentation](../../../config-docker) for more information about workspace images.
 
