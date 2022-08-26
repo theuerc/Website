@@ -14,7 +14,11 @@
   import { countryList } from "$lib/contents/license-key";
   import type { Email, EmailToType } from "$lib/api/api";
   import Header from "$lib/components/header.svelte";
-  import { licenseFormsQuestions, noOfEngineers } from "$lib/contents/contact";
+  import {
+    cloudPlatforms,
+    licenseFormsQuestions,
+    noOfEngineers,
+  } from "$lib/contents/contact";
   import Checkbox from "$lib/components/ui-library/checkbox";
   import { tick } from "svelte";
   import { scrollToElement } from "../lib/utils/helpers";
@@ -54,6 +58,16 @@
     noOfEngineers: {
       el: null,
       valid: false,
+      value: "",
+    },
+    cloudInfrastructure: {
+      el: null,
+      valid: false,
+      value: "",
+    },
+    number: {
+      el: null,
+      valid: true,
       value: "",
     },
     referrer: {
@@ -100,8 +114,10 @@
       message: `
         ${formData.company.value}
         ${formData.firstName.value} ${formData.lastName.value}
-
+        
         developers: ${formData.noOfEngineers.value}
+        Cloud Infrastructure: ${formData.cloudInfrastructure.value}
+        ${formData.number.value ? `Phone Number: ${formData.number.value}` : ""}
         Message:
         ${formData.message.value}
       `,
@@ -118,6 +134,7 @@
                 cloudInfrastructure: formData.cloudInfrastructure
                   ? formData.cloudInfrastructure.value
                   : "",
+                number: formData.number.value,
                 referrer: formData.referrer.value,
                 message: formData.message.value,
               },
@@ -295,6 +312,38 @@
                   formData.noOfEngineers.value &&
                   formData.noOfEngineers.el.checkValidity();
               }}
+            />
+          </div>
+          <div>
+            <Select
+              label="Cloud infrastructure*"
+              hasError={isFormDirty && !formData.cloudInfrastructure.valid}
+              name="cloudInfrastructure"
+              bind:value={formData.cloudInfrastructure.value}
+              on:change={(e) => {
+                formData.cloudInfrastructure.valid =
+                  formData.cloudInfrastructure.value &&
+                  // @ts-ignore
+                  e.target.validity.valid;
+              }}
+              options={cloudPlatforms}
+              placeholder="Which cloud infrastructure do you use?"
+            />
+          </div>
+          <div>
+            <Input
+              label="Phone number"
+              hasError={isFormDirty && !formData.number.valid}
+              id="phone-number"
+              name="phone-number"
+              bind:value={formData.number.value}
+              bind:element={formData.number.el}
+              on:change={() => {
+                formData.number.valid =
+                  formData.number.value && formData.number.el.checkValidity();
+              }}
+              type="text"
+              autocomplete="tel"
             />
           </div>
           <div>

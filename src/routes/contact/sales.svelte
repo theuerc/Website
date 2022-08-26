@@ -77,6 +77,11 @@
       valid: false,
       value: "",
     },
+    number: {
+      el: null,
+      valid: true,
+      value: "",
+    },
     message: {
       el: null,
       valid: false,
@@ -161,6 +166,7 @@
             ? `Total number of engineers: ${formData.noOfEngineers.value}`
             : ""
         }
+        ${formData.number.value ? `Phone Number: ${formData.number.value}` : ""}
         Message: ${formData.message.value}
       `,
     };
@@ -388,6 +394,25 @@
                         formData.noOfEngineers.el.checkValidity();
                     }}
                     options={noOfEngineers}
+                  />
+                </div>
+              </InputsHalf>
+              <InputsHalf>
+                <div>
+                  <Input
+                    label="Phone number"
+                    hasError={isFormDirty && !formData.companyWebsite.valid}
+                    id="phone-number"
+                    name="phone-number"
+                    bind:value={formData.number.value}
+                    bind:element={formData.number.el}
+                    on:change={() => {
+                      formData.number.valid =
+                        formData.number.value &&
+                        formData.number.el.checkValidity();
+                    }}
+                    type="text"
+                    autocomplete="tel"
                   />
                 </div>
               </InputsHalf>
