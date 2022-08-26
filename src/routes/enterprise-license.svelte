@@ -342,7 +342,7 @@
                 formData.number.valid =
                   formData.number.value && formData.number.el.checkValidity();
               }}
-              type="text"
+              type="tel"
               autocomplete="tel"
             />
           </div>
