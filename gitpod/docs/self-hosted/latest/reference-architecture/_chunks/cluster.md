@@ -167,7 +167,7 @@ gcloud container node-pools \
     create "workload-workspaces" \
     --cluster="${CLUSTER_NAME}" \
     --disk-type="pd-ssd" \
-    --disk-size="360GB" \
+    --disk-size="512GB" \
     --image-type="UBUNTU_CONTAINERD" \
     --machine-type="n2d-standard-8" \
     --num-nodes=1 \
@@ -352,7 +352,7 @@ managedNodeGroups:
     maxSize: 50
     maxPodsPerNode: 110
     disableIMDSv1: false
-    volumeSize: 300
+    volumeSize: 512
     volumeType: gp3
     volumeIOPS: 6000
     volumeThroughput: 500
