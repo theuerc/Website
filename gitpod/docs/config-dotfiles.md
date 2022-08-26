@@ -30,7 +30,6 @@ Make sure to make your installation script executable with `chmod 755 <install-s
 
 If there is no install script, your dotfiles will be symlinked into `/home/gitpod`.
 
-
 ## Example
 
 > You Can Refer this [demo-dotfiles template](https://github.com/gitpod-io/demo-dotfiles) to Bring your dotfiles to Gitpod.
