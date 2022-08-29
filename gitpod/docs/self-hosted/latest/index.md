@@ -25,7 +25,9 @@ Gitpod can be deployed and operated on your own infrastructure. It supports diff
 
 ## Local Preview
 
-The [Local Preview](./latest/local-preview) provides a way to run Gitpod Self-Hosted locally on your machine to experience Gitpod without having to spin up a Kubernetes cluster. It is intended for preview purposes only - we strongly encourage the Kubernetes-based installation below for continuous usage.
+The [Local Preview](/docs/self-hosted/latest/local-preview) installation of Gitpod Self-Hosted is the easiest way to try out Gitpod locally in situations where you cannot use the [SaaS version](https://gitpod.io/workspaces/) and cannot easily spin up a Kubernetes cluster to use the Proof-of-Value [reference architecture](/docs/self-hosted/latest/reference-architecture).
+
+It is intended for preview purposes only - we strongly encourage the Kubernetes-based installation below for continuous usage.
 
 ## Prerequisites to Install Gitpod Self-Hosted
 
