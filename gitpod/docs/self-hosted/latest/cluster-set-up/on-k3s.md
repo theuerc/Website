@@ -71,7 +71,7 @@ The section in the `calico-vxlan.yaml` file should look like this:
           "kubernetes": {
               "kubeconfig": "__KUBECONFIG_FILEPATH__"
           },
-          "container_settings": { "allow_ip_forwarding": true },
+          "container_settings": { "allow_ip_forwarding": true }
         },
 [...]
 ```
