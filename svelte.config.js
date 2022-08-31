@@ -51,7 +51,7 @@ const config = {
     },
     trailingSlash: "never",
     adapter: adapterNetlify({
-      split: false,
+      split: true,
     }),
     amp: false,
     appDir: "_app",
