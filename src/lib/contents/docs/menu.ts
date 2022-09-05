@@ -32,6 +32,7 @@ export const MENU: MenuEntry[] = [
     M("Dotfiles", "config-dotfiles", []),
     M("SSH", "configure/ssh"),
     M("Multi-Repo", "multi-repo-workspaces", [], "beta"),
+    M("Workspace Classes", "workspace-classes", [], "beta"),
   ]),
   M("Develop", "develop", [
     M("One workspace per task", "workspaces"),
