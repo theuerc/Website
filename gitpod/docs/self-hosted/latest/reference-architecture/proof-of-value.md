@@ -12,9 +12,16 @@ title: "Proof-of-Value Reference Architecture"
   import CloudPlatformToggle from "$lib/components/docs/cloud-platform-toggle.svelte";
   import Preparations from "./_chunks/preparations.md";
   import Networking from "./_chunks/networking.md";
+  import BigPill from "$lib/components/big-pill.svelte";
 </script>
 
 # Proof-of-Value Reference Architecture
+
+|               |                                                                                                                                                                                                                                                                                                 |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Status:       | <BigPill text="alpha" class="ml-1.5" />                                                                                                                                                                                                                                                         |
+| Intended for: | Trying out Gitpod in a representative way but with only the minimum of infrastructure required                                                                                                                                                                                                  |
+| Limitations:  | - Not intended for long-term, production usage <br/> - Higher risk of data loss due to use of in-cluster dependencies - if you lose your cluster, you may lose your data <br/> - Data is not carried over when moving to the [Single Cluster Reference Architecture](./single-cluster-ref-arch) |
 
 You like Gitpod and want to introduce it in your company? You want to evaluate the value of Gitpod Self-Hosted connected to your local Git provider with a couple of volunteers? This guide is for you! On this page, we describe a reference architecture for Gitpod that is optimized on a quick and simple setup. It is explicitly intended for the proof-of-value phase and not for productive usage. For the latter, please take a look at the other [reference architectures](../reference-architecture). After the proof-of-value phase, you should tear down your cluster and start again with the desired productive architecture.
 
@@ -138,7 +145,7 @@ kubectl create clusterrolebinding cluster-admin-binding \
 
 ## Install Gitpod
 
-Congratulations. You have set up your cluster. Now, you are ready to install Gitpod. Follow the instructions of [step 4 of the Getting Started Guide](../getting-started#step-4-install-gitpod).
+Congratulations. You have set up your cluster. Now, you are ready to install Gitpod. Follow the instructions of the [installation guide](../installing-gitpod).
 
 If you followed the steps to create your infrastructure of this guide, you need to use the following config settings for your Gitpod installation:
 
