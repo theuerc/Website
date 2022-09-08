@@ -18,12 +18,6 @@
   import Articles from "$lib/components/articles.svelte";
 </script>
 
-<style lang="postcss">
-  .othercompanies span {
-    @apply px-2 py-[0.3rem] rounded-xl bg-tertiary dark:text-dark-grey;
-  }
-</style>
-
 <OpenGraph
   data={{
     description:

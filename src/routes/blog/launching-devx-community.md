@@ -20,10 +20,6 @@ title: Launching DevX Community
     margin-top: var(--small);
     margin-bottom: var(--x-small);
   }
-
-  img[src$="funding.jpg"] {
-    margin-top: var(--large);
-  }
 </style>
 
 We care deeply about developer experience. As omnipresent as the term seems these days, developer experience is an emerging field that is often misunderstood.

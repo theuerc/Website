@@ -217,10 +217,6 @@
 </script>
 
 <style lang="postcss">
-  .h3 {
-    @apply mb-small;
-  }
-
   .link {
     @apply underline;
   }

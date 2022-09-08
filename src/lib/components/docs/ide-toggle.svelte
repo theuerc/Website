@@ -90,8 +90,6 @@
         break;
     }
   };
-
-  export let id = "ide-toggle";
 </script>
 
 <style lang="postcss">

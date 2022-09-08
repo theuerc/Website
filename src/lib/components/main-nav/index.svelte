@@ -60,18 +60,6 @@
     }
   }
 
-  button {
-    @apply outline-none py-2;
-
-    @media (min-width: 1190px) {
-      @apply py-1;
-    }
-  }
-
-  button::-moz-focus-inner {
-    @apply border-0;
-  }
-
   .stars {
     @media (min-width: 1190px) {
       @apply hidden;
