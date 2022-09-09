@@ -1,6 +1,6 @@
 ---
 section: develop
-title: Usage-Based Billing
+title: Usage-based Billing
 ---
 
 <script context="module">
