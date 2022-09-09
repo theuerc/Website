@@ -79,10 +79,10 @@
       {#each links as { href, text, description }}
         <a
           class="
-            py-micro 
-            pl-xx-small 
-            pr-medium 
-            text-p-small 
+            py-micro
+            pl-xx-small
+            pr-medium
+            text-p-small
             rounded-lg
             border
             border-transparent

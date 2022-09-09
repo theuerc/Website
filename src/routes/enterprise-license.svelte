@@ -114,7 +114,7 @@
       message: `
         ${formData.company.value}
         ${formData.firstName.value} ${formData.lastName.value}
-        
+
         developers: ${formData.noOfEngineers.value}
         Cloud Infrastructure: ${formData.cloudInfrastructure.value}
         ${formData.number.value ? `Phone Number: ${formData.number.value}` : ""}
