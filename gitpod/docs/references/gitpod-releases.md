@@ -15,6 +15,7 @@ For information on latest changes, please see the [changelog](/changelog).
 
 ## Gitpod Release Cycle
 
-1. **Alpha** - Feature and published APIs unstable.
-2. **Beta** - Feature and published APIs are relatively stable.
-3. **General Availability (GA)** - Features and published API's are stable. Deprecations and API changes will be communicated in advance.
+1. **Early Access** - Available by invitation to gather user feedback -- changes likely.
+2. **Alpha** - Feature and published APIs unstable.
+3. **Beta** - Feature and published APIs are relatively stable.
+4. **General Availability (GA)** - Features and published API's are stable. Deprecations and API changes will be communicated in advance.

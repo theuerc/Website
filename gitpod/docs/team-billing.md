@@ -19,7 +19,7 @@ title: Team Billing
 >
 > If you prefer to continue to manage membership of [**Team Plans**](/docs/teams) manually, you can.
 >
-> The next iteration of Team Billing will replace Team Plans with Usage-Based Billing.
+> The next iteration of Team Billing will replace Team Plans with [Usage-based Billing](/docs/usage-based-billing).
 
 Team Billing allows you to pay for your whole team with a single subscription. You can choose between the **Team Professional** plan, or the **Team Unleashed** plan.
 

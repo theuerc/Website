@@ -1,4 +1,4 @@
-export type MenuStatus = "soon" | "beta" | "alpha";
+export type MenuStatus = "soon" | "beta" | "alpha" | "Early Access";
 
 export type MenuEntry = {
   title: string;

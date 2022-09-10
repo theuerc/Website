@@ -9,9 +9,14 @@ title: Workspace Classes
 
 # {title}
 
-> {title} are currently in [Beta](/docs/references/gitpod-releases) and only available for selected customers · [Send feedback](https://github.com/gitpod-io/gitpod/issues/12473).
+> {title} are currently in [Early Access](/docs/references/gitpod-releases) with [Usage-based Billing](/docs/usage-based-billing). Please [contact us](/contact/support) for an invitation, or [send feedback](https://github.com/gitpod-io/gitpod/issues/12473).
 
-Workspace classes allow you to select the resources that are assigned to your workspace.
+Workspace classes allow you to select the resources available to your workspaces.
+
+On gitpod.io, the options are:
+
+- **Standard**: up to 4 cores, up to 8GB RAM, 30GB storage
+- **Large**: up to 8 cores, up to 16GB RAM, 50GB storage
 
 You can configure the workspace class that should be used for your workspaces in your user preferences.
 

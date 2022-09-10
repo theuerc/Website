@@ -32,7 +32,7 @@ export const MENU: MenuEntry[] = [
     M("Dotfiles", "config-dotfiles", []),
     M("SSH", "configure/ssh"),
     M("Multi-Repo", "multi-repo-workspaces", [], "beta"),
-    M("Workspace Classes", "workspace-classes", [], "beta"),
+    M("Workspace Classes", "workspace-classes", [], "Early Access"),
   ]),
   M("Develop", "develop", [
     M("One workspace per task", "workspaces"),
@@ -41,7 +41,7 @@ export const MENU: MenuEntry[] = [
     M("Collaboration & Sharing", "sharing-and-collaboration"),
     M("Teams & Projects", "teams-and-projects", [], "beta"),
     M("Team Billing", "team-billing", [], "beta"),
-    M("Usage-based Billing", "usage-based-billing", [], "beta"),
+    M("Usage-based Billing", "usage-based-billing", [], "Early Access"),
     M("Create a Team Plan", "teams", []),
   ]),
   M("IDEs & Editors", "ides-and-editors", [

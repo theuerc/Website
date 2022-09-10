@@ -9,11 +9,11 @@ title: Usage-based Billing
 
 # {title}
 
-> {title} is currently in [Beta](/docs/references/gitpod-releases), available to selected customers by invitation only. [Send feedback](https://github.com/gitpod-io/gitpod/issues/12636).
+> {title} is currently in [Early Access](/docs/references/gitpod-releases) Please [contact us](/contact/support) for an invitation, or [send feedback](https://github.com/gitpod-io/gitpod/issues/12636).
 
 Usage-based billing provides a flexible way for teams and individual users to pay for Gitpod.
 
-Instead of pre-paying for each user every month, you can set up a billing account for yourself or your team. Every time a workspace runs, Gitpod will record that usage based on how long the workspace runs, and the workspace class.
+Instead of pre-paying for yourself or for each team member every monthb, Gitpod will charge for usage based on how long each workspace runs, and its allocated [resources](/docs/workspace-classes).
 
 With usage-based billing you will be charged only for the usage incurred during a billing period.
 
@@ -21,7 +21,7 @@ With usage-based billing you will be charged only for the usage incurred during 
 
 Gitpod usage is measured in **credits**. Your invoice will show the total amount of credits consumed in a billing period.
 
-Larger workspace classes will use credits at a faster rate than smaller workspace classes. E.g. `Standard` workspaces use `10 credits per hour`, whereas `Large` workspaces use `20 credits per hour`.
+Larger [workspace classes](/docs/workspace-classes) will use credits at a faster rate than smaller workspace classes. E.g. `Standard` workspaces use `10 credits per hour`, whereas `Large` workspaces use `20 credits per hour`.
 
 Users or teams who have been granted free credits, or who have purchased credits in advance, will use those credits first, and only see charges for additional usage above that.
 
