@@ -55,7 +55,7 @@ Team owners can view usage details for their team for the current (unbilled) bil
 
 - Usage-based billing is an early-access (invitation only) feature.
 
-- You will need to cancel any existing (prepad) team-plan before configuring usage-based billing.
+- You will need to cancel any existing (prepaid) team-plan before configuring usage-based billing.
 
 - Metered usage includes prebuilds.
 
