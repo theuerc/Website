@@ -3,6 +3,7 @@
   export { clazz as class };
   export let text: string;
   export let variant: "pink" | "orange" = "orange";
+  export let tight: boolean = false;
   const capitalised = text.charAt(0).toUpperCase() + text.slice(1);
 </script>
 
@@ -17,7 +18,9 @@
 </style>
 
 <div
-  class="inline-block px-3 py-0.5 text-xs font-semibold text-important dark:text-black rounded-lg shadow-light {clazz} {variant}"
+  class="inline-block {tight
+    ? 'px-2'
+    : 'px-3'} py-0.5 text-xs font-semibold text-important dark:text-black rounded-lg shadow-light whitespace-nowrap {clazz} {variant}"
 >
   {capitalised}
 </div>

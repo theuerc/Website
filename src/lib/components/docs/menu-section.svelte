@@ -17,7 +17,7 @@
 </script>
 
 <li data-analytics={`{"position":"sidebar"}`}>
-  <div class="px-6 inline-block text-sm leading-6">
+  <div class="pl-6 inline-block text-sm leading-6">
     <MenuLink
       class={isActiveSection ? "text-black dark:text-white font-semibold" : ""}
       href={menuItem.path}>{menuItem.title}</MenuLink

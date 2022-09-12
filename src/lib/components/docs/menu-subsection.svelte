@@ -5,6 +5,8 @@
   import Pill from "../pill.svelte";
   import MenuLink from "./menu-link.svelte";
   export let menuItem: MenuEntry;
+  let isLong: boolean =
+    menuItem && menuItem.status && menuItem.status.split(" ").length > 1;
 
   function findSubSection(section: MenuEntry, currentSubSection: string) {
     if (currentSubSection) {
@@ -19,39 +21,51 @@
   $: isActiveSubSection = findSubSection(menuItem, $docsCurrentSubsectionStore);
 </script>
 
+<style lang="postcss">
+  @media (max-width: 1420px) {
+    .link-container :global(a) {
+      @apply flex-wrap;
+    }
+  }
+</style>
+
 <li class="flex flex-row items-center" data-analytics={`{"context":"submenu"}`}>
   <div class="text-sm leading-6">
-    <div class="inline-flex items-center">
+    <div class="link-container">
       <MenuLink
-        class="{isActiveSubSection
-          ? 'text-black dark:text-white font-semibold'
-          : ''} block border-l pl-4 -ml-px border-transparent dark:hover:border-divider-light hover:border-light-black"
-        href={menuItem.path}>{menuItem.title}</MenuLink
+        class="
+          {isActiveSubSection ? 'text-black dark:text-white font-semibold' : ''}
+          inline-flex items-center -ml-px pl-3 border-l border-transparent dark:hover:border-divider-light hover:border-light-black overflow-hidden
+        "
+        href={menuItem.path}
       >
-      {#if menuItem.status}
-        <Pill
-          text={menuItem.status}
-          variant={menuItem.status === "soon" ? "pink" : "orange"}
-          class="ml-1.5"
-        />
-      {/if}
+        <span class={isLong ? "whitespace-nowrap mr-1 2xl:mr-0" : ""}>
+          {menuItem.title}
+        </span>
+        {#if menuItem.status}
+          <Pill
+            text={menuItem.status}
+            variant={menuItem.status === "soon" ? "pink" : "orange"}
+            class={isLong ? "ml-0 mt-0.5 2xl:ml-1.5 2xl:mt-0" : "ml-1.5"}
+            tight={isLong}
+          />
+        {/if}
+      </MenuLink>
     </div>
     {#if menuItem.subMenu && menuItem.subMenu.length > 0 && isActiveSubSection}
       <ul class="mt-2 space-y-6 lg:space-y-2 border-divider leading-6">
         {#each menuItem.subMenu as subsub}
-          <li
-            class="flex flex-row items-center"
-            data-analytics={`{"context":"submenu"}`}
-          >
-            <MenuLink subMenu={true} href={subsub.path}>{subsub.title}</MenuLink
-            >
-            {#if subsub.status}
-              <Pill
-                text={subsub.status}
-                variant={subsub.status === "soon" ? "pink" : "orange"}
-                class="ml-1.5"
-              />
-            {/if}
+          <li data-analytics={`{"context":"submenu"}`}>
+            <MenuLink subMenu={true} href={subsub.path}>
+              {subsub.title}
+              {#if subsub.status}
+                <Pill
+                  text={subsub.status}
+                  variant={subsub.status === "soon" ? "pink" : "orange"}
+                  class="ml-1.5"
+                />
+              {/if}
+            </MenuLink>
           </li>
         {/each}
       </ul>
