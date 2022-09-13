@@ -8,6 +8,7 @@
     sequence.push(i);
   }
 
+
   onMount(() => {
     const logosWrappers = Array.from(
       document.querySelectorAll(".logos-wrapper")
