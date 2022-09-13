@@ -8,6 +8,14 @@
   let isLong: boolean =
     menuItem && menuItem.status && menuItem.status.split(" ").length > 1;
 
+  const getVariantFromStatus = (status: string) => {
+    if (status === "soon" || status === "Early Access") {
+      return "pink";
+    } else {
+      return "orange";
+    }
+  };
+
   function findSubSection(section: MenuEntry, currentSubSection: string) {
     if (currentSubSection) {
       const split = section.path.split("/");
@@ -45,7 +53,7 @@
         {#if menuItem.status}
           <Pill
             text={menuItem.status}
-            variant={menuItem.status === "soon" ? "pink" : "orange"}
+            variant={getVariantFromStatus(menuItem.status)}
             class={isLong ? "ml-0 mt-0.5 2xl:ml-1.5 2xl:mt-0" : "ml-1.5"}
             tight={isLong}
           />
@@ -61,7 +69,7 @@
               {#if subsub.status}
                 <Pill
                   text={subsub.status}
-                  variant={subsub.status === "soon" ? "pink" : "orange"}
+                  variant={getVariantFromStatus(subsub.status)}
                   class="ml-1.5"
                 />
               {/if}
