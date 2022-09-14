@@ -42,7 +42,7 @@ export const MENU: MenuEntry[] = [
     M("Teams & Projects", "teams-and-projects", [], "beta"),
     M("Team Billing", "team-billing", [], "beta"),
     M("Usage-based Billing", "usage-based-billing", [], "Early Access"),
-    M("Create a Team Plan", "teams", []),
+    M("Team Plans", "teams", []),
   ]),
   M("IDEs & Editors", "ides-and-editors", [
     M("VS Code Browser", "ides-and-editors/vscode-browser"),

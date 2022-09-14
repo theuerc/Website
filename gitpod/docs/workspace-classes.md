@@ -9,7 +9,7 @@ title: Workspace Classes
 
 # {title}
 
-> {title} are currently in [Early Access](/docs/references/gitpod-releases) with [Usage-based Billing](/docs/usage-based-billing). Please [contact us](/contact/support) for an invitation, or [send feedback](https://github.com/gitpod-io/gitpod/issues/12473).
+> {title} are currently in [Early Access](/docs/references/gitpod-releases) with [Usage-based Billing](/docs/usage-based-billing). Please [contact us](/contact/support) to request access, or [send feedback](https://github.com/gitpod-io/gitpod/issues/12473).
 
 Workspace classes allow you to select the resources available to your workspaces.
 

@@ -9,7 +9,7 @@ title: Usage-based Billing
 
 # {title}
 
-> {title} is currently in [Early Access](/docs/references/gitpod-releases) Please [contact us](/contact/support) for an invitation, or [send feedback](https://github.com/gitpod-io/gitpod/issues/12636).
+> {title} is currently in [Early Access](/docs/references/gitpod-releases). Please [contact us](/contact/support) to request access, or [send feedback](https://github.com/gitpod-io/gitpod/issues/12636).
 
 Usage-based billing provides a flexible way for teams and individual users to pay for Gitpod.
 
