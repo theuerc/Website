@@ -103,6 +103,7 @@
         infrastructure: formData.cloudInfrastructure.value,
         message: formData.message.value,
         attribution: formData.referrer.value,
+        referrer: formData.referrer.value,
       },
       true
     );
