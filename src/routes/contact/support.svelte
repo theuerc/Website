@@ -152,7 +152,7 @@
           formData.selectedSubject.value == selfHostingSubject
             ? formData.company.value
             : undefined,
-        messsage: formData.message.value,
+        message: formData.message.value,
       },
       true
     );
