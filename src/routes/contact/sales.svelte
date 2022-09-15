@@ -122,6 +122,7 @@
       {
         name_untrusted: formData.name.value,
         email_untrusted: formData.workEmail.value,
+        phone_untrusted: formData.number.value,
       },
       true
     );
@@ -139,6 +140,7 @@
         company_website: formData.companyWebsite.value,
         company_engineers: formData.noOfEngineers.value,
         message: formData.message.value,
+        phone_number: formData.number.value,
       },
       true
     );
