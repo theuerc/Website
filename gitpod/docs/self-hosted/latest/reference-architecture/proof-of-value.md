@@ -395,8 +395,8 @@ helm upgrade \
     --set cloudProvider=aws \
     --set awsRegion=$AWS_REGION \
     --set autoDiscovery.clusterName=$CLUSTER_NAME \
-    --set serviceAccount.create=false \
-    --set serviceAccount.name=cluster-autoscaler \
+    --set rbac.serviceAccount.create=false \
+    --set rbac.serviceAccount.name=cluster-autoscaler \
     --set securityContext.fsGroup=65534 \
     --set extraArgs.skip-nodes-with-local-storage=false \
     --set extraArgs.skip-nodes-with-system-pods=false \
