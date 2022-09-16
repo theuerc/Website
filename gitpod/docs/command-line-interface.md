@@ -258,8 +258,10 @@ gp ports await 3000 && gp preview $(gp url 3000)/my/path/index.html
 
 ## top
 
-Displays the used and available workspace CPU and memory.
+Displays the current workspace's class info along with the used and available CPU and memory.
 
 ```sh
 gp top
 ```
+
+You can also use `gp top --json` to get output in JSON format if you want to access them.
