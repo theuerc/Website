@@ -117,7 +117,7 @@
 </style>
 
 <div>
-  <Card size="small" class="youtube" stroked={false}>
+  <Card size="small" class="youtube shadow-normal" stroked={false}>
     <iframe
       id={randomId}
       src={`https://www.youtube-nocookie.com/embed/${embedId}?enablejsapi=1`}

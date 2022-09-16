@@ -57,7 +57,7 @@
     text: "Try now",
   }}
   btnSecondary={{
-    href: "/contact/sales?get-a-demo",
+    href: "/contact/get-demo",
     text: "Get a demo",
   }}
 />

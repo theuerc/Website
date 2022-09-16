@@ -45,7 +45,7 @@
   text="Learn how other customers leverage Gitpod to improve their developer experience, remote collaboration and security."
   image={{
     src: "/images/customers/hero.png",
-    alt: "Gitpod Illustration image",
+    alt: "Workspace setup",
     isCut: false,
   }}
   btnPrimary={{

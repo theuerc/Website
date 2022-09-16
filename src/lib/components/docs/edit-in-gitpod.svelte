@@ -8,13 +8,32 @@
     $page.url.pathname === "/docs"
       ? `${$page.url.pathname}/index`
       : $page.url.pathname;
-  const href = `${BASE_PATH}${currentPage}.md`;
+  export let url: string = "";
+
+  const href = url || `${BASE_PATH}${currentPage}.md`;
   export let renderedOn: "desktop" | "mobile" = "desktop";
+  export let text: string = "";
 </script>
 
 <style lang="postcss">
   .disable-filter {
     @apply after:filter-none !important;
+  }
+
+  a.stroked:hover,
+  a.stroked:focus {
+    &::after {
+      @apply bg-white;
+    }
+  }
+
+  :global(body.dark) a.stroked {
+    &:hover,
+    &:focus {
+      &::after {
+        @apply bg-light-black;
+      }
+    }
   }
 </style>
 
@@ -22,12 +41,19 @@
   <a
     {href}
     target="_blank"
-    class="inline-flex stroked disable-filter after:dark:hover:bg-light-black after:filter-none py-macro px-4 items-center justify-center bg-bg dark:bg-card rounded-2xl text-btn-small text-important dark:text-white shadow-light dark:shadow-none font-semibold hover:bg-card focus:bg-card dark:hover:bg-light-black dark:focus:bg-light-black"
+    class="inline-flex stroked disable-filter after:filter-none py-3 px-4 items-center justify-center bg-bg dark:bg-card rounded-2xl text-important dark:text-white shadow-light dark:shadow-none font-semibold"
     rel="noopener"
     data-analytics={`{"variant":"open_in_gitpod"}`}
   >
     <span>
       <LogoTextless {renderedOn} />
-    </span> <span class="ml-macro">Edit in Gitpod</span>
+    </span>
+    <span class="ml-3">
+      {#if text}
+        {text}
+      {:else}
+        Edit in Gitpod
+      {/if}
+    </span>
   </a>
 </div>

@@ -2,6 +2,7 @@
   import type { Screencast as ScreencastType } from "$lib/types/screencasts.type";
   import Screencast from "./screencast.svelte";
   export let screencasts: ScreencastType[];
+  export let headlineOrder: "h3" | "" = "";
 </script>
 
 <style lang="postcss">
@@ -16,6 +17,7 @@
 >
   {#each screencasts as screencast}
     <Screencast
+      {headlineOrder}
       {screencast}
       screencastNumber={screencast.nextScreencast ||
         screencast.screencastNumber}

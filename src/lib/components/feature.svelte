@@ -6,6 +6,7 @@
   import Section from "./section.svelte";
   import ButtonsWrapper from "./buttons-wrapper.svelte";
   import Lottie from "./lottie.svelte";
+  import TickList from "./tick-list.svelte";
 
   export let feature: Feature;
   const {
@@ -36,16 +37,6 @@
   .feature :global(code) {
     @apply py-1 px-2 rounded-xl bg-tertiary text-dark-grey;
     white-space: break-spaces;
-  }
-
-  ul {
-    text-align: left;
-  }
-
-  li::before {
-    content: url("/tick.svg");
-    @apply block h-6 w-6 mr-micro;
-    flex: 0 0 1.5rem;
   }
 
   .buttons-wrapper {
@@ -81,11 +72,7 @@
           {@html paragraph}
         </p>
         {#if featureList}
-          <ul class="space-y-3 mt-micro">
-            {#each featureList as f}
-              <li class="flex">{f}</li>
-            {/each}
-          </ul>
+          <TickList list={featureList} />
         {/if}
       </div>
       <ButtonsWrapper class={!moreButton && !secondaryButton ? "hidden" : ""}>

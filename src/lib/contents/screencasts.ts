@@ -5,9 +5,23 @@ export let topics = [
   "Advanced",
   "Customisations",
   "Open VS Code",
+  "Demo",
 ];
 
 let id = 1;
+
+export const demoScreencast: Screencast = {
+  title: "Gitpod demo 🍊",
+  previewText: "Demo",
+  description:
+    "See how Gitpod launches a ready-to-code project built on five containers using a Node app, .NET app, a Python app as well as Redis and Postgres databases with a simple click.",
+  youtubeId: "KgIWj9rHXS4",
+  tile: "screencast-16.jpg",
+  duration: 523,
+  tags: ["Demo"],
+  href: "/screencasts/demo",
+};
+
 export const screencasts: Screencast[] = [
   {
     nextScreencast: id++,
@@ -228,4 +242,5 @@ export const screencasts: Screencast[] = [
     ],
     tags: ["Open VS Code"],
   },
+  demoScreencast,
 ];

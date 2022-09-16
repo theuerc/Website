@@ -47,7 +47,7 @@
   }}
   btnPrimary={{
     text: "Get a demo",
-    href: "/contact/sales?get-a-demo",
+    href: "/contact/get-demo",
   }}
   btnSecondary={{
     text: "Contact sales",

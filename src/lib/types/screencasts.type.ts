@@ -8,9 +8,11 @@ export type Screencast = {
   duration: number;
   nextScreencast?: number;
   screencastNumber?: number;
+  previewText?: string;
   relatedDocs?: RelatedDocs[];
   tile: string;
   title: string;
   youtubeId: string;
   tags?: string[];
+  href?: string;
 };

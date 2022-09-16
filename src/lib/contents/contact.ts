@@ -74,3 +74,9 @@ export const licenseFormsQuestions = [
   "Someone else told me about it",
   " Other",
 ];
+
+export const list: string[] = [
+  "5h weekly productivity gain per engineer",
+  "4x faster time from zero to first PR",
+  "61% cost savings compared to a VDI solution",
+];

@@ -49,7 +49,7 @@
     >
       Try now
     </LinkButton>
-    <LinkButton variant="cta" size="large" href="/contact/sales?get-a-demo">
+    <LinkButton variant="cta" size="large" href="/contact/get-demo">
       Get a demo
     </LinkButton>
   </ButtonsWrapper>

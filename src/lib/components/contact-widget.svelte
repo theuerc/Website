@@ -24,7 +24,7 @@
   }[] = [
     {
       text: "Schedule a demo",
-      href: "/contact/sales?get-a-demo",
+      href: "/contact/get-demo",
       icon: {
         component: Play,
         size: "h-[12.94px] w-[10.78px]",

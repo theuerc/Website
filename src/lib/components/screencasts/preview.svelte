@@ -59,14 +59,19 @@
 </style>
 
 <a
-  href="/screencasts/{stringToBeautifiedFragment(
-    screencast.title.slice(0, -3)
-  )}"
+  href={screencast.href ||
+    `/screencasts/${stringToBeautifiedFragment(screencast.title.slice(0, -3))}`}
   class="cast relative dark:bg-card flex flex-col flex-nowrap min-w-full text-left mb-micro py-micro pl-x-small z-10 rounded-xl bg-right h-56"
   data-analytics={`{"variant":"preview"}`}
 >
   <div class="flex flex-col h-full">
-    <data class="text-body">Screencast {screencastNumberPadded}</data>
+    <data class="text-body font-bold mb-macro">
+      {#if screencast.previewText}
+        {screencast.previewText}
+      {:else}
+        Screencast {screencastNumberPadded}
+      {/if}
+    </data>
     {#if headlineOrder === "h3"}
       <h3 class="h2">{screencast.title}</h3>
     {:else}

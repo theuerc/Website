@@ -22,7 +22,7 @@
       {link.text}
     </LinkButton>
     {#if isGetADemoLinkShown}
-      <LinkButton variant="cta" size="large" href="/contact/sales?get-a-demo">
+      <LinkButton variant="cta" size="large" href="/contact/get-demo">
         Get a demo
       </LinkButton>
     {/if}

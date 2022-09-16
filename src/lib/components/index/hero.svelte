@@ -92,7 +92,7 @@
           href="https://gitpod.io/workspaces/"
           size="large">Try now</LinkButton
         >
-        <LinkButton variant="cta" href="/contact/sales?get-a-demo" size="large"
+        <LinkButton variant="cta" href="/contact/get-demo" size="large"
           >Get a demo</LinkButton
         >
       </ButtonsWrapper>
