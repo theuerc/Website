@@ -47,9 +47,10 @@ export const get: RequestHandler = async ({ request }) => {
         }
       }
       stars = starsCount;
-      bannerData = getBannerData();
     }
   }
+
+  bannerData = getBannerData();
 
   return {
     status: 200,
