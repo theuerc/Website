@@ -13,7 +13,8 @@
 <OpenGraph
   data={{
     title: "Get a demo of Gitpod",
-    description: "Supercharge your productivity by how you develop. Get a demo of Gitpod's continuous development platform to see how to maximize your developer experience.",
+    description:
+      "Supercharge your productivity by how you develop. Get a demo of Gitpod's continuous development platform to see how to maximize your developer experience.",
     keywords: "continuous development, remote development, demo, get started",
   }}
 />
