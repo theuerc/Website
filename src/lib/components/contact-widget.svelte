@@ -87,10 +87,6 @@
 </script>
 
 <style lang="postcss">
-  :global(body.consent-is-shown) .parent {
-    @apply bottom-[105px] md:bottom-2;
-  }
-
   .icon-wrapper {
     &::before {
       content: "";
@@ -118,7 +114,7 @@
 </style>
 
 <div
-  class="fixed bottom-2 right-2 sm:right-4 flex flex-col items-end z-50 parent"
+  class="flex flex-col items-end z-50 parent mb-2 mr-2"
   data-analytics={`{"context":"contact_widget"}`}
 >
   {#if areButtonsShown}
