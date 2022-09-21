@@ -58,9 +58,7 @@
 
 <GitpodVsLocalDevelopmentPost
   title="Full blog post"
-  text={`
-  Read the full blog post by <a href="https://twitter.com/mikenikles" target="_blank">Mike Nikles</a>, our Senior Developer Success Engineer, sharing the story of moving to the cloud.
-  `}
+  text="Read a first-hand developer perspective on switching to remote development."
 />
 
 <Explore />
