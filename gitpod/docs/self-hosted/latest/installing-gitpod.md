@@ -104,4 +104,4 @@ This git integration will also serve as the way that you and your users get auth
 
 > **Note:** Your first workspace start can take a bit of time because the workspace image first needs to be built and then downloaded. Subsequent workspace starts should be much quicker.
 
-Once you are all set up, you can visit the [getting started with Gitpod page](../../getting-started) to start learning about using Gitpod.
+Once you are all set up, you can visit the [getting started with Gitpod page](../../getting-started) to start learning about using Gitpod. You should also familiarise yourself with our [guides around operating Gitpod Self-Hosted](./operational-guides), especially the guide that explains [how to update Gitpod](./updating).
