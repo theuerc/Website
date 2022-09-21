@@ -18,6 +18,7 @@
     grid-template-columns: repeat(auto-fill, 314px);
 
     @media (max-width: 1430px) {
+      /* this breakpoint is there to help make sure there are 4 cards in a row on Macbook 13' */
       @apply max-w-4xl mx-auto;
     }
 

@@ -13,6 +13,9 @@
   let isHovered = false;
   let interval: any;
 
+  const buttonImageClassNames =
+    "h-7 w-20 sm:h-9 sm:w-28 transition group-hover:opacity-100 group-focus:opacity-100 group-focus:filter-none group-hover:filter-none";
+
   const swiper = () => {
     if (isHovered) return;
     let currentIndex = quotes.findIndex(
@@ -34,20 +37,6 @@
     };
   });
 </script>
-
-<style lang="postcss">
-  div :global(.quotes) {
-    max-width: 1182px !important;
-  }
-
-  .square {
-    @apply max-w-[50%] md:max-w-[65%] rounded-3xl;
-  }
-
-  button > :global(*) {
-    @apply h-7 w-20 sm:h-9 sm:w-28 transition group-hover:opacity-100 group-focus:opacity-100 group-focus:filter-none group-hover:filter-none;
-  }
-</style>
 
 <Card
   size="medium"
@@ -78,13 +67,14 @@
             <img
               src={quote.companyLogo.src}
               alt={quote.companyLogo.alt}
-              class=""
+              class={buttonImageClassNames}
             />
           {:else}
             <svelte:component
               this={quote.companyLogo}
               inActive={selectedQuote !== quote}
               {...quote.companyLogoProps}
+              class={buttonImageClassNames}
             />
           {/if}
         </button>
@@ -99,7 +89,9 @@
             src={selectedQuote.img.src}
             alt={selectedQuote.img.alt}
             class:square={selectedQuote.img.square}
-            class="w-full sm:rounded-3xl mx-auto"
+            class="w-full sm:rounded-3xl mx-auto {selectedQuote.img.square
+              ? 'max-w-[50%] md:max-w-[65%] rounded-3xl'
+              : ''}"
             in:scale={{ duration: 2500, start: 0.97, delay: 100 }}
           />
         </div>
