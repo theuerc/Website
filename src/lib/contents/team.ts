@@ -4,7 +4,7 @@ import type { Image } from "$lib/types/image.type";
 
 export const teamImages: Image[] = [
   {
-    src: "/images/about/3.jpg",
+    src: "/images/about/3-2x.png",
     alt: "Gitpod team members taking a selfie.",
   },
   {
@@ -28,7 +28,7 @@ export const teamImages: Image[] = [
     alt: "Gitpod team members on eating table.",
   },
   {
-    src: "/images/about/11.jpg",
+    src: "/images/about/11.png",
     alt: "A Gitpod team member waving and smiling.",
   },
   {
@@ -59,7 +59,7 @@ export const featureTitles: FeatureTitle[] = [
   },
   {
     main: "From",
-    sub: "5",
+    sub: "4",
     third: "continents",
   },
 ];
