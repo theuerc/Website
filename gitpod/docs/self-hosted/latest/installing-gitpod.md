@@ -14,12 +14,12 @@ title: Installing Gitpod Self-Hosted
 
 ## Prerequisites
 
-> These prerequisites are fulfilled already if you used one of the [reference architectures](./reference-architecture). We strongly encourage the use of these reference architectures. Please see the [cluster requirements](./cluster-requirements) for more information on what Gitpod needs to function.
+> These prerequisites are fulfilled already if you used one of the [reference architectures](./reference-architecture). We strongly encourage the use of these reference architectures. Please see the [requirements](./requirements) for more information on what Gitpod needs to function.
 
 <details>
   <summary  class="text-p-medium"><b> Kubernetes Cluster</b></summary>
 
-Gitpod is a Kubernetes application that uses Kubernetes internally to provision workspaces as Kubernetes pods. Before you can start installing Gitpod, you need to create a compatible Kubernetes cluster. The [reference architectures](./reference-architecture) will help you to get started with your favorite cloud provider. If you are creating a cluster yourself, it's up to you to set up a cluster that meets the [requirements](./cluster-requirements).
+Gitpod is a Kubernetes application that uses Kubernetes internally to provision workspaces as Kubernetes pods. Before you can start installing Gitpod, you need to create a compatible Kubernetes cluster. The [reference architectures](./reference-architecture) will help you to get started with your favorite cloud provider. If you are creating a cluster yourself, it's up to you to set up a cluster that meets the [requirements](./requirements).
 
 </details>
 
@@ -74,7 +74,7 @@ Open your favorite browser and go to `http://localhost:8800` (port `8800` is ope
 
 The first page will ask you to upload your Gitpod license which you can get [here](/community-license) For more information about our licenses and respective pricing plans, please visit our [self-hosted pricing page](https://www.gitpod.io/self-hosted).
 
-After uploading the license, you will be forwarded to the config page. On this page, you need to enter your domain name for your Gitpod installation. You can also configure to use [external components](./required-components) (by default internal ones are installed) as well as your TLS certs setup. Click “Continue” to proceed with the installation.
+After uploading the license, you will be forwarded to the config page. On this page, you need to enter your domain name for your Gitpod installation. You can also configure to use [external components](./requirements) (by default internal ones are installed) as well as your TLS certs setup. Click “Continue” to proceed with the installation.
 
 ![kots-install-config](../../static/images/docs/self-hosted/kots-install-config.png)
 

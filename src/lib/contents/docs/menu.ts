@@ -116,8 +116,7 @@ export const MENU: MenuEntry[] = [
       M("Disaster Recovery", "self-hosted/latest/disaster-recovery"),
     ]),
     M("Reference", "self-hosted/latest/reference", [
-      M("Required Components", "self-hosted/latest/required-components"),
-      M("Cluster Requirements", "self-hosted/latest/cluster-requirements"),
+      M("Requirements", "self-hosted/latest/requirements"),
       M(
         "Compatibility Matrix",
         "references/product-compatibility-matrix?admin"
