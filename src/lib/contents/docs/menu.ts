@@ -111,6 +111,7 @@ export const MENU: MenuEntry[] = [
       M("Support Bundles", "self-hosted/latest/support-bundle", []),
       M("Config Patches", "self-hosted/latest/config-patches", []),
       M("Stop Workspaces", "self-hosted/latest/stop-workspaces", []),
+      M("Manage Cluster Nodes", "self-hosted/latest/manage-cluster-nodes", []),
     ]),
     M("Background", "self-hosted/latest/background", [
       M("Disaster Recovery", "self-hosted/latest/disaster-recovery"),
