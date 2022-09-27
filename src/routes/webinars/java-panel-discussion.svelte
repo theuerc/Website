@@ -18,6 +18,8 @@
       "Open conversation about Java remote development covering best practices. What does not work well yet, and what had to click to make it work.",
     keywords:
       "panel-discussion, remote development, success-stories, Java, Gitpod",
+    image: "images/webinars/java-panel-discussion-twitter.png",
+    imageTwitter: "images/webinars/java-panel-discussion-twitter.png",
   }}
 />
 
