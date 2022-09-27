@@ -31,7 +31,7 @@
     <Header
       title="Success & failure stories of Java developers shifting to remote"
       label="Panel Discussion"
-      date="October 6pm CEST/ 9am PDT"
+      date="October 04 - 6:00 pm CEST"
       duration="60min"
       webinarDescription="Open conversation about Java remote development covering best practices. What does not work well yet, and what had to click to make it work."
     />
