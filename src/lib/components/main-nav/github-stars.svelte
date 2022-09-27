@@ -6,7 +6,7 @@
   import { getContext } from "svelte";
   import Octocat from "../svgs/octocat.svelte";
 
-  const stars: string = getContext(key).toString() || "9089";
+  const stars: string = getContext(key).toString();
 
   const starsFormatted = stars[0] + "," + stars.substring(1, stars.length);
 </script>
