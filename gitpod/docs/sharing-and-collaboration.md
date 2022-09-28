@@ -5,39 +5,54 @@ title: Collaboration & Sharing
 
 <script context="module">
   export const prerender = true;
+  import IdeToggle from "$lib/components/docs/ide-toggle.svelte";
 </script>
 
 # Collaboration & Sharing of Workspaces
 
-There are two ways to share your workspaces:
-
-- [Sharing Snapshots](#sharing-snapshots)
-- [Sharing Running Workspaces](#sharing-running-workspaces)
+There are currently two ways to share a Gitpod workspace, either by creating a [workspace snapshot](#sharing-snapshots), a "point in time" capture of a workspace state that can be then opened by another user. Or, by [sharing a running workspace](#sharing-running-workspaces) which shares access to a single running workspace to multiple users.
 
 `youtube: TrY15zN98p8`
 
-## Sharing Snapshots
+## Workspace Snapshots
 
-You can take a snapshot URL of your workspace at any time and share it with others. Clicking on the snapshot link will open a complete clone of your workspace, including
+Snapshotting a workspace is useful when you want to create reproducible workspace state for reporting support issues, or when giving training, or presentations. You can create up to three snapshots from any workspace.
 
-- all the files in the workspace
-- the VS Code layout
+You can create a snapshot URL of your workspace to share your workspace files with others. Following a Gitpod snapshot URL starts a new workspace, but under the account of the user who followed that original snapshot URL.
 
-Workspaces created from snapshots are treated as restarts, so you can configure them to launch differently than if you had created a fresh workspace from Git. This is useful if you want to create easy-to-consume reproducible workspace state e.g. for issues, support answers, training, or presentations.
+There are a few important things to note about workspace snapshots:
 
-Unlike sharing running workspaces, snapshotted workspaces are full copies. This means developers can do whatever they like with the content. And of course, no access to any of your credentials is shared.
+- **Snapshots behave like workspace restarts** - All workspace state, including files changed since the original workspace start are preserved in a snapshot. Any tasks or processes typically launched via a workspace start will not run for a workspace snapshot.
 
-Read more about this feature [in this blog post](/blog/workspace-snapshots).
+- **Access to secret information** - Snapshotted workspaces do not grant access to Gitpod environment variables, Gitpod authentication or Git credentials within a snapshot. However, you should use caution that you did not store any secret or private information in any files of a workspace snapshot before generating a snapshot URL.
 
-> **Note:** Users must have access to the git repository in the snapshot, in order to open it.
+- **Deleting and managing snapshots** - If you want to remove any created snapshot URLs, deleting the workspace directly removes any created snapshot URLs associated with that workspace.
+
+- **Users must have repository access** - Each workspace snapshot creates a new unique URL. Access to a snapshot is based on the access rules on the repository the workspace is based on. This means snapshots based on private repositories can only be opened by those with access to the repository. Public repository snapshots can be accessed without authentication.
+
+> **Note:** Caution should always be taken when sharing potentially sensitive information, including Gitpod workspace snapshots. If you are concerned you have accidentally shared sensitive information, we suggest you follow best practices such as immediately rotating credentials and adhere to your typical security response process.
 
 ### How To Take a Snapshot URL
 
-To create a snapshot, run `Gitpod: Share Workspace Snapshot` from the hamburger menu at the top left, or from the Gitpod menu at the bottom, or via the command palette.
+<IdeToggle id="ide-toggle-ports">
 
-Once you execute it, the snapshot is taken and the URL is shown in a dialog.
+<div slot="jetbrains">
+  To create a snapshot, run "Gitpod: Share Workspace Snapshot" from the Backend Control Center, or from the JetBrains IDE search. Once you execute the command, the snapshot is taken and the URL is shown in a dialog.
+</div>
 
-You can also run `gp snapshot` if you prefer to do it from CLI for some automation need.
+<div slot="vscodedesktop">
+  To create a snapshot, run "Gitpod: Share Workspace Snapshot" from the hamburger menu at the top left of VS Code, from the Gitpod menu at the bottom, or via the VS Code command palette. Once you execute the command, the snapshot is taken and the URL is shown in a dialog.
+</div>
+
+<div slot="vscodebrowser">
+  To create a snapshot, run "Gitpod: Share Workspace Snapshot" from the hamburger menu at the top left of VS Code, from the Gitpod menu at the bottom, or via the VS Code command palette. Once you execute the command, the snapshot is taken and the URL is shown in a dialog.
+</div>
+
+<div slot="commandline">
+    You can run `gp snapshot` from any workspace to generate a snapshot URL.
+</div>
+
+</IdeToggle>
 
 ## Sharing Running Workspaces
 
