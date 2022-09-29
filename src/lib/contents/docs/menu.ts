@@ -125,6 +125,10 @@ export const MENU: MenuEntry[] = [
       [
         M("Updating", "configure/self-hosted/latest/updating"),
         M("Monitoring", "configure/self-hosted/latest/monitoring"),
+        M(
+          "Workspace resources",
+          "configure/self-hosted/latest/configuring-workspace-resources"
+        ),
         M("Backing Up", "configure/self-hosted/latest/backup-restore"),
       ]
     ),

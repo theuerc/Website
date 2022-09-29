@@ -74,7 +74,7 @@ Open your favorite browser and go to `http://localhost:8800` (port `8800` is ope
 
 The first page will ask you to upload your Gitpod license which you can get [here](/community-license) For more information about our licenses and respective pricing plans, please visit our [self-hosted pricing page](https://www.gitpod.io/self-hosted).
 
-After uploading the license, you will be forwarded to the config page. On this page, you need to enter your domain name for your Gitpod installation. You can also configure to use [external components](./requirements) (by default internal ones are installed) as well as your TLS certs setup. Click “Continue” to proceed with the installation.
+After uploading the license, you will be forwarded to the config page. On this page, you need to enter your domain name for your Gitpod installation. You can also configure to use [external components](./requirements) (by default internal ones are installed) as well as your TLS certs setup or your [workspace size](./configuring-workspace-resources). Click “Continue” to proceed with the installation.
 
 ![kots-install-config](../../static/images/docs/self-hosted/kots-install-config.png)
 
