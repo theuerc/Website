@@ -47,7 +47,7 @@ The following table gives an overview of the node types for the different cloud 
 
 |                  | GCP               | AWS           |
 | ---------------- | ----------------- | ------------- |
-| Gitpod Node Pool | `n2d-standard-16` | `m6i.2xlarge` |
+| Gitpod Node Pool | `n2d-standard-16` | `m6i.4xlarge` |
 
 <CloudPlatformToggle id="cloud-platform-toggle-cluster">
 
@@ -233,7 +233,7 @@ managedNodeGroups:
   - name: default
     amiFamily: Ubuntu2004
     spot: false
-    instanceTypes: ["m6i.xlarge"]
+    instanceTypes: ["m6i.4xlarge"]
     desiredCapacity: 1
     minSize: 1
     maxSize: 50
