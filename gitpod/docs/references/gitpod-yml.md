@@ -16,6 +16,7 @@ Below is a full reference of all available properties. To see the underlying sch
 - [{title}](#title)
   - [`additionalRepositories`](#additionalrepositories)
   - [`checkoutLocation`](#checkoutlocation)
+  - [`coreDump`](#coreDump)
   - [`gitConfig`](#gitconfig)
   - [`github`](#github)
     - [`prebuilds.addBadge`](#prebuildsaddbadge)
@@ -142,6 +143,39 @@ In most cases, this is not needed. If you work on an older Go project, please se
 
 ```yaml
 checkoutLocation: "go/src/github.com/demo-apps/go-gin-app"
+```
+
+## `coreDump`
+
+Define workspace core dump behavior.
+
+In most cases, this is not needed, but it is a valuable feature to debug C++ and other languages like Rust, Python, or node.js when debugging add-ons.
+
+<div class="overflow-x-auto">
+
+| Type     | Default   |
+| -------- | --------- |
+| `object` | `<empty>` |
+
+</div>
+
+**Example**
+
+```yaml
+coreDump:
+  enabled: true
+```
+
+We can also set custom size values for the generated core files using the `softLimit` and `hardLimit` values
+The setting `softLimit` configures the upper limit on the size of the core dump file that will be produced if a process receives a core dump signal, while `hardLimit` allows setting a hard limit to act as a ceiling for the soft limit.
+
+For more details, please check https://man7.org/linux/man-pages/man2/getrlimit.2.html
+
+```yaml
+coreDump:
+  enabled: true
+  softLimit: <bytes>
+  hardLimit: <bytes>
 ```
 
 ## `gitConfig`
