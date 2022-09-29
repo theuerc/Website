@@ -29,7 +29,9 @@
   {/if}
 
   <!-- https://ogp.me -->
-  <meta property="og:image" content="{url.origin}/{image}" />
+  <!-- url for OG-Image needs to be hardcoded, otherwise it would be resolved to
+  `http://sveltekit-prerender` -->
+  <meta property="og:image" content="https://www.gitpod.io/{image}" />
   <meta property="og:description" content={description} />
   <meta property="og:title" content={title} />
   <meta property="og:type" content={type} />
@@ -42,5 +44,5 @@
   />
   <meta name="twitter:site" content="@gitpod" />
   <meta name="twitter:creator" content="@gitpod" />
-  <meta name="twitter:image" content="{url.origin}/{imageTwitter}" />
+  <meta name="twitter:image" content="https://www.gitpod.io/{imageTwitter}" />
 </svelte:head>
