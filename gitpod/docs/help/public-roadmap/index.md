@@ -7,7 +7,7 @@ title: Public roadmap
   export const prerender = true;
 </script>
 
-# {title}
+# Public roadmap
 
 The most up-to-date Gitpod roadmap can be found at www.gitpod.io/roadmap.
 

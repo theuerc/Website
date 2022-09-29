@@ -7,7 +7,7 @@ title: Personal plans
   export const prerender = true;
 </script>
 
-# {title}
+# Personal plans
 
 Gitpod offers a free plan for new users which includes 50 hours of standard workspace usage.
 

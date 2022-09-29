@@ -7,6 +7,6 @@ title: CLion
   export const prerender = true;
 </script>
 
-# {title}
+# CLion
 
 JetBrains CLion Desktop Support is coming soon to Gitpod.

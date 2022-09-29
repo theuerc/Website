@@ -7,7 +7,7 @@ title: Learn Gitpod
   export const prerender = true;
 </script>
 
-# {title}
+# Learn Gitpod
 
 - [One workspace per task](/docs/introduction/learn-gitpod/one-workspace-per-task)
 - [The Life of a workspace](/docs/introduction/learn-gitpod/the-life-of-a-workspace)

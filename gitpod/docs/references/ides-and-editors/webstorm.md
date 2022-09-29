@@ -7,6 +7,6 @@ title: WebStorm
   export const prerender = true;
 </script>
 
-# {title}
+# WebStorm
 
 JetBrains WebStorm Desktop Support is coming soon to Gitpod.

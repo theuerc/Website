@@ -7,7 +7,7 @@ title: GitHub Enterprise
   export const prerender = true;
 </script>
 
-# {title}
+# GitHub Enterprise
 
 Gitpod works with public, private, or internal repositories on your own instance of [GitHub Enterprise](https://docs.github.com/en/enterprise-server@3.4/get-started/onboarding/getting-started-with-github-enterprise-server) (GHE). Setting this up requires 2 steps.
 

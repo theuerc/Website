@@ -7,7 +7,7 @@ title: VS Code Desktop
   export const prerender = true;
 </script>
 
-# {title}
+# VS Code Desktop
 
 > VS Code Desktop is currently in [Beta](/docs/help/public-roadmap/release-cycle) · [Send feedback](https://github.com/gitpod-io/gitpod/issues/5712).
 

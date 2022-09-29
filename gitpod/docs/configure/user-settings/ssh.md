@@ -7,7 +7,7 @@ title: SSH
   export const prerender = true;
 </script>
 
-# {title}
+# SSH
 
 Secure Shell Protocol (SSH) is the basis for connecting to your Gitpod workspace when using [VS Code Desktop](/docs/references/ides-and-editors/vscode), [JetBrains Gateway](/docs/integrations/jetbrains-gateway), or accessing via the [command-line](/docs/references/ides-and-editors/command-line) from a local machine.
 

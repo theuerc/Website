@@ -7,7 +7,7 @@ title: Billing
   export const prerender = true;
 </script>
 
-# {title}
+# Billing
 
 See below for information about how Gitpod billing works.
 

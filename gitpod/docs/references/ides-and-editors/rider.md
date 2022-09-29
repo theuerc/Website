@@ -7,6 +7,6 @@ title: Rider
   export const prerender = true;
 </script>
 
-# {title}
+# Rider
 
 JetBrains Rider Desktop Support is coming soon to Gitpod.

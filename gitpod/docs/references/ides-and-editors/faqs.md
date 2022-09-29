@@ -7,7 +7,7 @@ title: FAQs
   export const prerender = true;
 </script>
 
-# {title}
+# FAQs
 
 ## Is there a limit of IDE/editor connections to Gitpod?
 

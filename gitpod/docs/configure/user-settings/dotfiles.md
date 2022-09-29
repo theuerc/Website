@@ -7,7 +7,7 @@ title: Dotfiles
   export const prerender = true;
 </script>
 
-# {title}
+# Dotfiles
 
 Dotfiles are a way to customize your developer environment according to your personal needs.
 

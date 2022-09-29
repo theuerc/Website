@@ -7,7 +7,7 @@ title: VS Code Browser
   export const prerender = true;
 </script>
 
-# {title}
+# VS Code Browser
 
 VS Code Browser is the default editor that workspaces open in when using Gitpod. You can even [configure your VS Code extension](/docs/references/ides-and-editors/vscode-extensions) preferences by updating your .gitpod.yml.
 

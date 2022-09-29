@@ -7,7 +7,7 @@ title: Release Cycle
   export const prerender = true;
 </script>
 
-# {title}
+# Release Cycle
 
 Information regarding how, and when Gitpod releases updates.
 

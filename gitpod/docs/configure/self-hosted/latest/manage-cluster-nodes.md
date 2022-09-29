@@ -8,7 +8,7 @@ title: Manage Cluster Nodes
   export const prerender = true;
 </script>
 
-# {title}
+# Manage Cluster Nodes
 
 Sometimes nodes become unhealthy, or you need to prevent the autoscaler from removing the node from your cluster.
 

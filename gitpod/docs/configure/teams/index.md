@@ -7,7 +7,7 @@ title: Teams
   export const prerender = true;
 </script>
 
-# {title}
+# Teams
 
 > {title} is currently in [Beta](/docs/help/public-roadmap/release-cycle) · [Send feedback](https://github.com/gitpod-io/gitpod/issues/5095).
 

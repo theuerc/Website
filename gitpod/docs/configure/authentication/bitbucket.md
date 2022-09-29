@@ -7,7 +7,7 @@ title: Bitbucket
   export const prerender = true;
 </script>
 
-# {title}
+# Bitbucket
 
 Gitpod works with any public or private repository on [Bitbucket](https://bitbucket.org/).
 

@@ -7,7 +7,7 @@ title: JetBrains Gateway
   export const prerender = true;
 </script>
 
-# {title}
+# JetBrains Gateway
 
 > {title} is currently in [Beta](/docs/help/public-roadmap/release-cycle) · [Send feedback](https://github.com/gitpod-io/gitpod/issues/6576).
 

@@ -7,7 +7,7 @@ title: Integrations
   export const prerender = true;
 </script>
 
-# {title}
+#Integrations
 
 - [Tailscale](/docs/integrations/tailscale)
 - [JetBrains Gateway](/docs/integrations/jetbrains-gateway)

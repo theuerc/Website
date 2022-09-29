@@ -7,7 +7,7 @@ title: GitHub
   export const prerender = true;
 </script>
 
-# {title}
+# GitHub
 
 Gitpod works well with public or private repositories from [github.com](https://github.com/).
 

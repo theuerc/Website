@@ -7,7 +7,7 @@ title: Team billing
   export const prerender = true;
 </script>
 
-# {title}
+# Team billing
 
 > Team billing is part of [Teams & Projects](/docs/configure), currently in [Beta](/docs/help/public-roadmap/release-cycle).
 

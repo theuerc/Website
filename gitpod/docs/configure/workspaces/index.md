@@ -7,7 +7,7 @@ title: Workspaces
   export const prerender = true;
 </script>
 
-# {title}
+# Workspaces
 
 Workspaces are the developer environments where you code in Gitpod.
 

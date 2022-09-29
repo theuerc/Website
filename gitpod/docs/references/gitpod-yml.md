@@ -7,13 +7,13 @@ title: .gitpod.yml
   export const prerender = true;
 </script>
 
-# {title}
+# .gitpod.yml
 
 The `.gitpod.yml` file at the root of your project is where you tell Gitpod how to prepare & build your project, start development servers and configure continuous [prebuilds](/docs/configure/projects/prebuilds) for GitHub.
 
 Below is a full reference of all available properties. To see the underlying schema, please refer to [`gitpod-io/gitpod`](https://github.com/gitpod-io/gitpod/blob/main/components/gitpod-protocol/data/gitpod-schema.json) in the [gitpod-io/gitpod](https://github.com/gitpod-io/gitpod) repository.
 
-- [{title}](#title)
+- [.gitpod.yml](#.gitpod.yml)
   - [`additionalRepositories`](#additionalrepositories)
   - [`checkoutLocation`](#checkoutlocation)
   - [`coreDump`](#coreDump)

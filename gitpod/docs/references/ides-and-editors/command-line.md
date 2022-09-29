@@ -7,7 +7,7 @@ title: Command Line (SSH)
   export const prerender = true;
 </script>
 
-# {title}
+# Command Line (SSH)
 
 You can directly access your workspace via SSH for editing code directly using a [command-line editor](/docs/references/ides-and-editors/command-line), such as Vim & Emacs or for connecting SSH supported applications such as a database client.
 

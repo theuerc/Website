@@ -7,7 +7,7 @@ title: Help
   export const prerender = true;
 </script>
 
-# {title}
+# Help
 
 - [Building Gitpod](/docs/help/public-roadmap/release-cycle)
 - [Troubleshooting](/docs/help/troubleshooting)

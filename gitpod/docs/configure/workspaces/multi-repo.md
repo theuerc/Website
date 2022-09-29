@@ -7,7 +7,7 @@ title: Multi-repo
   export const prerender = true;
 </script>
 
-# {title}
+# Multi-repo
 
 > {title} is currently in [Beta](/docs/help/public-roadmap/release-cycle) · [Send feedback](https://github.com/gitpod-io/gitpod/issues/8623).
 

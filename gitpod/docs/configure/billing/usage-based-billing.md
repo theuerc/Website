@@ -7,7 +7,7 @@ title: Usage-based billing
   export const prerender = true;
 </script>
 
-# {title}
+# Usage-based billing
 
 > {title} is currently in [Early Access](/docs/help/public-roadmap/release-cycle). Please [contact us](/contact/support) to request access, or [send feedback](https://github.com/gitpod-io/gitpod/issues/12636).
 

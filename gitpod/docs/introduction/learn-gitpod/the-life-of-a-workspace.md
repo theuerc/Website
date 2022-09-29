@@ -7,7 +7,7 @@ title: The life of a workspace
   export const prerender = true;
 </script>
 
-# {title}
+# The life of a workspace
 
 Gitpod makes creating fresh workspaces as easy as [clicking a button on a repository page](/docs/configure/user-settings/browser-extension).
 Gitpod's continuous dev environments encourages you to create fresh workspaces rather than restarting older ones.

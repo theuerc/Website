@@ -7,7 +7,7 @@ title: Gitpod CLI
   export const prerender = true;
 </script>
 
-# {title}
+# Gitpod CLI
 
 Gitpod supports a command line interface that is available in each workspace terminal called `gp`:
 

@@ -7,7 +7,7 @@ title: Tasks
   export const prerender = true;
 </script>
 
-# {title}
+# Tasks
 
 <!--
   Source for diagrams: https://excalidraw.com/#json=5144082254921728,Kl_Vys0jGocSg6BQ9musNw

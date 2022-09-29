@@ -7,7 +7,7 @@ title: One workspace per task
   export const prerender = true;
 </script>
 
-# {title}
+# One workspace per task
 
 On any given day, you may be involved in tasks such as the following:
 

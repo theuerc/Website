@@ -7,7 +7,7 @@ title: Team plans
   export const prerender = true;
 </script>
 
-# {title}
+# Team plans
 
 > **NOTE**
 > You can now configure [Team billing](/docs/configure/billing/team-billing) directly from Teams & Projects with the following benefits:

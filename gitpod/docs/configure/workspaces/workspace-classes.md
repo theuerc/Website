@@ -7,7 +7,7 @@ title: Workspace classes
   export const prerender = true;
 </script>
 
-# {title}
+# Workspace classes
 
 > {title} are currently in [Early Access](/docs/help/public-roadmap/release-cycle) with [Usage-based billing](/docs/configure/billing/usage-based-billing). Please [contact us](/contact/support) to request access, or [send feedback](https://github.com/gitpod-io/gitpod/issues/12473).
 

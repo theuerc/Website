@@ -7,7 +7,7 @@ title: GitLab
   export const prerender = true;
 </script>
 
-# {title}
+# GitLab
 
 Gitpod works nicely with GitLab: You can start Gitpod workspaces directly from the web pages of your GitLab repositories, and you can configure Gitpod to automatically prebuild these workspaces such that you can start coding on any branch in no time.
 
@@ -41,7 +41,7 @@ To use Gitpod on a GitLab repository, you have to connect your GitLab account wi
 
 Gitpod supports the following use cases:
 
-- [{title}](#title)
+- [GitLab](#GitLab)
   - [Starting Workspaces](#starting-workspaces)
   - [Enabling Prebuilds](#enabling-prebuilds)
   - [Connecting Your GitLab Account](#connecting-your-gitlab-account)

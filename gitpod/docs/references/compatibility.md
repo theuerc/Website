@@ -12,7 +12,7 @@ title: Compatibility
 
 </script>
 
-# {title}
+# Compatibility
 
 This page shows you what components and services Gitpod is and is not compatible with. It is aimed at both individual developers that use Gitpod as well as admins that install and maintain a [Gitpod Self-Hosted](/docs/configure/self-hosted/latest) instance. You can filter the table to show only what is relevant to you.
 

@@ -7,7 +7,7 @@ title: User settings
   export const prerender = true;
 </script>
 
-# {title}
+# User settings
 
 User settings allow you to customize your own personal Gitpod experience.
 

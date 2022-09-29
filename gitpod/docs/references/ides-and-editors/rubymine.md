@@ -7,6 +7,6 @@ title: RubyMine
   export const prerender = true;
 </script>
 
-# {title}
+# RubyMine
 
 JetBrains RubyMine Desktop Support is coming soon to Gitpod.

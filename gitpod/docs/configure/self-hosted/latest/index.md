@@ -19,7 +19,7 @@ data={{
   }}
 />
 
-# {title}
+# Self-Hosted
 
 Gitpod can be deployed and operated on your own infrastructure. It supports different cloud providers, self-managed Kubernetes clusters, corporate firewalls, and even off-grid / air-gapped networks.
 

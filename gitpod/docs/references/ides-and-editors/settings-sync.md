@@ -7,7 +7,7 @@ title: VS Code settings sync
   export const prerender = true;
 </script>
 
-# {title}
+# VS Code settings sync
 
 VS Code is beloved for its endless customization possibilities.
 
