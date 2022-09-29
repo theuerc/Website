@@ -1,4 +1,5 @@
 import { readable } from "svelte/store";
+import type { MenuEntry } from "../types/menu-entry.type";
 
 export const isEurope = () => {
   const offset = new Date().getTimezoneOffset();
@@ -65,4 +66,16 @@ export const useMediaQuery = (mediaQueryString: string) => {
     };
   });
   return matches;
+};
+
+export const getVariantFromStatus = (status: string) => {
+  if (status === "soon" || status === "Early Access") {
+    return "pink";
+  } else {
+    return "orange";
+  }
+};
+
+export const isLongDocsMenuEntry = (entry: MenuEntry) => {
+  return entry && entry.status && entry.status.split(" ").length > 1;
 };
