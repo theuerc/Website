@@ -1,7 +1,7 @@
 ---
 section: self-hosted/latest
 subsection: troubleshooting
-title: Stop workspaces
+title: Stop Workspaces
 ---
 
 <script context="module">
@@ -14,13 +14,13 @@ Sometimes it becomes necessary to stop Gitpod workspaces (in a `<namespace>`). U
 
 This can be done with `kubectl`, and when done so, the IDE is closed, data in `/workspace` is backed up, and then the pod finally terminates.
 
-## A single workspace
+## A Single Workspace
 
 ```shell
 $ kubectl delete pods <workspace-or-headless-pod-name> -n <namespace>
 ```
 
-## All workspaces
+## All Workspaces
 
 > **Caution**: This will delete all actively running workspaces.
 

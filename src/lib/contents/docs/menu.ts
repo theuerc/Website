@@ -156,6 +156,10 @@ export const MENU: MenuEntry[] = [
           []
         ),
         M(
+          "Prevent Workspace Starts",
+          "configure/self-hosted/latest/prevent-workspace-starts"
+        ),
+        M(
           "Manage Cluster Nodes",
           "configure/self-hosted/latest/manage-cluster-nodes",
           false,

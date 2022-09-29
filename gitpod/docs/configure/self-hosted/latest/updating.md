@@ -12,7 +12,7 @@ title: Updating Gitpod Self-Hosted
 
 At first, you must decide on an [update strategy](#update-strategies), and follow related instructions.
 
-After which, you need to start the installation admin console. In a terminal with configured `kubectl` run the following command (`<namespace>` is the Kubernetes namespace your Gitpod installation has been installed to):
+After following instructions for your desired update strategy, you need to start the installation admin console. In a terminal with configured `kubectl` run the following command (`<namespace>` is the Kubernetes namespace your Gitpod installation has been installed to):
 
 ```shell
 $ kubectl kots admin-console --namespace <namespace>
@@ -38,13 +38,13 @@ Please refer to [Update Guides](../latest/upgrade-guides) to check for breaking 
 
 ### Maintenance Window (Higher downtime, low risk and medium cost) - Recommended
 
-> **Important:** [Single Cluster Reference Architecture](../latest/reference-architecture/single-cluster-ref-arch) is not highly-available, please [stop workspaces](./stop-workspaces) prior to proceeding.
+> **Important:** [Single Cluster Reference Architecture](../latest/reference-architecture/single-cluster-ref-arch) is not highly-available, please [stop workspaces](./stop-workspaces) and [prevent workspace starts](./prevent-workspace-starts) prior to proceeding.
 
 In this strategy, you have scheduled maintenance windows where you take down your entire Gitpod installation, update it, test it, and then make it available again. Ideally, this is done during times of low demand, e.g. outside of work hours.
 
 ### Secondary Staging Deployment (medium downtime, lower risk, higher cost)
 
-> **Important:** [Single Cluster Reference Architecture](../latest/reference-architecture/single-cluster-ref-arch) is not highly-available, please [stop workspaces](./stop-workspaces) prior to proceeding.
+> **Important:** [Single Cluster Reference Architecture](../latest/reference-architecture/single-cluster-ref-arch) is not highly-available, please [stop workspaces](./stop-workspaces) and [prevent workspace starts](./prevent-workspace-starts) prior to proceeding.
 
 In this strategy, you run the newest version of Gitpod on a secondary (staging) cluster to ensure compatibility/fitness of the newest version within your specific environment. Given that you are testing on a secondary cluster, you save on downtime in your primary cluster. If you are confident in the release, you can then also apply the update to your primary cluster. Given that workspace startups may fail for a brief period _during_ the update process, a maintenance window (albeit smaller) will still be required.
 
