@@ -252,9 +252,13 @@ https://community.gitpod.io/* https://www.gitpod.io/chat 301!
 /docs/multi-repo-workspaces /docs/configure/workspaces/multi-repo
 /docs/workspace-classes /docs/configure/workspaces/workspace-classes
 /docs/self-hosted/latest/cluster-set-up/on-k3s /docs/configure/self-hosted/latest/cluster-set-up/on-k3s
+/docs/self-hosted/latest/cluster-set-up/on-amazon-eks /docs/configure/self-hosted/latest/cluster-set-up/on-amazon-eks
+/docs/self-hosted/latest/cluster-set-up/on-gke /docs/configure/self-hosted/latest/cluster-set-up/on-gke
 /docs/self-hosted/helm-deprecated/troubleshooting /docs/configure/self-hosted/helm-deprecated/troubleshooting
 /docs/self-hosted/helm-deprecated/installation/on-kubernetes /docs/configure/self-hosted/helm-deprecated/installation/on-kubernetes
 /docs/self-hosted/helm-deprecated/installation /docs/configure/self-hosted/helm-deprecated/installation
 /docs/self-hosted/latest/cluster-set-up/on-microsoft-aks /docs/configure/self-hosted/latest/cluster-set-up/on-microsoft-aks
 /docs/self-hosted/latest/reference-architecture/single-cluster-ref-arch /docs/configure/self-hosted/latest/reference-architecture/single-cluster-ref-arch
 /docs/self-hosted/latest/reference-architecture/proof-of-value /docs/configure/self-hosted/latest/reference-architecture/proof-of-value
+/docs/self-hosted/latest/cluster-set-up /docs/configure/self-hosted/latest/reference-architecture/single-cluster-ref-arch
+/docs/self-hosted/latest/advanced/requirements /docs/configure/self-hosted/latest/requirements
