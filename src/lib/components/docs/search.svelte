@@ -1,6 +1,7 @@
 <script lang="ts" context="module">
   declare global {
     type docsearchParamType = {
+      appId: string;
       apiKey: string;
       indexName: string;
       inputSelector: string;
@@ -35,7 +36,8 @@
   $: if (docSearchInput && (docSearchScript || docSearchScriptLoaded)) {
     window.docsearch &&
       window.docsearch({
-        apiKey: "1a880f3060e9ff81ff84087fc90878fc",
+        appId: "QZ9BJ7JSAP",
+        apiKey: "5de60226283bd5a67c57b3f711b62b2d",
         indexName: "gitpod",
         inputSelector: `#${docSearchInputSelector}`,
         // Set debug to true to inspect the dropdown
