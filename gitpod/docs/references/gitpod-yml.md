@@ -175,7 +175,7 @@ coreDump:
   hardLimit: <bytes>
 ```
 
-For more details, please see the [Linux man page for `gerlimit`](https://man7.org/linux/man-pages/man2/getrlimit.2.html)
+For more details, please see the [Linux man page for `getrlimit`](https://man7.org/linux/man-pages/man2/getrlimit.2.html)
 
 ## `gitConfig`
 
