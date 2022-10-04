@@ -109,7 +109,7 @@ There are a number of key benefits of using Gitpod and LocalStack to develop clo
 - **Seamless transition into CI:** The application configuration can be taken 1:1 and directly transferred to a CI/CD pipeline that deploys the application and executes integration tests to ensure quality, as the business logic of the cloud app evolves over time.
 - **Cost savings:** Last but not least, it becomes very easy to run your applications in a sandbox environment, without ever talking to the real cloud, hence not incurring any costs for using any of the real cloud resources.
 
-If you have any questions about configuring and running your project, drop by Gitpod’s [community Discord server](https://discord.com/invite/gitpod) or LocalStack [Slack Community](https://localstack-community.slack.com/). We would love to hear your feedback in the Community.
+If you have any questions about configuring and running your project, drop by Gitpod’s [community Discord server](https://gitpod.io/chat) or LocalStack [Slack Community](https://localstack-community.slack.com/). We would love to hear your feedback in the Community.
 
 ## Resources and Further Reading
 
