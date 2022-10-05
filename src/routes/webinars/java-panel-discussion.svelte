@@ -7,9 +7,7 @@
   import Hosts from "$lib/components/webinars/hosts.svelte";
   import Layout from "$lib/components/webinars/layout.svelte";
   import OrganizedBy from "$lib/components/webinars/organized-by.svelte";
-  import Register from "$lib/components/webinars/register.svelte";
   import YoutubeEmbed from "$lib/components/youtube-embed.svelte";
-  import { javaPanelDiscussionWebinar } from "$lib/constants";
   import { hosts } from "$lib/contents/webinars/java-panel-discussion";
 </script>
 
