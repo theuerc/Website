@@ -13,7 +13,6 @@
   import Share from "./share.svelte";
   import Card from "$lib/components/ui-library/card";
   import type { ShareLink } from "$lib/types/share-link.type";
-  import Hackernews from "./svgs/share/hackernews.svelte";
 
   export let embedId: string;
   export let title: string;
@@ -87,7 +86,10 @@
       href: `http://news.ycombinator.com/submitlink?u=${encodeURIComponent(
         youtubeURL
       )}`,
-      svg: Hackernews,
+      icon: {
+        src: "/svg/brands/hackernews.svg",
+        alt: "HackerNews",
+      },
       trackingName: "hackernews",
     },
   ];
