@@ -5,7 +5,7 @@
   import "$lib/assets/markdown-commons.scss";
   import Share from "$lib/components/share.svelte";
   import Pill from "./pill.svelte";
-  import type { ShareLink } from "$lib/types/share-link.type";
+  import type { ShareLink } from "$lib/types/share-link";
   import RequestChanges from "./ui-library/request-changes.svelte";
 
   export let baseUrl: string;

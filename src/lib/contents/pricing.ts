@@ -1,14 +1,14 @@
-import type { Pricing } from "$lib/types/pricing.type";
+import type { Pricing } from "$lib/types/pricing";
 import { isEurope } from "$lib/utils/helpers";
-import type { Card } from "$lib/types/card.type";
+import type { Card } from "$lib/types/card";
 // @ts-ignore
 import RedeemOffer from "$lib/components/pricing/redeem-offer.svelte";
 import type {
   FeatureTable,
   FeatureTableColumn,
   FeatureTableToc,
-} from "../components/ui-library/feature-table/feature-table.types";
-import type { FAQ } from "../types/faq.type";
+} from "../components/ui-library/feature-table/feature-table";
+import type { FAQ } from "../types/faq";
 // @ts-ignore
 import githubMarkSvelte from "$lib/components/svgs/github-mark.svelte";
 
