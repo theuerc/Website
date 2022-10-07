@@ -29,7 +29,9 @@
   fullWidth={true}
 >
   <div slot="content">
-    <YoutubeEmbed embedId={screencast.youtubeId} title={screencast.title} />
+    <div class="max-w-full w-[990px] mx-auto">
+      <YoutubeEmbed embedId={screencast.youtubeId} title={screencast.title} />
+    </div>
 
     <div class="max-w-lg mx-auto mt-24 text-left">
       <Duration duration={screencast.duration} />
