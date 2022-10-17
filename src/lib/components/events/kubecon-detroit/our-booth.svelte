@@ -1,6 +1,6 @@
 <script lang="ts">
   import BoothCard from "./booth-card.svelte";
-  import Section from "../section.svelte";
+  import Section from "$lib/components/section.svelte";
   import DemoCard from "./demo-card.svelte";
   import SwagCard from "./swag-card.svelte";
   export let demoCards = [

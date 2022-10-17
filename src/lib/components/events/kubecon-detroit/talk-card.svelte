@@ -2,9 +2,9 @@
   import Card from "$lib/components/ui-library/card/card.svelte";
   import Avatars from "$lib/components/ui-library/avatars/avatars.svelte";
   import { authors, authorSocialMediaLinks } from "$lib/contents/authors";
-  import Calendar from "../svgs/webinars/calendar.svelte";
-  import Clock from "../svgs/webinars/clock.svelte";
-  import LinkButton from "../ui-library/link-button/link-button.svelte";
+  import Calendar from "$lib/components/svgs/webinars/calendar.svelte";
+  import Clock from "$lib/components/svgs/webinars/clock.svelte";
+  import LinkButton from "$lib/components/ui-library/link-button/link-button.svelte";
 
   const authorDisplayNames = Object.entries(authors).reduce(
     (displayNames, [username, profile]) => {

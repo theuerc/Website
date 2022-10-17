@@ -1,7 +1,7 @@
 <script lang="ts">
   import HeaderDescription from "./header-description.svelte";
   import Card from "$lib/components/ui-library/card/card.svelte";
-  import Section from "../section.svelte";
+  import Section from "$lib/components/section.svelte";
 </script>
 
 <Section class="grid grid-cols-1 gap-x-small lg:grid-cols-2">

@@ -1,8 +1,8 @@
 <script lang="ts">
-  import Header from "../header.svelte";
-  import Pill from "../pill.svelte";
-  import Calendar from "../svgs/webinars/calendar.svelte";
-  import Location from "../svgs/events/location.svelte";
+  import Header from "$lib/components/header.svelte";
+  import Pill from "$lib/components/pill.svelte";
+  import Calendar from "$lib/components/svgs/webinars/calendar.svelte";
+  import Location from "$lib/components/svgs/events/location.svelte";
   export let title: string,
     label: string,
     date: string,

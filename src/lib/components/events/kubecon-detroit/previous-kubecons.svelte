@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Section from "../section.svelte";
-  import Quote from "$lib/components/events/quote.svelte";
+  import Section from "$lib/components/section.svelte";
+  import Quote from "$lib/components/events/kubecon-detroit/quote.svelte";
   import type { Testimonial } from "$lib/types/testimonial";
 
   const quotes: Testimonial[] = [

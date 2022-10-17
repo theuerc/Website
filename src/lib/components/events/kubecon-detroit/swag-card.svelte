@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Section from "../section.svelte";
-  import Card from "../ui-library/card/card.svelte";
+  import Section from "$lib/components/section.svelte";
+  import Card from "$lib/components/ui-library/card/card.svelte";
 </script>
 
 <Section class="flex justify-center w-full">

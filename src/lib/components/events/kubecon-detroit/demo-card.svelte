@@ -1,6 +1,6 @@
 <script lang="ts">
   import Card from "$lib/components/ui-library/card/card.svelte";
-  import LinkButton from "../ui-library/link-button/link-button.svelte";
+  import LinkButton from "$lib/components/ui-library/link-button/link-button.svelte";
 
   export let buttonLabel: string;
   export let href: string;

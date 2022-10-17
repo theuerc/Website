@@ -1,7 +1,7 @@
 <script lang="ts">
   import Card from "$lib/components/ui-library/card/card.svelte";
-  import Calendar from "../svgs/webinars/calendar.svelte";
-  import Clock from "../svgs/webinars/clock.svelte";
+  import Calendar from "$lib/components/svgs/webinars/calendar.svelte";
+  import Clock from "$lib/components/svgs/webinars/clock.svelte";
 </script>
 
 <Card
@@ -23,11 +23,11 @@
       <h3 class="h3 !mb-micro md:!mb-x-small">JetBrains 🤝 Gitpod demo</h3>
       <div class="flex items-center mb-micro">
         <Calendar class="h-7 w-7 mr-micro" />
-        <span class="text-p-large">TBC</span>
+        <span class="text-p-large">Wednesday - Thursday, October 26-27</span>
       </div>
       <div class="flex items-center">
         <Clock class="h-7 w-7 mr-micro" />
-        <span class="text-p-large">TBC</span>
+        <span class="text-p-large">2pm - 3pm</span>
       </div>
       <p class="text-large my-x-small max-w-[595px]">
         Join Ernst Haagsman from JetBrains at our booth who will demo how the

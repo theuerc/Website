@@ -1,6 +1,6 @@
 <script lang="ts">
   import TalkCard from "./talk-card.svelte";
-  import Section from "../section.svelte";
+  import Section from "$lib/components/section.svelte";
 </script>
 
 <Section class="flex justify-center w-full">
