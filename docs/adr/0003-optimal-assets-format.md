@@ -41,7 +41,7 @@ You Can use [cwebp](https://developers.google.com/speed/webp/docs/cwebp), a comm
 
 ```sh
 sudo apt update
-sudo apt-get install webp --y
+yes|sudo apt-get install webp
 ```
 
 Then, change the present working directorty to your image file path & run the following command:
