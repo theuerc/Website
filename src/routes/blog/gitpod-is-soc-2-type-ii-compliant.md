@@ -36,7 +36,7 @@ We acknowledge the relevance of providing a secure product and hence go beyond t
 
 🧰 Gitpod integrates with best-in-breed solutions such as [Tailscale](https://tailscale.com/) - to provide the best possible user experience and [secured access to remote development environments](https://www.gitpod.io/blog/tailscale)
 
-🔑 Gitpod is passwordless - authentication to Gitpod is established via OAuth with code repositories like Github, Gtilab and Bitbucket
+🔑 Gitpod is passwordless - authentication to Gitpod is established via OAuth with code repositories like GitHub, GitLab and Bitbucket
 
 🔒 Data is encrypted - during transit (TLS 1.2 or above) and at rest (AES 256)
 
