@@ -138,8 +138,8 @@
           <FooterLink href="/cookies">Cookie policy</FooterLink>
         </li>
         <li>
-          <!-- svelte-ignore a11y-missing-attribute -->
           <a
+            href="/"
             on:click={() => (isModalOpen = true)}
             class="text-body no-underline focus:text-important hover:text-important active:text-important"
             >Cookie preferences</a
