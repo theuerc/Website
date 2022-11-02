@@ -1,7 +1,6 @@
 https://blog.gitpod.io/* https://www.gitpod.io/blog/:splat 301!
 https://community.gitpod.io/* https://www.gitpod.io/chat 301!
 /blog/gitlab-integration/+ /blog/gitlab-integration
-/careers https://gitpod.crew.work/jobs
 /chat https://discord.com/invite/gitpod
 /code-of-conduct https://github.com/gitpod-io/.github/blob/main/CODE_OF_CONDUCT.md
 /configure/editor /docs/editors/vscode

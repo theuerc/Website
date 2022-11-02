@@ -116,11 +116,7 @@
         <li><FooterLink href="/about">About</FooterLink></li>
         <li><FooterLink href="/about/team">Team</FooterLink></li>
         <li>
-          <FooterLink
-            href="https://www.gitpod.io/careers"
-            target="_blank"
-            highlight>Careers</FooterLink
-          >
+          <FooterLink href="/careers" highlight>Careers</FooterLink>
         </li>
         <li><FooterLink href="/contact">Contact</FooterLink></li>
         <li><FooterLink href="/media-kit">Media kit</FooterLink></li>
