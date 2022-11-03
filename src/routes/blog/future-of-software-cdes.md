@@ -85,6 +85,8 @@ So.. what will we do with the additional capital? We want CDEs to become the sta
 
 We want to build a lasting company on top of a paradigm shift that will change how the world writes software - for the better.
 
-<div class="">
-<Download />
-</div>
+<Download
+      class="mx-auto lg:m-0"
+      toType="cde-whitepaper"
+      eventType="Whitepaper"
+    />

@@ -100,7 +100,7 @@
         on:submit|preventDefault={handleSubmit}
         novalidate
       >
-        <h2 class="h5">Download {eventType}</h2>
+        <h2 class="h5 !mt-0">Download {eventType}</h2>
         <InputsHalf>
           <div>
             <Input

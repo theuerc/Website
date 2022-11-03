@@ -36,7 +36,7 @@
     darkSrc: "/images/cde/hero-dark.png",
   }}
   btnPrimary={{
-    text: "View 8 principles",
+    text: "Principles of CDEs",
     href: "#principles",
   }}
 />
