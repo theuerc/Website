@@ -1,8 +1,7 @@
 <script lang="ts">
-  import type { Testimonial } from "$lib/types/testimonial";
-  export let quote: Testimonial;
-
-  const { name, avatar, role, org, text, alt, img } = quote;
+  export let img: string;
+  export let alt: string;
+  export let text: string;
 </script>
 
 <style lang="scss">
@@ -27,29 +26,22 @@
 <div
   class="testimonial stroked py-x-small px-xx-small stroked-light max-w-sm p-xx-small overflow-hidden rounded-2xl flex flex-col justify-between bg-white dark:bg-card transition-shadow duration-300 ease-in-out text-body"
 >
-  <div>
-    {#if img}
-      <img src={img} {alt} class="rounded-2xl mb-xx-small" />
-    {/if}
-    <div>{@html text}</div>
-  </div>
-  <div class="mt-x-small flex">
+  <div class="flex">
     <div
       class="bg-wrapper p-0.5 h-[55px] w-[55px] flex justify-center items-center rounded-full"
     >
       <img
-        src={`/images/avatars/${avatar}`}
-        alt={name}
+        src={img}
+        {alt}
         width="50"
         height="50"
-        class="rounded-full"
+        class="rounded-full bg-bg aspect-square object-cover"
       />
     </div>
     <div class="ml-3">
-      <p class="mb-0 font-semibold text-small leading-6 text-important">
-        {name}
+      <p class="mb-0 text-p-medium leading-6">
+        {text}
       </p>
-      <p class="role">{role ? role : ""} {@html org ? org : ""}</p>
     </div>
   </div>
 </div>
