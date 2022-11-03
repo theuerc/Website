@@ -13,8 +13,8 @@ title: The future of writing software happens in Cloud Development Environments 
 </script>
 
 <script>
-  import Quotes from "$lib/components/blog/cde-quotes.svelte"
-  import Download from "$lib/components/whitepaper/cloud-dev-environments/download.svelte"
+  import Quotes from "$lib/components/blog/cde-quotes.svelte";
+  import Download from "$lib/components/whitepaper/cloud-dev-environments/download.svelte";
 </script>
 
 **TL;DR**
