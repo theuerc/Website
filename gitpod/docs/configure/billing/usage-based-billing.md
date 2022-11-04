@@ -43,6 +43,10 @@ Once billing has been configured, use the "Manage Plan" button to modify your pa
 
 ![Active Personal billing](../../../static/images/docs/billing/active-personal-billing.png)
 
+If you are a member of a team with billing, you can select the team to pay for all your personal usage under "Default Billing Account".
+
+![Select default billing account](../../../static/images/docs/billing/select-default-billing-account.png)
+
 ## Configure team billing
 
 Team owners can configure usage-based billing in their team settings.
