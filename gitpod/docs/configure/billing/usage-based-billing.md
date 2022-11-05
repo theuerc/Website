@@ -13,7 +13,7 @@ title: Usage-based billing
 
 Usage-based billing is a flexible way for teams and individual users to pay for Gitpod.
 
-Instead of billing for each user based on their plan, Gitpod can charge for usage based on how long workspaces run, and the resources consumed by different [workspace classes](/docs/configure/workspaces/workspace-classes).
+Instead of billing for each user based on their plan, Gitpod can charge for usage based on how long workspaces run, and the resources consumed by different [workspace classes](/docs/configure/workspaces/workspace-classes). Metered usage also includes [prebuilds](/docs/configure/projects/prebuilds).
 
 As an individual user, you receive a free usage allowance so that you can try Gitpod without a billing account. A personal billing account is required for additional usage beyond that.
 
