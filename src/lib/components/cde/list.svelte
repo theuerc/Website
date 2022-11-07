@@ -17,7 +17,7 @@
     </p>
   </div>
   <ol
-    class="list-outside columns-1 md:columns-2 gap-x-x-large space-y-small py-0"
+    class="list-outside grid-flow-row md:grid-flow-col grid grid-cols-1 md:grid-cols-2 md:grid-rows-4 gap-x-x-large gap-y-small py-0"
   >
     {#each manifestoItems as item, i}
       <li class="break-inside-avoid flex">
