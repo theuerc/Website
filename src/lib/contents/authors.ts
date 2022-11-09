@@ -397,6 +397,14 @@ export const authors: { [idx: string]: Author } = {
     },
     description: "",
   },
+  maciejwalkowiak: {
+    name: "Maciej Walkowiak",
+    socialProfiles: {
+      github: "maciejwalkowiak",
+      twitter: "maciejwalkowiak",
+    },
+    description: "",
+  },
 };
 
 export const authorSocialMediaLinks: SocialMediaLinks = Object.entries(
