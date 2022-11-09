@@ -1,6 +1,6 @@
 ---
 section: workspaces
-title: Collaboration & Sharing
+title: Collaboration & Sharing of Gitpod workspaces
 ---
 
 <script context="module">

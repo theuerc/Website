@@ -1,11 +1,24 @@
 ---
 section: projects
-title: Prebuilds
+title: Gitpod Prebuilds
 ---
 
 <script context="module">
   export const prerender = true;
 </script>
+
+<script lang="ts">
+  import OpenGraph from "$lib/components/open-graph.svelte";
+</script>
+
+<OpenGraph
+data={{
+    description:
+      "Learn how to configure prebuilds for your Gitpod projects.",
+    title: "Gitpod Prebuilds",
+    keywords: "prebuilds, Gitpod, faster workspace start, faster workspace init, faster workspace creation",
+  }}
+/>
 
 # Prebuilds
 

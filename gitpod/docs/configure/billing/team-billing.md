@@ -1,6 +1,6 @@
 ---
 section: billing
-title: Team billing
+title: Billing - Team billing
 ---
 
 <script context="module">

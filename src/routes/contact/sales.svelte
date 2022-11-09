@@ -223,7 +223,7 @@
 <OpenGraph
   data={{
     description: "We’ll help you find the best plan for your business.",
-    title: "Contact Sales",
+    title: "Contact Sales - Book a demo",
   }}
 />
 

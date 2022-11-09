@@ -1,6 +1,6 @@
 ---
 section: billing
-title: Usage-based billing
+title: Billing - Usage-based billing
 ---
 
 <script context="module">
