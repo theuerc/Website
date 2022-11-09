@@ -5,7 +5,7 @@ excerpt: Gitpod workspace image (the image on which your environment runs) comes
 slug: custom-java-distribution-on-gitpod
 teaserImage: teaser.webp
 image: header.webp
-title: How to use custom Java distribution on Gitpod
+title: How to use a custom Java distribution on Gitpod
 ---
 
 <script context="module">
@@ -22,9 +22,9 @@ Since [SDKMan](https://sdkman.io/) is installed, you can easily switch to a diff
 sdk install java 17.0.4.1-tem
 ```
 
-But this change will be reflected only in your current workspace. If someone else opens Gitpod workspace for the same Gitpod repository or if you recreate workspace, Java will be back to 11 and the version you installed with SDKMan will be gone.
+But this change will be reflected only in your current workspace. If someone else opens the Gitpod workspace for the same Gitpod repository or if you recreate the workspace, Java will be back to 11, and the version you installed with SDKMan will be gone.
 
-There are at least two ways to configure Java version for each new Gitpod workspace.
+There are at least two ways to configure the Java version for each new Gitpod workspace.
 
 ## Set Java version with `.gitpod.yml`
 
@@ -35,7 +35,7 @@ tasks:
   - before: sdk install java 17.0.4.1-tem
 ```
 
-This is almost good. The problem is that `sdk install` prompts user to set the installed version as a default. There's no flag to run the command in non-interactive mode, but there is a [hacky workaround](https://github.com/sdkman/sdkman-cli/issues/101#issuecomment-155938383):
+This is almost good. The problem is that `sdk install` prompts the user to set the installed version as a default. There's no flag to run the command in non-interactive mode, but there is a [hacky workaround](https://github.com/sdkman/sdkman-cli/issues/101#issuecomment-155938383):
 
 ```yaml
 tasks:
@@ -48,7 +48,7 @@ Instead, we can create a custom workspace image that will be built only once.
 
 ## Set Java version with workspace image
 
-Gitpod gives an option to use [custom Docker image](https://www.gitpod.io/docs/configure/workspaces/workspace-image) on which the workspace runs. Let's create one that uses `Java 17` by default:
+Gitpod gives an option to use a [custom Docker image](https://www.gitpod.io/docs/configure/workspaces/workspace-image) on which the workspace runs. Let's create one that uses `Java 17` by default:
 
 Remove the `before` task from `.gitpod.yml` and instead set the `image.file` property to `.gitpod.Dockerfile.`
 
@@ -93,7 +93,7 @@ OpenJDK 64-Bit Server VM Temurin-17.0.4.1+1 (build 17.0.4.1+1, mixed mode, shari
 
 # Use a JDK that is unavailable in SDKman
 
-What if the JDK we want to use is not available in SDKMan? Since we use Dockerfile, we can write shell scripts.
+What if the JDK we want to use is not available in SDKMan? Since we are using a Dockerfile, we can write shell scripts.
 
 As an example, let's use [JetBrains distribution of the OpenJDK](https://github.com/JetBrains/JetBrainsRuntime).
 Use the following `.gitpod.Dockerfile` contents:
