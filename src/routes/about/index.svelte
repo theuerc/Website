@@ -34,7 +34,7 @@
 
 <Header
   title="About Gitpod"
-  text="Gitpod is an open source developer platform automating the provisioning 
+  text="Gitpod is an open source developer platform automating the provisioning
   of ready-to-code developer environments."
   textClassNames="max-w-[770px] text-large mx-auto mb-x-small"
   tight={true}

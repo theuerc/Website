@@ -60,7 +60,7 @@ You can view all pre-installed extensions by navigating to VS Code's Extensions 
 
 ## Use of Microsoft-owned extensions in Gitpod
 
-You can only use extensions available on the [Open VSX](#open-vsx) registry with [VS Code Browser](vscode-browser) on Gitpod. Microsoft only permits use of their marketplace via "Microsoft’s publicly supported interfaces" (see their [ToS](https://cdn.vsassets.io/v/M190_20210811.1/_content/Microsoft-Visual-Studio-Marketplace-Terms-of-Use.pdf) section `1f`), and this restriction applies to the Gitpod VS Code Browser integration. If you wish to use extensions from Microsoft's VS Code Marketplace, you must use [VS Code Desktop](vscode). 
+You can only use extensions available on the [Open VSX](#open-vsx) registry with [VS Code Browser](vscode-browser) on Gitpod. Microsoft only permits use of their marketplace via "Microsoft’s publicly supported interfaces" (see their [ToS](https://cdn.vsassets.io/v/M190_20210811.1/_content/Microsoft-Visual-Studio-Marketplace-Terms-of-Use.pdf) section `1f`), and this restriction applies to the Gitpod VS Code Browser integration. If you wish to use extensions from Microsoft's VS Code Marketplace, you must use [VS Code Desktop](vscode).
 
 The following extensions are therefore not available in VS Code Browser:
 
@@ -72,11 +72,11 @@ The following extensions are therefore not available in VS Code Browser:
 
 ## Install VS Code extensions from a VSIX file
 
-It is possible to develop, install and test your own custom VS Code extensions in Gitpod. While developing the extension, you can test it by uploading the `.vsix` file to your Gitpod workspace. 
+It is possible to develop, install and test your own custom VS Code extensions in Gitpod. While developing the extension, you can test it by uploading the `.vsix` file to your Gitpod workspace.
 
-**Please note:** 
+**Please note:**
 
-* You can install any private extensions using manual VSIX installation. 
+* You can install any private extensions using manual VSIX installation.
 * Installing a `.vsix` in Gitpod does not list that extension anywhere public.
 * Any `.vsix` referenced in the `.gitpod.yml` must be publicly accessible.
 
@@ -86,9 +86,9 @@ Open VSX is an open source VS Code extensions registry. For VS Code Browser in G
 
 ### Why do we need Open VSX?
 
-VS Code Browser is prohibited from accessing the Microsoft VS Code Extensions marketplace. 
+VS Code Browser is prohibited from accessing the Microsoft VS Code Extensions marketplace.
 
-See [Use of Microsoft owned extensions in Gitpod](#use-of-microsoft-owned-extensions-in-gitpod) for more. 
+See [Use of Microsoft owned extensions in Gitpod](#use-of-microsoft-owned-extensions-in-gitpod) for more.
 
 ### Where do I find extensions?
 

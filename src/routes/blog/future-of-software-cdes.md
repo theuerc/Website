@@ -43,28 +43,28 @@ Developing software in the cloud is not about simply replicating an existing loc
 
 CDEs value the following principles:
 
-- **Ephemeral** _over long lived_  
+- **Ephemeral** _over long lived_
   A fresh, disposable development environment for every task.
 
-- **Reproducible** _over cobbled together_  
+- **Reproducible** _over cobbled together_
   Consistently replicable without manual intervention.
 
-- **Effortless** _over arduous_  
+- **Effortless** _over arduous_
   With minimal friction and difficulty.
 
-- **Independent** _over tangled_  
+- **Independent** _over tangled_
   Isolated and self-sufficient.
 
-- **Abundant** _over scarce_  
+- **Abundant** _over scarce_
   Instantaneously obtainable, seemingly infinite.
 
-- **Powerful** _over constrained_  
+- **Powerful** _over constrained_
   Supports the most expansive development activities.
 
-- **Equitable** _over requiring specialised skills_  
+- **Equitable** _over requiring specialised skills_
   Lowers the barrier to software development.
 
-- **Collaborative** _over solitary_  
+- **Collaborative** _over solitary_
   Enables collaboration across time, space and practice.
 
 You can read more under [www.gitpod.io/cde](/cde).
