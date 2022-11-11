@@ -74,6 +74,7 @@
           >
         </li>
         <li><FooterLink href="/guides">Guides</FooterLink></li>
+        <li><FooterLink href="/events">Events</FooterLink></li>
       </Section>
       <Section title="Use Cases">
         <li>
