@@ -5,22 +5,22 @@ export const webinars = [
     image: "/images/events/remote-dev-webinar.jpg",
     alt: "banner for remote development workshop that takes 60 min",
     text: "A hands on conversation about remote development using Gitpod. We will talk about how to get started and cover some best practices. You will be able to follow along with a example repository and your own Gitpod account.",
-    title: "Getting started with Gitpod and remote development",
     href: "/webinars/getting-started-with-nuaware",
+    isInPast: false,
   },
   {
     image: "/images/events/java-panel-discussion.jpg",
     alt: "banner for a pannel discussion around java that takes 60 min",
     text: "Open conversation about Java remote development covering best practices. What does not work well yet, and what had to click to make it work.",
-    title: "Success and failure stories of Java developers shifting to remote",
     href: "/webinars/java-panel-discussion",
+    isInPast: true,
   },
   {
     image: "/images/events/intellij-webinar.jpg",
     alt: "banner for IntelliJ Webinar that takes 60 min",
     text: "Curious how the biggest tech companies are using remote development to speed up their development cycles? We’ll explore using Gitpod to enable Java development in the cloud with your local IntelliJ IDEA.",
-    title: "Remote development with IntelliJ & Gitpod",
     href: "/webinars/java-remote-development",
+    isInPast: true,
   },
 ];
 
@@ -53,53 +53,53 @@ export const highlights: Card[] = [
 ];
 
 export const conferences: {
-  title: string;
   text: string;
   buttonText?: string;
   img: string;
   imgDark?: string;
   href?: string;
   alt: string;
+  year: string;
 }[] = [
   {
     imgDark: "/images/events/kubecon-logo-dark.png",
     img: "/images/events/kubecon-logo.png",
-    title: "KubeCon NA 22",
     text: "The CNCF's flagship conference in North America, October 2022.",
     alt: "Kubecon NA 2022 Logo",
     buttonText: "More on KubeCon NA 22",
     href: "/events/kubecon-detroit",
+    year: "2022",
   },
   {
     imgDark: "/images/events/devoxx-2022-dark.svg",
     img: "/images/events/devoxx-2022.svg",
-    title: "Devoxx 2022",
     text: "The biggest vendor-independent Java conference in the world, hosted in Antwerp, Belgium.",
     alt: "Devoxx 2022 Logo",
+    year: "2022",
   },
   {
     imgDark: "/images/events/kubecon-eu-2022.svg",
     img: "/images/events/kubecon-eu-2022.svg",
-    title: "KubeCon EU 22",
     text: "The CNCF's flagship conference in Europe, May 2022.",
     alt: "KubeCon EU 22 Logo",
+    year: "2022",
   },
   {
     imgDark: "/images/events/devx-conf-dark.svg",
     img: "/images/events/devx-conf.svg",
-    title: "DevX Conf 22",
     text: "A space for creators to talk about developer experience tools, tech, and workflows.",
     alt: "DevX Conf Logo",
     buttonText: "Go to devxconf.org",
     href: "https://devxconf.org/",
+    year: "2022",
   },
   {
     imgDark: "/images/events/devx-conf-dark.svg",
     img: "/images/events/devx-conf.svg",
-    title: "DevX Conf 21",
     text: "The first annual DevX Conf, virtually hosted by Gitpod.",
     alt: "DevX Conf Logo",
     buttonText: "Go to devxconf.org",
     href: "https://devxconf.org/2021/stage/a",
+    year: "2021",
   },
 ];

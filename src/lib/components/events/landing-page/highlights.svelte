@@ -10,7 +10,7 @@
       <Card
         textAlign="left"
         titleClassNames="!text-left"
-        btnSize="large"
+        btnSize="medium"
         btnClassNames="self-start mt-xx-small"
         card={highlight}
       />

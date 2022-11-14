@@ -51,9 +51,10 @@
         -z-10 hidden
         lg:block {darkSrc ? 'dark:lg:hidden' : ''}
         w-[35vw]
+        scale-75
         {isCut
-      ? 'xl:transform xl:translate-x-24'
-      : 'absolute right-0 top-1/2 transform -translate-y-[40%]'}
+      ? 'xl:transform xl:translate-x-12'
+      : 'absolute right-0 top-1/2 transform -translate-y-[50%]'}
       "
     {src}
     {alt}
@@ -66,10 +67,10 @@
           dark:lg:block
           w-[35vw]
           transfrom
-          scale-[1.12]
+          scale-75
           {isCut
-        ? 'xl:transform xl:translate-x-24 xl:translate-y-[20%]'
-        : 'absolute right-0 top-1/2 -translate-y-[40%]'}
+        ? 'xl:transform xl:translate-x-12 xl:translate-y-[20%]'
+        : 'absolute right-0 top-1/2 -translate-y-[50%]'}
         "
       src={darkSrc}
       {alt}
