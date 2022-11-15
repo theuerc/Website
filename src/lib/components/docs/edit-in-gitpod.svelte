@@ -2,15 +2,18 @@
   import { page } from "$app/stores";
   import LogoTextless from "../svgs/logo-textless.svelte";
 
+  export let isIndex = false;
+
   const BASE_PATH =
-    "https://gitpod.io#https://github.com/gitpod-io/website/tree/main/src/routes";
-  const currentPage =
-    $page.url.pathname === "/docs"
+    "https://gitpod.io#https://github.com/gitpod-io/website/blob/main/gitpod";
+  $: currentPage =
+    isIndex && $page.url.pathname.includes("/docs")
       ? `${$page.url.pathname}/index`
       : $page.url.pathname;
+
   export let url: string = "";
 
-  const href = url || `${BASE_PATH}${currentPage}.md`;
+  $: href = url || `${BASE_PATH}${currentPage}.md`;
   export let renderedOn: "desktop" | "mobile" = "desktop";
   export let text: string = "";
 </script>

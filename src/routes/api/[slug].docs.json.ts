@@ -73,10 +73,13 @@ export const get: RequestHandler = async ({ params }) => {
       ],
     });
 
+    const frontmatter = {
+      ...compiledMarkdown.data.fm,
+      isIndex: filePath.endsWith("index.md"),
+    };
+
     return {
-      body: {
-        ...compiledMarkdown.data.fm,
-      },
+      body: frontmatter,
     };
   } catch (e) {
     console.log(e.message);
