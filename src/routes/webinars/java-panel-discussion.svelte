@@ -42,7 +42,7 @@
       webinarDescription="Open conversation about Java remote development covering best practices. What does not work well yet, and what had to click to make it work."
     />
 
-    <div class="lgx:hidden ">
+    <div class="lgx:hidden">
       <Card
         size="small"
         class="px-3 sm:px-xx-small py-micro md:py-xx-small max-w-full shadow-normal"

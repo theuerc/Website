@@ -6,7 +6,7 @@ export const webinars = [
     alt: "banner for remote development workshop that takes 60 min",
     text: "A hands on conversation about remote development using Gitpod. We will talk about how to get started and cover some best practices. You will be able to follow along with a example repository and your own Gitpod account.",
     href: "/webinars/getting-started-with-nuaware",
-    isInPast: false,
+    isInPast: true,
   },
   {
     image: "/images/events/java-panel-discussion.jpg",
