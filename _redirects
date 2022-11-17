@@ -270,3 +270,4 @@ https://community.gitpod.io/* https://www.gitpod.io/chat 301!
 /docs/self-hosted/latest/advanced/default-workspace-image /docs/configure/self-hosted/latest/advanced/default-workspace-image
 /docs/self-hosted/latest/advanced/private-registries /docs/configure/self-hosted/latest/advanced/private-registries
 docs/ides-and-editors/jetbrains-gateway /docs/integrations/jetbrains-gateway
+/docs/vscode-extensions /docs/references/ides-and-editors/vscode-extensions
