@@ -62,7 +62,7 @@
         sveltekit:prefetch
         href="https://www.gitpod.io/blog/gitpod-core-values">core values</a
       >. They represent who we are and are a benchmark for how we serve and work
-      with each other..
+      with each other.
     </p>
     <br />
 
