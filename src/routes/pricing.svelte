@@ -12,6 +12,7 @@
   import Empower from "$lib/components/pricing/empower.svelte";
   import FeatureTable from "$lib/components/ui-library/feature-table/feature-table.svelte";
   import SectionCommon from "$lib/components/section-common.svelte";
+  import DedicatedInfo from "$lib/components/pricing/dedicated-info.svelte";
 </script>
 
 <OpenGraph
@@ -23,6 +24,8 @@
   }}
 />
 <PlansAndPricing {pricingPlans} />
+
+<DedicatedInfo />
 <UsedBy class="py-small" title="Used by 500k+ developers" />
 <SectionCommon
   title="Compare features"

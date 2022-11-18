@@ -4,7 +4,7 @@ import fs from "fs";
 
 const fallbackStars = 9200;
 
-const startDate = new Date("Nov 3 2022 00:00:00 EST");
+const startDate = new Date("Nov 17 2022 00:00:00 EST");
 const endDate = new Date("Dec 3 2022 06:00:00 EST");
 
 const USE_CACHE = process.env.USE_CACHE;
