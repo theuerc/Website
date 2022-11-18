@@ -2,7 +2,7 @@
   import CalloutCard from "../card/callout-card.svelte";
 </script>
 
-<CalloutCard class="text-important text-p-small max-w-2xl gap-micro mx-auto">
+<CalloutCard class="text-black text-p-small max-w-2xl gap-micro mx-auto">
   <div
     class="px-[12px] py-[2px] bg-black text-xs font-semibold text-white mb-micro inline-block rounded-lg"
   >
@@ -24,7 +24,7 @@
   ->
   <a
     sveltekit:prefetch
-    class="mt-macro !underline text-important transition-all duration-200 delay-[50ms] hover:!decoration-transparent"
+    class="mt-macro !underline !text-black transition-all duration-200 delay-[50ms] hover:!decoration-transparent"
     href="/dedicated"
   >
     Sign up for waitlist</a

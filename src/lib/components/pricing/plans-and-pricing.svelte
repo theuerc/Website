@@ -9,10 +9,6 @@
 </script>
 
 <style lang="postcss">
-  a {
-    @apply text-[#565252];
-  }
-
   .active {
     @apply font-bold text-important;
   }
@@ -29,7 +25,7 @@
     >
       <li>
         <a
-          class="!underline hover:!decoration-transparent"
+          class="!underline text-[#565252] dark:text-body hover:!decoration-transparent"
           sveltekit:prefetch
           class:active={$page.url.pathname === "/pricing"}
           href="/pricing">SaaS</a
@@ -37,7 +33,7 @@
       </li>
       <li>
         <a
-          class=" !underline hover:!decoration-transparent"
+          class=" !underline text-[#565252] dark:text-body hover:!decoration-transparent"
           sveltekit:prefetch
           class:active={$page.url.pathname === "/self-hosted"}
           href="/self-hosted">Self-Hosted</a
@@ -45,7 +41,7 @@
       </li>
       <li>
         <a
-          class="!underline hover:!decoration-transparent"
+          class="!underline text-[#565252] dark:text-body hover:!decoration-transparent"
           sveltekit:prefetch
           class:active={$page.url.pathname === "/dedicated"}
           href="/dedicated">Dedicated</a
