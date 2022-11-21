@@ -70,7 +70,6 @@ https://community.gitpod.io/* https://www.gitpod.io/chat 301!
 /docs/ides-and-editors/command-line /docs/references/ides-and-editors/command-line
 /docs/ides-and-editors/faqs /docs/references/ides-and-editors/faqs
 /docs/index.html /docs
-/docs/integrations/jetbrains /docs/editors
 /docs/java_in_gitpod /docs/java-in-gitpod
 /docs/java-in-gitpod /docs/introduction/languages/java
 /docs/julia_in_gitpod /docs/julia-in-gitpod
@@ -88,7 +87,7 @@ https://community.gitpod.io/* https://www.gitpod.io/chat 301!
 /docs/self-hosted/latest/self-hosted /docs/configure/self-hosted/latest
 /docs/self-hosted/latest/installation/on-kubernetes /docs/configure/self-hosted/latest/installation
 /docs/vue-in-gitpod /docs/languages/vue
-/docs/editors/jetbrains-private-beta /docs/editors/
+/docs/editors/jetbrains-private-beta /docs/references/ides-and-editors
 /education /pricing#do-you-offer-discounts-for-students-and-educational-institutions
 /gitpod-business.html /pricing
 /gitpod-vs-codespaces /vs/github-codespaces
@@ -272,3 +271,4 @@ https://community.gitpod.io/* https://www.gitpod.io/chat 301!
 docs/ides-and-editors/jetbrains-gateway /docs/integrations/jetbrains-gateway
 /docs/vscode-extensions /docs/references/ides-and-editors/vscode-extensions
 /docs/integrations/jetbrains /docs/integrations/jetbrains-gateway
+/docs/editors /docs/references/ides-and-editors
