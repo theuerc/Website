@@ -23,7 +23,6 @@
     educationFAQ,
     features,
     getStartedFeatures,
-    programBenefits,
   } from "$lib/contents/education";
   import { integrateFeatures } from "$lib/contents/enterprise";
 
@@ -48,8 +47,6 @@
 />
 
 <Integrate features={integrateFeatures} />
-
-<ProgramBenefits cards={programBenefits} />
 
 <ProgramBenefits title="Get started with Gitpod" cards={getStartedFeatures} />
 
