@@ -405,6 +405,22 @@ export const authors: { [idx: string]: Author } = {
     },
     description: "",
   },
+  evoxmusic: {
+    name: "Romaric",
+    socialProfiles: {
+      github: "evoxmusic",
+      twitter: "rophilogene",
+    },
+    description: "",
+  },
+  Albanetonnellier: {
+    name: "Albane Tonnellier",
+    socialProfiles: {
+      github: "Albanetonnellier",
+      twitter: "Albanetnl",
+    },
+    description: "",
+  },
 };
 
 export const authorSocialMediaLinks: SocialMediaLinks = Object.entries(
