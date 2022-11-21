@@ -3,7 +3,7 @@ author: evoxmusic, Albanetonnellier, nancy-chauhan
 date: Tuesday, 23 November 2022 11:00:00 UTC
 title: Gitpod x Qovery - Develop, Deploy and Run applications on AWS with Gitpod and Qovery
 slug: qovery-and-gitpod
-excerpt: Developing and running cloud applications is simplified with Gitpod and LocalStack ✨ Gitpod’s fully automated, ephemeral workspaces provide a great developer experience. LocalStack accelerates your dev and test feedback loop.
+excerpt: Gitpod, integrated into the Qovery console, will work on the developer experience, helping to have a complete cloud development environment for the developers anywhere in no time. On the other side, Qovery will help developers teams be autonomous enough to ship in production and testing features on dynamic production-like environments, but let’s see how it works behind the scenes and explore some real-life examples.
 teaserImage: header.jpg
 image: header.jpg
 ---
