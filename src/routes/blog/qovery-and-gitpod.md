@@ -3,8 +3,8 @@ author: evoxmusic, Albanetonnellier, nancy-chauhan
 date: Tuesday, 23 November 2022 11:00:00 UTC
 title: Gitpod x Qovery - Develop, Deploy and Run applications with Gitpod and Qovery
 slug: qovery-and-gitpod
-excerpt: Gitpod, integrated into the Qovery console, will work on the developer experience, helping to have a complete cloud development environment for the developers anywhere in no time. On the other side, Qovery will help developers teams be autonomous enough to ship in production and testing features on dynamic production-like environments.
-teaserImage: header.jpg
+excerpt: Gitpod, integrated into the Qovery console, will work on the developer experience, helping to have a complete cloud development environment for the developers anywhere in no time. In this blog we will learn how can we develop and run applications using Qovery and Gitpod.
+teaserImage: header.png
 image: header.jpg
 ---
 
@@ -88,7 +88,7 @@ ports:
     description: Website Preview
 ```
 
-3. After committing and pushing from Gitpod on your necessary changes, Qovery will automatically re-deploy the new version without any downtime. You can even head to the Deployment Logs on the Qovery interface to see what happens in real-time such as the rebuild.
+3. After committing and pushing from Gitpod on your necessary changes, Qovery will automatically re-deploy the new version without any downtime. You can even head to the deployment logs on the Qovery interface to see what happens in real-time such as the rebuild.
 
 ## Try a New Feature Before Pushing it to Production
 
@@ -98,7 +98,9 @@ Now let’s say that you or someone from your team wants to try out a new featur
 
 2. For every single pull request that you create for your application, a new environment will be spun up with all the dependencies so you will be able to test that feature. When you close the pull request or merge back, the environment will disappear, so you won’t pay for resources that you are no longer consuming.
 
-3. Once the Preview Environment feature is activated, you can follow the same steps as for the first use case, where you click on the “edit button” that will redirect you to Gitpod, but this time, we are just going to create a new branch. Once your new branch is created on the Gitpod browser interface, make the change wanted on your code, and then you can commit your branch.
+3. Once the Preview Environment feature is activated, you can follow the same steps as for the first use case, where you click on the “edit button” that will redirect you to Gitpod, but this time, we are just going to create a new branch.
+
+4. Once your new branch is created on the Gitpod browser interface, make the change wanted on your code, and then you can commit your branch.
 
 <figure class="flex flex-col items-center text-center">
   <img src="/images/blog/qovery-and-gitpod/new-feature.png" alt="hotfix" width="400" />
