@@ -16,7 +16,7 @@
 
 <OpenGraph
   data={{
-    title: "Unsubscribed",
+    title: "Stay connected",
     description: "",
     norobots: true,
   }}
@@ -26,14 +26,15 @@
     size="small"
     class="unsubscribe pb-0 mt-x-large sm:mt-large shadow-normal p-xx-small sm:py-small sm:px-x-small md:p-medium pb mb-medium text-center sm:mx-8"
   >
-    <h1 class="text-h4 mb-micro mt-0">Unsubscribed</h1>
+    <h1 class="text-h4 mb-micro mt-0">We’ll keep you in the loop</h1>
     <p class="max-w-2xl text-large mx-auto">
-      You have been sucessfully unsubscribed. If you would like to revert it,
-      please go to <a
+      We’re happy to stay connected and will continue emailing you based on your <a
         href="https://gitpod.io/notifications"
         target="_blank"
-        rel="nofollow">gitpod.io/notifications</a
-      >.
+        rel="nofollow"
+      >
+        email preferences
+      </a>.
     </p>
     <div class="-mb-medium">
       <GitpodIllustration />
