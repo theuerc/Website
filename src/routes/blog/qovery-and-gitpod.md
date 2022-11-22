@@ -1,11 +1,11 @@
 ---
 author: evoxmusic, Albanetonnellier, nancy-chauhan
-date: Tuesday, 23 November 2022 11:00:00 UTC
+date: Tuesday, 22 November 2022 11:00:00 UTC
 title: Gitpod x Qovery - Develop, Deploy and Run applications with Gitpod and Qovery
 slug: qovery-and-gitpod
 excerpt: Gitpod, integrated into the Qovery console, will work on the developer experience, helping to have a complete cloud development environment for the developers anywhere in no time. In this blog we will learn how can we develop and run applications using Qovery and Gitpod.
 teaserImage: header.png
-image: header.jpg
+image: header.png
 ---
 
 <script context="module">
