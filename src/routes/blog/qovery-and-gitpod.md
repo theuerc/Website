@@ -30,7 +30,7 @@ In this blog we will learn how can we develop and run applications using Qovery 
 
 # What is Gitpod?
 
-Gitpod is an open-source remote development platform for remote development. It provides an automated setup with cloud-based, remote developer environments connected with a developer's [editing experience of choice](https://www.gitpod.io/docs/references/ides-and-editors), making developer experiences better. Gitpod's Cloud Development Environments (CDEs) help developers to be always ready-to-code from any device, from anywhere.
+Gitpod is an open-source remote development platform for remote development. It provides an automated setup with cloud-based, remote developer environments connected with a developer's [editing experience of choice](https://www.gitpod.io/docs/references/ides-and-editors), making developer experiences better. Gitpod's [Cloud Development Environments (CDEs)](https://www.gitpod.io/cde) help developers to be always ready-to-code from any device, from anywhere.
 
 Rather than having a single static environment (like your local machine), Gitpod encourages you to codify your dev environment as code. With your project codified, you'll be able to spin up a new workspace, start coding and throw away the workspace when you're done. You can have multiple workspaces with different contexts open at once - one for your feature, one for a bug, or one for your code review directly in Gitpod.
 
@@ -50,7 +50,7 @@ Gitpod, integrated into the Qovery console, will work on the developer experienc
 
 ## The Magic Behind it
 
-Qovery is a product that integrates into your working environment, meaning that you can connect it directly to the git account of your choice; it will take the applications from those VCS providers. You can also note that it's integrated in the same way with Gitpod as it's working on Git, so when you make a change with Gitpod, Qovery detect the change and react to it. You can also integrate your CI/CD, Container Registry if you want to deploy an already build the container image. Several interfaces exist, such as a web interface, CLI, API, and Terraform Provider. All your actions on those interfaces are applied to your Cloud Infrastructure as you connect your Cloud Provider account when registering in just 30min.
+Qovery is a product that integrates into your working environment, meaning that you can connect it directly to the git account of your choice; it will take the applications from those VCS providers. You can also note that it’s integrated in the same way with Gitpod as it’s working on Git, so when you make a change with Gitpod, Qovery detect the change and react to it. You can also integrate your CI/CD, Container Registry if you want to deploy an already build container image. There are several interfaces, such as a web interface, CLI, API and even a Terraform Provider. All the actions you will perform on those interfaces are applied to your Cloud Infrastructure as you connect your Cloud Provider account when registering in just 30 min.
 
 <figure class="flex flex-col items-center text-center">
   <img src="/images/blog/qovery-and-gitpod/interfaces.png" alt="interfaces" width="600" />
@@ -103,12 +103,12 @@ Now let’s say that you or someone from your team wants to try out a new featur
 4. Once your new branch is created on the Gitpod browser interface, make the change wanted on your code, and then you can commit your branch.
 
 <figure class="flex flex-col items-center text-center">
-  <img src="/images/blog/qovery-and-gitpod/new-feature.png" alt="hotfix" width="400" />
+  <img src="/images/blog/qovery-and-gitpod/new-feature.png" alt="hotfix" width="300" />
 </figure>
 
-4. Going back to the Qovery interface, you can find the Git provider button that will redirect your repository, where you can create a merge request (also called a pull request, depending on your Git provider).
+5. Going back to the Qovery interface, you can find the Git provider button that will redirect your repository, where you can create a merge request (also called a pull request, depending on your Git provider).
 
-5. After creating your merge request, you will see that a new environment has been created on Qovery, which is a full-stack environment with Frontend, Backend, API Gateway. So you can test it and change it in a production-like environment without impacting your production or any other environments.
+6. After creating your merge request, you will see that a new environment has been created on Qovery, which is a full-stack environment with Frontend, Backend, API Gateway. So you can test it and change it in a production-like environment without impacting your production or any other environments.
 
 ## Example Scenario - Sample application on Qovery x Gitpod
 
@@ -117,6 +117,6 @@ In this Demo, Nancy (Gitpod) and Romaric (Qovery), will show you how you can eas
 `youtube: QPXeCmbl2d0`
 
 Whether you need to do a hotfix because you messed up something or want to try a new feature before pushing it to production, Gitpod and Qovery are here for you.
-The power of Gitpod and Qovery combined makes managing the environment, production and development has never been this easy and straightforward. Don’t wait for one more second and improve your velocity and autonomy today!
+The power of Gitpod and Qovery combined makes managing the environment and development easy and straightforward. Don’t wait for one more second and improve your velocity and autonomy today!
 
 If you have any questions about configuring and running your project, drop by [Gitpod’s community Discord](https://discord.com/invite/gitpod) server or [Qovery Discord Server](https://discord.gg/qovery). We would love to hear your feedback in the Community.
