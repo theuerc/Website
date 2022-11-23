@@ -24,7 +24,7 @@ export const get: RequestHandler = async ({ params }) => {
         },
       };
     }
-    let title = slugToTitle(params.slug);
+    const title = slugToTitle(params.slug);
     const allFiles = import.meta.glob(`/src/routes/docs/**/*.md`, {
       as: "raw",
     });

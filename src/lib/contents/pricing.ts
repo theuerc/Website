@@ -479,7 +479,7 @@ export const pricingTableToc: FeatureTableToc[] = [
   },
 ];
 
-export let pricingTable: FeatureTable = {
+export const pricingTable: FeatureTable = {
   toc: pricingTableToc,
   columns: [
     freePlanTableData,
