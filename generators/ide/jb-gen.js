@@ -15,26 +15,32 @@ products.set("intellij", {
   productTitle: "IntelliJ IDEA",
   productFullyQualifiedTitle: "IntelliJ IDEA Ultimate",
   productDocCode: "idea",
+  productCode: "IU",
 });
 products.set("goland", {
   productTitle: "GoLand",
   productDocCode: "go",
+  productCode: "GO",
 });
 products.set("phpstorm", {
   productTitle: "PhpStorm",
   productDocCode: "phpstorm",
+  productCode: "PS",
 });
 products.set("pycharm", {
   productTitle: "PyCharm",
   productDocCode: "pycharm",
+  productCode: "PY",
 });
 products.set("rubymine", {
   productTitle: "RubyMine",
   productDocCode: "ruby",
+  productCode: "RM",
 });
 products.set("webstorm", {
   productTitle: "WebStorm",
   productDocCode: "webstorm",
+  productCode: "WS",
 });
 
 const keys = new Set();
