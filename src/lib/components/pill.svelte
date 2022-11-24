@@ -2,9 +2,9 @@
   let clazz = "";
   export { clazz as class };
   export let text: string;
-  export let variant: "pink" | "orange" | "gray" = "orange";
+  export let variant: "pink" | "orange" | "gray" | "violet" = "orange";
   export let tight: boolean = false;
-  const capitalised = text.charAt(0).toUpperCase() + text.slice(1);
+  $: capitalised = text.charAt(0).toUpperCase() + text.slice(1);
 </script>
 
 <div
@@ -16,6 +16,7 @@
     : 'dark:text-black'} whitespace-nowrap {clazz}"
   class:bg-salmon={variant === "pink"}
   class:bg-tertiary={variant === "orange"}
+  class:bg-violet={variant === "violet"}
 >
   {capitalised}
 </div>

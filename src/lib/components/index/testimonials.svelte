@@ -5,6 +5,7 @@
   import Carousel, { getItemId } from "$lib/components/index/carousel.svelte";
   import { scrollIntoView } from "$lib/utils/helpers";
 
+  export let isSection = true;
   export let testimonials: TestimonialType[];
   export let title: string = "";
   export let text: string = "";

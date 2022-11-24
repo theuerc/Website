@@ -59,6 +59,7 @@ module.exports = {
 
         salmon: "var(--salmon)",
         "salmon-hover": "var(--salmon-hover)",
+        violet: "var(--violet)",
 
         black: "var(--black)",
         "off-black": "var(--off-black)",

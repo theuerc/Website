@@ -19,10 +19,6 @@
     font-weight: 600;
   }
 
-  .testimonial :global(p) + :global(p) {
-    margin-top: var(--macro);
-  }
-
   .role :global(span) {
     font-weight: bold;
   }
@@ -68,7 +64,7 @@
         <p class="mb-0 font-semibold text-small leading-6 text-important">
           {name}
         </p>
-        <p class="role">{role} {@html org}</p>
+        <p class="role">{role ? role : ""} {@html org}</p>
       </div>
     </div>
     {#if subtext}
