@@ -48,7 +48,7 @@
   contents={{
     title: "Join the community",
     link: {
-      href: "#",
+      href: "https://www.gitpod.io/chat",
       text: "Join the community",
     },
     secondaryLink: null,
