@@ -75,7 +75,7 @@
       trackingName: "twitter",
     },
     {
-      href: `http://www.reddit.com/submit?url=${encodeURIComponent(
+      href: `https://www.reddit.com/submit?url=${encodeURIComponent(
         youtubeURL
       )}`,
       icon: {
@@ -86,7 +86,7 @@
     },
     {
       name: "Hacker News",
-      href: `http://news.ycombinator.com/submitlink?u=${encodeURIComponent(
+      href: `https://news.ycombinator.com/submitlink?u=${encodeURIComponent(
         youtubeURL
       )}`,
       icon: {

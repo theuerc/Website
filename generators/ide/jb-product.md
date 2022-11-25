@@ -46,6 +46,30 @@ title: __productTitle__
 
 **Important:** You must restart any started workspaces for your IDE preferences to take effect.
 
+<CONDITIONAL_SECTION_START products="rider">
+
+## Prerequisites
+
+To successfully use Rider and load a .NET project, your workspace needs the .NET Framework or a compatible alternative, to be installed. The [default workspace image](/docs/configure/workspaces/workspace-image#use-a-public-docker-image) does not come with .NET pre-installed, so you have two options:
+
+**Using the .NET workspace image (Recommended)**
+
+1. Create a `.gitpod.yml` file
+2. Set the `image` property to `image: gitpod/workspace-dotnet:latest` or alternatively, [use a custom Dockerfile](https://www.gitpod.io/docs/configure/workspaces/workspace-image#use-a-custom-dockerfile)
+
+If you need a specific version of .NET, check out our [Dockerfile](https://github.com/gitpod-io/workspace-images/blob/main/chunks/tool-dotnet/Dockerfile) so you can create your own, specifying the version you need.
+
+For additional examples, check out [.NET in Gitpod](/docs/introduction/languages/dotnet).
+
+**Manually install .NET**
+
+1. Using a workspace terminal, install `dotnet` or a compatible alternative
+2. Restart the IDE
+
+Note: manually installed dependencies are only available in the current workspace, when you start a new workspace dotnet will not be pre-installed, for this reason we recommend the first option.
+
+<CONDITIONAL_SECTION_END>
+
 ## Install Plugins
 
 > This section relates to plugin management when using JetBrains IDEs in a remote development context. For information on regular plugin management, refer to <a href="https://www.jetbrains.com/help/__productDocCode__/managing-plugins.html" target="_blank">{title} docs</a>.
@@ -187,6 +211,12 @@ Follow the instructions for [configuring IDE settings per project](#configure-id
 
 ## Indexing using Prebuilds
 
+<CONDITIONAL_SECTION_START products="rider">
+Currently, prebuilds for Rider are not supported. To leave feedback or check for updates, see [gitpod/issues/6740](https://github.com/gitpod-io/gitpod/issues/6740).
+<CONDITIONAL_SECTION_END>
+
+<CONDITIONAL_SECTION_START products="intellij,goland,phpstorm,pycharm,rubymine,webstorm,clion">
+
 > JetBrains Prebuilds is currently in [Alpha](/docs/help/public-roadmap/release-cycle) · [Send feedback](https://github.com/gitpod-io/gitpod/issues/6576).
 
 When you open the project {title} starts indexing to load modules and
@@ -212,6 +242,7 @@ jetbrains:
 
 The `version` property allows you to control whether to index for `stable`, `latest`, or `both` versions of {title} compatible with Gitpod.
 Users can switch between `stable` and `latest` versions of {title} on the [user preferences](https://gitpod.io/preferences) page.
+<CONDITIONAL_SECTION_END>
 
 ## Workspace performance
 
