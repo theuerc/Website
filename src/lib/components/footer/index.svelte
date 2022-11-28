@@ -21,6 +21,11 @@
       alt: "Discord",
       icon: "/svg/brands/discord.svg",
     },
+    {
+      href: "https://www.developerexperience.us",
+      alt: "DevX community logo",
+      icon: "/svg/brands/devx.svg",
+    },
   ];
 
   let isModalOpen: boolean = false;
@@ -147,22 +152,29 @@
     <div
       class="flex flex-col-reverse items-center justify-between border-t border-solid border-divider pt-xx-small md:flex-row md:pt-x-small"
     >
-      <div class="mt-micro flex items-center md:mt-0">
-        <FooterLink href="/"
-          ><div class="relative -top-px z-0">
+      <div class="mt-micro flex flex-col items-center lg:items-start md:mt-0">
+        <div>
+          <div
+            class="border-divider border mb-xx-small inline-flex items-center rounded-lg py-macro gap-macro px-micro"
+          >
             <img
-              src="/svg/logo-textless.svg"
-              alt="Gitpod"
-              height="24"
-              width="24"
+              height="30"
+              width="30"
+              alt="soc 2 logo"
+              src="/images/footer/soc-logo.png"
             />
-          </div></FooterLink
-        ><span class="ml-macro"
-          >Copyright &copy; {new Date().getFullYear()} Gitpod</span
-        >
+            <div>
+              <p class="text-fine-print text-important">SOC 2 Type II</p>
+              <p class="text-fine-print">Certified</p>
+            </div>
+          </div>
+        </div>
+        <p>Copyright &copy; {new Date().getFullYear()} Gitpod</p>
       </div>
-      <ThemeSwitcher />
-      <div class="flex space-x-macro">
+      <div class="lg:self-end">
+        <ThemeSwitcher />
+      </div>
+      <div class="flex lg:self-start space-x-macro">
         {#each socialLinks as link}
           <FooterLink
             href={link.href}
