@@ -400,7 +400,7 @@
               </InputsHalf>
               <div>
                 <Textarea
-                  label="Your message*"
+                  label="How can we help you?*"
                   id="message"
                   name="message"
                   hasError={isFormDirty && !formData.message.valid}

@@ -381,7 +381,7 @@
             <div>
               <Textarea
                 id="message"
-                label="Your message*"
+                label="How can we help you?*"
                 name="message"
                 hasError={isFormDirty && !formData.message.valid}
                 bind:value={formData.message.value}

@@ -47,17 +47,17 @@
     },
     cloudInfrastructure: {
       el: null,
-      valid: false,
+      valid: true,
       value: "",
     },
     gitProvider: {
       el: null,
-      valid: false,
+      valid: true,
       value: "",
     },
     message: {
       el: null,
-      valid: true,
+      valid: false,
       value: "",
     },
     consent: {
@@ -93,9 +93,9 @@
             email: formData.email.value,
             company: formData.companyWebsite.value,
             noOfEngineers: formData.noOfEngineers.value,
-            cloudInfrastructure: formData.cloudInfrastructure.value,
-            gitProvider: formData.gitProvider.value,
-            message: formData.message.value || "N/A",
+            cloudInfrastructure: formData.cloudInfrastructure.value || "N/A",
+            gitProvider: formData.gitProvider.value || "N/A",
+            message: formData.message.value,
           },
         }),
       });
@@ -216,7 +216,7 @@
         <InputsHalf>
           <div class="flex flex-col justify-end">
             <Select
-              label="Cloud infrastructure*"
+              label="Cloud infrastructure"
               hasError={isFormDirty && !formData.cloudInfrastructure.valid}
               name="cloudInfrastructure"
               bind:value={formData.cloudInfrastructure.value}
@@ -233,7 +233,7 @@
           </div>
           <div class="flex flex-col justify-end">
             <Select
-              label="Git provider*"
+              label="Git provider"
               hasError={isFormDirty && !formData.gitProvider.valid}
               name="gitProvider"
               bind:value={formData.gitProvider.value}
@@ -251,7 +251,7 @@
         </InputsHalf>
         <div>
           <Textarea
-            label="Your message"
+            label="How can we help you?*"
             id="message"
             name="message"
             hasError={isFormDirty && !formData.message.valid}
