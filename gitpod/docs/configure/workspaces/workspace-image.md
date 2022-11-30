@@ -179,6 +179,8 @@ You can trigger a workspace image rebuild with the following URL pattern: `https
 
 ## Configure a custom shell
 
+> **Feedback needed**: Custom shell support is in the works. The below shows a method for running some of the `~/.bashrc.d` startup scripts. To leave feedback on the approach, please see this GitHub issue: [#10105](https://github.com/gitpod-io/gitpod/issues/10105).
+
 For example, if you wish to default your workspace-image to `zsh`, you could do it from your [custom dockerfile](#custom-docker-image) with the following line:
 
 ```dockerfile
@@ -191,42 +193,8 @@ Caveat: Shells like `fish`, `zsh` and etc. are not POSIX-compliant or bash-compa
 
 ### Load bash environment in custom shell
 
-Currently we put startup scripts for the workspace-images at `~/.bashrc.d`, that means if you change your SHELL from `bash` to something else, it will not be able to load them into it's session environment. You can load it in two ways:
-
-#### From [custom-dockerfile](#custom-docker-image)
-
-Append the following in your dockerfile:
-
-```dockerfile
-USER root
-RUN mkdir -m 755 -p /usr/share/fish/vendor_conf.d /etc/zsh \
-  # For zsh
-  && echo "$(curl -sSL "https://raw.githubusercontent.com/axonasif/bashenv.zsh/master/src/lib.sh")bashenv.zsh" \
-	>> /etc/zsh/zshrc \
-  # For fish
-  && echo "$(curl -sSL "https://raw.githubusercontent.com/axonasif/bashenv.fish/master/conf.d/bashenv.fish")" \
-  	>> /usr/share/fish/vendor_conf.d/autoload_bash.fish \
-  && chmod 644 /etc/zsh/zshrc /usr/share/fish/vendor_conf.d/autoload_bash.fish
-USER gitpod
-```
-
-#### From [dotfiles](/docs/configure/user-settings/dotfiles)
-
-Use following in your `install.sh` for example:
+Currently we put some startup scripts for the workspace-images at `~/.bashrc.d`, that means if you change your SHELL from `bash` to something else, they will not auto run. You could run the following command from your SHELL to workaround:
 
 ```bash
-#!/usr/bin/env bash
-
-fish_target="/usr/share/fish/vendor_conf.d/autoload_bash.fish"
-zsh_target="/etc/zsh/autoload_bash.zsh"
-
-sudo mkdir -p "${fish_target%/*}" "${zsh_target%/*}"
-
-# Fish
-sudo sh -c 'curl -sSL "https://raw.githubusercontent.com/axonasif/bashenv.fish/master/conf.d/bashenv.fish" --output '"$fish_target"
-
-# Zsh
-sudo sh -c 'echo "$(curl -sSL "https://raw.githubusercontent.com/axonasif/bashenv.zsh/master/src/lib.sh")bashenv.zsh)" > '"$zsh_target"
-
-sudo chmod 644 "$fish_target" "$zsh_target"
+bash -lic 'true'
 ```
