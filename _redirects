@@ -246,7 +246,8 @@ https://community.gitpod.io/* https://www.gitpod.io/chat 301!
 /docs/examples /docs/introduction/languages
 /docs/subscriptions /docs/configure/billing
 /docs/team-billing /docs/configure/billing/team-billing
-/docs/usage-based-billing /docs/configure/billing/usage-based-billing
+/docs/usage-based-billing /docs/configure/billing/pay-as-you-go
+/docs/configure/billing/usage-based-billing /docs/configure/billing/pay-as-you-go
 /docs/teams /docs/configure/billing/team-plans
 /docs/multi-repo-workspaces /docs/configure/workspaces/multi-repo
 /docs/workspace-classes /docs/configure/workspaces/workspace-classes

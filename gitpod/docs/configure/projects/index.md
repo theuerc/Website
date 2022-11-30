@@ -15,7 +15,7 @@ Projects connect Gitpod to a git repository.
 
 A Gitpod project can only have one git repository, and a git repository can only belong to one project. Projects live under a Gitpod team. Team members use the project to configure and view [prebuilds](/docs/configure/projects/prebuilds).
 
-With [usage-based billing](/docs/configure/billing/usage-based-billing), all project usage such as workspaces and prebuilds, may be billed to the team.
+With [pay-as-you-go billing](/docs/configure/billing/pay-as-you-go), all project usage such as workspaces and prebuilds, may be billed to the team.
 
 Projects have a static URL based on the team and project name, for example:
 

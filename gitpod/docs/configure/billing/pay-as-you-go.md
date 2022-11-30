@@ -1,17 +1,17 @@
 ---
 section: billing
-title: Billing - Usage-based billing
+title: Billing - Pay-as-you-go
 ---
 
 <script context="module">
   export const prerender = true;
 </script>
 
-# Usage-based billing
+# Pay-as-you-go
 
-> {title} is currently in [Early Access](/docs/help/public-roadmap/release-cycle). Please [contact us](/contact/support) to request an invitation, or [send feedback](https://github.com/gitpod-io/gitpod/issues/12636).
+> Pay-as-you-go is currently in [Early Access](/docs/help/public-roadmap/release-cycle). Please [contact us](/contact/support) to request an invitation, or [send feedback](https://github.com/gitpod-io/gitpod/issues/12636).
 
-Usage-based billing is a flexible way for teams and individual users to pay for Gitpod.
+Pay-as-you-go is a flexible way for teams and individual users to pay for Gitpod.
 
 Instead of billing for each user based on their plan, Gitpod can charge for usage based on how long workspaces run, and the resources consumed by different [workspace classes](/docs/configure/workspaces/workspace-classes). Metered usage also includes [prebuilds](/docs/configure/projects/prebuilds).
 
@@ -49,11 +49,11 @@ If you are a member of a team with billing, you can select the team to pay for a
 
 ## Configure team billing
 
-Team owners can configure usage-based billing in their team settings.
+Team owners can configure pay-as-you-go billing in their team settings.
 
 Gitpod will charge the team billing account for usage by team members, when they start workspaces on team projects, and for prebuild usage on team projects.
 
-![Active Team billing](../../../static/images/docs/billing/active-team-billing-3.png)
+![Active Team billing](../../../static/images/docs/billing/active-team-billing.png)
 
 ## Configure a usage limit
 
@@ -71,9 +71,9 @@ You can see the details of your personal usage when you click on "View Usage →
 
 ## Good to know
 
-- Usage-based billing is an early-access (invitation only) feature.
+- Pay-as-you-go billing is an early-access (invitation only) feature.
 
-- You will need to cancel any existing plan, before configuring usage-based billing.
+- You will need to cancel any existing plan, before configuring pay-as-you-go billing.
 
 - Metered usage includes prebuilds.
 

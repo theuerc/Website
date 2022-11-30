@@ -184,8 +184,8 @@ export const MENU: MenuEntry[] = [
     M("Team plans", "configure/billing/team-plans"),
     M("Team billing", "configure/billing/team-billing", false, [], "beta"),
     M(
-      "Usage-based billing",
-      "configure/billing/usage-based-billing",
+      "Pay-as-you-go",
+      "configure/billing/pay-as-you-go",
       false,
       [],
       "Early Access"
