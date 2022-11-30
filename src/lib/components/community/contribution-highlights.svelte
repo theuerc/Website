@@ -14,7 +14,7 @@
 
   let element: HTMLElement;
 
-  const clickHandler = (month) => {
+  const clickHandler = (month: string) => {
     selectedMonth = month;
 
     //check if element is in view

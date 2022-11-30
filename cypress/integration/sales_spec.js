@@ -12,7 +12,7 @@ describe("Test the sales contact form", () => {
       .click()
       .type("www.gitpod.io");
     cy.findByDisplayValue(/number of engineers/i).select("1-10");
-    cy.findByLabelText(/message/i)
+    cy.findByLabelText(/How can we help you/i)
       .click()
       .type("Gitpod is Awesome!");
     cy.findByLabelText(

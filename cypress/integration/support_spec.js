@@ -5,7 +5,7 @@ describe("Test the support contact form", () => {
     cy.findByText(/billing/i).click();
     cy.findByLabelText(/name/i).click().type("Gitpod User");
     cy.findByLabelText(/mail/i).click().type("gitpoduser@gitpod.io");
-    cy.findByLabelText(/message/i)
+    cy.findByLabelText(/How can we help you/i)
       .click()
       .type("Gitpod is Awesome!");
     cy.findByLabelText(
