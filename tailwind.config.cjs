@@ -165,7 +165,7 @@ module.exports = {
               },
             },
             code: {
-              color: "var(--dark-grey)",
+              color: "var(--mid-black)",
               fontWeight: "100",
               fontSize: "1em",
               "&::after": {
@@ -226,7 +226,7 @@ module.exports = {
                 margin: "0",
               },
               ul: {
-                marginLeft: "var(--x-small)",
+                marginLeft: "var(--micro)",
               },
               strong: {
                 color: "var(--important)",
@@ -311,7 +311,7 @@ module.exports = {
             ul: {
               listStyle: "none",
               margin: "var(--micro) 0",
-              paddingLeft: "var(--xx-small)",
+              paddingLeft: "var(--micro)",
               "@media (min-width: 768px)": {
                 paddingLeft: "var(--x-small)",
               },
