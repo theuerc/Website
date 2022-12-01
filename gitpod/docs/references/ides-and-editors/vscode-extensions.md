@@ -76,13 +76,13 @@ It is possible to develop, install and test your own custom VS Code extensions i
 
 **Please note:**
 
-* You can install any private extensions using manual VSIX installation.
-* Installing a `.vsix` in Gitpod does not list that extension anywhere public.
-* Any `.vsix` referenced in the `.gitpod.yml` must be publicly accessible.
+- You can install any private extensions using manual VSIX installation.
+- Installing a `.vsix` in Gitpod does not list that extension anywhere public.
+- Any `.vsix` referenced in the `.gitpod.yml` must be publicly accessible.
 
 ## Open VSX
 
-Open VSX is an open source VS Code extensions registry. For VS Code Browser in Gitpod, we use the public Open VSX instance provided by the [Eclipse Foundation](https://www.eclipse.org/), [open-vsx.org](https://open-vsx.org/).
+Open VSX is an open source VS Code extensions registry. For VS Code Browser in Gitpod, Gitpod uses a self-hosted mirror of the public Open VSX instance provided by the [Eclipse Foundation](https://www.eclipse.org/), [open-vsx.org](https://open-vsx.org/). Any extensions published to Open VSX are immediately reflected in the Gitpod OpenVSX mirror.
 
 ### Why do we need Open VSX?
 
