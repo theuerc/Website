@@ -26,7 +26,7 @@ Prebuilds reduce wait time, by installing dependencies or running builds **befor
 
 `youtube: ZtlJ0PakUHQ`
 
-## gitpod.yml
+## .gitpod.yml
 
 In the example below, the `init` task installs npm packages into the node_modules directory of the workspace. The `command` task runs 'npm start' on every workspace startup.
 
