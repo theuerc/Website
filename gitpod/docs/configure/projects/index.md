@@ -33,6 +33,12 @@ To add a new project, click on _New Project_ on the Projects page for the team, 
 
 The list will show repositories from one of your git providers. Select a different provider if necessary. You may also be prompted to configure our [GitHub app](/docs/configure/authentication/github#authorizing-github-webhooks), the first time a project is created for a GitHub account. The new project will be associated with the current team selected in the dashboard.
 
+### Configure a project
+
+Team members can configure Prebuilds, and set the workspace class used for project workspaces, in project settings.
+
+![Project Settings](../../../static/images/docs/project-settings.png)
+
 ### Remove a project
 
 You can remove a project using the "Remove project" action from a project card.
