@@ -2,7 +2,6 @@ import type { Pricing } from "$lib/types/pricing";
 import { isEurope } from "$lib/utils/helpers";
 import type { Card } from "$lib/types/card";
 // @ts-ignore
-import RedeemOffer from "$lib/components/pricing/redeem-offer.svelte";
 import type {
   FeatureTable,
   FeatureTableColumn,
