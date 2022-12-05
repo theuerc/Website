@@ -9,6 +9,10 @@ teaserImage: teaser.jpg
 title: Sven's new role
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 I'm super stoked to share with all of you that I have stepped down from my former CEO role in order to get back to working more directly on our beloved product. I actually made this transition already two months ago, and this has turned out to be one of the best decisions I've made.
 
 I'm still on the board of directors and also help our leadership team with strategic decisions (I'm writing these lines from our annual leadership offsite in San Francisco). But I have completely moved out of any management responsibilities and my weekly meeting schedule has slimmed down significantly. This allows me to focus entirely on making Gitpod better.😍

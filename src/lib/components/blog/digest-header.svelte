@@ -10,6 +10,7 @@
   <h2 class="!mt-0">More about DevX Digest</h2>
   <p class="text-medium mb-x-small">
     Sign up for our newsletter or follow <a
+      rel="noreferrer"
       href="https://twitter.com/@devxcommunity"
       target="_blank">@devxcommunity</a
     > on Twitter to stay updated.

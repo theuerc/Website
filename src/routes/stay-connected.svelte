@@ -31,7 +31,7 @@
       We’re happy to stay connected and will continue emailing you based on your <a
         href="https://gitpod.io/notifications"
         target="_blank"
-        rel="nofollow"
+        rel="nofollow noreferrer"
       >
         email preferences
       </a>.

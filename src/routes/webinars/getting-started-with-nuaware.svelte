@@ -1,3 +1,7 @@
+<script context="module" lang="ts">
+  export const prerender = true;
+</script>
+
 <script>
   import Articles from "$lib/components/articles.svelte";
   import Explore from "$lib/components/explore.svelte";

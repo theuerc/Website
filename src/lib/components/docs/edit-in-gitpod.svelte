@@ -43,7 +43,7 @@
     class="
       inline-flex stroked  after:dark:hover:bg-light-black after:!filter-none py-3 px-4 items-center justify-center bg-bg dark:bg-card rounded-2xl text-important dark:text-white shadow-light dark:shadow-none font-semibold hover:bg-card focus:bg-card dark:hover:bg-light-black dark:focus:bg-light-black
     "
-    rel="noopener"
+    rel="noopener noreferrer"
     data-analytics={`{"variant":"open_in_gitpod"}`}
   >
     <span>

@@ -81,7 +81,7 @@
   ];
 </script>
 
-<style>
+<style lang="postcss">
   .prose :global(nav.toc) {
     @apply hidden;
   }

@@ -32,7 +32,7 @@
       please go to <a
         href="https://gitpod.io/notifications"
         target="_blank"
-        rel="nofollow">gitpod.io/notifications</a
+        rel="nofollow noreferrer">gitpod.io/notifications</a
       >.
     </p>
     <div class="-mb-medium">
