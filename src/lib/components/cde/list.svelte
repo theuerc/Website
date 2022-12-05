@@ -17,22 +17,22 @@
     </p>
   </div>
   <ol
-    class="list-outside grid-flow-row md:grid-flow-col grid grid-cols-1 md:grid-cols-2 md:grid-rows-4 gap-x-x-large gap-y-small py-0"
+    class="list-outside grid-flow-row md:grid-flow-col grid grid-cols-1 md:grid-cols-2 md:grid-rows-4 gap-x-x-small gap-y-small py-0"
   >
     {#each manifestoItems as item, i}
       <li class="break-inside-avoid flex">
-        <div class="mr-xx-small font-bold text-primary h3">
+        <div class="mr-xx-small font-bold text-primary h4">
           0{i + 1}
         </div>
         <div>
-          <h3 class="!mb-macro lg:!mb-micro">
+          <h4 class="!sm lg:!sm">
             <span class="text-important">{@html item.heading} </span><span
               class="text-light-grey"
             >
               {item.subHeading}</span
             >
-          </h3>
-          <p class="text-p-large">{item.description}</p>
+          </h4>
+          <p class="text-p-medium">{item.description}</p>
         </div>
       </li>
     {/each}
