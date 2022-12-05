@@ -62,7 +62,7 @@
   text="Read how our customers improved their development workflows"
   id="stories"
   {customers}
-  class="max-w-7xl lg:grid-cols-3 xl:px-4 mb-xxx-large"
+  class="max-w-5xl lg:grid-cols-2 xl:px-4 mb-xxx-large"
 />
 
 <Faqs faq={educationFAQ} />
