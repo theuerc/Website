@@ -29,6 +29,10 @@ Your invoice will show the total amount of credits consumed in a billing period.
 
 ## Configure personal billing
 
+The personal billing page is located in your [account settings](https://gitpod.io/account).
+
+> 💡 If you do not see "Billing" in your settings, cancel your existing plan or team plan first.
+
 The Gitpod Free plan comes with 500 free credits, renewed monthly. These credits can be used for all workspace classes. Unused credits expire at the end of each month.
 
 Configuring a Personal billing plan in your user billing settings will increase your monthly credit allowance from 500 to 1000. Additional usage will be charged at the pay-as-you-go rate.
@@ -49,9 +53,13 @@ If you are a member of a team with billing, you can select the team to pay for a
 
 ## Configure team billing
 
-Team owners can configure pay-as-you-go billing in their team settings.
+Team owners can configure pay-as-you-go in their team billing settings.
 
-Gitpod will charge the team billing account for usage by team members, when they start workspaces on team projects, and for prebuild usage on team projects.
+> 💡 You may need to cancel your existing Professional or Unleashed team-billing plan first.
+
+![Configure Team Billing](../../../static/images/docs/billing/configure-team-billing.png)
+
+Once team billing is configured, Gitpod will charge the team billing account for usage by team members, when they start workspaces on team projects, and for prebuild usage on team projects.
 
 ![Active Team billing](../../../static/images/docs/billing/active-team-billing.png)
 
@@ -59,7 +67,7 @@ Gitpod will charge the team billing account for usage by team members, when they
 
 The usage limit prevents workspaces from starting once the limit has been reached.
 
-To change the usage limit, look for "Manage Usage Limit" in your personal or team billing settings, after you have configured billing.
+To change the usage limit, look for "Update limit" in the BALANCE section of your personal or team billing settings, after you have configured billing.
 
 ![Active Team billing](../../../static/images/docs/billing/update-usage-limit-2.png)
 
@@ -72,8 +80,6 @@ You can see the details of your personal usage when you click on "View Usage →
 ## Good to know
 
 - Pay-as-you-go billing is an early-access (invitation only) feature.
-
-- You will need to cancel any existing plan, before configuring pay-as-you-go billing.
 
 - Metered usage includes prebuilds.
 
