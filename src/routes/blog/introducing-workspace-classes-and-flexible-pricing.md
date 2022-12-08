@@ -43,8 +43,6 @@ Instead of billing for each user based on their monthly plan, Gitpod can now cha
 
 ### How does flexible pricing work?
 
-How does flexible pricing work?
-
 [Individual users](/docs/configure/billing) on the free plan can use up to 500 credits each month. This is equivalent to 50 standard workspace hours.
 
 Individual users who upgrade to paid billing at $9.00 per month can use up to 1,000 credits, and pay for additional usage beyond that, at the pay-as-you-go rate of $0.036 per credit.
