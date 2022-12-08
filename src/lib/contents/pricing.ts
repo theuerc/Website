@@ -795,7 +795,7 @@ export const pricingFAQ: FAQ = {
     {
       title: "How can I pay?",
       content:
-        '<p>All our plans can only be paid via credit card.</p> <div class="flex mt-xx-small space-x-xx-small"> <img class="mr-4" src="/svg/brands/mastercard.svg" alt="Mastercard" width="52" height="40"/> <img src="/svg/brands/visa.svg" alt="Visa" width="72" height="40"/> </div>',
+        '<p>You can pay with MasterCard, Visa card or Google Pay.</p><div class="flex my-xx-small space-x-xx-small"> <img class="mr-4" src="/svg/brands/mastercard.svg" alt="Mastercard" width="52" height="40" /> <img class="mr-4" src="/svg/brands/visa.svg" alt="Visa" width="72" height="40" /> <img src="/svg/brands/google-pay.svg" alt="Google Pay Logo" width="72" height="40" /></div> <p>For enterprise customers, additional payment options are available. Please contact sales for annual billing.</p> ',
     },
     {
       title: "Can I create a team plan?",

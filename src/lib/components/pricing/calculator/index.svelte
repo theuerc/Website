@@ -45,14 +45,15 @@
           id="members"
           class="w-full"
           min={1}
-          max={1000}
+          max={100}
           bind:value={members}
           step={1}
         />
         <p class="absolute text-grey font-bold right-0 top-[50%] text-h6">
-          <span class="text-important">{members}</span> member{members > 1
-            ? "s"
-            : ""}
+          <span class="text-important"
+            >{members}{members === 100 ? "+" : ""}</span
+          >
+          member{members > 1 ? "s" : ""}
         </p>
       </div>
       <div class="relative">
@@ -107,7 +108,7 @@
   </div>
   <div
     bind:this={selfReference}
-    class="w-full md:w-2/5 m-[1px] md:rounded-r-5xl bg-sand-dark dark:bg-black md:px-medium py-x-small px-x-small md:py-[5.5rem]"
+    class="w-full md:w-2/5 m-[1px] md:rounded-r-5xl bg-sand-dark dark:bg-[#1A1712] md:px-medium py-x-small px-x-small md:py-[5.5rem]"
   >
     {#if mailSubmitted}
       <DisplayResult {members} displayValue={calculatedPrice} />{:else}

@@ -8,7 +8,7 @@
   <p class="font-bold text-body">For all members per month</p>
   <p class="text-grey">(excl. VAT)</p>
   <p class="h2 mt-micro font-bold text-important !mb-small">
-    {members > 100
+    {members >= 100
       ? "custom"
       : `$${displayValue
           .toFixed(0)
@@ -17,7 +17,7 @@
   </p>
   <p>Get started by creating your team. Only pay what you use.</p>
   <div class="mt-micro">
-    {#if members > 100}
+    {#if members >= 100}
       <p>
         For large teams of 100+, please contact sales to receive a custom quote.
       </p>
