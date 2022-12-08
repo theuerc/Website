@@ -57,15 +57,15 @@ export const pricingPlans: Pricing[] = [
 export const empowermentFeatures: Card[] = [
   {
     title: "Pro OSS developers",
-    text: "Professional open-source developers, can apply to our free Professional Open Source Plan.",
+    text: "Professional open-source developers, can apply for our complimentary Open Source plan.",
     link: {
-      text: "View requirements",
+      text: "View OSS Program",
       href: "/for/opensource",
     },
   },
   {
     title: "Startups",
-    text: "Startups can get up to 2 years of Gitpod for free, no matter how fast your developers and workloads scale.",
+    text: "Startups can get all our services at a 50% discount, for up to 2 years, no matter how fast your developers and workloads scale.",
     link: {
       text: "View Startups Program",
       href: "/for/startups",
@@ -769,7 +769,7 @@ export const faqOldPlan: FAQ = {
     {
       title:
         "I am on one of the old plans. Where can I find the details of my plan?",
-      content: `To see the details of your old plan, login to <a href="https://gitpod.io">gitpod.io</a> and go to the plans or team plans section of your <a href="https://gitpod.io/settings">account settings</a>.`,
+      content: `To see the details of your old plan, login to <a href="https://gitpod.io">gitpod.io</a> and go to the plans or team plans section of your <a href="https://gitpod.io/settings">account settings</a>`,
     },
     {
       title:
@@ -779,7 +779,7 @@ export const faqOldPlan: FAQ = {
     {
       title:
         "I am on one of the old plans. How long can I continue to use the old pricing model?",
-      content: `Existing paid plans will keep working until the end of March, 2023. However, we recommend you look at the new prices.`,
+      content: `Existing paid plans will keep working until the end of March, 2023. However, we recommend you look at the new prices`,
     },
   ],
 };
@@ -790,42 +790,42 @@ export const pricingFAQ: FAQ = {
     {
       title: "Can I always use Gitpod for free?",
       content:
-        '<p> Yes! Gitpod is always for free for public and private repositories for up to 50h per month. If you need more hours or would like to unlock more features, you can upgrade your subscription at any time. If you’re a professional open-source developer and need more hours, you can apply to our free <a href="/for/opensource" >Professional Open Source plan</a >. </p>',
+        '<p> Yes! Gitpod is always for free for public and private repositories for up to 50h per month. If you need more hours or would like to unlock more features, you can upgrade your subscription at any time. If you’re a professional open-source developer and need more hours, you can apply to our free <a href="/for/opensource">Professional Open Source plan</a> </p>',
     },
     {
       title: "How can I pay?",
       content:
-        '<p>All our plans can only be paid via credit card.</p> <div class="flex mt-xx-small space-x-xx-small"> <img class="mr-4" src="/svg/brands/mastercard.svg" alt="Mastercard" width="52" height="40" /> <img src="/svg/brands/visa.svg" alt="Visa" width="72" height="40" /> </div>',
+        '<p>All our plans can only be paid via credit card.</p> <div class="flex mt-xx-small space-x-xx-small"> <img class="mr-4" src="/svg/brands/mastercard.svg" alt="Mastercard" width="52" height="40"/> <img src="/svg/brands/visa.svg" alt="Visa" width="72" height="40"/> </div>',
     },
     {
       title: "Can I create a team plan?",
       content:
-        '<p> Sure, if you would like to manage subscriptions for a whole team on a single invoice, you can create a <a href="https://gitpod.io/teams/">team plan.</a> </p> <p> In case you need more information on how to setup a team subscription, visit <a href="/docs/configure/teams">gitpod.io/docs/configure/teams.</a> </p>',
+        '<p> Sure, if you would like to manage subscriptions for a whole team on a single invoice, you can create a <a href="https://gitpod.io/teams/">team plan.</a> </p> <p> In case you need more information on how to setup a team subscription, visit <a href="/docs/configure/teams">gitpod.io/docs/configure/teams</a> </p>',
     },
     {
       title: "Can I change my subscription at any time?",
       content:
-        '<p> Yes, you can upgrade or downgrade whenever you want on <a href="https://gitpod.io/subscription/">gitpod.io/subscription</a >. Your billing cycle starts with the creation date of your subscription. After 30 days it will automatically renew itself. </p> <p> If you choose to upgrade, the pricing difference will be added to your next month’s invoice. If you choose to downgrade, you’ll be credited on your next month’s invoice. </p>',
+        '<p> Yes, you can upgrade or downgrade whenever you want on <a href="https://gitpod.io/subscription/">gitpod.io/subscription</a >. Your billing cycle starts with the creation date of your subscription. After 30 days it will automatically renew itself. </p> <p> If you choose to upgrade, the pricing difference will be added to your next month’s invoice. If you choose to downgrade, you’ll be credited on your next month’s invoice </p>',
     },
     {
       title: "What if I decide to cancel?",
       content:
-        "<p> If you wish to stop using Gitpod, you may cancel your subscription at any time. Your cancellation will take effect after that month’s billing cycle. </p>",
+        "<p> If you wish to stop using Gitpod, you may cancel your subscription at any time. Your cancellation will take effect after that month’s billing cycle </p>",
     },
     {
       title: "What are the benefits of Gitpod?",
       content:
-        '<p> Gitpod enables cloud based development without friction. Pre-configured and automated dev environments prevent "works on my machine issues", let you work on multiple issues or features at once and let\'s you easily collaborate with colleagues. All in your favorite IDE with the tools and extensions you love. In the browser or in your desktop version. </p>',
+        '<p> Gitpod enables cloud based development without friction. Pre-configured and automated dev environments prevent "works on my machine issues", let you work on multiple issues or features at once and let\'s you easily collaborate with colleagues. All in your favorite IDE with the tools and extensions you love. In the browser or in your desktop version </p>',
     },
     {
       title: "Is Gitpod secure?",
       content:
-        '<p> Gitpod is secure by design and at the heart of what we do. Your source code is safely stored in the cloud, never locally. Each Gitpod workspace and prebuild runs on a secured single-use container providing fast startup times without compromising on security. Learn more at <a href="/security">gitpod.io/security</a >. We are also in the process of receiving the SOC2 compliance report. </p>',
+        '<p> Gitpod is secure by design and at the heart of what we do. Your source code is safely stored in the cloud, never locally. Each Gitpod workspace and prebuild runs on a secured single-use container providing fast startup times without compromising on security. Learn more at <a href="/security">gitpod.io/security</a>. We are also in the process of receiving the SOC2 compliance report </p>',
     },
     {
       title: "Still have more questions?",
       content:
-        '<p> We are happy to answer them, please <a href="/contact/support" >Get in Touch</a >. </p>',
+        '<p> We are happy to answer them, please <a href="/contact/support">Get in Touch</a></p>',
     },
   ],
 };

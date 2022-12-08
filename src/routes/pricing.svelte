@@ -9,6 +9,7 @@
   import PlansAndPricing from "$lib/components/pricing/plans-and-pricing.svelte";
   import { pricingPlans, pricingTable } from "$lib/contents/pricing";
   import UsedBy from "$lib/components/index/used-by.svelte";
+  import Empower from "$lib/components/pricing/empower.svelte";
   import FeatureTable from "$lib/components/ui-library/feature-table/feature-table.svelte";
   import SectionCommon from "$lib/components/section-common.svelte";
   import PayAsYouGoCard from "$lib/components/pricing/pay-as-you-go-card.svelte";
@@ -50,6 +51,7 @@
     <PayAsYouGoCard class="mt-small md:mt-xx-large" />
   </div>
 </SectionCommon>
+<Empower />
 <Faqs />
 
 <Explore />

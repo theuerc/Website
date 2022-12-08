@@ -18,6 +18,10 @@
   <p>Get started by creating your team. Only pay what you use.</p>
   <div class="mt-micro">
     {#if members > 100}
+      <p>
+        For large teams of 100+, please contact sales to receive a custom quote.
+      </p>
+      <br />
       <LinkButton variant="primary" size="large" href="/contact/sales">
         Talk to Sales
       </LinkButton>
