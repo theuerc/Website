@@ -57,7 +57,7 @@
     },
     message: {
       el: null,
-      valid: false,
+      valid: true,
       value: "",
     },
     consent: {
@@ -95,7 +95,7 @@
             noOfEngineers: formData.noOfEngineers.value,
             cloudInfrastructure: formData.cloudInfrastructure.value || "N/A",
             gitProvider: formData.gitProvider.value || "N/A",
-            message: formData.message.value,
+            message: formData.message.value || "N/A",
           },
         }),
       });
@@ -251,7 +251,7 @@
         </InputsHalf>
         <div>
           <Textarea
-            label="How can we help you?*"
+            label="How can we help you?"
             id="message"
             name="message"
             hasError={isFormDirty && !formData.message.valid}
