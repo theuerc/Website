@@ -9,14 +9,18 @@
   import type { FAQ } from "$lib/types/faq";
   import StructuredData from "./structured-data.svelte";
 
+  export let headlineClasses: string = "";
   export let faq: FAQ;
 
   setContext(faqsKey, writable(null));
 </script>
 
 <div class="max-w-6xl mx-auto">
-  <h2 class="text-center mb-x-small">{faq.headline}</h2>
-  <div class="space-y-xx-small">
+  {#if faq.headline}
+    <h2 class="text-center mb-x-small {headlineClasses}">{faq.headline}</h2>
+    <slot name="subheading" />
+  {/if}
+  <div class="space-y-micro md:space-y-xx-small">
     {#each faq.items as item}
       <Faq title={item.title}>
         {@html item.content}

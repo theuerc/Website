@@ -16,7 +16,6 @@ export const openSourceFeature = {
   paragraph:
     "Gitpod puts developers' interest first and seemlessly integrates with your existing tools & workflows.",
   featureList: [
-    "Host Gitpod yourself on GCP, AWS, Azure or self-managed Kubernetes",
     "Contribute to Gitpod and build your own customizations",
     "Works just as smoothly with GitHub, GitLab and Bitbucket",
   ],
@@ -86,22 +85,6 @@ export const gitpodTableData: FeatureTableColumn = {
           availability: true,
         },
         {
-          term: "Self-Host on GCP",
-          availability: true,
-        },
-        {
-          term: "Self-Host on AWS",
-          availability: true,
-        },
-        {
-          term: "Self-Host on AKS",
-          availability: true,
-        },
-        {
-          term: "Self-Host on Kubernetes",
-          availability: true,
-        },
-        {
           term: "Prebuilds",
           availability: true,
         },
@@ -142,7 +125,7 @@ export const jetbrainsTableData: FeatureTableColumn = {
     {
       items: [
         {
-          term: "Pricing (SAAS)",
+          term: "Pricing (SaaS)",
           text: "$$$",
         },
         {
@@ -159,22 +142,6 @@ export const jetbrainsTableData: FeatureTableColumn = {
         },
         {
           term: "Bitbucket Integration",
-          availability: false,
-        },
-        {
-          term: "Self-Host on GCP",
-          availability: false,
-        },
-        {
-          term: "Self-Host on AWS",
-          availability: false,
-        },
-        {
-          term: "Self-Host on AKS",
-          availability: true,
-        },
-        {
-          term: "Self-Host on Kubernetes",
           availability: false,
         },
         {
@@ -210,7 +177,7 @@ export const JetbraisSpaceToc: FeatureTableToc[] = [
   {
     type: "text",
     data: {
-      text: "Pricing (SAAS)",
+      text: "Pricing (SaaS)",
     },
   },
   {
@@ -243,43 +210,6 @@ export const JetbraisSpaceToc: FeatureTableToc[] = [
       image: {
         alt: "Bitbucket",
         path: "/svg/bitbucket.svg",
-      },
-    },
-  },
-  {
-    type: "image",
-    data: {
-      text: "Self-Host on GCP",
-      image: {
-        alt: "GCP",
-        path: "/svg/brands/gcp.svg",
-      },
-    },
-  },
-  {
-    type: "image",
-    data: {
-      text: "Self-Host on AWS",
-      image: awsSvelte,
-    },
-  },
-  {
-    type: "image",
-    data: {
-      text: "Self-Host on AKS",
-      image: {
-        alt: "Azure Logo",
-        path: "/svg/brands/azure.svg",
-      },
-    },
-  },
-  {
-    type: "image",
-    data: {
-      text: "Self-Host on Kubernetes",
-      image: {
-        alt: "Kubernetes",
-        path: "/svg/brands/kubernetes.svg",
       },
     },
   },

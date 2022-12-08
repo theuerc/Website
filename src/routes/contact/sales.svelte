@@ -24,11 +24,11 @@
   import InputsHalf from "$lib/components/contact/inputs-half.svelte";
   import { goto } from "$app/navigation";
 
-  const selfHostingSubject = "Self-hosting";
+  const enterpriseSubject = "Enterprise";
   const otherSubject = "Other";
   const demoSubject = "Get a demo";
   const subjects = [
-    selfHostingSubject,
+    enterpriseSubject,
     demoSubject,
     "Educational Discount",
     "Reselling",
@@ -90,7 +90,7 @@
     },
   };
 
-  $: if (formData.selectedSubject.value == selfHostingSubject) {
+  $: if (formData.selectedSubject.value == enterpriseSubject) {
     isCloudPlatformsSelectShown = true;
     formData.cloudInfrastructure = cloudInfrastructure;
   } else {
@@ -134,7 +134,7 @@
       {
         subject: formData.selectedSubject.value,
         infrastructure:
-          formData.selectedSubject.value == selfHostingSubject
+          formData.selectedSubject.value == enterpriseSubject
             ? formData.cloudInfrastructure.value
             : undefined,
         full_name: formData.name.value,
@@ -210,7 +210,7 @@
   $: {
     if (
       formData.noOfEngineers.value === "1-10" &&
-      (formData.selectedSubject.value === selfHostingSubject ||
+      (formData.selectedSubject.value === enterpriseSubject ||
         formData.selectedSubject.value === demoSubject)
     ) {
       toType = "community-license";

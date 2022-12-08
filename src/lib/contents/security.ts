@@ -4,7 +4,7 @@ import type { Card } from "$lib/types/card";
 
 export const secureParagraphs = [
   "Storing copies of your source code locally on countless unsecured devices and networks is a bad practice. At the same time, it has become a reality for many organisations to enable their employees to work remotely with BYOD policies.",
-  "With Gitpod, your source code is safely stored in the cloud and never stored locally. Either on the carbon-neutral Google Cloud Platform with our SaaS solution or on your own cloud infrastructure with Gitpod Self-Hosted. Our native integrations with GitHub, GitLab and Bitbucket create a single access point to your intellectual property, no matter where your developers are and what device they use for it.",
+  "With Gitpod, your source code is safely stored in the cloud on the carbon-neutral Google Cloud Platform and never stored locally.",
   "No packages or dependencies are downloaded to users' devices. Gitpod developer environments run in the cloud and are short-lived, protecting your local machines and other corporate resources from malicious attacks through the execution of arbitrary code.",
 ];
 

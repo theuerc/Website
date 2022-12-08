@@ -9,13 +9,11 @@ title: Projects
 
 # Projects
 
-> {title} is currently in [Beta](/docs/help/public-roadmap/release-cycle) · [Send feedback](https://github.com/gitpod-io/gitpod/issues/5095).
-
 Projects live under a Gitpod team. They connect Gitpod to a git repository. A Gitpod project can only have one git repository, and a git repository can only belong to one project.
 
 A project is required in order to trigger [prebuilds](/docs/configure/projects/prebuilds) on a repository. Team members use the project to configure and view prebuilds.
 
-With [pay-as-you-go billing](/docs/configure/billing/pay-as-you-go), all project usage such as workspaces and prebuilds, may be billed to the team.
+With [team billing](/docs/configure/billing#configure-team-billing), all project usage such as workspaces and prebuilds, may be billed to the team.
 
 Projects have a static URL based on the team and project name, for example:
 

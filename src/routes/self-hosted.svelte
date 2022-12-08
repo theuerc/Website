@@ -11,7 +11,6 @@
   import ViewAllFeatures from "$lib/components/self-hosted/view-all-features.svelte";
   import Card from "$lib/components/ui-library/card/card.svelte";
   import LinkButton from "$lib/components/ui-library/link-button";
-  import DedicatedInfo from "$lib/components/pricing/dedicated-info.svelte";
   import Section from "$lib/components/section.svelte";
 </script>
 
@@ -24,8 +23,8 @@
       "self-hosted, self-managed, download, installation, infrastructure, kubernetes, deploy, teams",
   }}
 />
+
 <PlansAndPricing {pricingPlans} />
-<DedicatedInfo />
 <Section>
   <Card
     size="medium"

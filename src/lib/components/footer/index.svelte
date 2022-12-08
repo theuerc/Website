@@ -50,7 +50,6 @@
           <FooterLink href="/cde">CDE</FooterLink>
         </li>
         <li><FooterLink href="/pricing">Pricing</FooterLink></li>
-        <li><FooterLink href="/self-hosted">Self-Hosted</FooterLink></li>
         <li><FooterLink href="/customers">Customers</FooterLink></li>
         <li><FooterLink href="/support">Support</FooterLink></li>
         <li>
@@ -117,9 +116,9 @@
         <li>
           <FooterLink href="/vs/jetbrains-space">JetBrains Space</FooterLink>
         </li>
-        <li>
+        <!-- <li>
           <FooterLink href="/vs/coder">Coder</FooterLink>
-        </li>
+        </li> -->
       </Section>
       <Section title="Company">
         <li><FooterLink href="/about">About</FooterLink></li>

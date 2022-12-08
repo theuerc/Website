@@ -5,8 +5,9 @@
 <script lang="ts">
   import Signup from "$lib/components/dedicated/signup.svelte";
   import OpenGraph from "$lib/components/open-graph.svelte";
-  import PlansAndPricing from "$lib/components/pricing/plans-and-pricing.svelte";
+  import Header from "$lib/components/header.svelte";
   import Hero from "$lib/components/dedicated/hero-text.svelte";
+  import Pill from "$lib/components/pill.svelte";
 </script>
 
 <OpenGraph
@@ -17,7 +18,15 @@
       "Get your private instance of Gitpod. Gitpod Dedicated is the right choice for large companies with high security and compliance requirements.",
   }}
 />
-<PlansAndPricing />
+
+<Header
+  class="md:!mb-small !mb-micro"
+  title="Gitpod Dedicated"
+  titleInline={true}
+  fullWidth={true}
+>
+  <Pill slot="annotation" class="align-top" text="soon" variant="pink" />
+</Header>
 <div class="flex justify-center lgx:justify-start items-start mb-xxx-large">
   <div class="max-w-2xl">
     <Hero />

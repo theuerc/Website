@@ -9,8 +9,6 @@ title: Teams
 
 # Teams
 
-> {title} is currently in [Beta](/docs/help/public-roadmap/release-cycle) · [Send feedback](https://github.com/gitpod-io/gitpod/issues/5095).
-
 Teams are used to share [Projects](/docs/configure/projects) amongst team members.
 
 There are two roles within a Gitpod team **team owners** and **team members**. Team members and owners can view branches and prebuilds for the projects within a team. Team members can open new workspaces directly from a branch in the dashboard. Team owners can manage other team members, reset user invite URLs, and manage [Team billing](/docs/configure/billing/team-billing).

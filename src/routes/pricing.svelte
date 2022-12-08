@@ -9,10 +9,11 @@
   import PlansAndPricing from "$lib/components/pricing/plans-and-pricing.svelte";
   import { pricingPlans, pricingTable } from "$lib/contents/pricing";
   import UsedBy from "$lib/components/index/used-by.svelte";
-  import Empower from "$lib/components/pricing/empower.svelte";
   import FeatureTable from "$lib/components/ui-library/feature-table/feature-table.svelte";
   import SectionCommon from "$lib/components/section-common.svelte";
-  import DedicatedInfo from "$lib/components/pricing/dedicated-info.svelte";
+  import PayAsYouGoCard from "$lib/components/pricing/pay-as-you-go-card.svelte";
+  import Calculator from "$lib/components/pricing/calculator/index.svelte";
+  import Section from "$lib/components/section.svelte";
 </script>
 
 <OpenGraph
@@ -25,17 +26,30 @@
 />
 <PlansAndPricing {pricingPlans} />
 
-<DedicatedInfo />
-<UsedBy class="py-small" title="Used by 750k+ developers" />
+<Section>
+  <div class="mb-small md:mb-x-medium">
+    <h2 class="text-center h2 mb-macro md:!mb-micro">Cost estimator</h2>
+    <p class="text-large text-center mx-auto">
+      Get a cost estimate for your team’s usage of Gitpod with pay-as-you-go.
+    </p>
+  </div>
+  <Calculator />
+</Section>
+
+<UsedBy title="Used by 750k+ developers" isCard={false} />
 <SectionCommon
+  titleClassNames="!mb-micro"
   title="Compare features"
-  text="Choose the plan that fits your needs. You can always start for free."
-  textClassNames="mb-xx-small"
+  text="Start using Gitpod for free. Upgrade to pay-as-you-go and create a team in your dashboard any time."
+  textClassNames="mb-micro md:mb-small"
   isTitleADeepLink={true}
 >
-  <FeatureTable slot="content" tableData={pricingTable} />
+  <div slot="content">
+    <FeatureTable tableData={pricingTable} />
+
+    <PayAsYouGoCard class="mt-small md:mt-xx-large" />
+  </div>
 </SectionCommon>
-<Empower />
 <Faqs />
 
 <Explore />

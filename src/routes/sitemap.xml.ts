@@ -17,7 +17,6 @@ export const get: RequestHandler = async () => {
         "extension-activation",
         "unsubscribe",
         "stay-connected",
-        "enterprise-license",
         "extension-uninstall",
       ];
       return !filters.find((filter) => page.includes(filter));

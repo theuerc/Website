@@ -9,8 +9,6 @@ title: Workspace classes
 
 # Workspace classes
 
-> {title} are currently in [Early Access](/docs/help/public-roadmap/release-cycle) with [Pay-as-you-go](/docs/configure/billing/pay-as-you-go). Please [contact us](/contact/support) to request access, or [send feedback](https://github.com/gitpod-io/gitpod/issues/12473).
-
 Workspace classes allow you to select the resources available to your workspaces.
 
 On gitpod.io, the options are:
@@ -24,5 +22,5 @@ You can override the default (Standard) workspace class in the [Gitpod project](
 
 ## Good to know
 
-- Large workspace classes use [pay-as-you-go](/docs/configure/billing/pay-as-you-go) credits at a faster rate. Standard workspaces use 10 credits per hour, whereas Large workspaces use 20 credits per hour.
+- Large workspace classes use [credits](/docs/configure/billing#credits) at a faster rate. Standard workspaces use 10 credits per hour, whereas Large workspaces use 20 credits per hour.
 - [Prebuilds](/docs/configure/projects/prebuilds) currently use the same workspace class as regular workspaces.

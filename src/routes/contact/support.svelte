@@ -26,7 +26,7 @@
 
   const studentUnlimitedSubject = "Educational Discount Verification";
 
-  const selfHostingSubject = "Self-hosting Gitpod";
+  const enterpriseSubject = "Enterprise";
 
   const otherSubject = "Other";
   const subjects = [
@@ -34,7 +34,7 @@
     "Technical Support",
     "Billing",
     studentUnlimitedSubject,
-    selfHostingSubject,
+    enterpriseSubject,
     "Open Source Sponsorship",
     "Security",
     otherSubject,
@@ -98,7 +98,7 @@
     },
   };
 
-  $: if (formData.selectedSubject.value == selfHostingSubject) {
+  $: if (formData.selectedSubject.value == enterpriseSubject) {
     isCloudPlatformsSelectShown = true;
     formData.cloudInfrastructure = cloudInfrastructure;
     formData.noOfEngineers = noOfEngineers;
@@ -142,15 +142,15 @@
         full_name: formData.name.value,
         email: formData.email.value,
         infrastructure:
-          formData.selectedSubject.value == selfHostingSubject
+          formData.selectedSubject.value == enterpriseSubject
             ? formData.cloudInfrastructure.value
             : undefined,
         company_engineers:
-          formData.selectedSubject.value == selfHostingSubject
+          formData.selectedSubject.value == enterpriseSubject
             ? formData.noOfEngineers.value
             : undefined,
         company:
-          formData.selectedSubject.value == selfHostingSubject
+          formData.selectedSubject.value == enterpriseSubject
             ? formData.company.value
             : undefined,
         message: formData.message.value,

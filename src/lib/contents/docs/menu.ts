@@ -67,19 +67,13 @@ export const MENU: MenuEntry[] = [
     M("Access Tokens", "configure/user-settings/access-tokens"),
   ]),
 
-  M(
-    "Projects",
-    "configure/projects",
-    false,
-    [
-      // Why is this side bar name different to the title / URL?
-      M("Prebuilds", "configure/projects/prebuilds"),
-      M("Environment Variables", "configure/projects/environment-variables"),
-    ],
-    "beta"
-  ),
+  M("Projects", "configure/projects", false, [
+    // Why is this side bar name different to the title / URL?
+    M("Prebuilds", "configure/projects/prebuilds"),
+    M("Environment Variables", "configure/projects/environment-variables"),
+  ]),
 
-  M("Teams", "configure/teams", false, [], "beta"),
+  M("Teams", "configure/teams"),
 
   M("Authentication", "configure/authentication", false, [
     M("GitLab", "configure/authentication/gitlab"),
@@ -179,19 +173,7 @@ export const MENU: MenuEntry[] = [
       M("Upgrade Guides", "configure/self-hosted/latest/upgrade-guides"),
     ]),
   ]),
-  M("Billing", "configure/billing", false, [
-    // M("Subscriptions", "configure/billing/subscriptions"),
-    M("Personal plans", "configure/billing/personal-plans"),
-    M("Team plans", "configure/billing/team-plans"),
-    M("Team billing", "configure/billing/team-billing", false, [], "beta"),
-    M(
-      "Pay-as-you-go",
-      "configure/billing/pay-as-you-go",
-      false,
-      [],
-      "Early Access"
-    ),
-  ]),
+  M("Billing", "configure/billing"),
 
   M("References", "references", true),
   M(".gitpod.yml", "references/gitpod-yml"),

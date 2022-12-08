@@ -10,6 +10,11 @@ title: How to backup and restore Gitpod
 
 # How to Backup and Restore Gitpod
 
+> ⚠️ **Self-hosted is no longer supported**
+>
+> The last official update of this product is the [November 2022 self-hosted release](https://www.gitpod.io/changelog/november-self-hosted-release). We no longer sell commercial self-hosted licenses. If you want to self-host Gitpod, you can still request our [free community license](https://www.gitpod.io/community-license). Unfortunately, we no longer offer support or updates for it. If you are interested in an isolated, private installation of Gitpod, take a look at [Gitpod Dedicated](/dedicated).
+> Read [our blog on Gitpod Dedicated](/blog/introducing-gitpod-dedicated) to learn why we made the decision to discontinue self-hosted.
+
 For [business continuity](https://en.wikipedia.org/wiki/Business_continuity_planning) purposes, it is important to think about how you might restore your ability to use Gitpod, and thus develop software in the event of a catastrophic failure of Gitpod or the underlying infrastructure it runs on. This guide assumes that you will use the backup and restore strategy for disaster recovery and will guide you towards what needs to be backed up and how to restore using said backup. Please see our background reading on [disaster recovery](./disaster-recovery) for more information.
 
 > **Important:** When using Gitpod in a production setting, we recommend you base your installation on the [single cluster reference architecture](./reference-architecture/single-cluster-ref-arch). Using in-cluster dependencies is not recommended because there is no means to produce backups, and the database/storages systems are within failure domain of the cluster. If possible consider using Gitpod [SaaS](https://www.gitpod.io/pricing).

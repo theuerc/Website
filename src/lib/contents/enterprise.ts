@@ -20,18 +20,6 @@ export const exploreContents: ExploreSection = {
 
 export const featureCards: Card[] = [
   {
-    title: "Self-hosted",
-    text: "Gitpod, managed on your own instances. Run Gitpod behind corporate firewalls or on air-gapped networks with full control.",
-    icon: {
-      src: "/svg/logo-textless.svg",
-      alt: "Gitpod Logo",
-    },
-    link: {
-      href: "/contact/sales",
-      text: "Get demo",
-    },
-  },
-  {
     title: "SaaS",
     text: "Gitpod, managed in the cloud for you. Secure data storage in the cloud and minimal setup cost. Scale users as you need with full flexibility.",
     icon: {

@@ -118,8 +118,8 @@ export const secondaryFeatures: Card[] = [
     icon: {
       src: "/svg/icons/cloud.svg",
     },
-    title: "SaaS or Self-Hosted",
-    text: "Use our SaaS solution running on the carbon neutral Google Cloud Platform or host Gitpod on your own cloud infrastructure using GKE, k3s, EKS or AKS.",
+    title: "SaaS",
+    text: "Use our SaaS solution running on the carbon neutral Google Cloud Platform.",
   },
   {
     icon: {

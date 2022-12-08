@@ -245,9 +245,11 @@ https://community.gitpod.io/* https://www.gitpod.io/chat 301!
 /docs/references/gitpod-dockerfile /docs/configure/workspaces/workspace-image
 /docs/examples /docs/introduction/languages
 /docs/subscriptions /docs/configure/billing
+/docs/configure/billing/personal-plans /docs/configure/billing
 /docs/team-billing /docs/configure/billing/team-billing
-/docs/usage-based-billing /docs/configure/billing/pay-as-you-go
-/docs/configure/billing/usage-based-billing /docs/configure/billing/pay-as-you-go
+/docs/usage-based-billing /docs/configure/billing
+/docs/configure/billing/usage-based-billing /docs/configure/billing
+/docs/configure/billing/pay-as-you-go /docs/configure/billing
 /docs/teams /docs/configure/billing/team-plans
 /docs/multi-repo-workspaces /docs/configure/workspaces/multi-repo
 /docs/workspace-classes /docs/configure/workspaces/workspace-classes
@@ -273,7 +275,8 @@ docs/ides-and-editors/jetbrains-gateway /docs/integrations/jetbrains-gateway
 /docs/vscode-extensions /docs/references/ides-and-editors/vscode-extensions
 /docs/integrations/jetbrains /docs/integrations/jetbrains-gateway
 /docs/editors /docs/references/ides-and-editors
-
-
+/self-hosted /docs/configure/self-hosted/latest
 /changelog/november-changelog /changelog/november-gitpod-release-2022
 /github-student-developer-pack /for/education
+/enterprise-license /pricing
+/vs/coder /

@@ -44,43 +44,6 @@ export const codespacesToc: FeatureTableToc[] = [
     },
   },
   {
-    type: "image",
-    data: {
-      text: "Self-Host on GKE",
-      image: {
-        alt: "GCP",
-        path: "/svg/brands/gcp.svg",
-      },
-    },
-  },
-  {
-    type: "image",
-    data: {
-      text: "Self-Host on EKS",
-      image: awsSvelte,
-    },
-  },
-  {
-    type: "image",
-    data: {
-      text: "Self-Host on AKS",
-      image: {
-        alt: "azure",
-        path: "/svg/brands/azure.svg",
-      },
-    },
-  },
-  {
-    type: "image",
-    data: {
-      text: "Self-Host on Kubernetes",
-      image: {
-        alt: "kubernetes",
-        path: "/svg/brands/kubernetes.svg",
-      },
-    },
-  },
-  {
     type: "text",
     data: {
       text: "Prebuilds",
@@ -153,22 +116,6 @@ export const gitpodColumns: FeatureTableColumn = {
           availability: true,
         },
         {
-          term: "Self-Host on GKE",
-          availability: true,
-        },
-        {
-          term: "Self-Host on EKS",
-          availability: true,
-        },
-        {
-          term: "Self-Host on AKS",
-          availability: true,
-        },
-        {
-          term: "Self-Host on Kubernetes",
-          availability: true,
-        },
-        {
           term: "Prebuilds",
           availability: true,
         },
@@ -224,22 +171,6 @@ export const codespacesColumn: FeatureTableColumn = {
         },
         {
           term: "Bitbucket Integration",
-          availability: false,
-        },
-        {
-          term: "Self-Host on GKE",
-          availability: false,
-        },
-        {
-          term: "Self-Host on EKS",
-          availability: false,
-        },
-        {
-          term: "Self-Host on AKS",
-          availability: false,
-        },
-        {
-          term: "Self-Host on Kubernetes",
           availability: false,
         },
         {

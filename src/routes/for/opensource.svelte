@@ -28,14 +28,14 @@
 <OpenGraph
   data={{
     description:
-      "Spend less time reviewing pull-requests, on-boarding contributors and more time on building great things. Upgrade your account to our complimentary professional open source plan.",
+      "Spend less time reviewing pull-requests, on-boarding contributors and more time on building great things. Upgrade your account to our complimentary Open Source plan.",
     title: "Gitpod for Open Source",
   }}
 />
 
 <Header
   title="Gitpod for Open Source"
-  text="Spend less time reviewing pull-requests, on-boarding contributors and more time on building great things. <strong>Upgrade your account to our complimentary professional open source plan.</strong>"
+  text="Spend less time reviewing pull-requests, on-boarding contributors and more time on building great things. <strong>Upgrade your account to our complimentary Open Source plan.</strong>"
   textClassNames="text-large max-w-4xl mx-auto"
   fullWidth={true}
 >

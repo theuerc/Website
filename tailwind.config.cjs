@@ -41,7 +41,7 @@ module.exports = {
         bg: "var(--bg)",
         card: "var(--card)",
         nav: "var(--nav)",
-
+        grey: "var(--slight-grey)",
         "less-important": "var(--less-important)",
 
         "sand-dark": "var(--sand-dark)",

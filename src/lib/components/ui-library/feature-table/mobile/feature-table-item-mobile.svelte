@@ -25,7 +25,7 @@
         {:else}
           <span
             class={definition.isHeadline
-              ? "text-black dark:text-important font-semibold text-h4"
+              ? "text-black dark:text-important font-semibold text-p-medium"
               : "text-[#565252] dark:text-important"}>{definition.term}</span
           >
         {/if}
