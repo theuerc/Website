@@ -42,7 +42,7 @@ We are excited to announce limited availability of Gitpod Dedicated for enterpri
 <Signup class="!mx-auto !left-0" toType="dedicated-signup" />
 </div>
 
-## Ending support for Self Hosted and moving our source to AGPL
+## Ending support for Self Hosted and moving our source code to the open-source AGPL licence
 
 We have decided to stop supporting self-hosting Gitpod for the reasons mentioned above. The focus on Gitpod SaaS and Gitpod Dedicated enables us to ship improvements much faster.
 
@@ -52,9 +52,9 @@ We have informed our enterprise customers about this decision and have been plea
 
 - The November 22 release will be our last Self-Hosted release. Both the product and its documentation will be frozen.
 - You will be able to continue installing and using the [currently available free KOTS based community edition](/community-license) until January 24.
-- We will move all of our source code to AGPL and remove the Enterprise License from our source code.
+- We will move all of our source code to open-source AGPL and remove the proprietary Enterprise License from our source code.
 
-We originally open sourced Gitpod because working in open source is in our DNA. Everything we have created over the past 10 years, including [Theia](https://github.com/eclipse-theia/theia), [Xtext](https://github.com/eclipse/xtext), [Open VSX](https://github.com/eclipse/openvsx), and many other projects have been open source. For Gitpod, we are focused on creating the best managed experience possible, rather than trying to make it as flexible as possible for self-hosting.
+We originally [open sourced Gitpod](https://www.gitpod.io/blog/opensource) because working in open source is in our DNA. Everything we have created over the past 10 years, including [Theia](https://github.com/eclipse-theia/theia), [Xtext](https://github.com/eclipse/xtext), [Open VSX](https://github.com/eclipse/openvsx), and many other projects have been open source. This stays true for Gitpod. What is going to change is, that we are focused on creating the best managed experience possible, rather than trying to make it as flexible as possible for self-hosting.
 
 As we close 2022 by introducing new workspace classes, flexible pricing and a new enterprise cloud offering, we couldn’t be more excited for 2023. Our vision for [Cloud Development Environments (CDEs)](/cde) is ambitious, and we are just getting started. There’s still a long way to go to remove all friction from the developer experience to be always ready-to-code and make software engineering more collaborative, joyful, and secure.
 
