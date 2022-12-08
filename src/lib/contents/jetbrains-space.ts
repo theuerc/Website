@@ -16,7 +16,8 @@ export const openSourceFeature = {
   paragraph:
     "Gitpod puts developers' interest first and seemlessly integrates with your existing tools & workflows.",
   featureList: [
-    "Contribute to Gitpod and build your own customizations",
+    "Contribute to Gitpod and build your own integrations and customizations",
+    '<p>Check Gitpod\'s <a href="https://github.com/gitpod-io/gitpod">open code base</a> and follow our <a href="https://gitpod.io/roadmap">product roadmap</a></p>',
     "Works just as smoothly with GitHub, GitLab and Bitbucket",
   ],
   previewComponent: opensourceSvelte,
