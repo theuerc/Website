@@ -34,11 +34,13 @@ Gitpod Dedicated is the same Gitpod that you know and love, but as a customer yo
 
 Gitpod Dedicated will be initially available in AWS because that’s where the majority of our customers are. We can run in your cloud account or ours, in the region of your choice, and customers will have the ability to manage encryption keys for data at rest. Every detail of Gitpod Dedicated has been designed to meet the security requirements of our enterprise customers.
 
+#### Join the waitlist
+
+We are excited to announce limited availability of Gitpod Dedicated for enterprise customers and an expanded beta in 2023. Sign-up for the waitlist and receive bi-weekly architecture and product updates.
+
 <div class="my-micro">
 <Signup class="!mx-auto !left-0" toType="dedicated-signup" />
 </div>
-
-We are excited to announce limited availability of Gitpod dedicated which will provide our enterprise customers with an offering that combines isolation and private networking with the ease of use of a managed offering.
 
 ## Ending support for Self Hosted and moving our source to AGPL
 
