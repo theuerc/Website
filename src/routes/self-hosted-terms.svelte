@@ -43,7 +43,7 @@
   <div
     class="px-[12px] py-[2px] bg-black text-xs font-semibold text-white mb-micro inline-block rounded-lg"
   >
-    ⚠️ Self-hosted is no longer supported
+    ⚠️ Self-hosted as a product is no longer supported
   </div>
   <p>
     The last official update of this product is the
@@ -52,7 +52,7 @@
     >. We no longer sell commercial self-hosted licenses. If you want to
     self-host Gitpod, you can still request our
     <a href="https://www.gitpod.io/community-license">free community license</a
-    >. Unfortunately, we no longer offer support or updates for it. If you are
+    >. However, we no longer offer support or updates for it. If you are
     interested in an isolated, private installation of Gitpod, take a look at
     <a href="/dedicated">Gitpod Dedicated</a>. Read
     <a href="/blog/introducing-gitpod-dedicated">our blog on Gitpod Dedicated</a
