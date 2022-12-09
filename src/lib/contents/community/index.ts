@@ -18,10 +18,10 @@ export const testimonials: Testimonial[] = [
     name: "dMLTquant",
     avatar: "dmltquant.jpg",
     text: `
-    I just want to say 🤯 
+    I just want to say 🤯
     <br /><br />
     Dear @gitpod
-     where have you been all my life?!? 😉 
+     where have you been all my life?!? 😉
      <br />
     Such an awesome project 👍 so easy to open a new dev environment right from an issue page 🤤
     <br />
