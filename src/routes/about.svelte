@@ -59,7 +59,7 @@
 
 <Articles
   title="Additional Resources"
-  slugs={["gitpod-core-values", "two-ceos-are-better-than-one", "opensource"]}
+  slugs={["future-of-software-cdes", "gitpod-core-values", "what-we-learned-growing-a-community-from-500-5000"]}
 />
 
 <Explore

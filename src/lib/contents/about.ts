@@ -63,6 +63,13 @@ export const newsArticles: {
   img: Image;
 }[] = [
   {
+    href: "https://redmonk.com/jgovernor/2022/12/01/the-year-of-the-cloud-development-environment/",
+    img: {
+      src: "/svg/about/redmonk.svg",
+      alt: "RedMonk",
+    },
+  },
+  {
     href: "https://www.theregister.com/2020/08/25/gitpod_open_sources_cloud_development_platform/",
     img: {
       src: "/svg/about/the-register.svg",
