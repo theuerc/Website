@@ -49,13 +49,7 @@ export const MENU: MenuEntry[] = [
     M("Ports", "configure/workspaces/ports"),
     M("Collaboration", "configure/workspaces/collaboration", false, []),
     M("Multi-repo", "configure/workspaces/multi-repo", false, [], "beta"),
-    M(
-      "Workspace classes",
-      "configure/workspaces/workspace-classes",
-      false,
-      [],
-      "Early Access"
-    ),
+    M("Workspace classes", "configure/workspaces/workspace-classes"),
   ]),
 
   M("User settings", "configure/user-settings", false, [
