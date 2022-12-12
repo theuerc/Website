@@ -45,8 +45,10 @@ Workspaces can be created on their own, or as part of a [Project](/docs/configur
 
 [Projects](/docs/configure/projects) are the connection between Gitpod and one or more git repositories and allow you to manage [Prebuilds](/docs/configure/projects/prebuilds). Projects can be associated with your personal account, or associated with [Teams](/docs/configure/teams).
 
-- [Environment Variables](/docs/configure/projects/environment-variables)
 - [Prebuilds](/docs/configure/projects/prebuilds)
+- [Incremental Prebuilds](/docs/configure/projects/incremental-prebuilds)
+- [Last Successful Prebuild](/docs/configure/projects/last-successful-prebuild)
+- [Environment Variables](/docs/configure/projects/environment-variables)
 
 ## Teams
 
