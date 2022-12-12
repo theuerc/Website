@@ -9,6 +9,7 @@
   import type { FAQ } from "$lib/types/faq";
   import StructuredData from "./structured-data.svelte";
 
+  export let useStructuredData = true;
   export let headlineClasses: string = "";
   export let faq: FAQ;
 
@@ -29,4 +30,6 @@
   </div>
 </div>
 
-<StructuredData {faq} />
+{#if useStructuredData}
+  <StructuredData {faq} />
+{/if}

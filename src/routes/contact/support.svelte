@@ -24,8 +24,6 @@
   import Select from "$lib/components/ui-library/select/select.svelte";
   import InputsHalf from "$lib/components/contact/inputs-half.svelte";
 
-  const studentUnlimitedSubject = "Educational Discount Verification";
-
   const enterpriseSubject = "Enterprise";
 
   const otherSubject = "Other";
@@ -33,7 +31,6 @@
     "Question",
     "Technical Support",
     "Billing",
-    studentUnlimitedSubject,
     enterpriseSubject,
     "Open Source Sponsorship",
     "Security",
@@ -60,15 +57,8 @@
     value: "",
   };
 
-  let isStudentEmailNoteShown: boolean = false;
   let sectionStart: HTMLElement;
   let isSubmissionInProgress: boolean = false;
-
-  $: if (formData.selectedSubject.value === studentUnlimitedSubject) {
-    isStudentEmailNoteShown = true;
-  } else {
-    isStudentEmailNoteShown = false;
-  }
 
   const formData: Form = {
     consent: {
@@ -295,14 +285,7 @@
                 />
               </div>
               <div class:error={isFormDirty && !formData.email.valid}>
-                <label class="cursor-pointer" for="email"
-                  >E-mail*
-                  {#if isStudentEmailNoteShown}
-                    <span class="fine-print"
-                      >(Please use your student or faculty email)</span
-                    >
-                  {/if}
-                </label>
+                <label class="cursor-pointer" for="email">E-mail* </label>
                 <Input
                   hasError={isFormDirty && !formData.email.valid}
                   id="email"

@@ -16,7 +16,10 @@
   import Select from "$lib/components/ui-library/select";
   import Card from "$lib/components/ui-library/card";
   import Button from "$lib/components/ui-library/button";
-  import { cloudPlatforms, noOfEngineers } from "$lib/contents/contact";
+  import {
+    dedicatedCloudPlatforms,
+    noOfEngineers,
+  } from "$lib/contents/contact";
   import { scrollToElement } from "$lib/utils/helpers";
   import { tick } from "svelte";
   import Unleashing from "$lib/components/contact/unleashing.svelte";
@@ -27,13 +30,7 @@
   const enterpriseSubject = "Enterprise";
   const otherSubject = "Other";
   const demoSubject = "Get a demo";
-  const subjects = [
-    enterpriseSubject,
-    demoSubject,
-    "Educational Discount",
-    "Reselling",
-    otherSubject,
-  ];
+  const subjects = [enterpriseSubject, demoSubject, "Reselling", otherSubject];
 
   let sectionStart: HTMLElement;
   let isCloudPlatformsSelectShown = false;
@@ -305,7 +302,7 @@
                       // @ts-ignore
                       e.target.validity.valid;
                   }}
-                  options={cloudPlatforms}
+                  options={dedicatedCloudPlatforms}
                   placeholder="Which cloud infrastructure do you use?"
                   class="max-w-md"
                 />
