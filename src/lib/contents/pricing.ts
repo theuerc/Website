@@ -17,9 +17,9 @@ export const pricingPlans: Pricing[] = [
     description: "For your personal projects",
     price: "From $0",
     features: [
-      "Use Gitpod for free with 500 credits/mo or up to 50 hours.",
-      "Upgrade to 1,000 credits for $9/mo and pay-as-you-go after that.",
-      "Workspace classes, prebuilds, and multi-IDE support.",
+      "Use Gitpod for free with 500 credits/mo or up to 50 hours",
+      "Upgrade to 1,000 credits for $9/mo and pay-as-you-go after that",
+      "Workspace classes, prebuilds, and multi-IDE support",
     ],
     btnText: "Start for free",
     btnHref: "https://gitpod.io/login",
@@ -30,9 +30,9 @@ export const pricingPlans: Pricing[] = [
     description: "For teams of any size",
     price: "From $0.36/hour",
     features: [
-      "Create a team for free.",
-      "Manage pay-as-you-go team billing in one account.",
-      "Invite additional team members at no extra charge.",
+      "Create a team for free",
+      "Manage team billing in one account",
+      "Invite additional team members at no extra charge",
     ],
     btnText: "Create team",
     btnHref: "https://gitpod.io/teams/new",
@@ -43,9 +43,9 @@ export const pricingPlans: Pricing[] = [
     price: "Custom",
     description: "For teams with high security and support needs",
     features: [
-      "Use Gitpod Dedicated: a fully-isolated, private instance.",
-      "Set up private connections to your dev resources.",
-      "SLA and premium support.",
+      "Deployment options: multi-tenant, single-tenant, and managed cloud",
+      "VPC peering and private links to your dev resources",
+      "SLA and premium support",
     ],
     btnText: "Talk to sales",
     btnHref: "/contact/sales",
@@ -140,7 +140,7 @@ export const indivdualPlanTableData: FeatureTableColumn = {
           availability: true,
         },
         {
-          term: "Multi-ide support",
+          term: "Multi-IDE support",
           availability: true,
         },
         {
@@ -253,7 +253,7 @@ export const indivdualPlanTableData: FeatureTableColumn = {
           availability: true,
         },
         {
-          term: "Multi-ide support",
+          term: "Multi-IDE support",
           availability: true,
         },
         {
@@ -380,7 +380,7 @@ export const teamPlanTableData: FeatureTableColumn = {
           availability: true,
         },
         {
-          term: "Multi-ide support",
+          term: "Multi-IDE support",
           availability: true,
         },
         {
@@ -444,7 +444,7 @@ export const dedicatedPlanTableData: FeatureTableColumn = {
     label: "Talk to sales",
   },
   header: {
-    headline: "Gitpod Dedicated",
+    headline: "Enterprise",
   },
   enteries: [
     {
@@ -505,7 +505,7 @@ export const dedicatedPlanTableData: FeatureTableColumn = {
           availability: true,
         },
         {
-          term: "Multi-ide support",
+          term: "Multi-IDE support",
           availability: true,
         },
         {
@@ -662,7 +662,7 @@ export const pricingTableToc: FeatureTableToc[] = [
   {
     type: "tooltip",
     data: {
-      text: "Multi-ide support",
+      text: "Multi-IDE support",
       tooltip:
         "Connect Gitpod with your favourite IDE. View <a href='/docs/references/ides-and-editors'>docs/IDE</a> to see all suported IDE’s.",
     },
