@@ -117,36 +117,29 @@
     }
     isSubmissionInProgress = true;
 
-    trackIdentity(
-      {
-        name_untrusted: formData.name.value,
-        email_untrusted: formData.email.value,
-      },
-      true
-    );
+    await trackIdentity({
+      name_untrusted: formData.name.value,
+      email_untrusted: formData.email.value,
+    });
 
-    trackEvent(
-      "message_submitted",
-      {
-        subject: formData.selectedSubject.value,
-        full_name: formData.name.value,
-        email: formData.email.value,
-        infrastructure:
-          formData.selectedSubject.value == enterpriseSubject
-            ? formData.cloudInfrastructure.value
-            : undefined,
-        company_engineers:
-          formData.selectedSubject.value == enterpriseSubject
-            ? formData.noOfEngineers.value
-            : undefined,
-        company:
-          formData.selectedSubject.value == enterpriseSubject
-            ? formData.company.value
-            : undefined,
-        message: formData.message.value,
-      },
-      true
-    );
+    await trackEvent("message_submitted", {
+      subject: formData.selectedSubject.value,
+      full_name: formData.name.value,
+      email: formData.email.value,
+      infrastructure:
+        formData.selectedSubject.value == enterpriseSubject
+          ? formData.cloudInfrastructure.value
+          : undefined,
+      company_engineers:
+        formData.selectedSubject.value == enterpriseSubject
+          ? formData.noOfEngineers.value
+          : undefined,
+      company:
+        formData.selectedSubject.value == enterpriseSubject
+          ? formData.company.value
+          : undefined,
+      message: formData.message.value,
+    });
 
     const email: Email = {
       replyTo: {

@@ -85,28 +85,21 @@
 
     isSubmissionInProgress = true;
 
-    trackIdentity(
-      {
-        name_untrusted: formData.name.value,
-        email_untrusted: formData.email.value,
-      },
-      true
-    );
+    await trackIdentity({
+      name_untrusted: formData.name.value,
+      email_untrusted: formData.email.value,
+    });
 
-    trackEvent(
-      "message_submitted",
-      {
-        full_name: formData.name.value,
-        email: formData.email.value,
-        company: formData.company.value,
-        company_engineers: formData.noOfEngineers.value,
-        infrastructure: formData.cloudInfrastructure.value,
-        message: formData.message.value,
-        attribution: formData.referrer.value,
-        referrer: formData.referrer.value,
-      },
-      true
-    );
+    await trackEvent("message_submitted", {
+      full_name: formData.name.value,
+      email: formData.email.value,
+      company: formData.company.value,
+      company_engineers: formData.noOfEngineers.value,
+      infrastructure: formData.cloudInfrastructure.value,
+      message: formData.message.value,
+      attribution: formData.referrer.value,
+      referrer: formData.referrer.value,
+    });
 
     const email: Email = {
       toType: "community-license",

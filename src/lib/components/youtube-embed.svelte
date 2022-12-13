@@ -10,8 +10,8 @@
   export let coverImage: string = null;
   let isConcealed = Boolean(coverImage);
 
-  const videoLoadedSuccessfully = () => {
-    trackEvent("screencast_started", {
+  const videoLoadedSuccessfully = async () => {
+    await trackEvent("screencast_started", {
       id: embedId,
       name: title,
       url: window.location.href,

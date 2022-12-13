@@ -59,7 +59,11 @@
 
 <Articles
   title="Additional Resources"
-  slugs={["future-of-software-cdes", "gitpod-core-values", "what-we-learned-growing-a-community-from-500-5000"]}
+  slugs={[
+    "future-of-software-cdes",
+    "gitpod-core-values",
+    "what-we-learned-growing-a-community-from-500-5000",
+  ]}
 />
 
 <Explore
