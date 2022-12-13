@@ -39,7 +39,8 @@
         >
         <td
           class="py-micro px-xx-small border-b border-r border-sand-dark dark:border-divider"
-          >10 credits/hour</td
+          ><p class="font-bold text-important">$0.36/hour</p>
+          (10 credits)</td
         >
       </tr>
       <tr>
@@ -50,7 +51,8 @@
         >
         <td
           class="py-micro px-xx-small border-r border-b rounded-br-2xl dark:border-divider border-sand-dark"
-          >20 credits/hour</td
+          ><p class="font-bold text-important">$0.72/hour</p>
+          (20 credits)</td
         >
       </tr>
     </table>
