@@ -2,31 +2,13 @@
   import Range from "$lib/components/ui-library/range.svelte";
   import Card from "$lib/components/ui-library/card/card.svelte";
   import DisplayResult from "./display-result.svelte";
-  import Signup from "$lib/components/pricing/calculator/signup.svelte";
-  import { onMount } from "svelte";
-
-  const largeWorkspacePrice = 0.72;
-  const standardWorkspacePrice = 0.36;
-
-  onMount(() => {
-    mailSubmitted = !!localStorage.getItem("estimated-costs-submitted");
-  });
-
-  let mailSubmitted = false;
 
   let members: number = 1;
   let workspaceHours = 1;
-  let selfReference: HTMLElement;
 
   let largeWorkspace = 0;
 
   $: displayStandard = 100 - largeWorkspace;
-
-  $: monthlyHours = workspaceHours * 4.3;
-
-  $: calculatedPrice =
-    standardWorkspacePrice * (displayStandard / 100) * members * monthlyHours +
-    largeWorkspacePrice * (largeWorkspace / 100) * members * monthlyHours;
 </script>
 
 <Card
@@ -107,19 +89,13 @@
     </div>
   </div>
   <div
-    bind:this={selfReference}
     class="w-full md:w-2/5 m-[1px] md:rounded-r-5xl bg-sand-dark dark:bg-[#1A1712] md:px-medium py-x-small px-x-small md:py-[5.5rem]"
   >
-    {#if mailSubmitted}
-      <DisplayResult {members} displayValue={calculatedPrice} />{:else}
-      <Signup
-        calculatedAmount={calculatedPrice}
-        sectionStart={selfReference}
-        bind:isEmailSent={mailSubmitted}
-        hours={workspaceHours}
-        largeWorkspaces={largeWorkspace}
-        {members}
-      />
-    {/if}
+    <DisplayResult
+      {workspaceHours}
+      largeWorkspaces={largeWorkspace}
+      {members}
+      standardWorkspaces={displayStandard}
+    />
   </div>
 </Card>

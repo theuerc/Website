@@ -1,7 +1,48 @@
 <script lang="ts">
   import LinkButton from "$lib/components/ui-library/link-button/link-button.svelte";
   export let members: number;
-  export let displayValue: number;
+  export let workspaceHours: number;
+  export let largeWorkspaces: number;
+  export let standardWorkspaces: number;
+
+  const largeWorkspacePrice = 0.72;
+  const standardWorkspacePrice = 0.36;
+
+  $: monthlyHours = workspaceHours * 4.3;
+
+  $: calculatedPrice =
+    standardWorkspacePrice *
+      (standardWorkspaces / 100) *
+      members *
+      monthlyHours +
+    largeWorkspacePrice * (largeWorkspaces / 100) * members * monthlyHours;
+
+  $: usedCredits =
+    10 * monthlyHours * (standardWorkspaces / 100) +
+    20 * monthlyHours * (largeWorkspaces / 100);
+
+  $: displayValue = getResult(members, usedCredits, calculatedPrice);
+
+  const getResult = (
+    members: number,
+    usedCredits: number,
+    calculatedPrice: number
+  ) => {
+    switch (members) {
+      case 1:
+        if (usedCredits <= 500) {
+          return 0;
+        }
+        if (usedCredits <= 1000) {
+          return 9;
+        } else {
+          return 9 + (usedCredits - 1000) * 0.036;
+        }
+
+      default:
+        return calculatedPrice;
+    }
+  };
 </script>
 
 <div class="flex flex-col">

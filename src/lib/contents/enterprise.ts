@@ -18,17 +18,40 @@ export const exploreContents: ExploreSection = {
   useKumquatIllustration: false,
 };
 
-export const featureCards: Card[] = [
+export const featureCards: {
+  card: Card;
+  pill?: { text: string; variant: "pink" | "orange" | "gray" | "violet" };
+}[] = [
   {
-    title: "SaaS",
-    text: "Gitpod, managed in the cloud for you. Secure data storage in the cloud and minimal setup cost. Scale users as you need with full flexibility.",
-    icon: {
-      src: "/svg/icons/cloud.svg",
-      alt: "Cloud Icon",
+    card: {
+      title: "Multi-tenant",
+      text: "Use Gitpod in our secure cloud with minimal setup time and effort. Scale users as you need with full flexibility. Reduce operational overhead.",
+      icon: {
+        src: "/svg/icons/cloud.svg",
+        alt: "Cloud Icon",
+      },
+      link: {
+        href: "/contact/sales",
+        text: "Talk to sales",
+      },
     },
-    link: {
-      href: "/pricing",
-      text: "See pricing",
+  },
+  {
+    pill: {
+      text: "Early access",
+      variant: "pink",
+    },
+    card: {
+      title: "Single-tenant",
+      text: "In your cloud, get a dedicated, private instance of Gitpod managed by us. Set up VPC peering and private links to your dev resources. Best for large teams with high security and compliance requirements.",
+      icon: {
+        src: "/svg/icons/cloud.svg",
+        alt: "Cloud Icon",
+      },
+      link: {
+        href: "/contact/sales",
+        text: "Talk to sales",
+      },
     },
   },
 ];
