@@ -15,21 +15,13 @@ export const testimonials: Testimonial[] = [
     org: "@snpranav",
   },
   {
-    name: "dMLTquant",
-    avatar: "dmltquant.jpg",
+    name: "Daniel Maricic",
+    avatar: "wossio.jpg",
     text: `
-    I just want to say 🤯
-    <br /><br />
-    Dear @gitpod
-     where have you been all my life?!? 😉
-     <br />
-    Such an awesome project 👍 so easy to open a new dev environment right from an issue page 🤤
-    <br />
-    I have only started using @gitpod
-     + @fastdotai
-     #nbdev but I can already see a jump in my productivity 🤩
+    it has been 3 months since i started using and paying @gitpod as my default env (in browser), replacing WSL + vscode + docker. The benefits are huge! Disposable workspaces are the best feature.
+    Also @AnagolayNet, @IdiyanaleNet & @kelp_digital are developed with them exclusively
     `,
-    org: "@dMLTquant",
+    org: "@woss_io",
   },
   {
     name: "arryangga",
