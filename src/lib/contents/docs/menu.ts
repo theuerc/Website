@@ -217,6 +217,7 @@ export const MENU: MenuEntry[] = [
   ]),
   M("Gitpod CLI", "references/gitpod-cli"),
   M("Compatibility", "references/compatibility?user"),
+  M("Security FAQ", "references/security/faq"),
   // M("Custom Docker image", "references/gitpod-dockerfile"),
   // M("Architecture", "references/architecture"),
   M("Help", "help", true),
