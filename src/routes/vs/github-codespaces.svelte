@@ -19,6 +19,10 @@
   import Combined from "$lib/components/vs/combined.svelte";
   import VerticalFeature from "$lib/components/vertical-feature.svelte";
   import { carbonNeutralFeature } from "$lib/contents/home/features";
+  import SectionCommon from "$lib/components/section-common.svelte";
+  import { featureCards } from "$lib/contents/enterprise";
+  import CardSmall from "$lib/components/card/card-small.svelte";
+  import Pill from "$lib/components/pill.svelte";
 </script>
 
 <OpenGraph
@@ -78,3 +82,23 @@
     <VerticalFeature {verticalFeatureData} fullWidth={true} headingLevel="h2" />
   {/each}
 </Combined>
+
+<!-- svelte-ignore missing-declaration -->
+<SectionCommon title="Flexible Deployment">
+  <div
+    class="flex flex-wrap justify-center mt-small max-w-5xl mx-auto"
+    slot="content"
+  >
+    {#each featureCards as card}
+      <CardSmall class="m-macro px-xx-small relative" card={card.card}>
+        {#if card.pill}
+          <Pill
+            class="absolute right-x-small -top-2"
+            variant={card.pill.variant}
+            text={card.pill.text}
+          />
+        {/if}
+      </CardSmall>
+    {/each}
+  </div>
+</SectionCommon>

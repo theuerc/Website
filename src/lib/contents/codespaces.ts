@@ -2,6 +2,7 @@
 import awsSvelte from "$lib/components/svgs/aws.svelte";
 // @ts-ignore
 import githubMarkSvelte from "$lib/components/svgs/github-mark.svelte";
+import type { Card } from "$lib/types/card";
 import type { verticalFeature } from "$lib/types/feature";
 import type {
   FeatureTable,
@@ -220,3 +221,41 @@ export const codespacesComparison: FeatureTable = {
   toc: codespacesToc,
   columns: [gitpodColumns, codespacesColumn],
 };
+
+export const featureCards: {
+  card: Card;
+  pill?: { text: string; variant: "pink" | "orange" | "gray" | "violet" };
+}[] = [
+  {
+    card: {
+      title: "Gitpod.io",
+      text: "Use Gitpod in our secure cloud with minimal setup time and effort. Scale users as you need with full flexibility. Reduce operational overhead.",
+      icon: {
+        src: "/svg/icons/cloud.svg",
+        alt: "Cloud Icon",
+      },
+      link: {
+        href: "https://gitpod.io/workspaces/",
+        text: "Start for free",
+      },
+    },
+  },
+  {
+    pill: {
+      text: "Early access",
+      variant: "pink",
+    },
+    card: {
+      title: "Gitpod Dedicated",
+      text: "In your cloud, get a dedicated, private instance of Gitpod managed by us. Set up VPC peering and private links to your dev resources. Best for large teams with high security and compliance requirements.",
+      icon: {
+        src: "/svg/icons/cloud.svg",
+        alt: "Cloud Icon",
+      },
+      link: {
+        href: "/contact/sales",
+        text: "Talk to sales",
+      },
+    },
+  },
+];
