@@ -29,9 +29,14 @@
 
 <Section>
   <div class="mb-small md:mb-x-medium">
-    <h2 class="text-center h2 mb-macro md:!mb-micro">Cost estimator</h2>
+    <h2 id="cost-estimator" class="text-center h2 mb-macro md:!mb-micro">
+      Cost estimator
+    </h2>
     <p class="text-large text-center mx-auto">
       Get a cost estimate for your team’s usage of Gitpod with pay-as-you-go.
+    </p>
+    <p class="text-center mx-auto">
+      <a href="/docs/configure/billing">Learn more</a> about billing and credits.
     </p>
   </div>
   <Calculator />
