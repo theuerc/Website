@@ -9,8 +9,9 @@ title: Access Tokens
 
 # Access Tokens
 
-Access Tokens are secrets which allow you to interact with Gitpod through our APIs. When you use an Access Token, all actions done with the token
-will happen as if the Access Token creator performed them.
+> Access Tokens are currently in [Beta](/docs/help/public-roadmap/release-cycle) · [Send feedback](https://github.com/gitpod-io/gitpod/issues/14280).
+
+Access Tokens are secrets that allow you to interact with Gitpod through Gitpod APIs. When you use an Access Token, all actions performed with the token assume the same level of authorization of the Access Token user.
 
 ![Create Access Token](../../../static/images/docs/access-token-create.png)
 

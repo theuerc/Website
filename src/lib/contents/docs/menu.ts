@@ -58,7 +58,13 @@ export const MENU: MenuEntry[] = [
     M("Browser bookmarklet", "configure/user-settings/browser-bookmarklet"),
     M("Dotfiles", "configure/user-settings/dotfiles", false, []),
     M("SSH", "configure/user-settings/ssh"),
-    M("Access Tokens", "configure/user-settings/access-tokens"),
+    M(
+      "Access Tokens",
+      "configure/user-settings/access-tokens",
+      false,
+      [],
+      "beta"
+    ),
   ]),
 
   M("Projects", "configure/projects", false, [
@@ -171,6 +177,7 @@ export const MENU: MenuEntry[] = [
 
   M("References", "references", true),
   M(".gitpod.yml", "references/gitpod-yml"),
+  // M("Gitpod public API", "references/gitpod-public-api", false, [], "alpha"),
   M("IDEs & editors", "references/ides-and-editors", false, [
     M("VS Code Browser", "references/ides-and-editors/vscode-browser"),
     M(
