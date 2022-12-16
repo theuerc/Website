@@ -125,4 +125,11 @@ export const newsArticles: {
       alt: "Golem DE",
     },
   },
+  {
+    href: "https://www.forbes.com/sites/forbestechcouncil/2022/09/28/finally-software-creation-joins-the-cloud/?sh=385862a96a6b",
+    img: {
+      src: "/svg/about/forbes.svg",
+      alt: "Forbes Logo",
+    },
+  },
 ];
