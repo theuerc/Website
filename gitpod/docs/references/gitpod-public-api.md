@@ -21,7 +21,7 @@ To access the public API, you will need to pass an [Access Token](/docs/configur
 
 ### Go
 
-The following is an example of how to use the Go client library with the Public API for retrieving teams data. Replac the environment variable `PERSONAL_PAT` with your own personal access token, for example: `export PERSONAL_PAT="Bearer <your-personal-pat>"`
+The following is an example of how to use the Go client library with the Public API for retrieving teams data. Replace the environment variable `PERSONAL_PAT` with your own personal access token, for example: `export PERSONAL_PAT=<your-personal-pat>`
 
 ```go
 package main
@@ -44,7 +44,7 @@ func main() {
         return connect.UnaryFunc(func(ctx context.Context, req connect.AnyRequest) (connect.AnyResponse, error) {
             if req.Spec().IsClient {
                 // Send a token with client requests.
-                req.Header().Set("Authorization", os.Getenv("PERSONAL_PAT"))
+                req.Header().Set("Authorization", "Bearer " + os.Getenv("PERSONAL_PAT"))
             }
 
             return next(ctx, req)
