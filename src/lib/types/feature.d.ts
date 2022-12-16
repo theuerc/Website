@@ -17,8 +17,8 @@ export type Feature = {
     darkSrc?: string;
     src: string;
     alt: string;
-    height?: number;
-    width?: number;
+    height?: number | string;
+    width?: number | string;
     classNames?: string;
     styles?: string;
   };

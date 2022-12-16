@@ -126,6 +126,8 @@
             ? 'dark:hidden'
             : ''}"
           style={image.styles}
+          width={image.width || "100%"}
+          height={image.height || "100%"}
         />
         {#if image.darkSrc}
           <img
@@ -133,6 +135,8 @@
             alt={image.alt}
             class="{image.classNames} mx-auto hidden dark:block"
             style={image.styles}
+            width={image.width || "100%"}
+            height={image.height || "100%"}
           />
         {/if}
       {/if}

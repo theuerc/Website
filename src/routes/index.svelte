@@ -37,12 +37,20 @@
 
 <svelte:head>
   <!-- Preloading the IDE screenshots so that the IDE switcher works swiftly -->
-  <link rel="preload" as="image" href="/images/index/vscode-desktop.png" />
-  <link rel="preload" as="image" href="/images/index/vscode-browser.png" />
-  <link rel="preload" as="image" href="/images/index/goland.png" />
-  <link rel="preload" as="image" href="/images/index/pycharm.png" />
-  <link rel="preload" as="image" href="/images/index/phpstorm.png" />
-  <link rel="preload" as="image" href="/images/index/Intellij.png" />
+  <link rel="preload" as="image" href="/images/index/vscode-desktop.webp" />
+  <link rel="preload" as="image" href="/images/index/vscode-browser.webp" />
+  <link rel="preload" as="image" href="/images/index/Intellij.webp" />
+  <link rel="preload" as="image" href="/images/index/goland.webp" />
+  <link rel="preload" as="image" href="/images/index/pycharm.webp" />
+  <link rel="preload" as="image" href="/images/index/phpstorm.webp" />
+  <link rel="preload" as="image" href="/images/index/rubymine.webp" />
+  <link rel="preload" as="image" href="/images/index/vim.webp" />
+  <link rel="preload" as="image" href="/images/index/webstorm.webp" />
+  <link
+    rel="preload"
+    as="image"
+    href="/images/index/gitpod-browser-extension.webp"
+  />
 </svelte:head>
 
 <Hero />

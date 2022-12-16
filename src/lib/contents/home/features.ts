@@ -35,8 +35,10 @@ export const codeAnywhereFeature: Feature = {
   paragraph:
     "You no longer need an over-powered laptop to code, Gitpod works just as smoothly on a Chromebook or iPad. All you need is a browser. ",
   image: {
-    src: "/images/features/ipad.png",
+    src: "/images/features/ipad.webp",
     alt: "Gitpod Workspace on an iPad.",
+    width: "100%",
+    height: "100%",
   },
 };
 
