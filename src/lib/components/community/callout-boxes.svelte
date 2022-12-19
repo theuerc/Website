@@ -2,11 +2,11 @@
   import FeatureBoxes from "$lib/components/vs/feature-boxes.svelte";
   import Section from "$lib/components/section.svelte";
   import FeatureBox from "$lib/components/feature-box.svelte";
-  import { session } from "$app/stores";
+  import { page } from "$app/stores";
   import type { BlogPost } from "$lib/types/blog-post";
   import PostPreview from "$lib/components/blog/post-preview.svelte";
 
-  const post = $session.posts.find(
+  const post = $page.stuff.posts.find(
     (p: BlogPost) =>
       p.slug === "what-we-learned-growing-a-community-from-500-5000"
   );

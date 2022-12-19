@@ -1,10 +1,14 @@
 <script lang="ts" context="module">
   export const prerender = true;
 
-  export async function load({ session }) {
-    const posts = session.posts;
+  export const load: Load = async ({ fetch }) => {
+    const res = await fetch("/api/posts");
+    if (!res.ok) {
+      throw new Error(res.statusText);
+    }
+    const posts = await res.json();
     return { props: { posts } };
-  }
+  };
 </script>
 
 <script lang="ts">
@@ -13,6 +17,7 @@
   import PostPreview from "$lib/components/blog/post-preview.svelte";
   import Section from "$lib/components/section.svelte";
   import Header from "$lib/components/header.svelte";
+  import type { Load } from "@sveltejs/kit";
 
   export let posts: BlogPost[];
 </script>

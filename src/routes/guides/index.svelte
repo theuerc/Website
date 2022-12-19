@@ -1,10 +1,14 @@
 <script lang="ts" context="module">
   export const prerender = true;
 
-  export async function load({ session }) {
-    const guides = session.guides;
+  export const load: Load = async ({ fetch }) => {
+    const res = await fetch("/api/guides");
+    if (!res.ok) {
+      throw new Error(res.statusText);
+    }
+    const guides = await res.json();
     return { props: { guides } };
-  }
+  };
 </script>
 
 <script lang="ts">
@@ -12,6 +16,7 @@
   import PostPreview from "$lib/components/blog/post-preview.svelte";
   import Write from "$lib/components/guides/write.svelte";
   import Header from "$lib/components/header.svelte";
+  import type { Load } from "@sveltejs/kit";
 
   export let guides = [];
 </script>

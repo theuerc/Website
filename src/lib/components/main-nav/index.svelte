@@ -18,7 +18,6 @@
 
   let scroll: number;
 
-  // const isLoggedIn = $session.loggedIn;
   const isLoggedIn =
     typeof document === "undefined"
       ? false

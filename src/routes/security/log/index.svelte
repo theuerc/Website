@@ -1,9 +1,13 @@
 <script lang="ts" context="module">
   export const prerender = true;
-  export async function load({ session }) {
-    const securityLogs = session.securityLogs;
+  export const load: Load = async ({ fetch }) => {
+    const res = await fetch("/api/security-logs");
+    if (!res.ok) {
+      throw new Error(res.statusText);
+    }
+    const securityLogs = await res.json();
     return { props: { securityLogs } };
-  }
+  };
 </script>
 
 <script lang="ts">
@@ -12,6 +16,7 @@
   import Header from "$lib/components/header.svelte";
   import { formatDate } from "$lib/utils/helpers";
   import Wrapper from "$lib/components/changelog/wrapper.svelte";
+  import type { Load } from "@sveltejs/kit";
 
   export let securityLogs: SecurityLog[];
 </script>

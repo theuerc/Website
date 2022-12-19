@@ -1,5 +1,14 @@
-<script context="module">
+<script lang="ts" context="module">
   export const prerender = true;
+
+  export const load: Load = async ({ fetch }) => {
+    const res = await fetch("/api/posts");
+    if (!res.ok) {
+      throw new Error(res.statusText);
+    }
+    const posts = await res.json();
+    return { props: { allPosts: posts } };
+  };
 </script>
 
 <script lang="ts">
@@ -7,12 +16,13 @@
   import Body from "$lib/components/screencasts/body.svelte";
   import GetStartedSmall from "$lib/components/screencasts/get-started-small.svelte";
   import { demoScreencast } from "$lib/contents/screencasts";
-  import { session } from "$app/stores";
   import type { BlogPost } from "$lib/types/blog-post";
   import MoreArticles from "$lib/components/more-articles.svelte";
   import Explore from "$lib/components/explore.svelte";
+  import type { Load } from "@sveltejs/kit";
+  export let allPosts: any;
 
-  const posts = $session.posts.filter((p: BlogPost) =>
+  const posts = allPosts.filter((p: BlogPost) =>
     [
       "i-said-goodbye-to-local-development-and-so-can-you",
       "cloud-based-development-for-everyone",

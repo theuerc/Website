@@ -1,10 +1,5 @@
 <script lang="ts" context="module">
   export const prerender = true;
-
-  export async function load({ session }) {
-    const customers = session.customers;
-    return { props: { customers } };
-  }
 </script>
 
 <script lang="ts">
@@ -20,8 +15,9 @@
   import Section from "$lib/components/section.svelte";
   import { developFeature, quotes, benefits } from "$lib/contents/customers";
   import { testimonials } from "$lib/contents/home/index";
+  import { page } from "$app/stores";
 
-  export let customers: any;
+  let customers = $page.stuff.customers;
 </script>
 
 <style lang="postcss">

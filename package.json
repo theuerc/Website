@@ -47,8 +47,8 @@
   "devDependencies": {
     "@netlify/functions": "^1.0.0",
     "@octokit/plugin-paginate-graphql": "^2.0.1",
-    "@sveltejs/adapter-netlify": "1.0.0-next.58",
-    "@sveltejs/kit": "1.0.0-next.340",
+    "@sveltejs/adapter-netlify": "1.0.0-next.69",
+    "@sveltejs/kit": "1.0.0-next.341",
     "@tailwindcss/typography": "^0.5.0",
     "@testing-library/cypress": "^8.0.7",
     "@tsconfig/svelte": "^2.0.1",

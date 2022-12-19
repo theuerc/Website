@@ -7,6 +7,7 @@
     if (res.ok) {
       const data = await res.clone().json();
       return {
+        stuff: { posts: data.posts },
         props: {
           bannerData: data.banner,
           stars: data.stars,
