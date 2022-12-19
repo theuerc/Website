@@ -122,27 +122,6 @@ Returns a single workspace.
 |   `context`   |                                 `contextUrl` with details of git or prebuild or snapshot                                 | string |
 |   `status`    | will return Instance Id if currently assigned Instance Id to this workspace. Empty when there is no Instance Id assigned | string |
 
-### Create & start workspace
-
-Creates and starts a new workspace.
-
-**Usage**: `createAndStartWorkspace()`
-
-**Request Parameters**:
-
-|  Parameter   |                Description                |  Type  | Required |
-| :----------: | :---------------------------------------: | :----: | :------: |
-| `contextUrl` | Context Url - git or prebuild or snapshot | string |   true   |
-| `prebuildId` |      Prebuild Id, if prebuild exists      | string |  false   |
-
-<br>
-
-**Response Parameters**:
-
-|   Parameter   |                Description                |  Type  |
-| :-----------: | :---------------------------------------: | :----: |
-| `workspaceId` | Workspace Id of created/started workspace | string |
-
 ### Get owner token
 
 It returns the owner token of a workspace.
