@@ -2,6 +2,7 @@
   import QaTooltip from "$lib/components/qa-tooltip.svelte";
   import GreyDash from "$lib/components/svgs/grey-dash.svelte";
   import GreenTick from "$lib/components/svgs/green-tick.svelte";
+  import { isEurope } from "$lib/utils/helpers";
   export let definition: any;
 </script>
 
@@ -32,7 +33,9 @@
       </div>
     </div>
     {#if definition.text}
-      {@html definition.text}
+      {@html `${definition.isCurrency ? (isEurope() ? "€" : "$") : ""}${
+        definition.text
+      }`}
     {/if}
     {#if definition.availability}
       <GreenTick />

@@ -142,8 +142,8 @@
           <FooterLink href="/cookies">Cookie policy</FooterLink>
         </li>
         <li>
-          <FooterLink on:click={() => (isModalOpen = true)} href=""
-            >Cookie preferences</FooterLink
+          <button class="text-left" on:click={() => (isModalOpen = true)}
+            >Cookie preferences</button
           >
         </li>
       </Section>

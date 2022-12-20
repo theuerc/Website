@@ -3,6 +3,7 @@
   import LinkButton from "$lib/components/ui-library/link-button";
   import Card from "$lib/components/ui-library/card";
   import FeaturesList from "./features-list.svelte";
+  import { isEurope } from "$lib/utils/helpers";
   // import MostPopular from "./most-popular.svelte";
 
   export let pricing: Pricing;
@@ -17,6 +18,8 @@
     description,
     footnote,
     trackingName,
+    prependedPrice,
+    showCurrency,
     plans,
   } = pricing;
 </script>
@@ -58,7 +61,11 @@
     <!-- {#if spiced}
       <MostPopular class="mb-macro" />
     {/if} -->
-    <p class="text-grey mb-micro font-bold">{@html price}</p>
+    <p class="text-grey mb-micro font-bold">
+      {@html `${prependedPrice ? prependedPrice : ""} ${
+        showCurrency ? (isEurope() ? "€" : "$") : ""
+      }${price}`}
+    </p>
     <h2 class="h4 !mb-1">{title}</h2>
     {#if description}
       <p class="font-bold mb-x-small">{description}</p>{/if}

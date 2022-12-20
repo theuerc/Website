@@ -15,7 +15,9 @@ export const pricingPlans: Pricing[] = [
   {
     title: "Individual",
     description: "For your personal projects",
-    price: "From $0",
+    prependedPrice: "From",
+    showCurrency: true,
+    price: `0`,
     features: [
       "Use Gitpod for free with 500 credits/mo or up to 50 hours",
       "Upgrade to 1,000 credits for $9/mo and pay-as-you-go after that",
@@ -28,7 +30,9 @@ export const pricingPlans: Pricing[] = [
   {
     title: "Teams",
     description: "For teams of any size",
-    price: "From $0.36/hour",
+    prependedPrice: "From",
+    showCurrency: true,
+    price: `0.36/hour`,
     features: [
       "Create a team for free",
       "Manage team billing in one account",
@@ -92,7 +96,8 @@ export const indivdualPlanTableData: FeatureTableColumn = {
         },
         {
           term: "Base price",
-          text: "$0/ mo",
+          isCurrency: true,
+          text: "0/ mo",
         },
         {
           term: "Credits in base price",
@@ -205,7 +210,8 @@ export const indivdualPlanTableData: FeatureTableColumn = {
         },
         {
           term: "Base price",
-          text: "$9/ mo",
+          isCurrency: true,
+          text: "9/ mo",
         },
         {
           term: "Credits in base price",
@@ -213,7 +219,8 @@ export const indivdualPlanTableData: FeatureTableColumn = {
         },
         {
           term: "Additional credits",
-          text: "$0.036 / credit",
+          isCurrency: true,
+          text: "0.036 / credit",
         },
         {
           isHeadline: true,
@@ -332,7 +339,8 @@ export const teamPlanTableData: FeatureTableColumn = {
         },
         {
           term: "Base price",
-          text: "$0/ mo",
+          isCurrency: true,
+          text: "0/ mo",
         },
         {
           term: "Credits in base price",
@@ -340,7 +348,8 @@ export const teamPlanTableData: FeatureTableColumn = {
         },
         {
           term: "Additional credits",
-          text: "$0.036 / credit",
+          isCurrency: true,
+          text: "0.036 / credit",
         },
         {
           isHeadline: true,

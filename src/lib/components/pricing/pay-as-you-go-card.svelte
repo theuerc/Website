@@ -1,5 +1,7 @@
 <script lang="ts">
   import Card from "$lib/components/ui-library/card/card.svelte";
+  import { isEurope } from "../../utils/helpers";
+
   let className: string = "";
 
   export { className as class };
@@ -19,7 +21,7 @@
     <h2 class="h3 !mb-micro md:!mb-x-small">Flexible Pricing</h2>
     <p class="text-p-large">
       Gitpod usage is measured in credits. Larger workspace classes use credits
-      at a faster rate.<br /><br /> 1 credit = $0.036
+      at a faster rate.<br /><br /> 1 credit = {isEurope() ? "€" : "$"}0.036
     </p>
   </div>
   <div>
@@ -39,7 +41,9 @@
         >
         <td
           class="py-micro px-xx-small border-b border-r border-sand-dark dark:border-divider"
-          ><p class="font-bold text-important">$0.36/hour</p>
+          ><p class="font-bold text-important">
+            {isEurope() ? "€" : "$"}0.36/hour
+          </p>
           (10 credits)</td
         >
       </tr>
@@ -51,7 +55,9 @@
         >
         <td
           class="py-micro px-xx-small border-r border-b rounded-br-2xl dark:border-divider border-sand-dark"
-          ><p class="font-bold text-important">$0.72/hour</p>
+          ><p class="font-bold text-important">
+            {isEurope() ? "€" : "$"}0.72/hour
+          </p>
           (20 credits)</td
         >
       </tr>

@@ -1,5 +1,6 @@
 <script lang="ts">
   import LinkButton from "$lib/components/ui-library/link-button/link-button.svelte";
+  import { isEurope } from "$lib/utils/helpers";
   export let members: number;
   export let workspaceHours: number;
   export let largeWorkspaces: number;
@@ -51,7 +52,7 @@
   <p class="h2 mt-micro font-bold text-important !mb-small">
     {members >= 100
       ? "custom"
-      : `$${displayValue
+      : `${isEurope() ? "€" : "$"}${displayValue
           .toFixed(0)
           .toString()
           .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`}
