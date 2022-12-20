@@ -2,6 +2,7 @@
   import PricingBoxes from "./pricing-boxes.svelte";
   import type { Pricing } from "$lib/types/pricing";
   import Header from "../header.svelte";
+  import { isEurope } from "$lib/utils/helpers";
 
   export let pricingPlans: Pricing[] = [];
 </script>
@@ -22,9 +23,8 @@
     {#if pricingPlans.length > 0}
       <PricingBoxes {pricingPlans} />
       <p class="mt-micro text-center">
-        All prices excluding VAT. See complete <a
-          href="/pricing#compare-features">feature table</a
-        >.
+        All prices excluding VAT. 1 credit = {isEurope() ? "€" : "$"}0.036. See
+        complete <a href="/pricing#compare-features">feature table</a>.
       </p>
     {/if}
   </div>

@@ -57,7 +57,9 @@
           .toString()
           .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`}
   </p>
-  <p>Get started by creating your team. Only pay what you use.</p>
+  <p>
+    Get started by signing up and creating your team. Only pay what you use.
+  </p>
   <div class="mt-micro">
     {#if members >= 100}
       <p>

@@ -20,7 +20,7 @@ export const pricingPlans: Pricing[] = [
     price: `0`,
     features: [
       "Use Gitpod for free with 500 credits/mo or up to 50 hours",
-      "Upgrade to 1,000 credits for $9/mo and pay-as-you-go after that",
+      "Upgrade to 1,000 credits for $9/mo. Pay-as-you-go after that",
       "Workspace classes, prebuilds, and multi-IDE support",
     ],
     btnText: "Start for free",
@@ -601,7 +601,7 @@ export const pricingTableToc: FeatureTableToc[] = [
     data: {
       text: "Additional credits",
       tooltip:
-        "Credits are used to measure Gitpod usage. With pay-as-you-go, you pay for usage at a per-credit rate.",
+        "Credits are used to measure Gitpod usage. With flexible pricing, you pay for usage at a per-credit rate.",
     },
   },
   {

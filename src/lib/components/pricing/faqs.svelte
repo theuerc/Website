@@ -9,7 +9,7 @@
 <Section>
   <Faqs useStructuredData={false} headlineClasses="!mb-micro" faq={pricingFAQ}>
     <p slot="subheading" class="text-p-large mb-x-small text-center">
-      Find all the details of our pay-as-you-go pricing in our docs.
+      Find all the details of our flexible pricing in our docs.
     </p>
   </Faqs>
 

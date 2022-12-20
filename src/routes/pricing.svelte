@@ -30,10 +30,10 @@
 <Section>
   <div class="mb-small md:mb-x-medium">
     <h2 id="cost-estimator" class="text-center h2 mb-macro md:!mb-micro">
-      Cost estimator
+      Pricing calculator
     </h2>
     <p class="text-large text-center mx-auto">
-      Get a cost estimate for your team’s usage of Gitpod with pay-as-you-go.
+      Get a cost estimate for your individual or your team’s usage of Gitpod.
     </p>
     <p class="text-center mx-auto">
       <a href="/docs/configure/billing">Learn more</a> about billing and credits.
@@ -46,7 +46,7 @@
 <SectionCommon
   titleClassNames="!mb-micro"
   title="Compare features"
-  text="Start using Gitpod for free. Upgrade to pay-as-you-go and create a team in your dashboard any time."
+  text="Start using Gitpod for free. Upgrade to flexible pricing and create a team in your dashboard any time."
   textClassNames="mb-micro md:mb-small"
   isTitleADeepLink={true}
 >
