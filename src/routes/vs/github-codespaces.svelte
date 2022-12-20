@@ -13,8 +13,6 @@
     automationFirstFeature,
     codespacesComparison,
   } from "$lib/contents/codespaces";
-  import { openSourceFeature } from "$lib/contents/jetbrains-space";
-  import idesSvelte from "$lib/components/svgs/ides.svelte";
   import FeatureBoxes from "$lib/components/vs/feature-boxes.svelte";
   import Combined from "$lib/components/vs/combined.svelte";
   import VerticalFeature from "$lib/components/vertical-feature.svelte";
@@ -23,6 +21,7 @@
   import { featureCards } from "$lib/contents/enterprise";
   import CardSmall from "$lib/components/card/card-small.svelte";
   import Pill from "$lib/components/pill.svelte";
+  import opensourceSvelte from "$lib/components/svgs/opensource.svelte";
 </script>
 
 <OpenGraph
@@ -44,13 +43,30 @@
 <FeatureBoxes>
   <FeatureBox
     feature={{
-      title: "Your environment, your tools, your&nbsp;craft",
+      title: "Open Source",
       paragraph:
-        "Bring your IDE and connect your Git provider of choice. Gitpod natively integrates with a lot of tools and avoids single vendor lock-in. Give your team the power to choose their own tools with Gitpod.",
-      previewComponent: idesSvelte,
+        "Gitpod puts developers first and seemlessly integrates with your existing tools & workflows.",
+      featureList: [
+        "Contribute to Gitpod and build your own integrations and customizations",
+        '<p>Check Gitpod\'s <a href="https://github.com/gitpod-io/gitpod">open code base</a> and join our vibrant <a href="https://www.gitpod.io/community">developer community</a></p>',
+        "Work just as smoothly with GitHub, GitLab and Bitbucket",
+      ],
+      previewComponent: opensourceSvelte,
     }}
   />
-
+  <FeatureBox
+    feature={{
+      title: "Flexible Deployment",
+      paragraph:
+        "Gitpod is available as multi-tenant or single-tenant solution. For maximum flexibility and minimal setup time, use Gitpod in our secure cloud. Alternatively, get a dedicated, private instance of Gitpod managed by us. <a href='/pricing' target='_blank'>Compare Options</a>",
+      image: {
+        src: "/images/github-codespaces/gitpod-dedicated.webp",
+        darkSrc: "/images/github-codespaces/gitpod-dedicated.webp",
+        alt: "Gitpod Dedicated",
+        classNames: "rounded-5xl w-80 h-auto",
+      },
+    }}
+  />
   <FeatureBox
     feature={{
       title: "Resource Efficient",
@@ -77,7 +93,6 @@
 />
 
 <Combined>
-  <FeatureBox feature={openSourceFeature} slot="top" />
   {#each [automationFirstFeature, carbonNeutralFeature] as verticalFeatureData}
     <VerticalFeature {verticalFeatureData} fullWidth={true} headingLevel="h2" />
   {/each}

@@ -18,6 +18,13 @@ export const codespacesToc: FeatureTableToc[] = [
     },
   },
   {
+    type: "tooltip",
+    data: {
+      text: "Free Plan",
+      tooltip: "Hours included in free plan for standard workspace (4 cores)",
+    },
+  },
+  {
     type: "image",
     data: {
       text: "GitHub Integration",
@@ -86,6 +93,14 @@ export const codespacesToc: FeatureTableToc[] = [
       text: "Multi-IDE Support",
     },
   },
+  {
+    type: "tooltip",
+    data: {
+      text: "Private SaaS option",
+      tooltip:
+        "<a href='/dedicated' target='_blank'>Gitpod Dedicated</a> is a fully isolated, single-tenant deployment of Gitpod",
+    },
+  },
 ];
 
 export const gitpodColumns: FeatureTableColumn = {
@@ -103,6 +118,10 @@ export const gitpodColumns: FeatureTableColumn = {
         {
           term: "License",
           text: "Open Source",
+        },
+        {
+          term: "Free Plan",
+          text: "50h",
         },
         {
           term: "GitHub Integration",
@@ -142,6 +161,10 @@ export const gitpodColumns: FeatureTableColumn = {
         },
         {
           term: "Multi-IDE Support",
+          availability: true,
+        },
+        {
+          term: "Private SaaS option",
           availability: true,
         },
       ],
@@ -163,6 +186,10 @@ export const codespacesColumn: FeatureTableColumn = {
           text: "Proprietary",
         },
         {
+          term: "Free Plan",
+          text: "30h",
+        },
+        {
           term: "GitHub Integration",
           availability: true,
         },
@@ -202,6 +229,10 @@ export const codespacesColumn: FeatureTableColumn = {
           term: "Multi-IDE Support",
           availability: true,
         },
+        {
+          term: "Private SaaS option",
+          availability: false,
+        },
       ],
     },
   ],
@@ -212,8 +243,8 @@ export const automationFirstFeature: verticalFeature = {
   paragraph:
     "Simply add your build command into a .gitpod.yml file and let Gitpod do the heavy-lifting. Once you’ve experienced the freedom of ephemeral workspaces, you’ll never want to go back to long-lived manually-maintained environments.",
   moreButton: {
-    href: "https://gitpod.io/workspaces/",
-    text: "Try Now",
+    href: "https://www.gitpod.io/docs/introduction/learn-gitpod/gitpod-yaml",
+    text: "More on Gitpod YAML",
   },
 };
 

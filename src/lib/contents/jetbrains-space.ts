@@ -12,13 +12,13 @@ import type { Quote } from "$lib/types/quote";
 import Jetbrains from "$lib/components/svgs/brands/jetbrains.svelte";
 
 export const openSourceFeature = {
-  title: "Open-source",
+  title: "Open Source",
   paragraph:
-    "Gitpod puts developers' interest first and seemlessly integrates with your existing tools & workflows.",
+    "Gitpod puts developers first and seemlessly integrates with your existing tools & workflows.",
   featureList: [
     "Contribute to Gitpod and build your own integrations and customizations",
-    '<p>Check Gitpod\'s <a href="https://github.com/gitpod-io/gitpod">open code base</a> and follow our <a href="https://gitpod.io/roadmap">product roadmap</a></p>',
-    "Works just as smoothly with GitHub, GitLab and Bitbucket",
+    '<p>Check Gitpod\'s <a href="https://github.com/gitpod-io/gitpod">open code base</a> and join our vibrant <a href="https://www.gitpod.io/community">developer community</a></p>',
+    "Work just as smoothly with GitHub, GitLab and Bitbucket",
   ],
   previewComponent: opensourceSvelte,
 };
