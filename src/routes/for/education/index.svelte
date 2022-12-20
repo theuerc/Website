@@ -1,12 +1,8 @@
 <script lang="ts" context="module">
   export const prerender = true;
 
-  export const load: Load = async ({ fetch }) => {
-    const res = await fetch("/api/education-customers");
-    if (!res.ok) {
-      throw new Error(res.statusText);
-    }
-    const customers = await res.json();
+  export const load: Load = async () => {
+    const customers = await getEducationCustomers();
     return { props: { customers } };
   };
 </script>
@@ -30,6 +26,7 @@
   } from "$lib/contents/education";
   import { integrateFeatures } from "$lib/contents/enterprise";
   import type { Load } from "@sveltejs/kit";
+  import { getEducationCustomers } from "$lib/utils/content";
 
   export let customers: any;
 </script>

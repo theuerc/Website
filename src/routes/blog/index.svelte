@@ -1,12 +1,8 @@
 <script lang="ts" context="module">
   export const prerender = true;
 
-  export const load: Load = async ({ fetch }) => {
-    const res = await fetch("/api/posts");
-    if (!res.ok) {
-      throw new Error(res.statusText);
-    }
-    const posts = await res.json();
+  export const load: Load = async () => {
+    const posts = await getPosts();
     return { props: { posts } };
   };
 </script>
@@ -18,6 +14,7 @@
   import Section from "$lib/components/section.svelte";
   import Header from "$lib/components/header.svelte";
   import type { Load } from "@sveltejs/kit";
+  import { getPosts } from "$lib/utils/content";
 
   export let posts: BlogPost[];
 </script>

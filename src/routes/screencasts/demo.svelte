@@ -1,12 +1,8 @@
 <script lang="ts" context="module">
   export const prerender = true;
 
-  export const load: Load = async ({ fetch }) => {
-    const res = await fetch("/api/posts");
-    if (!res.ok) {
-      throw new Error(res.statusText);
-    }
-    const posts = await res.json();
+  export const load: Load = async () => {
+    const posts = await getPosts();
     return { props: { allPosts: posts } };
   };
 </script>
@@ -20,6 +16,7 @@
   import MoreArticles from "$lib/components/more-articles.svelte";
   import Explore from "$lib/components/explore.svelte";
   import type { Load } from "@sveltejs/kit";
+  import { getPosts } from "$lib/utils/content";
   export let allPosts: any;
 
   const posts = allPosts.filter((p: BlogPost) =>
