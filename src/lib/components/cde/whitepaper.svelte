@@ -7,8 +7,8 @@
 <Section class="flex items-center gap-small lg:gap-0 flex-wrap">
   <div class="w-full pr-x-small lg:w-1/2">
     <WhitepaperInfo
-      description="Curious why many of the largest tech companies are adopting CDEs? Our whitepaper explores a business perspective on CDEs and their benefits for engineering teams."
-      title="CDEs for large engineering orgs"
+      description="Curious why many of the largest tech companies are adopting CDEs? Our whitepaper describes 9 measurable benefits of CDEs that are relevant to engineering leaders who want to remove friction from their teams and increase security."
+      title="CDEs for enterprises"
       label="Whitepaper"
     />
   </div>

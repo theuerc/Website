@@ -27,6 +27,6 @@ export const Voices: Host[] = [
     },
     jobTitle: "Founder of GitHub",
     name: "Tom Preston-Werner",
-    text: "I am a power user of Gitpod myself and am convinced CDEs are on their way to change how the world writes software",
+    text: "CDEs are like perfectly configured, high powered developer laptops that you can use and discard as easily as sticky notes. One perfect laptop for every project you work on, so you can say goodbye to dependency collision issues between unrelated projects. <br/> <br /> CDEs are especially powerful in complex environments at large companies. At GitHub we built our own complex setup script to provision developer laptops, always aiming to get new employees committing to main on their first day. It still didn't work 100%. CDEs make it easy.",
   },
 ];

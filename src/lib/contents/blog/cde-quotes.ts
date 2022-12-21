@@ -5,7 +5,7 @@ export const Voices: Testimonial[] = [
     avatar: "tom-preston-werner.jpg",
     role: "Co-founder of GitHub",
     name: "Tom Preston-Werner",
-    text: "“I am a power user of the platform myself, and am convinced Gitpod is on its way to change how the world writes software. The direction of travel is set and a massive company will be built around Cloud Development Environments (CDEs). <br/><br/>I am excited to join their board and help build a company that will have a similar impact on the lives of developers as GitHub did.”",
+    text: "“CDEs are like perfectly configured, high powered developer laptops that you can use and discard as easily as sticky notes. One perfect laptop for every project you work on, so you can say goodbye to dependency collision issues between unrelated projects. <br/> <br /> CDEs are especially powerful in complex environments at large companies. At GitHub we built our own complex setup script to provision developer laptops, always aiming to get new employees committing to main on their first day. It still didn't work 100%. CDEs make it easy.”",
   },
   {
     avatar: "kent-beck.jpg",
