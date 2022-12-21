@@ -69,9 +69,15 @@
       <LinkButton variant="primary" size="large" href="/contact/sales">
         Talk to Sales
       </LinkButton>
+    {:else if members === 1}
+      <LinkButton size="large" variant="primary" href="https://gitpod.io/login"
+        >Start for free</LinkButton
+      >
     {:else}
-      <LinkButton href="#" variant="primary" size="large"
-        >Create team for free</LinkButton
+      <LinkButton
+        href="https://gitpod.io/teams/new"
+        variant="primary"
+        size="large">Create team for free</LinkButton
       >
     {/if}
   </div>

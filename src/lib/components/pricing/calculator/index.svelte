@@ -2,6 +2,7 @@
   import Range from "$lib/components/ui-library/range.svelte";
   import Card from "$lib/components/ui-library/card/card.svelte";
   import DisplayResult from "./display-result.svelte";
+  import Tooltip from "../../tooltip.svelte";
 
   let members: number = 1;
   let workspaceHours = 1;
@@ -40,13 +41,17 @@
       </div>
       <div class="relative">
         <label class="h5 font-bold mb-small text-important" for="hours"
-          >Weekly hours/member</label
+          ><Tooltip
+            class="flex items-center gap-macro"
+            title="weekly hours worked with Gitpod per team member"
+            >Weekly hours/member</Tooltip
+          ></label
         >
         <Range
           id="hours"
           class="w-full"
           min={1}
-          max={40}
+          max={60}
           bind:value={workspaceHours}
           step={1}
         />
@@ -56,16 +61,16 @@
         </p>
       </div>
       <div class="relative">
-        <label class="h5 text-important mb-small font-bold" for="members"
+        <label class="h5 text-important mb-small font-bold" for="load"
           >Workspace load</label
         >
         <Range
-          id="members"
+          id="load"
           class="w-full"
           min={0}
           max={100}
           bind:value={largeWorkspace}
-          step={1}
+          step={10}
         />
         <div class="absolute text-right right-0 top-4">
           <p class="text-grey font-bold text-h6">

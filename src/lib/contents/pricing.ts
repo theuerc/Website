@@ -178,9 +178,17 @@ export const indivdualPlanTableData: FeatureTableColumn = {
           availability: false,
         },
         {
+          term: "Run in your cloud",
+          availability: false,
+        },
+        {
           isHeadline: true,
           term: "ADMIN & SUPPORT",
           text: "",
+        },
+        {
+          term: "Single sign-on",
+          availability: false,
         },
         {
           term: "Centralized team billing",
@@ -263,6 +271,7 @@ export const indivdualPlanTableData: FeatureTableColumn = {
           term: "Multi-IDE support",
           availability: true,
         },
+
         {
           term: "GitLab",
           availability: true,
@@ -293,9 +302,17 @@ export const indivdualPlanTableData: FeatureTableColumn = {
           availability: false,
         },
         {
+          term: "Run in your cloud",
+          availability: false,
+        },
+        {
           isHeadline: true,
           term: "ADMIN & SUPPORT",
           text: "",
+        },
+        {
+          term: "Single sign-on",
+          availability: false,
         },
         {
           term: "Centralized team billing",
@@ -422,9 +439,17 @@ export const teamPlanTableData: FeatureTableColumn = {
           availability: false,
         },
         {
+          term: "Run in your cloud",
+          availability: false,
+        },
+        {
           isHeadline: true,
           term: "ADMIN & SUPPORT",
           text: "",
+        },
+        {
+          term: "Single sign-on",
+          availability: false,
         },
         {
           term: "Centralized team billing",
@@ -547,9 +572,17 @@ export const dedicatedPlanTableData: FeatureTableColumn = {
           availability: true,
         },
         {
+          term: "Run in your cloud",
+          availability: true,
+        },
+        {
           isHeadline: true,
           term: "ADMIN & SUPPORT",
           text: "",
+        },
+        {
+          term: "Single sign-on",
+          text: "Coming soon",
         },
         {
           term: "Centralized team billing",
@@ -734,8 +767,23 @@ export const pricingTableToc: FeatureTableToc[] = [
   },
   {
     type: "tooltip",
+    data: {
+      text: "Run in your cloud",
+      tooltip:
+        "Run a fully isolated instance of <a href='/dedicated'>Gitpod Dedicated</a> in your cloud account or ours",
+    },
+  },
+  {
+    type: "tooltip",
     isHeadline: true,
     headlineText: "ADMIN & SUPPORT",
+  },
+  {
+    type: "tooltip",
+    data: {
+      text: "SSO",
+      tooltip: "Single sign-on",
+    },
   },
   {
     type: "text",
