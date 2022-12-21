@@ -33,6 +33,17 @@
     <LinkButton variant="primary" size="medium" href="#program"
       >View security program</LinkButton
     >
+    <LinkButton
+      variant="primary"
+      size="medium"
+      href="/docs/references/security/faq">View security faq</LinkButton
+    >
+    <LinkButton
+      variant="primary"
+      size="medium"
+      href="https://app.safebase.io/portal/71ccd717-aa2d-4a1e-942e-c768d37e9e0c/preview?product=default"
+      >View trust center</LinkButton
+    >
   </div>
 </Header>
 

@@ -19,7 +19,7 @@ export const programFeatures: Card[] = [
   },
   {
     title: "Environment Isolation",
-    text: '<p>Each Gitpod workspace or prebuild runs on a secured single-use container providing fast startup times without compromising on security</p><p>We create separate user, PID, mount and network namespaces for each Gitpod workspace, and establish an unprivileged node user as root within that user namespace. More details on the technical approach can be found <a href="https://www.youtube.com/watch?v=iYLCHQgj0fE" target="_blank" rel="noreferrer">in this talk</a> from our Head of Engineering as well as in this <a href="https://kinvolk.io/blog/2020/12/improving-kubernetes-and-container-security-with-user-namespaces/"  rel="noreferrer" target="_blank">blog post</a> from the container security experts at Kinvolk who stress-tested our namespace layering implementation.</p>',
+    text: '<p>Each Gitpod workspace or prebuild runs on a secured single-use container providing fast startup times without compromising on security</p><p>We create separate user, PID, mount and network namespaces for each Gitpod workspace, and establish an unprivileged node user as root within that user namespace. More details on the technical approach can be found <a href="https://www.youtube.com/watch?v=iYLCHQgj0fE" target="_blank" rel="noreferrer">in this talk</a> as well as in this <a href="https://kinvolk.io/blog/2020/12/improving-kubernetes-and-container-security-with-user-namespaces/"  rel="noreferrer" target="_blank">blog post</a> from the container security experts at Kinvolk who stress-tested our namespace layering implementation.</p>',
     icon: {
       src: "/svg/icons/secure.svg",
       alt: "Chat",
@@ -84,6 +84,6 @@ export const assessmentAction: Action = {
     "You can find our CAIQ self-asssessment inside the Cloud Security Alliance STAR Registry. A framework dedicated to providing an industry-accepted way of transperency around cloud security controls.",
   link: {
     href: "https://cloudsecurityalliance.org/star/registry/gitpod-gmbh",
-    text: "View our Self-Assessment",
+    text: "View our CAIQ self-assessment",
   },
 };
