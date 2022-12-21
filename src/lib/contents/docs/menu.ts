@@ -58,13 +58,13 @@ export const MENU: MenuEntry[] = [
     M("Browser bookmarklet", "configure/user-settings/browser-bookmarklet"),
     M("Dotfiles", "configure/user-settings/dotfiles", false, []),
     M("SSH", "configure/user-settings/ssh"),
-    M(
-      "Access Tokens",
-      "configure/user-settings/access-tokens",
-      false,
-      [],
-      "beta"
-    ),
+    // M(
+    //   "Access Tokens",
+    //   "configure/user-settings/access-tokens",
+    //   false,
+    //   [],
+    //   "beta"
+    // ),
   ]),
 
   M("Projects", "configure/projects", false, [
