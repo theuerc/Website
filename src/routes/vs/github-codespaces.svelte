@@ -99,7 +99,7 @@
 </Combined>
 
 <!-- svelte-ignore missing-declaration -->
-<SectionCommon title="Flexible Deployment">
+<SectionCommon title="Your cloud or our cloud">
   <div
     class="flex flex-wrap justify-center mt-small max-w-5xl mx-auto"
     slot="content"

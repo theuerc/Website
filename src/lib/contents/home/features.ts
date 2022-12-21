@@ -120,8 +120,8 @@ export const secondaryFeatures: Card[] = [
     icon: {
       src: "/svg/icons/cloud.svg",
     },
-    title: "SaaS",
-    text: "Use our SaaS solution running on the carbon neutral Google Cloud Platform.",
+    title: "Flexible deployment",
+    text: "Run Gitpod in your cloud or ours. With Gitpod Dedicated, you can meet high compliance and security requirements. Best for teams of 100+. <a href='/dedicated'>More about Gitpod Dedicated</a>",
   },
   {
     icon: {

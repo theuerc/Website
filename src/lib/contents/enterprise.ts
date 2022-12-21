@@ -24,7 +24,7 @@ export const featureCards: {
 }[] = [
   {
     card: {
-      title: "Multi-tenant",
+      title: "Gitpod.io",
       text: "Use Gitpod in our secure cloud with minimal setup time and effort. Scale users as you need with full flexibility. Reduce operational overhead.",
       icon: {
         src: "/svg/icons/cloud.svg",
@@ -42,8 +42,8 @@ export const featureCards: {
       variant: "pink",
     },
     card: {
-      title: "Single-tenant",
-      text: "In your cloud, get a dedicated, private instance of Gitpod managed by us. Set up VPC peering and private links to your dev resources. Best for large teams with high security and compliance requirements.",
+      title: "Gitpod Dedicated",
+      text: "In your cloud or ours, run a private instance of Gitpod managed by us. Meet high security and compliance requirements while leveraging the ease of cloud development.",
       icon: {
         src: "/svg/icons/cloud.svg",
         alt: "Cloud Icon",

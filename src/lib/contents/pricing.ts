@@ -47,7 +47,7 @@ export const pricingPlans: Pricing[] = [
     price: "Custom",
     description: "For teams with high security and support needs",
     features: [
-      "Deployment options: multi-tenant, single-tenant, and managed cloud",
+      "Deployment options: run Gitpod in your cloud or ours",
       "VPC peering and private links to your dev resources",
       "SLA and premium support",
     ],
