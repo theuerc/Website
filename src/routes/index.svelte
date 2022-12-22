@@ -28,10 +28,10 @@
 <OpenGraph
   data={{
     description:
-      "Gitpod is an open-source developer platform for remote development. Accelerate your teams developer experience, remote collaboration and security - to ship new products faster and more securely.",
+      "Gitpod is a cloud development environment for teams to efficiently and securely develop software. Improve your team's developer experience by coding in a CDE.",
     title: "Gitpod: Always ready to code.",
     keywords:
-      "cloud dev environment, remote development, open-source, integration, coding, developer experience, automation",
+      "cloud dev environment, cde, remote development, open-source, integration, coding, developer experience, automation",
   }}
 />
 
