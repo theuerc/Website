@@ -260,6 +260,24 @@ module.exports = {
 
 If you want to use private packages from npm or yarn on Gitpod, you can use the [`NPM_TOKEN`](https://docs.npmjs.com/creating-and-viewing-access-tokens) environment variable. You can set it in your [Gitpod user settings](/docs/configure/projects/environment-variables#using-the-account-settings).
 
+## Debug your JavaScript application in Gitpod
+
+### Debugging JavaScript applications in VS Code
+
+To debug your application, you can use the [VS Code Browser](/docs/references/ides-and-editors/vscode-browser) or [VS Code Desktop](/docs/references/ides-and-editors/vscode) IDE. You can start debugging by clicking the `Debug` button in the IDE's status bar or by pressing `F5` or following the steps below:
+
+![Debugger Option in Gitpod VS Code](.../../../static/images/docs/debugger-option-vscode.webp)
+
+_You Can follow [this official blog](https://code.visualstudio.com/docs/editor/debugging) for more._
+
+### Debugging JavaScript applications in JetBrains IDE (WebStorm)
+
+To debug your application, you can use the [WebStorm](/docs/references/ides-and-editors/webstorm) IDE. You can start debugging by clicking the `Add Confiurations` button in the IDE's top status bar.
+
+![Debugger Option in Gitpod WebStorm](.../../../static/images/docs/debugger-option-webstorm.webp)
+
+_You Can follow [this official blog](https://blog.jetbrains.com/webstorm/2018/01/how-to-debug-with-webstorm/) for more._
+
 ## Recommended Reading
 
 - [Build Projects in a Gitpod Ephemeral Dev Environment — The Ultimate Guide](/guides/guide-ephemeral-dev-environment-on-gitpod)
