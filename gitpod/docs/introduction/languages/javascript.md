@@ -272,11 +272,21 @@ _You Can follow [this official blog](https://code.visualstudio.com/docs/editor/d
 
 ### Debugging JavaScript applications in JetBrains IDE (WebStorm)
 
-To debug your application, you can use the [WebStorm](/docs/references/ides-and-editors/webstorm) IDE. You can start debugging by clicking the `Add Confiurations` button in the IDE's top status bar.
+To debug your application, you can use the [WebStorm](/docs/references/ides-and-editors/webstorm) IDE. You can start debugging by clicking the `Add Configurations` button in the IDE's top status bar.
 
 ![Debugger Option in Gitpod WebStorm](.../../../static/images/docs/debugger-option-webstorm.webp)
 
 _You Can follow [this official blog](https://blog.jetbrains.com/webstorm/2018/01/how-to-debug-with-webstorm/) for more._
+
+## Example Repositories
+
+Here are a few JavaScript/TypeScript example projects that are automated with Gitpod:
+
+|                          Repository                          |                                       Description                                       |                                                              Try it                                                               |
+| :----------------------------------------------------------: | :-------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------: |
+|    [Tesseract.js](https://github.com/naptha/tesseract.js)    |                     Pure JavaScript OCR for more than 100 Languages                     |    [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/naptha/tesseract.js)    |
+| [freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | [freeCodeCamp.org](https://www.freecodecamp.org/)'s open source codebase and curriculum | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/freeCodeCamp/freeCodeCamp) |
+|     [Mozilla PDF.js](https://github.com/mozilla/pdf.js)      |                     PDF.js is a PDF viewer that is built with HTML5                     |      [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/mozilla/pdf.js)       |
 
 ## Recommended Reading
 
