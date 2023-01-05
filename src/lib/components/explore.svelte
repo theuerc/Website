@@ -9,7 +9,7 @@
 
   const {
     title = "Get Started <span>for&nbsp;Free</span>",
-    description = "Spin up fresh, automated dev environments for each task, in the cloud, in seconds.",
+    description = " for each task, fully automated, in secoSpin up fresh cloud development environmentsnds.",
     note = "",
     link = {
       text: "Try now",

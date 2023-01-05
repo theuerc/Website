@@ -13,7 +13,7 @@ import { jetbrainsQuote } from "./jetbrains-space";
 export const exploreContents: ExploreSection = {
   title: "Get demo",
   description:
-    "Spin up fresh, automated dev environments for each task, in the cloud, in seconds",
+    "Spin up fresh cloud development environments for each task, in the cloud, in seconds",
   link: { text: "Contact sales", href: "/contact/sales" },
   useKumquatIllustration: false,
 };
