@@ -45,12 +45,12 @@ export const featureCards: {
       title: "Gitpod Dedicated",
       text: "In your cloud or ours, run a private instance of Gitpod managed by us. Meet high security and compliance requirements while leveraging the ease of cloud development.",
       icon: {
-        src: "/svg/icons/cloud.svg",
+        src: "/svg/icons/secure.svg",
         alt: "Cloud Icon",
       },
       link: {
-        href: "/contact/sales",
-        text: "Talk to sales",
+        href: "/dedicated",
+        text: "Request early access",
       },
     },
   },
