@@ -28,6 +28,11 @@ You can override the default (Standard) workspace class in the [Gitpod project](
 
 ## FAQs
 
+### [How to select Large workspace type for extended storage and CPU](https://discord.com/channels/816244985187008514/1061902096389111849)
+<!-- DISCORD_BOT_FAQ - DO NOT REMOVE -->
+
+Create a team [project](/docs/configure/projects) on Gitpod, from the project settings you can select a large workspace.
+
 ### [Is it possible to build (android) AOSP source on Gitpod?](https://discord.com/channels/816244985187008514/1055454782908792843)
 <!-- DISCORD_BOT_FAQ - DO NOT REMOVE -->
 
