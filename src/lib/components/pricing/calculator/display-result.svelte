@@ -66,7 +66,11 @@
         For large teams of 100+, please contact sales to receive a custom quote.
       </p>
       <br />
-      <LinkButton variant="primary" size="large" href="/contact/sales">
+      <LinkButton
+        variant="primary"
+        size="large"
+        href="/contact/sales?subject=enterprise"
+      >
         Talk to Sales
       </LinkButton>
     {:else if members === 1}

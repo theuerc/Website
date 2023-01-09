@@ -14,7 +14,7 @@ export const exploreContents: ExploreSection = {
   title: "Get demo",
   description:
     "Spin up fresh cloud development environments for each task, in the cloud, in seconds",
-  link: { text: "Contact sales", href: "/contact/sales" },
+  link: { text: "Contact sales", href: "/contact/sales?subject=enterprise" },
   useKumquatIllustration: false,
 };
 
@@ -31,7 +31,7 @@ export const featureCards: {
         alt: "Cloud Icon",
       },
       link: {
-        href: "/contact/sales",
+        href: "/contact/sales?subject=enterprise",
         text: "Talk to sales",
       },
     },
