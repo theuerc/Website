@@ -20,7 +20,9 @@ export const pricingPlans: Pricing[] = [
     price: `0`,
     features: [
       "Use Gitpod for free with 500 credits/mo or up to 50 hours",
-      "Upgrade to 1,000 credits for $9/mo. Pay-as-you-go after that",
+      `Upgrade to 1,000 credits for ${
+        isEurope() ? "€" : "$"
+      }9/mo. Pay-as-you-go after that`,
       "Workspace classes, prebuilds, and multi-IDE support",
     ],
     btnText: "Start for free",
