@@ -26,6 +26,7 @@ Available Commands:
   open                Opens a file in Gitpod
   ports               Interact with workspace ports.
   preview             Opens a URL in the IDE's preview
+  rebuild             Re-builds the workspace image (useful to debug a workspace custom image)
   snapshot            Take a snapshot of the current workspace
   stop                Stop current workspace
   sync-await          Awaits an event triggered using gp sync-done
@@ -306,4 +307,12 @@ Opens the Gitpod documentation in a new browser tab.
 
 ```sh
 gp docs
+```
+
+## rebuild
+
+Re-builds the workspace image, it's useful to validate and debug your [custom Workspace image](/docs/configure/workspaces/workspace-image#custom-base-image).
+
+```sh
+gp rebuild
 ```

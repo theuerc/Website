@@ -141,16 +141,13 @@ USER gitpod
 
 ### In the existing workspace
 
-Since the `.gitpod.Dockerfile` is a regular Dockerfile, you can build the image in your Gitpod workspace. This helps you catch syntax or build errors before you commit your changes.
+To test your custom `.gitpod.Dockerfile`, run the following command:
 
-To test your custom `.gitpod.Dockerfile`, run the following commands from the project root:
+```bash
+gp rebuild
+```
 
-1. `docker build -f .gitpod.Dockerfile -t gitpod-dockerfile-test .`
-1. `docker run -it gitpod-dockerfile-test bash`
-
-This builds a `gitpod-dockerfile-test` image and starts a new container based on that image. At this point, you are connected to the Docker container that will be available as the foundation for your Gitpod workspace. You can inspect the container and make sure the necessary tools & libraries are installed.
-
-To exit the container and return back to your Gitpod workspace, type `exit`.
+This builds a new image from your workspace, spins up a container and connects to it. Once connected, you can confirm all necessary tools and libraries are installed in the container. Finally, type `exit` to disconnect and return to your Gitpod workspace.
 
 ### As a new workspace
 
