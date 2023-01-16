@@ -13,6 +13,7 @@
 
   const closeBanner = () => {
     showBanner = false;
+    document.body.classList.remove("consent-is-shown");
     window.localStorage.setItem(storageKey, "true");
     if (clazz.includes("announcement-banner")) {
       displayBanner.set(false);
