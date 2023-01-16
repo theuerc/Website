@@ -18,6 +18,7 @@ Usage:
   gp [command]
 
 Available Commands:
+  docs                Open Gitpod Documentation in default browser
   env                 Controls user-defined, persistent environment variables.
   help                Help about any command
   info                Display workspace info, such as its ID, class, etc.
@@ -298,3 +299,11 @@ gp top
 - Use `gp top --json` to get the output in JSON format for programmatic use in (e.g. in shell scripts).
 
 - Use `gp top --no-color` to disable colors for the output. It also respects the [`NO_COLOR`](https://no-color.org/) & `GP_NO_COLOR` environment variable.
+
+## docs
+
+Opens the Gitpod documentation in a new browser tab.
+
+```sh
+gp docs
+```
