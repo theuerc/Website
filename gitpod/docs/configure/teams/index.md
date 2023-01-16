@@ -53,9 +53,9 @@ You can leave a team using the more actions button in the Members list while hov
 | Manage Team Members    | Yes   | No     |
 | Edit Team Settings     | Yes   | No     |
 | Manage Team Billing    | Yes   | No     |
-| Edit Project Settings  | Yes   | No     |
-| Edit Project Variables | Yes   | No     |
 | View Team Usage        | Yes   | No     |
+| Edit Project Settings  | Yes   | Yes    |
+| Edit Project Variables | Yes   | Yes    |
 | Invite Team Members    | Yes   | Yes    |
 | Add Projects           | Yes   | Yes    |
 | Remove Projects        | Yes   | Yes    |
