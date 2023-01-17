@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { EmailToType } from "$lib/api/api";
-
+  import validator from "validator";
   import InputsHalf from "$lib/components/contact/inputs-half.svelte";
   import Input from "$lib/components/ui-library/input/input.svelte";
   import type { Form } from "$lib/types/form";
@@ -147,7 +147,7 @@
               bind:element={formData.companyWebsite.el}
               on:change={() => {
                 formData.companyWebsite.valid =
-                  formData.companyWebsite.value &&
+                  validator.isURL(formData.companyWebsite.value) &&
                   formData.companyWebsite.el.checkValidity();
               }}
             />

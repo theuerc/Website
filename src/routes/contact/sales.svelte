@@ -3,6 +3,7 @@
 </script>
 
 <script lang="ts">
+  import validator from "validator";
   import type { Form } from "$lib/types/form";
   import type { Email, EmailToType } from "$lib/api/api";
   import OpenGraph from "$lib/components/open-graph.svelte";
@@ -352,13 +353,13 @@
                   <Input
                     label="Company website*"
                     hasError={isFormDirty && !formData.companyWebsite.valid}
-                    id="compnay-website"
+                    id="company-website"
                     name="website"
                     bind:value={formData.companyWebsite.value}
                     bind:element={formData.companyWebsite.el}
                     on:change={() => {
                       formData.companyWebsite.valid =
-                        formData.companyWebsite.value &&
+                        validator.isURL(formData.companyWebsite.value) &&
                         formData.companyWebsite.el.checkValidity();
                     }}
                     type="text"

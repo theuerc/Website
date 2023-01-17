@@ -5,6 +5,7 @@
 <script lang="ts">
   import type { Form } from "$lib/types/form";
   import type { Email } from "$lib/api/api";
+  import validator from "validator";
   import OpenGraph from "$lib/components/open-graph.svelte";
   import SubmissionSuccess from "$lib/components/submission-success.svelte";
   import { onMount, tick } from "svelte";
@@ -19,7 +20,7 @@
   import { scrollToElement } from "$lib/utils/helpers";
   import { page } from "$app/stores";
   import {
-    cloudPlatforms,
+    dedicatedCloudPlatforms,
     noOfEngineers as noOfEngineersArray,
   } from "$lib/contents/contact";
   import Select from "$lib/components/ui-library/select/select.svelte";
@@ -316,7 +317,7 @@
                         // @ts-ignore
                         e.target.validity.valid;
                     }}
-                    options={cloudPlatforms}
+                    options={dedicatedCloudPlatforms}
                     placeholder="Which cloud infrastructure do you use?"
                     class="max-w-md"
                   />
@@ -343,7 +344,7 @@
               <InputsHalf>
                 <div class:error={isFormDirty && !formData.company.valid}>
                   <Input
-                    label="Company*"
+                    label="Company website*"
                     hasError={isFormDirty && !formData.company.valid}
                     id="company"
                     name="company"
@@ -351,7 +352,7 @@
                     bind:element={formData.company.el}
                     on:change={() => {
                       formData.company.valid =
-                        formData.company.value &&
+                        validator.isURL(formData.company.value) &&
                         formData.company.el.checkValidity();
                     }}
                     type="text"

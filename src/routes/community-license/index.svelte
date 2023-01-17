@@ -4,6 +4,7 @@
 
 <script lang="ts">
   import type { Form } from "$lib/types/form";
+  import validator from "validator";
   import OpenGraph from "$lib/components/open-graph.svelte";
   import Textarea from "$lib/components/ui-library/textarea";
   import Input from "$lib/components/ui-library/input";
@@ -226,14 +227,15 @@
         <div>
           <Input
             hasError={isFormDirty && !formData.company.valid}
-            label="Company*"
+            label="Company website*"
             name="company"
             id="company"
             bind:value={formData.company.value}
             bind:element={formData.company.el}
             on:change={() => {
               formData.company.valid =
-                formData.company.value && formData.company.el.checkValidity();
+                validator.isURL(formData.company.value) &&
+                formData.company.el.checkValidity();
             }}
             type="text"
             autocomplete="organization"
