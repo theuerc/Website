@@ -127,19 +127,50 @@ Important notes:
 
 > **Warning:** Care should be taken with secrets. Allowing secrets to be accessed from workspaces will expose those secrets to anyone who can open the workspace.
 
-## Terminal-Specific Environment Variables
+## Task terminal-specific Environment Variables
 
-You can set environment variables for a Gitpod `task` terminal of VS Code by setting the `env` property within the task definition in your `.gitpod.yml`. Please note that such environment variables will be limited to the `task` terminal and is not globally set across the workspace.
+You can set environment variables for a Gitpod `task` terminal by setting the `env` property within the task definition in your `.gitpod.yml`. Please note that such environment variables will be limited to the `task` terminal and are not globally set across the workspace.
 
-For example:
+### Using the `env` keyword
 
 ```yaml
 tasks:
-  - name: Example of passing an environment variable to a command
+  - name: Example of setting an environment variable for a task terminal
     env:
       PRINT_ME: "Hello World!"
     command: echo "$PRINT_ME"
 ```
+
+Note: The values should be a static string or integer, you can't refer to an existing variable via `env` keyword.
+
+### Using the task SHELL
+
+```yaml
+tasks:
+  - name: Example of starting yarn with a custom environment variable set
+    command: |
+      # Example for referring to the existing system variables
+      export API_URL="$HOSTNAME"
+      
+      # Print out the environment variable
+      echo "$API_URL"
+      
+      yarn start
+
+  - name: Example of updating PATH environment variable inside a task shell
+    command: |
+      # Download and install `fzf` binary to ~/.local/bin/
+      mkdir -p ~/.local/bin
+      curl -sL "https://github.com/junegunn/fzf/releases/download/0.35.1/fzf-0.35.1-linux_amd64.tar.gz" | tar -C ~/.local/bin -xpz
+      
+      # Update PATH variable
+      export PATH="$HOME/.local/bin:$PATH"
+      
+      # Now `fzf` can be called without full path from the task shell
+      ls / | fzf
+```
+
+Note: You can use this method when you need to refer to other variables or want to use scripting to set them conditionally.
 
 See [`.gitpod.yml`](/docs/references/gitpod-yml#tasksnenv) for more details.
 
