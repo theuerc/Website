@@ -179,20 +179,7 @@
     };
 
     try {
-      const emailToSend =
-        toType === "community-license"
-          ? {
-              ...email,
-              data: {
-                company: formData.companyWebsite.value,
-                noOfEngineers: formData.noOfEngineers.value,
-                cloudInfrastructure: formData.cloudInfrastructure
-                  ? formData.cloudInfrastructure.value
-                  : "",
-                message: formData.message.value,
-              },
-            }
-          : email;
+      const emailToSend = email;
       const response = await fetch("/api/submit-form", {
         method: "POST",
         body: JSON.stringify(emailToSend),
@@ -209,18 +196,6 @@
       console.error(error);
     }
   };
-
-  $: {
-    if (
-      formData.noOfEngineers.value === "1-10" &&
-      (formData.selectedSubject.value === enterpriseSubject ||
-        formData.selectedSubject.value === demoSubject)
-    ) {
-      toType = "community-license";
-    } else {
-      toType = "sales";
-    }
-  }
 </script>
 
 <OpenGraph
@@ -250,12 +225,8 @@
       <div bind:this={sectionStart} data-analytics={`{"dnt":true}`}>
         {#if isEmailSent}
           <SubmissionSuccess
-            title={toType === "community-license"
-              ? "Check your email"
-              : "Thank you for your message"}
-            text={toType === "community-license"
-              ? "We've just sent you your license key via email. Enjoy!"
-              : "We received your message. Our team will take a look and get back to you as soon as possible."}
+            title="Thank you for your message"
+            text="We received your message. Our team will take a look and get back to you as soon as possible."
           />
         {:else}
           <form
@@ -443,11 +414,7 @@
                   isSubmissionInProgress}
                 isLoading={isSubmissionInProgress}
               >
-                {#if toType === "community-license"}
-                  Receive license
-                {:else}
-                  Contact sales
-                {/if}
+                Contact sales
               </Button>
               {#if isFormDirty && !isFormValid}
                 <legend class="text-xs text-error block mt-1 mb-2">
