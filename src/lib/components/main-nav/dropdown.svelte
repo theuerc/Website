@@ -74,7 +74,7 @@
 {#if shown}
   <div
     class:extended={$displayBanner}
-    class="fixed top-20 left-0 w-screen flex justify-center bg-bg border-y border-divider !m-0 shadow-md"
+    class="fixed top-20 left-0 w-screen flex justify-center bg-bg border-y border-divider !m-0 shadow-md dark:border-b-black dark:shadow-[0_10px_24px_0px_rgba(0,0,0,1)]"
     in:fade={{ duration: 300 }}
     bind:this={wrapperEl}
   >
