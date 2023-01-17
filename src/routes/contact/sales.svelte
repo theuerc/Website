@@ -386,7 +386,7 @@
                 <div>
                   <Input
                     label="Phone number"
-                    hasError={isFormDirty && !formData.companyWebsite.valid}
+                    hasError={isFormDirty && !formData.number.valid}
                     id="phone-number"
                     name="phone-number"
                     bind:value={formData.number.value}
