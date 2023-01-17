@@ -6,6 +6,7 @@ image: gitpod-for-startups.png
 slug: gitpod-for-startups
 subtitle:
 teaserImage: gitpod-for-startups.png
+tags: ["Company building", "Gitpod updates"]
 title: Introducing Gitpod for Startups
 ---
 

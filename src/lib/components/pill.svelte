@@ -2,7 +2,8 @@
   let clazz = "";
   export { clazz as class };
   export let text: string;
-  export let variant: "pink" | "orange" | "gray" | "violet" = "orange";
+  export let variant: "pink" | "orange" | "gray" | "violet" | "transparent" =
+    "orange";
   export let tight: boolean = false;
   $: capitalised = text.charAt(0).toUpperCase() + text.slice(1);
 </script>

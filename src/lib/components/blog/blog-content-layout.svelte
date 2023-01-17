@@ -3,7 +3,7 @@
   import PostContentLayout from "../post-content-layout.svelte";
   import FeedbackWidget from "../docs/feedback-widget.svelte";
   import DigestHeader from "./digest-header.svelte";
-  const { type } = $$restProps;
+  const { type, tags, title } = $$restProps;
 </script>
 
 <PostContentLayout
@@ -20,4 +20,4 @@
 {#if type === "digest"}
   <FeedbackWidget class="mt-large mb-huge" type="digests" />
 {/if}
-<RecentArticlesPreview />
+<RecentArticlesPreview {tags} {title} />

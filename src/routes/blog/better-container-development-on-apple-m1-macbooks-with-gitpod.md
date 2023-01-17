@@ -4,6 +4,7 @@ date: Thursday, 22 Dec 2022 16:00:00 UTC
 excerpt: CDEs like Gitpod enable efficient container development on Apple M1. If you use an ARM-based device like an M1 or M2 Mac, you can move the workload of your applications to run in an x86-based Linux container in the cloud.
 slug: better-container-development-on-apple-m1-macbooks-with-gitpod
 teaserImage: teaser.webp
+tags: ["Engineering"]
 image: teaser.webp
 title: Better container development on Apple M1 Macbooks with Gitpod
 ---

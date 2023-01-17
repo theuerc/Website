@@ -16,14 +16,14 @@
   export let badge: string = "";
   export let textWidth: string = "";
 
-  const generateURL = () => {
+  const generateURL = (post: BlogPost) => {
     if (post && post.href) return post.href;
     if (type === "education") return `/for/education/${post.slug}`;
     return `/${type}/${post.slug}`;
   };
 
-  const href = generateURL();
-  const target =
+  $: href = generateURL(post);
+  $: target =
     post && post.href && isAnExternalLink(post.href) ? "_blank" : undefined;
 </script>
 
@@ -33,12 +33,11 @@
   sveltekit:prefetch
   class:pointer-events-none={!availability}
   tabindex={!availability && -1}
-  class:bg-sand-dark={!isMostRecent}
-  class="flex flex-col max-w-sm lg:max-w-none text-left stroked group {!isMostRecent
+  class="flex flex-col max-w-sm lg:max-w-none text-left group {!isMostRecent
     ? 'bg-sand-dark dark:bg-card'
-    : ''} {layout === 'column'
+    : 'stroked'} {layout === 'column'
     ? ''
-    : 'lg:flex-row min-h-[200px] w-full'} rounded-xl bg-card transition-all duration-200 {availability &&
+    : 'lg:flex-row min-h-[200px] w-full'} rounded-xl transition-all duration-200 {availability &&
     'hover:shadow-normal focus:shadow-normal'}"
   data-analytics={`{"context":"grid","variant":"preview"}`}
 >
@@ -47,7 +46,7 @@
       <div
         role="img"
         aria-label={`${type === "blog" ? "Blog post" : "Guide"}: ${post.title}`}
-        class="object-cover m-auto overflow-hidden rounded-t-xl bg-center bg-cover w-full {teaserHeightClass} {layout ===
+        class="object-coverm-auto overflow-hidden rounded-t-xl bg-center bg-cover w-full {teaserHeightClass} {layout ===
         'column'
           ? ''
           : 'lg:rounded-l-xl aspect-square lg:rounded-tr-none lg:w-60 lg:h-full'}"
@@ -65,22 +64,35 @@
       : 'flex-wrap gap-y-micro w-full gap-x-small'} flex lg:justify-between p-xx-small"
   >
     <div class="{textWidth ? textWidth : 'max-w-3xl'} ">
-      {#if badge}
-        <Pill class="mb-micro" text={badge} variant="orange" />
-      {/if}
+      <div class="flex gap-macro {badge || post.tags ? 'mb-micro' : ''}">
+        {#if badge}
+          <Pill text={badge} variant="orange" />
+        {/if}
+        {#if post.tags}
+          {#each post.tags as tag}
+            <Pill
+              class="!text-important {isMostRecent
+                ? ''
+                : 'bg-sand-light dark:bg-light-black'}"
+              variant={isMostRecent ? "gray" : "transparent"}
+              text={tag}
+            />
+          {/each}
+        {/if}
+      </div>
       {#if !availability}
         <Pill text="soon" variant="pink" />
       {/if}
       <div class:mt-micro={!availability}>
         {#if headlineOrder === "h3"}
           <h3
-            class="text-h4 text-important group-focus:underline group-hover:underline"
+            class="text-h4 text-important transition-all duration-200 delay-[50ms] decoration-transparent group-focus:underline group-hover:underline"
           >
             {post.title}
           </h3>
         {:else}
           <h2
-            class="text-h4 text-important group-focus:underline group-hover:underline"
+            class="text-h4 text-important transition-all duration-200 delay-[50ms] decoration-transparent group-focus:underline group-hover:underline"
           >
             {post.title}
           </h2>
@@ -88,7 +100,7 @@
       </div>
       <p>{post.excerpt}</p>
     </div>
-    <p>
+    <p class="mt-micro md:mt-x-small">
       <span>
         {#if post.author}
           <Avatars

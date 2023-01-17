@@ -6,6 +6,7 @@ image: teaser.jpg
 slug: next-chapter-for-gitpod
 subtitle:
 teaserImage: teaser.jpg
+tags: ["Company building"]
 title: Next Chapter for Gitpod
 ---
 

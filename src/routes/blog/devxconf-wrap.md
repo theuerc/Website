@@ -6,6 +6,7 @@ image: teaser.png
 slug: devxconf-wrap
 subtitle:
 teaserImage: teaser.png
+tags: ["Company building"]
 title: DevX Conf wrap & distributing USD 10k of open-source funding
 ---
 

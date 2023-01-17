@@ -7,6 +7,7 @@ slug: devx-with-chris
 subtitle:
 teaserImage: teaser.jpg
 title: DevX Digest 10 - A look at DevX with Chris Weichel
+tags: ["Developer experience"]
 type: digest
 ---
 

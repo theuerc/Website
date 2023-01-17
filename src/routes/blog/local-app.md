@@ -5,6 +5,7 @@ excerpt: While Gitpod can seamlessly integrate into your workflow in the vast ma
 image: header-desktop.png
 slug: local-app
 subtitle:
+tags: ["Engineering"]
 teaserImage: header-desktop.png
 title: Gitpod Local Companion - localhost is going remote
 ---

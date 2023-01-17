@@ -4,6 +4,7 @@ date: Mon Nov 19 2018 15:39:56 GMT+0000 (UTC)
 excerpt: Imagine that only a decade ago system administrators deployed, configured, and maintained software systems manually.
 image: dev-env-gilbert.png
 slug: dev-env-as-code
+tags: ["Engineering"]
 subtitle: How to streamline developer onboarding
 title: Dev environments as code
 ---

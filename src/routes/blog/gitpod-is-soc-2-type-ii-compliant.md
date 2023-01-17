@@ -5,6 +5,7 @@ excerpt: We are delighted to announce that Gitpod is officially SOC 2 Type II co
 image: teaser.webp
 slug: gitpod-is-soc-2-type-ii-compliant
 teaserImage: teaser.webp
+tags: ["Gitpod updates", "Company building"]
 title: Gitpod is SOC 2 Type II compliant
 ---
 

@@ -4,6 +4,7 @@ date: Mon Aug 30 2021 08:08:08 GMT+0000 (UTC)
 excerpt: GitLab now has a Gitpod button on MR pages
 image: gitlab-header.png
 slug: gitlab-mr-gitpod-integration
+tags: ["Gitpod updates"]
 subtitle: Launch Gitpod workspace from GitLab MR pages with one click
 title: New Gitpod Button has landed on GitLab Merge Request Pages
 ---

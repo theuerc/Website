@@ -6,6 +6,7 @@ slug: gitpod-for-opensource
 subtitle:
 teaserImage: teaser.jpg
 image: teaser.jpg
+tags: ["Company building"]
 title: Introducing Gitpod for Open Source
 ---
 

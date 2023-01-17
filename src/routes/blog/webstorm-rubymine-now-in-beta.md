@@ -6,6 +6,7 @@ image: webstorm-rubymine-announcement-gitpod.webp
 slug: webstorm-rubymine-now-in-beta
 subtitle: As of today you can now use WebStorm and RubyMine to edit code in Gitpod! Get started by updating your user preferences to WebStorm or RubyMine and starting a new Gitpod workspace!
 teaserImage: webstorm-rubymine-announcement-gitpod.webp
+tags: ["Gitpod updates"]
 title: Introducing RubyMine and WebStorm support for Gitpod
 ---
 

@@ -5,7 +5,7 @@
   import Section from "./section.svelte";
 
   export let posts: BlogPost[];
-  export let title: string = "More articles";
+  export let title: string = "You might also like";
   export let text: string = "";
   export let textMaxW: string = "max-w-4xl";
   export let type: "blog" | "guides" | "customers" = "blog";

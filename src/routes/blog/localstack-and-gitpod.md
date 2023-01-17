@@ -4,6 +4,7 @@ date: Thursday, 15 September 2022 11:00:00 UTC
 title: LocalStack x Gitpod - Run cloud applications with LocalStack and Gitpod
 slug: localstack-and-gitpod
 excerpt: Developing and running cloud applications is simplified with Gitpod and LocalStack ✨ Gitpod’s fully automated, ephemeral workspaces provide a great developer experience. LocalStack accelerates your dev and test feedback loop.
+tags: ["Gitpod updates"]
 teaserImage: header.jpg
 image: header.jpg
 ---

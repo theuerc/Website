@@ -4,6 +4,7 @@ date: Friday, 3 September 2021 09:00:00 UTC
 excerpt: This is a story about a cake. Following a long-standing tradition in technology, we decided to send an edible Gitpod workspace to GitHub's San Francisco office.
 image: teaser.jpg
 slug: cake
+tags: ["Company building"]
 subtitle:
 teaserImage: teaser.jpg
 title: Gitpod shipped GitHub a launch cake for Codespaces

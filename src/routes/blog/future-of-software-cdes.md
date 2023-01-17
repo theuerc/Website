@@ -3,6 +3,7 @@ author: JohannesLandgraf
 date: Thursday, 3 November 2022 00:00:00 UTC
 excerpt: Announcing our $25m Series A led by Tom Preston-Werner (Founder of GitHub) with existing investors increasing ownership and pebblebed, MongoDB Ventures, GTMfund, Tobi Lutke, Kent Beck and Oliver Pomel joining the round
 slug: future-of-software-cdes
+tags: ["Company building", "Gitpod updates"]
 image: teaser.jpg
 teaserImage: teaser.jpg
 title: The future of writing software happens in Cloud Development Environments (CDEs)

@@ -7,6 +7,7 @@ slug: building-devx-teams
 subtitle:
 teaserImage: header.jpg
 title: DevX Digest 04 - Building a Developer Experience team
+tags: ["Developer experience"]
 type: digest
 ---
 

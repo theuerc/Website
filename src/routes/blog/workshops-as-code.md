@@ -6,6 +6,7 @@ image: teaser.png
 slug: workshops-as-code
 subtitle:
 teaserImage: teaser.png
+tags: ["Company building"]
 title: Workshops as code
 ---
 

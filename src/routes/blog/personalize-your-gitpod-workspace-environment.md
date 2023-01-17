@@ -5,6 +5,7 @@ title: Personalize your Gitpod Workspace Environments
 slug: personalize-your-gitpod-workspace-environment
 excerpt: With Gitpod, switching to remote development becomes frictionless 🚀 You Can personalize your Gitpod workspaces as you configure your IDE Settings & Custom dotfiles.
 teaserImage: header.png
+tags: ["Gitpod updates"]
 image: header.png
 ---
 

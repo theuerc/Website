@@ -5,6 +5,7 @@ excerpt: Nowadays, there are many collaborative platforms for showcasing JS code
 image: node-js-development-with-only-a-browser.jpeg
 slug: node-js-development
 title: Sustainable Node.js development with only a browser
+tags: ["Engineering"]
 url: https://medium.com/gitpod/sustainable-node-js-development-with-only-a-browser-4887bc6e737b
 ---
 

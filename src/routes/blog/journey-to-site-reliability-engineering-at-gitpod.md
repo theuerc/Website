@@ -6,6 +6,7 @@ image: teaser.png
 slug: journey-to-site-reliability-engineering-at-gitpod
 subtitle:
 teaserImage: teaser.png
+tags: ["Gitpod updates"]
 title: Journey to Site Reliability Engineering at Gitpod
 ---
 

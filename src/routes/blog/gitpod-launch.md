@@ -6,6 +6,7 @@ image: teaser-launch-min.jpg
 slug: gitpod-launch
 subtitle: No Setup, Less Waiting, More Flow
 teaserImage: teaser-launch-min.jpg
+tags: ["Gitpod updates"]
 title: Introducing Gitpod — Frictionless Coding on GitHub
 ---
 

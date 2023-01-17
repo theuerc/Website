@@ -5,6 +5,7 @@ excerpt: Announcing limited availability for Gitpod Dedicated - a secure install
 slug: introducing-gitpod-dedicated
 teaserImage: teaser.jpg
 image: teaser.jpg
+tags: ["Gitpod updates", "Company building"]
 title: "Introducing Gitpod Dedicated: our enterprise cloud offering"
 ---
 

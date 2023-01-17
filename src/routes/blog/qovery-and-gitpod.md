@@ -5,6 +5,7 @@ title: Gitpod x Qovery - Develop, Deploy and Run applications with Gitpod and Qo
 slug: qovery-and-gitpod
 excerpt: Gitpod, integrated into the Qovery console, will work on the developer experience, helping to have a complete cloud development environment for the developers anywhere in no time. In this blog we will learn how can we develop and run applications using Qovery and Gitpod.
 teaserImage: header.png
+tags: ["Gitpod updates"]
 image: header.png
 ---
 
