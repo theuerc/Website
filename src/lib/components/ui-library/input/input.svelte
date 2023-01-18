@@ -10,6 +10,7 @@
   export { className as class };
   export let type: Type = "text";
   export let id: string;
+  export let legendClass = "";
 </script>
 
 <style lang="postcss">
@@ -60,11 +61,17 @@
   />{/if}
 {#if hasError}
   {#if id === "company-website" || id === "company"}
-    <legend class:error={hasError} class="text-xs block mt-1 mb-2">
+    <legend
+      class:error={hasError}
+      class="text-xs block mt-1 mb-2 {legendClass}"
+    >
       Please enter a valid domain
     </legend>
   {:else}
-    <legend class:error={hasError} class="text-xs block mt-1 mb-2">
+    <legend
+      class:error={hasError}
+      class="text-xs block mt-1 mb-2 {legendClass}"
+    >
       Please fill out the {name ? name : ""} field
     </legend>
   {/if}

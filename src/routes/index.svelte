@@ -24,6 +24,7 @@
   import AnimatedLogos from "$lib/components/animated-logos.svelte";
   import UsedBy from "$lib/components/index/used-by.svelte";
   import Titles from "$lib/components/index/titles.svelte";
+  import Newsletter from "$lib/components/forms/newsletter.svelte";
 </script>
 
 <OpenGraph
@@ -93,3 +94,4 @@
 />
 <GetStarted />
 <SpinUp />
+<Newsletter />
