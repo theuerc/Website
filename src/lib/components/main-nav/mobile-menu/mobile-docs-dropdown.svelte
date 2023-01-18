@@ -8,12 +8,8 @@
 </script>
 
 <style lang="postcss">
-  .nav-items > :global(*:not(:last-child)) {
-    @apply border-b border-divider;
-  }
-
   /* for last-child of docs items to create a extra space*/
-  .nav-items-docs > :global(*:last-child) {
+  .nav-items-docs > *:last-child {
     @apply pb-6;
   }
 </style>
@@ -34,7 +30,9 @@
 </button>
 
 {#if shown}
-  <div class="nav-items nav-items-docs flex flex-col text-lg">
+  <div
+    class="divide-y divide-divider nav-items-docs border-none flex flex-col text-lg"
+  >
     {#each mobileDocsLinks as { href, text }}
       <a
         {href}
@@ -51,11 +49,11 @@
   </div>
 
   <p
-    class="py-macro no-underline text-lg text-slight-grey font-bold bg-sand-light dark:text-important dark:bg-dark-grey"
+    class="py-macro border-none -mx-micro px-micro no-underline text-lg text-slight-grey font-bold bg-sand-light dark:text-important dark:bg-dark-grey"
   >
     Templates
   </p>
-  <div class="nav-items flex flex-col text-lg">
+  <div class="flex divide-y divide-divider flex-col text-lg">
     {#each templateLinks as { href, text }}
       <a class="py-macro no-underline" {href}>
         {text}
