@@ -24,6 +24,10 @@ In particular, this opens up any environment or framework that assumes localhost
 
 As a preview release, not all of the features are implemented, most notably the tunneling is 1-way only: local -> workspace.
 
+> 💡 **Notice:** A lot has improved on local-companion and the port-forwarding aspect since the publication of this blog post. You could also simply open a Gitpod workspace in [VSCode Desktop](https://www.gitpod.io/docs/references/ides-and-editors/vscode#open-a-workspace-in-vs-code-desktop) or any other supported local editor client and your ports would be automatically forwarded for you! See the below links to learn more:
+> - https://www.gitpod.io/docs/references/ides-and-editors#supported-ideeditors
+> - https://www.gitpod.io/docs/configure/workspaces/ports#port-forwarding
+
 ## See it in action
 
 As a simple example, with the _Gitpod Local Companion_ app installed and running, open the standard Svelte template in Gitpod, using this [link](https://gitpod.io/#https://github.com/sveltejs/template) or the Gitpod button [directly](https://github.com/sveltejs/template). This will create an ephemeral environment for you without requiring any local setup or installation. As per the template instructions, run the following:
