@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { links } from "$lib/contents/dropdown";
+  import { resourcesLinks } from "$lib/contents/dropdown";
   import { onMount } from "svelte";
 
   import { fade } from "svelte/transition";
@@ -59,7 +59,7 @@
 
 <button
   on:click={() => (shown = !shown)}
-  class="flex items-center text-base transition-all duration-200 hover:text-important focus:text-important"
+  class="flex relative py-[29px] items-center text-base transition-all duration-200 hover:text-important focus:text-important"
   bind:this={buttonEl}
   aria-expanded={shown}
   aria-haspopup="menu"
@@ -69,6 +69,12 @@
     class="ml-1.5 h-3 w-3 transform {shown ? 'rotate-180' : ''}"
     fillClass={shown ? "fill-important" : "fill-body"}
   />
+  {#if shown}
+    <span
+      in:fade={{ duration: 300 }}
+      class="absolute z-20 h-[2px] bottom-0 w-full bg-important"
+    />
+  {/if}
 </button>
 
 {#if shown}
@@ -82,7 +88,7 @@
       class="grid grid-cols-3 gap-x-large pt-x-small pb-small"
       bind:this={linksGrid}
     >
-      {#each links as { href, text, description }}
+      {#each resourcesLinks as { href, text, description }}
         <a
           class="
             py-micro

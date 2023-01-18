@@ -13,7 +13,8 @@
   import SkipToContent from "../skip-to-content.svelte";
   import GithubStars from "./github-stars.svelte";
 
-  import Dropdown from "./dropdown.svelte";
+  import ResourcesDropdown from "./resources-dropdown.svelte";
+  import DocsDropdown from "./docs-dropdown.svelte";
   // import { session } from "$app/stores";
 
   let scroll: number;
@@ -92,18 +93,15 @@
     >
       <NavItem
         navItem={{
-          href: "/docs",
-          label: "Docs",
-        }}
-      />
-      <NavItem
-        navItem={{
           href: "/cde",
           label: "CDE",
         }}
       />
       <li>
-        <Dropdown />
+        <DocsDropdown />
+      </li>
+      <li>
+        <ResourcesDropdown />
       </li>
       <NavItem
         navItem={{
