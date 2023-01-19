@@ -54,7 +54,7 @@ export const pricingPlans: Pricing[] = [
       "SLA and premium support",
     ],
     btnText: "Talk to sales",
-    btnHref: "/contact/sales",
+    btnHref: "/contact/sales?subject=enterprise",
     spiced: true,
     trackingName: "enterprise",
   },
