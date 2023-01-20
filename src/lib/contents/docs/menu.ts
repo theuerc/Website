@@ -188,13 +188,7 @@ export const MENU: MenuEntry[] = [
   // M("Gitpod public API", "references/gitpod-public-api", false, [], "alpha"),
   M("IDEs & editors", "references/ides-and-editors", false, [
     M("VS Code Browser", "references/ides-and-editors/vscode-browser"),
-    M(
-      "VS Code Desktop",
-      "references/ides-and-editors/vscode",
-      false,
-      [],
-      "beta"
-    ),
+    M("VS Code Desktop", "references/ides-and-editors/vscode"),
     M(
       "IntelliJ IDEA",
       "references/ides-and-editors/intellij",
