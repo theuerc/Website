@@ -37,6 +37,18 @@ The best way to configure Gitpod is by using Gitpod - you could perform the foll
 
 **Congratulations**, you have started your first of many ephemeral developer environments 🎉!
 
+### Open in Gitpod button
+
+You can add the following button to your Development/Setup Docs so that users can launch projects in Gitpod and begin working on them without having to go through the entire setup process.
+
+<img src="https://gitpod.io/button/open-in-gitpod.svg" alt="Open with Gitpod"/>
+
+```markdown
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#<your-repository-url>)
+```
+
+> here, `your-repository-url` can be something like: `https://github.com/gitpod-samples/awesome-gitpod` or any of your Repository URLs.
+
 ### Contribute with Gitpod badge
 
 To make it easy for anyone to start a Gitpod workspace based on your project, we recommend you add a badge to your `README.md`.
@@ -51,20 +63,6 @@ To make it easy for anyone to start a Gitpod workspace based on your project, we
   />
 </a>
 ```
-
-> here, `your-repository-url` can be something like: `https://github.com/gitpod-io/website` or any of your Repository URLs.
-
-### Open in Gitpod button
-
-You can add the following button to your Development/Setup Docs so that users can launch projects in Gitpod and begin working on them without having to go through the entire setup process.
-
-<img src="https://gitpod.io/button/open-in-gitpod.svg" alt="Open with Gitpod"/>
-
-```markdown
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#<your-repository-url>)
-```
-
-> here, `your-repository-url` can be something like: `https://github.com/gitpod-io/website` or any of your Repository URLs.
 
 Next, let's help Gitpod understand your repository to automate the developer environment and turn on prebuilds to supercharge your development workflow.
 
