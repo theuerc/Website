@@ -44,6 +44,7 @@ export const MENU: MenuEntry[] = [
   M("Configure", "configure", true),
 
   M("Workspaces", "configure/workspaces", false, [
+    M("Workspace Lifecycle", "configure/workspaces/workspace-lifecycle"),
     M("Workspace Image", "configure/workspaces/workspace-image"),
     M("Tasks", "configure/workspaces/tasks"),
     M("Ports", "configure/workspaces/ports"),
