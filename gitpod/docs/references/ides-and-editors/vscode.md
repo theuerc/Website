@@ -5,6 +5,7 @@ title: VS Code Desktop
 
 <script context="module">
   export const prerender = true;
+  import Keybind from "$lib/components/keybind.svelte";
 </script>
 
 # VS Code Desktop
@@ -20,8 +21,8 @@ There are currently two supported ways to open a VS Code Desktop session connect
 ### From VS Code Browser
 
 1. Start a new Gitpod workspace
-2. Open the command palette (⇧⌘P or Ctrl+Shift+P)
-3. Type "Open in VS Code" and hit Enter
+2. Open the command palette (<Keybind>CtrlCmd + Shift + P</Keybind>)
+3. Type "Open in VS Code" and hit <Keybind>Enter</Keybind>
 
 You will now be redirected to VS Code Desktop.
 
