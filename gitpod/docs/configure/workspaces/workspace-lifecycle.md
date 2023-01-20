@@ -39,7 +39,7 @@ When you open a workspace, it will be in the "starting" state. This means that t
 
 ### Workspace Stopped
 
-- No provisioned workspace is running (e.g. ports and URLs are not accessible).K
+- No provisioned workspace is running (e.g. ports and URLs are not accessible).
 - Only files and directories inside `/workspace` are preserved.
 - If the workspace is restarted, the URL is preserved.
 - A start is required before the workspace can be used.
