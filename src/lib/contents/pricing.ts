@@ -14,7 +14,7 @@ import githubMarkSvelte from "$lib/components/svgs/github-mark.svelte";
 export const pricingPlans: Pricing[] = [
   {
     title: "Individual",
-    description: "For your personal projects",
+    description: "For single users",
     prependedPrice: "From",
     showCurrency: true,
     price: `0`,
