@@ -670,7 +670,7 @@ export const pricingTableToc: FeatureTableToc[] = [
     type: "tooltip",
     data: {
       text: "Timeout boost",
-      tooltip: "Manually extent workspace timeout to 180 minutes",
+      tooltip: "Manually extend workspace timeout up to 24 hours.",
     },
   },
   {
