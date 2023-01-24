@@ -2,11 +2,11 @@
 author: JohannesLandgraf
 date: Tue, 24 Jan 2023 17:00:00 UTC
 excerpt: Today I have some tough news to share. I decided to reduce the size of the Gitpod team by 28%, saying goodbye to 21 Gitpodders. This is the most difficult decision I’ve made to-date and it impacts the lives and families of colleagues and friends we care about. It hurts, and I apologize for hiring too aggressively for the macroeconomic environment we are in today.
-image: teaser.jpg
+image: teaser.webp
 slug: building-for-the-long-run
-teaserImage: teaser.jpg
+teaserImage: teaser.webp
+tags: ["Gitpod updates"]
 title: Building for the long run
-subtitle:
 ---
 
 <script context="module">
