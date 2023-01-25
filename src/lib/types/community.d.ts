@@ -10,4 +10,5 @@ export type ContentCard = {
 export type ContentBadge =
   | "Content"
   | "Community office hours"
-  | "Discord contribution";
+  | "Discord contribution"
+  | "Open Source";

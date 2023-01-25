@@ -104,7 +104,11 @@ export const overviewCards = [
   },
 ];
 
-export const contributionMonths = ["September 2022", "October 2022"];
+export const contributionMonths = [
+  "September 2022",
+  "October 2022",
+  "December 2022",
+];
 
 export const contributionHighlights: ContentCard[] = [
   {
@@ -167,6 +171,39 @@ export const contributionHighlights: ContentCard[] = [
     title: "Run Gitpod…anywhere!",
     link: {
       href: "https://twitter.com/josepjaume/status/1567490383373914114",
+      text: "View Tweet",
+    },
+  },
+  {
+    date: "December 2022",
+    badge: "Content",
+    contributor: "Laurent Kempé",
+    text: "Laurent Kempé shares his experiences of using Gitpod with the Jetbrains integration on this podcast.",
+    title: "How to use JetBrains tools with Gitpod",
+    link: {
+      href: "https://devdevdev.net/tr-12-22-des-outils-pour-kubernetes-de-lia-gitpod-maui-viva-et-projet-volterra/",
+      text: "Listen to the Podcast",
+    },
+  },
+  {
+    date: "December 2022",
+    badge: "Open Source",
+    contributor: "M. Palanikannan",
+    text: "M. Palanikannan successfully integrated Gitpod with RocketChat to allow for easier contributions to the open source project.",
+    title: "RocketChat has been Gitpodified!",
+    link: {
+      href: "https://github.com/RocketChat/RC4Community/pull/203",
+      text: "View Pull Request",
+    },
+  },
+  {
+    date: "December 2022",
+    badge: "Content",
+    contributor: "Marco Zille",
+    text: "In this workshop, Marco shows how to set up GDK and a Gitpod workspace to start contributing to GitLab.",
+    title: "Contributing to GitLab with Gitpod and the GDK",
+    link: {
+      href: "https://twitter.com/marco_zille/status/1603526381274537984",
       text: "View Tweet",
     },
   },
