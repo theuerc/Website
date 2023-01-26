@@ -359,11 +359,11 @@ export const teamPlanTableData: FeatureTableColumn = {
         {
           term: "Base price",
           isCurrency: true,
-          text: "0/ mo",
+          text: "9/ mo",
         },
         {
           term: "Credits in base price",
-          text: "0",
+          text: "1000",
         },
         {
           term: "Additional credits",
