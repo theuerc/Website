@@ -107,6 +107,7 @@ export const overviewCards = [
 export const contributionMonths = [
   "September 2022",
   "October 2022",
+  "November 2022",
   "December 2022",
 ];
 
@@ -171,6 +172,39 @@ export const contributionHighlights: ContentCard[] = [
     title: "Run Gitpod…anywhere!",
     link: {
       href: "https://twitter.com/josepjaume/status/1567490383373914114",
+      text: "View Tweet",
+    },
+  },
+  {
+    date: "November 2022",
+    badge: "Community office hours",
+    contributor: "Evan Mattiza",
+    title: "Nix",
+    text: "In our Community Office hours Evan Mattiza shows us what you can do with Nix and Gitpod",
+    link: {
+      href: "https://www.youtube.com/watch?v=GpcLaV5Srpw",
+      text: "Watch on YouTube",
+    },
+  },
+  {
+    date: "November 2022",
+    badge: "Content",
+    contributor: "Airball",
+    title: "J-Fall Conf",
+    text: "Airball did a presentation about sustainability and Gitpod at J-Fall Conf",
+    link: {
+      href: "https://twitter.com/jlengrand/status/1588457884358414337",
+      text: "View Tweet",
+    },
+  },
+  {
+    date: "November 2022",
+    badge: "Open Source",
+    contributor: "Tyler van der Hoeven",
+    title: "Stellar Quest Game",
+    text: "You can participate in Stellar Quest code challenge game using Gitpod",
+    link: {
+      href: "https://twitter.com/tyvdh/status/1591893088561254401",
       text: "View Tweet",
     },
   },
