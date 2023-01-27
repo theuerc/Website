@@ -46,7 +46,7 @@ For prebuilds to run automatically, you also need a [project](/docs/configure#pr
 
 To create a new project:
 
-- Click on _New Project_ in the Projects page of one your teams.
+- Click on _New Project_ in the Projects page of one your organizations.
 - If necessary, you will be prompted for additional authorization to install and configure the Gitpod GitHub app,
   so that Gitpod can watch your repositories and trigger prebuilds.
 - Select the repository for your project.

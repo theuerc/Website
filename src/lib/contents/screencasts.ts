@@ -79,7 +79,7 @@ export const screencasts: Screencast[] = [
     nextScreencast: id++,
     title: "Personalise Your Workspace 🎨",
     description:
-      "How to customize and configure Gitpod for your personal needs and those of your team.",
+      "How to customize and configure Gitpod for your personal needs and those of your organization.",
     duration: 125,
     tile: "screencast-4.jpg",
     youtubeId: "VYHsd1zI_tE",

@@ -23,20 +23,20 @@
     10 * monthlyHours * (standardWorkspaces / 100) +
     20 * monthlyHours * (largeWorkspaces / 100);
 
-  $: toalHoursUsingTeamMembers = members * monthlyHours;
+  $: toalHoursUsingOrgMembers = members * monthlyHours;
 
   $: displayValue = getResult(
     members,
     usedCredits,
     calculatedPrice,
-    toalHoursUsingTeamMembers
+    toalHoursUsingOrgMembers
   );
 
   const getResult = (
     members: number,
     usedCredits: number,
     calculatedPrice: number,
-    toalHoursUsingTeamMembers: number
+    toalHoursUsingOrgMembers: number
   ) => {
     if (members === 1) {
       if (usedCredits <= 500) {
@@ -50,7 +50,7 @@
     } else if (
       members >= 2 &&
       usedCredits <= 1000 &&
-      toalHoursUsingTeamMembers <= 100
+      toalHoursUsingOrgMembers <= 100
     ) {
       if (usedCredits <= 1000) {
         return 9;
@@ -77,7 +77,8 @@
   <div>
     {#if members >= 100}
       <p>
-        For large teams of 100+, please contact sales to receive a custom quote.
+        For large organizations of 100+ members, please contact sales to receive
+        a custom quote.
       </p>
       <br />
       <LinkButton
@@ -112,15 +113,15 @@
         <TickList
           textClassNames="max-w-sm"
           list={[
-            "Pay for total team usage, not individual plans",
+            "Pay for total organization usage, not individual plans",
             "Manage billing from a central account",
           ]}
         />
       </div>
       <LinkButton
-        href="https://gitpod.io/teams/new"
+        href="https://gitpod.io/orgs/new"
         variant="primary"
-        size="large">Create team for free</LinkButton
+        size="large">Create organization for free</LinkButton
       >
     {/if}
   </div>
