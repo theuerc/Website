@@ -2,6 +2,7 @@
  * RSS Feed for www.gitpod.io/blog
  */
 
+import { getPosts } from "$lib/utils/content";
 import RSS from "rss";
 
 // This function loads all blog post metadata from the file system.
@@ -9,20 +10,7 @@ import RSS from "rss";
 // The list is sorted by date, with the most recent post first.
 
 const loadBlogPosts = async () => {
-  const posts = await Promise.all(
-    Object.entries(import.meta.glob("/src/routes/blog/*.md")).map(
-      async ([path, page]) => {
-        try {
-          const { metadata } = await page();
-          const filename = path.split("/").pop();
-          return { ...metadata, filename };
-        } catch (e) {
-          console.error(e);
-        }
-      }
-    )
-  );
-  posts.sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
+  const posts = await getPosts();
   return posts;
 };
 
@@ -40,7 +28,7 @@ export const get = async () => {
     title: "Gitpod Blog - News, ideas and background stories",
     description:
       "The latest news, articles, and opinions around developer experience and remote development in the cloud.",
-    copyright: `Copyright © ${new Date().getFullYear()} Gitpod`,
+    copyright: `Copyright © ${new Date().getFullYear()} Gitpod GmbH. All rights reserved`,
     ttl: 1800,
     feed_url: "https://www.gitpod.io/blog",
     site_url: "https://www.gitpod.io",
@@ -77,6 +65,7 @@ export const get = async () => {
 
   return {
     headers: {
+      "Cache-Control": "max-age=0, s-max-age=3600",
       "Content-Type": "application/xml",
     },
     body: feed.xml(),
