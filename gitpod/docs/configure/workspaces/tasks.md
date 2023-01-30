@@ -193,7 +193,7 @@ tasks:
 ### Immediately exit for any command failure within a task
 
 If you wish to halt an entire task with for an error within the task script, then you could do the following:
-```
+```yaml
 tasks:
   - init: |
       (
