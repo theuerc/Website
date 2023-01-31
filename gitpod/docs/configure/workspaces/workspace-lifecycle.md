@@ -52,8 +52,28 @@ Workspaces are deleted after 14 days. Pinned workspaces are never deleted automa
 
 ### Workspace Pinning
 
-A pinned workspace is never deleted. You can pin a workspace from the Gitpod dashboard.
+A pinned workspace is never deleted. You can pin a workspace from your [workspace list](https://gitpod.io/workspaces/) in the Gitpod dashboard.
 
 ### Workspace Snapshotting
 
 You can create a snapshot of a workspace to save its state. This is useful if you want to keep a workspace around for a longer period of time, than the default. Read more about [Snapshots](/docs/configure/workspaces/collaboration).
+
+## Workspace Deletion
+
+Stopped workspaces are automatically deleted 14 days since the last workspace start. Pinned workspaces are never deleted. You can pin a workspace from your [workspace list](https://gitpod.io/workspaces/) in the Gitpod dashboard.
+
+## Workspace Timeouts
+
+Running workspaces will stop automatically after a period of inactivity.
+
+### Workspace Inactivity
+
+By default, workspaces stop following 30 minutes without user input (e.g. keystrokes or terminal input commands). You can increase the workspace timeout up to a maximum of 24 hours.
+
+### Editor Disconnect
+
+Currently, all timeouts are dependent on an active editor connection. Closing your Gitpod connected editor or IDE will reduce the workspace timeout to 5 minutes.
+
+### Extending Timeouts
+
+Paying users of Gitpod can extend the timeout of their current workspace using the `gp timeout set` from the [Gitpod CLI](/docs/references/gitpod-cli), which is installed in all gitpod workspaces by default. Extending the workspace timeout does not affect the timeout of other any other workspaces.

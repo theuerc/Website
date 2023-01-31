@@ -200,7 +200,7 @@ gp tasks stop --all
 
 ## timeout
 
-Interact with workspace timeout configuration. You can learn more in [Life of a Workspace](/docs/introduction/learn-gitpod/the-life-of-a-workspace#timeouts).
+Interact with workspace timeout configuration. You can learn more in [Life of a Workspace](/docs/configure/workspaces/workspace-lifecycle).
 
 ```sh
 gp timeout show
@@ -239,7 +239,7 @@ gp timeout show
 
 ### extend
 
-Extends the current workspace's timeout to 180 minutes. Note, It will set your workspace's timeout to 180 minutes if it's less or even more than 180 minutes.
+Extends the current workspace timeout from the default, or currently set value to 180 minutes.
 
 ```sh
 gp timeout extend
