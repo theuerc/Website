@@ -8,12 +8,22 @@
 </script>
 
 <div
-  class="grid grid-cols-2 lg:grid-cols-4 gap-macro sm:gap-micro max-w-[608px] lg:flex lg:max-w-none lg:justify-center mx-auto"
+  class="grid grid-cols-2 lg:grid-cols-4 gap-macro sm:gap-micro max-w-[608px] lg:flex lg:justify-center mx-auto relative"
 >
+  <img
+    src="/images/startups/kumquat-right.png"
+    alt="Gitpod Kumquat"
+    class="absolute hidden -z-10 md:block -left-[44px] -top-[16px] lgx:left-[-85px] lgx:top-[-30px] h-16 lgx:h-32 lgx:w-36"
+  />
   {#each featureTitles as featureTitle}
     <FeatureTitle
       featureTitle={{ ...featureTitle, swap }}
       {featureTitlePadding}
     />
   {/each}
+  <img
+    src="/images/startups/kumquat-left.png"
+    alt="Gitpod Kumquat"
+    class="absolute hidden -z-10 md:block top-[110px] lgx:top-[82px] right-[-60px] lgx:right-[-112px] h-16 lgx:h-32 lgx:w-36"
+  />
 </div>
