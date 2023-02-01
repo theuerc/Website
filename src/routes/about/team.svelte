@@ -44,7 +44,7 @@
   /> -->
 </Header>
 
-<FeatureTitles {featureTitles} swap={true} />
+<FeatureTitles {featureTitles} swap={true} showKumquat={true} />
 
 <MeetTheTeam />
 
