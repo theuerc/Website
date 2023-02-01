@@ -28,7 +28,7 @@
     location="top"
   >
     <span class="flex-1 text-right">📢</span>
-    <p class="flex-1 px-4 md:px-2 font-bold">
+    <p class="flex-2 px-4 md:px-2 font-bold">
       Gitpod Dedicated: the self-hosted alternative for large teams -
       <a href="/dedicated" sveltekit:prefetch on:click={closeBanner}
         >Request early access
@@ -43,6 +43,7 @@
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
+          Close
           <path
             d="M1.00107 1L11 11M10.9989 1L1 11"
             stroke="var(--important)"
