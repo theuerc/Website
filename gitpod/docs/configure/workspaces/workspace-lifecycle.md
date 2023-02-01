@@ -76,4 +76,4 @@ Currently, all timeouts are dependent on an active editor connection. Closing yo
 
 ### Extending Timeouts
 
-Paying users of Gitpod can extend the timeout of their current workspace using the `gp timeout set` from the [Gitpod CLI](/docs/references/gitpod-cli), which is installed in all gitpod workspaces by default. Extending the workspace timeout does not affect the timeout of other any other workspaces.
+Paying users of Gitpod can extend the inactivity timeout of their current workspace using the `gp timeout set` from the [Gitpod CLI](/docs/references/gitpod-cli), which is installed in all gitpod workspaces by default. Extending the workspace timeout does not affect the inactivity timeout of other any other workspaces.

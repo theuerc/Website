@@ -75,7 +75,7 @@ You can see the details of your personal usage when you click on "View Usage →
 
 ## Old pricing plans
 
-Users with old paid plans, may need to cancel those plans before configurig their personal or organization billing accounts.
+Users with old paid plans, may need to cancel those plans before configuring their personal or organization billing accounts.
 
 - [Organization plans](/docs/configure/billing/org-plans)
 - [Organization billing](/docs/configure/billing/org-billing)
