@@ -28,10 +28,10 @@
     location="top"
   >
     <span class="flex-1 text-right">📢</span>
-    <p class="flex-2 px-4 md:px-2">
+    <p class="flex-1 px-4 md:px-2 font-bold">
+      Gitpod Dedicated: the self-hosted alternative for large teams -
       <a href="/dedicated" sveltekit:prefetch on:click={closeBanner}
-        >Coming soon: Gitpod Dedicated, an isolated & managed installation of
-        Gitpod
+        >Request early access
       </a>
     </p>
     <div class="flex-1 flex justify-end">
