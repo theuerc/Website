@@ -105,6 +105,39 @@ export const overviewCards = [
 ];
 
 export const contributionHighlights: Record<string, ContentCard[]> = {
+  "January 2023": [
+    {
+      badge: "Community office hours",
+      contributor: "Sébastien Blanc",
+      title: "Build a VSCode extension with Gitpod and Aiven",
+      text: "Sébastien shows us how you can use Gitpod and Aiven to easily build VSCode Extensions",
+      link: {
+        href: "https://twitter.com/sebi2706/status/1615640594071654401",
+        text: "View Tweet",
+      },
+    },
+    {
+      badge: "Gitpod Community",
+      contributor: "Jean-Phi Baconnais",
+      title: "First Gitpod Community Meetup!",
+      text: "Jean-Phi Baconnais has organised our very first Gitpod community meetup, and it's taking place in France",
+      link: {
+        href: "https://twitter.com/gitpod/status/1613557635088777220",
+        text: "View Tweet",
+      },
+    },
+    {
+      badge: "Content",
+      contributor: "Alex Patterson",
+      title: "Appwrite + Gitpod: One Click Setup",
+      text: "In this blog post, Alex shows us how you can use Appwrite in your Gitpod workspace",
+      link: {
+        href: "https://dev.to/appwrite/appwrite-gitpod-one-click-setup-2894",
+        text: "Read Post",
+      },
+    },
+  ],
+
   "December 2022": [
     {
       badge: "Content",
