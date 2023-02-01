@@ -18,7 +18,12 @@
 </style>
 
 <span class="prose my-small md:my-0">
-  <a {href} target="_blank" rel="noopener noreferrer" class="text-xs">
+  <a
+    {href}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="text-xs inline-flex items-center"
+  >
     <RSS class="inline-block my-0 mx-1 h-4 w-4" />
     <span class="mr-2"> subscribe to RSS </span>
   </a>
