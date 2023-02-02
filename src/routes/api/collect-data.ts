@@ -5,6 +5,18 @@ import type { AnalyticsPayload, PageProps } from "$lib/types/analytics";
 
 const writeKey = process.env.SEGMENT_KEY || "";
 
+const allowedEvents = [
+  "email_submitted",
+  "extension_installed",
+  "extension_uninstalled",
+  "feedback_submitted",
+  "message_submitted",
+  "screencast_started",
+  "waitlist_joined",
+  "website_clicked",
+  "whitepaper_downloaded",
+];
+
 export const post: RequestHandler = async ({ request }) => {
   const body = (await request.json()) as AnalyticsPayload;
   const ip = request.headers.get("x-forwarded-for")?.split(",")[0];
@@ -58,6 +70,12 @@ export const post: RequestHandler = async ({ request }) => {
       case "event":
         if (!body.eventName)
           return { body: { message: "Please provide eventName" }, status: 400 };
+        if (!allowedEvents.includes(body.eventName)) {
+          return {
+            body: { message: "Invalid eventName passed." },
+            status: 400,
+          };
+        }
         await fetch("https://api.segment.io/v1/track", {
           method: "POST",
           headers: {
