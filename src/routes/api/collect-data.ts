@@ -126,6 +126,12 @@ export const post: RequestHandler = async ({ request }) => {
             body: { message: "Please include url and path in props" },
             status: 400,
           };
+        if (!body.props.url.startsWith("https://www.gitpod.io")) {
+          return {
+            body: { message: "Invalid URL provided" },
+            status: 400,
+          };
+        }
         await fetch("https://api.segment.io/v1/page", {
           method: "POST",
           headers: {
