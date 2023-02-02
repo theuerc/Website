@@ -30,10 +30,18 @@ export const post: RequestHandler = async ({ request }) => {
       : undefined;
   };
 
+  const getPrimaryLanguage = () => {
+    const languages = request.headers.get("accept-language");
+    if (languages) {
+      return languages.split(",")[0];
+    }
+  };
+
   const getServerContext = () => {
     return {
       userAgent: agent,
       ip: maskIp(ip),
+      locale: getPrimaryLanguage(),
     };
   };
 
