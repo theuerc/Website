@@ -97,18 +97,18 @@ export const brands: Brand[] = [
 ];
 
 export const logosAnimated: Brand[] = [
-  freeCodeCamp,
+  dataStax,
   gitlab,
+  amazon,
+  astrato,
   jetbrains,
   redwood,
-  google,
-  amazon,
   codeInstitute,
-  fourGeeks,
-  dataStax,
-  shares,
-  astrato,
+  google,
   factorial,
+  fourGeeks,
+  shares,
+  freeCodeCamp,
 ];
 
 export const projects: Project[] = [
