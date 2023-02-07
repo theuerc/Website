@@ -443,7 +443,7 @@
       </p>
     </li>
     <li>
-      <h2 class="inline">L. Right of Withdrawal and Dispute Resolution</h2>
+      <h2 class="inline">Right of Withdrawal and Dispute Resolution</h2>
       <p class="mb-4">
         The following provisions of this Section L. shall only apply to
         Consumers.
@@ -457,7 +457,6 @@
       </p>
 
       <div>
-        <div>-- begin instruction on withdrawal --</div>
         <h4>Right of Withdrawal</h4>
         <p class="mb-4">
           You have the right to withdraw from this contract within 14 days
@@ -700,7 +699,6 @@
   <div
     class="p-xx-small sm:py-small sm:px-x-small md:p-medium rounded-2xl bg-card"
   >
-    <div>-- begin model withdrawal form --</div>
     <p class="mb-4">
       To<br /> Gitpod GmbH represented by: Sven Efftinge, Moritz Eysholdt, Dr.
       Jan Köhnlein<br /> Am Germaniahafen 1<br /> 24143 Kiel/Germany
@@ -720,6 +718,5 @@
     <p class="mb-4">Date</p>
     <p class="mb-4">_______________</p>
     <p class="mb-4">(*) Delete where inapplicable.</p>
-    <div>-- end model withdrawal form --</div>
   </div>
 </article>
