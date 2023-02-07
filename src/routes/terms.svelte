@@ -510,7 +510,6 @@
           withdraw from the contract with the beginning of the execution of the
           contract.
         </p>
-        <div>-- end instruction on withdrawal --</div>
       </div>
 
       <h3>Alternative Settlements of Disputes</h3>
