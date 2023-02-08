@@ -2,7 +2,7 @@
 author: pawlean
 date: Monday, 6 Feb 2023 18:00 UTC
 excerpt: Last week, we hosted our very first in-person community meet-up in Paris, France. Learn how to host a community meet-up with Gitpod.
-header: teaser.webp
+image: teaser.webp
 slug: gitpod-comes-to-your-city-host-a-community-meet-up-with-gitpod
 tags: ["Gitpod updates"]
 teaserImage: teaser.webp
