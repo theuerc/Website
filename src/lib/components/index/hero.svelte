@@ -81,8 +81,8 @@
       Always<br /> ready to code.
     </h1>
     <p id="choose-project-observer-target" class="hero__intro-text text-large">
-      Spin up fresh cloud development environments<br />
-      for each task, fully automated, in seconds.
+      Ship software faster with secure cloud <br />
+      development environments that just work.
     </p>
     <div class="hero__action">
       <ButtonsWrapper class="mt-x-small lg:mt-small mb-x-small">

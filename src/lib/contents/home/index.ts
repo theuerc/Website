@@ -156,34 +156,6 @@ export const projects: Project[] = [
     alt: "Svelte",
     trackingName: "svelte",
   },
-  // {
-  //   logo: "svg/projects/php.svg",
-  //   title: "PHP & Symfony",
-  //   githubUrl: "https://github.com/gitpod-io/symfony-demo",
-  //   alt: "PHP",
-  // },
-  // {
-  //   logo: "svg/projects/dotnet-core.svg",
-  //   title: ".NET Core",
-  //   githubUrl: "https://github.com/gitpod-io/example-dotnet-core",
-  //   gitlabUrl: "https://gitlab.com/gitpod/dotnetcore",
-  //   bitbucketUrl: "https://bitbucket.org/gitpod/dotnetcore",
-  //   alt: "C#",
-  // },
-  // {
-  //   logo: "python.png",
-  //   title: "Python & Flask",
-  //   githubUrl: "https://github.com/breatheco-de/python-flask-api-tutorial",
-  //   alt: "Python",
-  // },
-  // {
-  //     logo: 'ruby.png',
-  //     title: 'Rails & Postgres',
-  //     githubUrl: "https://github.com/gitpod-io/ruby-on-rails",
-  //     gitlabUrl: "https://gitlab.com/gitpod/rails",
-  //     bitbucketUrl: "https://bitbucket.org/gitpod/ruby-on-rails",
-  //     alt: "Ruby",
-  // },
 ];
 
 export const testimonials: Testimonial[] = [
@@ -389,6 +361,24 @@ export const ides: Ide[] = [
     icon: "webstorm.svg",
   },
   {
+    name: "clion",
+    availibility: "beta",
+    label: "CLion",
+    screenshots: {
+      desktop: "clion.webp",
+    },
+    icon: "clion.svg",
+  },
+  {
+    name: "rider",
+    availibility: "beta",
+    label: "Rider",
+    screenshots: {
+      desktop: "rider.webp",
+    },
+    icon: "rider.svg",
+  },
+  {
     name: "vim",
     label: "Vim",
     screenshots: {
@@ -400,19 +390,19 @@ export const ides: Ide[] = [
 
 export const featureTitles: FeatureTitle[] = [
   {
+    main: "<5 min",
+    sub: "onboarding time for new developers",
+  },
+  {
+    main: "40%",
+    sub: "fewer issues across dev lifecycle",
+  },
+  {
     main: "5h",
-    sub: "weekly productivity gain per engineer",
+    sub: "productivity gain per week per developer",
   },
   {
-    main: "4x",
-    sub: "faster time from zero to first PR",
-  },
-  {
-    main: "100%",
-    sub: "of code runs in a secure CDE",
-  },
-  {
-    main: "+750k",
-    sub: "developers are using Gitpod",
+    main: "45%",
+    sub: "improvement in developer happiness",
   },
 ];

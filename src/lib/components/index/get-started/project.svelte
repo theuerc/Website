@@ -24,7 +24,7 @@
   }
 </style>
 
-<div class="w-[28rem] inline-flex flex-col">
+<div class="w-72 sm:w-[28rem] inline-flex flex-col">
   <LinkButton
     class="flex h-14 items-center justify-between group !p-3"
     variant="cta"
