@@ -127,6 +127,15 @@ export const projects: Project[] = [
     trackingName: "python",
   },
   {
+    logo: "svg/projects/java.svg",
+    title: "Java",
+    githubUrl: "https://github.com/gitpod-io/spring-petclinic",
+    gitlabUrl: "https://gitlab.com/gitpod/spring-petclinic",
+    bitbucketUrl: "https://bitbucket.org/gitpod/spring-petclinic",
+    alt: "Java",
+    trackingName: "java",
+  },
+  {
     logo: "svg/projects/go.svg",
     title: "Golang",
     githubUrl: "https://github.com/gitpod-io/example-golang-cli",
@@ -139,15 +148,6 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/gitpod-io/example-rust-cli",
     alt: "Rust",
     trackingName: "rust",
-  },
-  {
-    logo: "svg/projects/java.svg",
-    title: "Java",
-    githubUrl: "https://github.com/gitpod-io/spring-petclinic",
-    gitlabUrl: "https://gitlab.com/gitpod/spring-petclinic",
-    bitbucketUrl: "https://bitbucket.org/gitpod/spring-petclinic",
-    alt: "Java",
-    trackingName: "java",
   },
   {
     logo: "svg/projects/svelte.svg",
