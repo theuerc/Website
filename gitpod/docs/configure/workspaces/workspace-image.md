@@ -141,6 +141,8 @@ USER gitpod
 
 ### In the existing workspace
 
+> `gp rebuild` is currently in [Beta](/docs/help/public-roadmap/release-cycle) · [Send feedback](https://github.com/gitpod-io/gitpod/issues/7671).
+
 To test your custom `.gitpod.Dockerfile`, run the following command:
 
 ```bash
@@ -196,13 +198,14 @@ Currently we put some startup scripts for the workspace-images at `~/.bashrc.d`,
 bash -lic 'true'
 ```
 
-
 ## FAQs
 
 ### [How to run a Desktop app for GUI development inside a Gitpod workspace](https://discord.com/channels/816244985187008514/1069538137572909106)
+
 <!-- DISCORD_BOT_FAQ - DO NOT REMOVE -->
 
 If you wish to do GUI application development in Gitpod and getting errors such as:
+
 - Unable to init server: Could not connect : Connection refused
 - No display server running
 - Xorg missing

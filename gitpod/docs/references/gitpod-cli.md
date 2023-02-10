@@ -327,6 +327,8 @@ gp docs
 
 ## rebuild
 
+> `gp rebuild` is currently in [Beta](/docs/help/public-roadmap/release-cycle) · [Send feedback](https://github.com/gitpod-io/gitpod/issues/7671).
+
 Re-builds the workspace image, it's useful to validate and debug your [custom Workspace image](/docs/configure/workspaces/workspace-image#custom-base-image).
 
 ```sh
