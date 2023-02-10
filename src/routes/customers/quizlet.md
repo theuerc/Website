@@ -1,10 +1,10 @@
 ---
-title: Quizlet increased developer satisfaction by 45% using Gitpod
+title: Quizlet increased developer satisfaction by 45 percentage points using Gitpod
 excerpt: Quizlet started using Gitpod due to CPU compatibility issues. Six months in, Quizlet improved internal developer satisfaction by 45 percentage points reporting reduced incidents with broken development environments and improved collaboration.
 slug: quizlet
 image: teaser.png
 date: Friday, 10 Feb 2023 06:00:00 UTC
-pageTitle: "Quizlet increased developer satisfaction by 45% using Gitpod"
+pageTitle: "Quizlet increased developer satisfaction by 45 percentage points using Gitpod"
 pageDescription: Quizlet started using Gitpod due to CPU compatibility issues. Six months in, Quizlet improved internal developer satisfaction by 45 percentage points reporting reduced incidents with broken development environments and improved collaboration.
 keywords: CDE, cloud dev environment, DevX, velocity, growth, education, quizlet
 ---
@@ -26,19 +26,19 @@ keywords: CDE, cloud dev environment, DevX, velocity, growth, education, quizlet
 data={{
     description:
       "Quizlet started using Gitpod due to CPU compatibility issues. Six months in, Quizlet improved internal developer satisfaction by 45 percentage points reporting reduced incidents with broken development environments and improved collaboration.",
-    title: "Quizlet increased developer satisfaction by 45% using Gitpod",
+    title: "Quizlet increased developer satisfaction by 45 percentage points using Gitpod",
     keywords: "CDE, cloud dev environment, DevX, velocity, growth, education, quizlet",
   }}
 />
 
 <CustomerHero
-title="Quizlet increased developer satisfaction by 45% using Gitpod"
+title="Quizlet increased developer satisfaction by 45 percentage points using Gitpod"
 text="Quizlet started using Gitpod due to CPU compatibility issues. Six months in, Quizlet improved internal developer satisfaction by 45 percentage points reporting reduced incidents with broken development environments and improved collaboration."
 card={{
 		image: "/images/customers/quizlet/teaser.png",
 		details:{
 			industry: "Education",
-			plan: "Organization, SaaS",
+			plan: "Enterprise",
 			people: {
 				title: "Engineers",
 				text: "85"
