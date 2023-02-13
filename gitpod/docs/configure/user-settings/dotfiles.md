@@ -52,3 +52,25 @@ The dotfiles repository installation logs are saved to `/home/gitpod/.dotfiles.l
 ```bash
 cat /home/gitpod/.dotfiles.log
 ```
+
+
+## FAQs
+
+### [It it possible to cache the dotfiles installation?](https://discord.com/channels/816244985187008514/1072003259075657849)
+<!-- DISCORD_BOT_FAQ - DO NOT REMOVE -->
+
+If your dotfiles installation relies on some heavy dependencies, that can take some time to install by nature.
+
+So, everytime you start a workspace, you may have to wait for the dotfiles installation to complete before you can enter the workspace.
+
+For some cases, you can start the commands in background from your `install.sh`, by adding `& disown` at the end of a command:
+
+```bash
+sudo apt install qemu-user-static & disown
+```
+
+This is a good workaround, so your workspace can start early and the long-running commands from your dotfiles installation script can happen in parallel.
+
+But it may not work if you are installing a SHELL (e.g. `zsh`) or a dependency of something else that has to start before your dotfiles can get installed.
+
+See [https://github.com/gitpod-io/gitpod/issues/7592](#7592) for more info, please upvote and share your feedback on this issue.
