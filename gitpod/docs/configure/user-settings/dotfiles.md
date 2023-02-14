@@ -56,6 +56,16 @@ cat /home/gitpod/.dotfiles.log
 
 ## FAQs
 
+### How to debug or test dotfiles changes in the existing workspace without creating a new one each time?
+
+Currently, you have to commit and push the changes to your remote dotfile repository, and then create a new workspace to see if your dotfiles work. This can be a tedious process. You can run the below command snippet in your terminal as a workaround until [gp rebuild](/docs/references/gitpod-cli#rebuild) command has built-in support for iterating on dotfiles:
+
+```bash
+docker run --rm -v $PWD:/home/gitpod/.dotfiles -v /workspace:/workspace -v /ide:/ide -v /usr/bin/gp:/usr/bin/gp:ro -v /.supervisor:/.supervisor -v /var/run/docker.sock:/var/run/docker.sock --privileged -it gitpod/workspace-full bash -c 'trap "echo -e \"=== Run \033[1;32mexit\033[0m command to leave debug workspace\"; exec bash -li" EXIT ERR; dot_path="${HOME}/.dotfiles"; for s in install setup bootstrap; do if p="${dot_path}/${s}" && test -x "${p}" || p="${p}.sh" && test -x "${p}"; then "$p"; exit; fi; done; while read -r file; do rf_path="${file#"${dot_path}"/}"; target_file="${HOME}/${rf_path}"; target_dir="${target_file%/*}"; if test ! -d "$target_dir"; then mkdir -p "$target_dir"; fi; ln -sf "$file" "$target_file"; done < <(find "${dot_path}" -type f);'
+```
+
+This will simulate a fake minimal workspace inside your existing Gitpod workspace using `docker`, where your dotfiles will be installed so you can easily test.
+
 ### [It it possible to cache the dotfiles installation?](https://discord.com/channels/816244985187008514/1072003259075657849)
 <!-- DISCORD_BOT_FAQ - DO NOT REMOVE -->
 
