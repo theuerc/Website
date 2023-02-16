@@ -69,7 +69,7 @@ text: "onboarding time for new engineers",
 
 <Section>
 	<Quote
-		quote="Gitpod is a great product that has helped us a lot. We were able to modernize our development environment and increase internal developer satisfaction by 45 percentage points."
+		quote="Gitpod offers a compelling developer experience, and reduces our developer downtime to nearly zero. Running in the cloud enabled new ways of working together that weren’t possible before. We were able to modernize our development environment and increase internal developer satisfaction by 45 percentage points."
 		author={{
 			name: "Roger Goldfinger",
 			jobTitle: "Senior Staff Software Engineer at Quizlet",
@@ -103,7 +103,7 @@ Quizlet solved their onboarding problems right away. In Gitpod, configuration of
 
 Quizlet saw the benefit of doing cloud-based development on ephemeral containers over virtual machines.
 
-> "When VMs exist as long as a developer at a company does, it's easy for a bad actor to go unobserved. Because Gitpod provides ephemeral environments and allows software to run on each running workspace, we're able to prevent exfiltration risks as well as outside actors from accessing our development environments." - <span style="font-weight:400; font-size:18px;">Roger Goldfinger,</span> <span style="font-weight:400; font-size:16px;">Senior Staff Software Engineer at Quizlet</span>
+> "Because Gitpod provides ephemeral environments and allows software to run on each running workspace, we’re able to reduce exfiltration risks as well as outside actors from accessing our development environments." - <span style="font-weight:400; font-size:18px;">Roger Goldfinger,</span> <span style="font-weight:400; font-size:16px;">Senior Staff Software Engineer at Quizlet</span>
 
 Gitpod keeps source code off the local machine and is ephemeral and isolated from other work which [reduces the potential impact of software supply chain attacks](/security).
 
@@ -127,7 +127,7 @@ Non-engineering team members benefit from the introduction of CDEs as well. At Q
 
 ## The bottom line: massively improved developer satisfaction
 
-> Gitpod is a great product that has helped us a lot. We were able to modernize our development environment and increase internal developer satisfaction by 45%” - <span style="font-weight:400; font-size:18px;">Roger Goldfinger,</span> <span style="font-weight:400; font-size:16px;">Senior Staff Software Engineer at Quizlet</span>
+> Gitpod offers a compelling developer experience, and reduces our developer downtime to nearly zero. Running in the cloud enabled new ways of working together that weren’t possible before. We were able to modernize our development environment and increase internal developer satisfaction by 45%” - <span style="font-weight:400; font-size:18px;">Roger Goldfinger,</span> <span style="font-weight:400; font-size:16px;">Senior Staff Software Engineer at Quizlet</span>
 
 The Quizlet team initially deployed Gitpod on their largest repo. Engineers at Quizlet can choose whether to use Gitpod or their local development environment.
 
