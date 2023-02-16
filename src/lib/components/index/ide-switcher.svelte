@@ -112,9 +112,9 @@
         class="shadow-highlight flex-col icon-box relative flex items-center justify-center border-solid bg-card hover:bg-white dark:hover:bg-black focus:bg-white dark:group-focus:bg-black rounded-lg lgx:rounded-2xl transition duration-200 linear"
         class:default-ide-type={checked}
       >
-        <img src="/svg/index/desktop.svg" alt="Desktop" class="icon" />
+        <img src="/svg/index/desktop.svg" alt="Desktop" class="pt-1 h-8 w-8" />
         <div
-          class="text-[10px] sm:text-xs font-semibold text-black dark:text-important group-focus:bg-white dark:group-focus:bg-black"
+          class="text-[10px] sm:text-xs font-semibold pt-1 text-black dark:text-important group-focus:bg-white dark:group-focus:bg-black"
         >
           Desktop
         </div>
@@ -138,9 +138,9 @@
         class="shadow-highlight flex-col icon-box relative flex items-center justify-center border-solid bg-card hover:bg-white dark:hover:bg-black focus:bg-white dark:group-focus:bg-black rounded-lg lgx:rounded-2xl transition duration-200 linear"
         class:default-ide-type={!checked}
       >
-        <img src="/svg/index/browser.svg" alt="Browser" class="icon" />
+        <img src="/svg/index/browser.svg" alt="Browser" class="pt-1 h-8 w-8" />
         <div
-          class="text-[10px] sm:text-xs font-semibold text-black dark:text-important"
+          class="text-[10px] sm:text-xs font-semibold pt-1 text-black dark:text-important"
         >
           Browser
         </div>
