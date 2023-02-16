@@ -65,7 +65,7 @@
           <img
             src="/images/index/{idetoRender.screenshots[ideType]}"
             alt={idetoRender.label}
-            class="shadow-highlight rounded-lg"
+            class="shadow-highlight rounded-xl"
             width="100%"
             height="100%"
           />
