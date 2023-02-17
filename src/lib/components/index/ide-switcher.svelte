@@ -88,7 +88,7 @@
   }
 
   .grayed {
-    @apply shadow-lg hover:bg-white;
+    @apply shadow-lg hover:bg-white border-divider border;
   }
 
   .toggle-ide-type {
@@ -96,7 +96,7 @@
   }
 
   .default-ide-type {
-    @apply shadow-lg focus:bg-white dark:focus:bg-black;
+    @apply shadow-lg bg-card border-divider border;
   }
 </style>
 
@@ -109,7 +109,7 @@
   >
     <label class="flex-row items-center justify-center" for={id}>
       <div
-        class="shadow-highlight flex-col icon-box relative flex items-center justify-center border-solid bg-card hover:bg-white dark:hover:bg-black focus:bg-white dark:group-focus:bg-black rounded-lg lgx:rounded-2xl transition duration-200 linear"
+        class="border-divider border-[3px] bg-white dark:bg-black flex-col icon-box relative flex items-center justify-center border-solid hover:bg-white dark:hover:bg-black focus:bg-white dark:group-focus:bg-black rounded-lg lgx:rounded-2xl transition duration-200 linear"
         class:default-ide-type={checked}
       >
         <img src="/svg/index/desktop.svg" alt="Desktop" class="pt-1 h-8 w-8" />
@@ -135,7 +135,7 @@
     </div>
     <label class="flex-row items-center justify-center" for={id}>
       <div
-        class="shadow-highlight flex-col icon-box relative flex items-center justify-center border-solid bg-card hover:bg-white dark:hover:bg-black focus:bg-white dark:group-focus:bg-black rounded-lg lgx:rounded-2xl transition duration-200 linear"
+        class="border-divider border-[3px] bg-white dark:bg-black flex-col icon-box relative flex items-center justify-center border-solid hover:bg-white dark:hover:bg-black focus:bg-white dark:group-focus:bg-black rounded-lg lgx:rounded-2xl transition duration-200 linear"
         class:default-ide-type={!checked}
       >
         <img src="/svg/index/browser.svg" alt="Browser" class="pt-1 h-8 w-8" />
@@ -163,7 +163,7 @@
         class:hidden={ideType === "browser" && !screenshots.browser}
       >
         <div
-          class="shadow-highlight icon-box relative flex items-center justify-center border-solid bg-card group-hover:bg-white dark:group-hover:bg-black group-focus:bg-white dark:group-focus:bg-black rounded-lg md:rounded-xl lgx:rounded-2xl transition duration-200 linear"
+          class="border-divider border-[3px] icon-box relative flex items-center justify-center border-solid bg-card group-hover:bg-white dark:group-hover:bg-black group-focus:bg-white dark:group-focus:bg-black rounded-lg md:rounded-xl lgx:rounded-2xl transition duration-200 linear"
           class:grayed={!(activeByDefaultName === name) &&
             !(activeIdeName === "vscode")}
           data-name={name}
