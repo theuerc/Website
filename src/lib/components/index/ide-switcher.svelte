@@ -96,7 +96,7 @@
   }
 
   .default-ide-type {
-    @apply shadow-lg bg-card hover:border-divider hover:border hover:bg-white dark:hover:bg-black;
+    @apply shadow-lg bg-card hover:border-divider hover:border;
   }
   .focused-ide-type {
     @apply border-0 hover:!border-divider hover:!border;
@@ -112,7 +112,7 @@
   >
     <label class="flex-row items-center justify-center" for={id}>
       <div
-        class="border-divider border-[3px] bg-white dark:bg-black flex-col icon-box relative flex items-center justify-center hover:bg-white dark:hover:bg-black focus:bg-white dark:group-focus:bg-black rounded-lg lgx:rounded-2xl transition duration-200 linear"
+        class="border-divider border-[3px] bg-white dark:bg-black flex-col icon-box relative flex items-center justify-center hover:bg-white dark:hover:bg-black focus:bg-white dark:focus:bg-black rounded-lg lgx:rounded-2xl transition duration-200 linear"
         class:default-ide-type={checked}
         class:focused-ide-type={checked}
       >
@@ -139,7 +139,7 @@
     </div>
     <label class="flex-row items-center justify-center" for={id}>
       <div
-        class="border-divider border-[3px]  bg-white dark:bg-black flex-col icon-box relative flex items-center justify-center hover:bg-white dark:hover:bg-black focus:bg-white dark:group-focus:bg-black rounded-lg lgx:rounded-2xl transition duration-200 linear"
+        class="border-divider border-[3px] bg-white dark:bg-black flex-col icon-box relative flex items-center justify-center hover:bg-white dark:hover:bg-black focus:bg-white dark:group-focus:bg-black rounded-lg lgx:rounded-2xl transition duration-200 linear"
         class:default-ide-type={!checked}
         class:focused-ide-type={!checked}
       >
