@@ -88,7 +88,7 @@
   }
 
   .grayed {
-    @apply shadow-lg hover:bg-white border-divider border;
+    @apply shadow-lg hover:bg-white dark:hover:bg-black border-0 hover:border-divider hover:border;
   }
 
   .toggle-ide-type {
@@ -96,7 +96,10 @@
   }
 
   .default-ide-type {
-    @apply shadow-lg bg-card border-divider border;
+    @apply shadow-lg bg-card hover:border-divider hover:border hover:bg-white dark:hover:bg-black;
+  }
+  .focused-ide-type {
+    @apply border-0 hover:!border-divider hover:!border;
   }
 </style>
 
@@ -109,8 +112,9 @@
   >
     <label class="flex-row items-center justify-center" for={id}>
       <div
-        class="border-divider border-[3px] bg-white dark:bg-black flex-col icon-box relative flex items-center justify-center border-solid hover:bg-white dark:hover:bg-black focus:bg-white dark:group-focus:bg-black rounded-lg lgx:rounded-2xl transition duration-200 linear"
+        class="border-divider border-[3px] bg-white dark:bg-black flex-col icon-box relative flex items-center justify-center hover:bg-white dark:hover:bg-black focus:bg-white dark:group-focus:bg-black rounded-lg lgx:rounded-2xl transition duration-200 linear"
         class:default-ide-type={checked}
+        class:focused-ide-type={checked}
       >
         <img src="/svg/index/desktop.svg" alt="Desktop" class="pt-1 h-8 w-8" />
         <div
@@ -135,8 +139,9 @@
     </div>
     <label class="flex-row items-center justify-center" for={id}>
       <div
-        class="border-divider border-[3px] bg-white dark:bg-black flex-col icon-box relative flex items-center justify-center border-solid hover:bg-white dark:hover:bg-black focus:bg-white dark:group-focus:bg-black rounded-lg lgx:rounded-2xl transition duration-200 linear"
+        class="border-divider border-[3px]  bg-white dark:bg-black flex-col icon-box relative flex items-center justify-center hover:bg-white dark:hover:bg-black focus:bg-white dark:group-focus:bg-black rounded-lg lgx:rounded-2xl transition duration-200 linear"
         class:default-ide-type={!checked}
+        class:focused-ide-type={!checked}
       >
         <img src="/svg/index/browser.svg" alt="Browser" class="pt-1 h-8 w-8" />
         <div
@@ -168,7 +173,13 @@
             !(activeIdeName === "vscode")}
           data-name={name}
         >
-          <img src="/svg/index/{icon}" alt={label} class="icon" />
+          <img
+            src="/svg/index/{icon}"
+            alt={label}
+            class=" {name == 'vscode' || name == 'vim'
+              ? 'h-9 w-9'
+              : 'h-11 w-11'}"
+          />
         </div>
         {#if availibility}
           <div
