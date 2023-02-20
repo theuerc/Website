@@ -60,9 +60,7 @@ cat /home/gitpod/.dotfiles.log
 
 ### How to debug or test dotfiles changes inside an existing workspace without creating a new one each time?
 
-Currently, you have to commit and push the changes to your remote dotfile repository, and then create a new workspace to see if your dotfiles work. This can be a tedious process. 
-
-But instead, after you've opened your dotfiles repository in Gitpod workspace, you can run the below command snippet in your terminal as a workaround until [gp rebuild](/docs/references/gitpod-cli#rebuild) command has built-in support for iterating on dotfiles:
+If you want to quickly test out dotfiles inside an existing workspace created from your `dotfiles` repository, you can run the below command snippet in your terminal as a workaround:
 
 ```bash
 gitpod_evars="${!GITPOD_*}" gp_evars="${!GP_*}"; for k in ${gitpod_evars:-} ${gp_evars:-}; do dargs+=(-e "${k}"); done; docker run "${dargs[@]}" --net=host --rm -v $PWD:/home/gitpod/.dotfiles -v /workspace:/workspace -v /ide:/ide -v /usr/bin/gp:/usr/bin/gp:ro -v /.supervisor:/.supervisor -v /var/run/docker.sock:/var/run/docker.sock --privileged -it gitpod/workspace-full bash -c 'trap "echo -e \"=== Run \033[1;32mexit\033[0m command to leave debug workspace\"; exec bash -li" EXIT ERR; echo "PROMPT_COMMAND=\"echo -n \\\"[debug-workspace] \\\"; \$PROMPT_COMMAND\"" >> $HOME/.bashrc; eval "$(gp env -e)"; dot_path="${HOME}/.dotfiles"; for s in install setup bootstrap; do if p="${dot_path}/${s}" && test -x "${p}" || p="${p}.sh" && test -x "${p}"; then set +m; "$p"; set -m; exit; fi; done; while read -r file; do rf_path="${file#"${dot_path}"/}"; target_file="${HOME}/${rf_path}"; target_dir="${target_file%/*}"; if test ! -d "$target_dir"; then mkdir -p "$target_dir"; fi; ln -sf "$file" "$target_file"; done < <(find "${dot_path}" -type f);'
