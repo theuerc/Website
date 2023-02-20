@@ -7,14 +7,14 @@
 
 <Card size="medium" class="m-auto shadow-highlight w-10/12">
   <Section class="text-center {clazz}" {...$$restProps}>
-    <h2 class="text-[32px] text-left ml-4 sm:ml-[72px]">
+    <h2 class="text-[32px] text-left ml-4 sm:ml-16">
       Integrate, don't dictate
     </h2>
-    <p class="text-left text-2xl ml-4 sm:ml-[72px] mb-8">
+    <p class="text-left text-2xl ml-4 sm:ml-16 mb-8">
       Control every detail of your developer experience.
     </p>
-    <div class="sm:flex mb-6">
-      <div class="ml-4 sm:ml-[72px] grid grid-rows-2 grid-flow-col">
+    <div class="flex flex-wrap items-center justify-evenly mb-6 ml-6 mr-6">
+      <div class="grid grid-rows-2 grid-flow-col">
         <!-- Git Provider options -->
         <div
           class="mt-4 text-left items-left bg-sand-light dark:bg-black py-micro pl-xx-small pr-medium text-p-small rounded-2xl border border-transparent w-64 sm:w-80"
@@ -84,7 +84,7 @@
           </div>
         </div>
       </div>
-      <div class="ml-4 sm:ml-4 grid grid-rows-1">
+      <div class="grid grid-rows-1">
         <!-- long IDE Section in center -->
         <div
           class="mt-4 text-left items-left bg-sand-light dark:bg-black py-micro pl-xx-small pr-medium text-p-small rounded-2xl border border-transparent w-64 sm:w-80"
@@ -125,7 +125,7 @@
           </div>
         </div>
       </div>
-      <div class="ml-4 sm:ml-4 grid grid-rows-2 grid-flow-col">
+      <div class="grid grid-rows-2 grid-flow-col">
         <!-- Customize Themes & Extensions  -->
         <div
           class="mt-4 text-left items-left bg-sand-light dark:bg-black py-micro pl-xx-small text-p-small rounded-2xl border border-transparent w-64 sm:w-80"
