@@ -13,7 +13,6 @@
   import Textarea from "$lib/components/ui-library/textarea";
   import Header from "$lib/components/header.svelte";
   import Input from "$lib/components/ui-library/input";
-  import Checkbox from "$lib/components/ui-library/checkbox";
   import Select from "$lib/components/ui-library/select";
   import Card from "$lib/components/ui-library/card";
   import Button from "$lib/components/ui-library/button";
@@ -67,11 +66,6 @@
       el: null,
       valid: false,
       value: "",
-    },
-    consent: {
-      el: null,
-      valid: false,
-      checked: false,
     },
     workEmail: {
       el: null,
@@ -389,21 +383,11 @@
                   rows="6"
                 />
               </div>
-              <Checkbox
-                hasError={isFormDirty && !formData.consent.valid}
-                label="I consent to having this website store my submitted information so that the sales team can respond to my inquiry."
-                bind:checked={formData.consent.checked}
-                bind:element={formData.consent.el}
-                on:change={() => {
-                  formData.consent.valid =
-                    formData.consent.checked &&
-                    formData.consent.el.validity.valid;
-                }}
-              />
               <p class="text-sm my-4">
-                By submitting this form I acknowledge that I have read and
-                understood <a class="!underline" href="/privacy"
-                  >Gitpod’s Privacy Policy.</a
+                By submitting this form, I confirm that I acknowledge the
+                collection and processing of personal data by Gitpod, as further
+                described in the <a class="!underline" href="/privacy"
+                  >Privacy Policy.</a
                 >
               </p>
               <Button
