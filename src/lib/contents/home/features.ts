@@ -185,3 +185,45 @@ export const dedicatedFeatures: Feature[] = [
   maximizeControl,
   devsDontCareAboutMachines,
 ];
+
+/**Collaboration Features,
+ * Using on /solutions/collaboration page
+ *
+ */
+
+export const parallelDevelopment: Feature = {
+  title: "A new workspace with a single click",
+  paragraph:
+    "Multiple ephemeral workspaces. Enable anyone on your team to work on fixing bugs, implementing features, reviewing pull request, all at the same time.",
+  lottie: {
+    src: "/lottie/edit_workspace.json",
+    id: "edit_workspace",
+  },
+};
+
+export const teamsCodeTogether: Feature = {
+  title: "Share workspaces in realtime",
+  paragraph:
+    "Collaborate on tasks without making changes to your dev environment. Share running workspaces for pair programming, use port forwarding or share a snapshot as a copy of your workspace with teammates.",
+  lottie: {
+    src: "/lottie/share_workspace.json",
+    id: "share-workspace",
+  },
+};
+
+export const worksOnAnyMachineFeatureForCollaboration: Feature = {
+  title: `Works on <t style="text-decoration-line: line-through; color: #999795;">my</t> any machine`,
+  paragraph: `No more "works on my machine" issues.</br></br> Gitpod creates an identical developer experience for everyone, on every machine.`,
+  image: {
+    src: "/images/features/works-on-any-machine.webp",
+    alt: "Works on any machine",
+    width: "100%",
+    height: "100%",
+  },
+};
+
+export const collaborationFeatures: Feature[] = [
+  parallelDevelopment,
+  teamsCodeTogether,
+  worksOnAnyMachineFeatureForCollaboration,
+];
