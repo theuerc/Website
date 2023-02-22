@@ -13,6 +13,8 @@ Dotfiles are a way to customize your developer environment according to your per
 
 To configure Gitpod to use your own dotfiles for all your workspaces, enter the URL of a dotfiles repository in [your user preferences](https://gitpod.io/preferences).
 
+`youtube: 00dif9QWXNU`
+
 ## Custom installation script
 
 Gitpod will recognize and run one of the following install scripts from your dotfiles repository.
@@ -55,7 +57,6 @@ The dotfiles repository installation logs are saved to `/home/gitpod/.dotfiles.l
 cat /home/gitpod/.dotfiles.log
 ```
 
-
 ## FAQs
 
 ### How to debug or test dotfiles changes inside an existing workspace without creating a new one each time?
@@ -76,6 +77,7 @@ When you commit a custom script such as `install.sh` in your dotfiles repository
 
 - Create a directory called `home_files` inside your dotfiles repository. You can place your .dotfiles in the `home_files` directory, that means you could put files like `.zshrc`, `.tmux.conf`, `.config/nvim/` and etc. in there.
 - In your [custom installation script](#custom-installation-script) (e.g. `install.sh`), use/append the below snippet:
+
 ```bash
 current_dir="$(cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd)"
 dotfiles_source="${current_dir}/home_files"
@@ -97,6 +99,7 @@ done < <(find "${dotfiles_source}" -type f)
 ```
 
 ### [It it possible to cache the dotfiles installation?](https://discord.com/channels/816244985187008514/1072003259075657849)
+
 <!-- DISCORD_BOT_FAQ - DO NOT REMOVE -->
 
 If your dotfiles installation relies on some heavy dependencies, that can take some time to install by nature.
