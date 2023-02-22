@@ -85,7 +85,7 @@ export const fourGeeks: Brand = {
 
 export const brands: Brand[] = [
   gitlab,
-  jetbrains,
+  freeCodeCamp,
   google,
   factorial,
   dataStax,
@@ -94,8 +94,6 @@ export const brands: Brand[] = [
   astrato,
   redwood,
   codeInstitute,
-  fourGeeks,
-  freeCodeCamp,
 ];
 
 export const logosAnimated: Brand[] = [
