@@ -38,6 +38,8 @@
       (s) => s.toLowerCase() === subject?.toLowerCase()
     );
 
+    formData.selectedSubject.value = "Enterprise";
+
     if (match) {
       formData.selectedSubject.value = match;
       formData.selectedSubject.valid = true;
@@ -59,7 +61,7 @@
   const formData: Form = {
     selectedSubject: {
       el: null,
-      valid: false,
+      valid: true,
       value: "",
     },
     name: {
@@ -201,8 +203,8 @@
 
 <div>
   <Header
-    title="Contact Sales"
-    text="We’ll help you find the best plan for your business."
+    title="Talk to an expert"
+    text="Want to get a custom demo or find the best plan for your company? We'd love to chat."
     tight={true}
     textAlign="left"
     centered={false}
@@ -231,53 +233,22 @@
             <div class="space-y-8">
               <div class:error={isFormDirty && !formData.selectedSubject.valid}>
                 <fieldset class="flex">
-                  <legend>Please choose a subject</legend>
-                  <ul class="flex flex-wrap">
-                    {#each subjects as subject, index}
-                      <li class="mr-macro">
-                        <input
-                          id="subject-{index}"
-                          type="radio"
-                          bind:group={formData.selectedSubject.value}
-                          bind:this={formData.selectedSubject.el}
-                          on:change={() => {
-                            formData.selectedSubject.valid =
-                              formData.selectedSubject.value &&
-                              formData.selectedSubject.el.validity.valid;
-
-                            if (
-                              formData.selectedSubject.value === demoSubject
-                            ) {
-                              goto("/contact/get-demo");
-                            }
-                          }}
-                          value={subject}
-                          name="subject"
-                        />
-                        <label for="subject-{index}" class="font-medium"
-                          >{subject}</label
-                        >
-                      </li>
-                    {/each}
-                  </ul>
+                  <Select
+                    placeholder="Please choose a subject"
+                    hasError={isFormDirty && !formData.selectedSubject.valid}
+                    bind:value={formData.selectedSubject.value}
+                    bind:element={formData.selectedSubject.el}
+                    on:change={() => {
+                      formData.selectedSubject.valid =
+                        formData.selectedSubject.value &&
+                        formData.selectedSubject.el.validity.valid;
+                    }}
+                    name="subject"
+                    options={subjects}
+                    class="max-w-md"
+                  />
                 </fieldset>
               </div>
-              {#if isCloudPlatformsSelectShown && formData.cloudInfrastructure}
-                <Select
-                  hasError={isFormDirty && !formData.cloudInfrastructure.valid}
-                  name="cloudInfrastructure"
-                  bind:value={formData.cloudInfrastructure.value}
-                  on:change={(e) => {
-                    formData.cloudInfrastructure.valid =
-                      formData.cloudInfrastructure.value &&
-                      // @ts-ignore
-                      e.target.validity.valid;
-                  }}
-                  options={dedicatedCloudPlatforms}
-                  placeholder="Which cloud infrastructure do you use?"
-                  class="max-w-md"
-                />
-              {/if}
               <InputsHalf>
                 <div>
                   <Input
@@ -351,6 +322,7 @@
                 <div>
                   <Input
                     label="Phone number"
+                    optionalLabel={true}
                     hasError={isFormDirty && !formData.number.valid}
                     id="phone-number"
                     name="phone-number"
@@ -364,6 +336,24 @@
                     type="tel"
                     autocomplete="tel"
                   />
+                </div>
+                <div class="flex flex-col justify-end">
+                  {#if isCloudPlatformsSelectShown && formData.cloudInfrastructure}
+                    <Select
+                      hasError={isFormDirty &&
+                        !formData.cloudInfrastructure.valid}
+                      name="cloudInfrastructure"
+                      bind:value={formData.cloudInfrastructure.value}
+                      on:change={(e) => {
+                        formData.cloudInfrastructure.valid =
+                          formData.cloudInfrastructure.value &&
+                          // @ts-ignore
+                          e.target.validity.valid;
+                      }}
+                      options={dedicatedCloudPlatforms}
+                      placeholder="Which cloud infrastructure do you use?"
+                    />
+                  {/if}
                 </div>
               </InputsHalf>
               <div>
@@ -391,14 +381,14 @@
                 >
               </p>
               <Button
-                variant="cta"
+                variant="primary"
                 size="medium"
                 type="submit"
                 disabled={(isFormDirty && !isFormValid) ||
                   isSubmissionInProgress}
                 isLoading={isSubmissionInProgress}
               >
-                Contact sales
+                Submit
               </Button>
               {#if isFormDirty && !isFormValid}
                 <legend class="text-xs text-error block mt-1 mb-2">
