@@ -57,7 +57,7 @@
 </style>
 
 <section class="mt-small md:mt-x-large">
-  <h2 class="h5 text-center">Speeding up +750k developers in teams like</h2>
+  <h2 class="h5 text-center">Used by industry leading companies</h2>
   <div class="flex justify-center gap-xx-small sm:gap-20 mt-large sm:mt-20">
     {#each sequence as i}
       <div class="logos-wrapper h-5 w-24 sm:h-8 sm:w-32">
