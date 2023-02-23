@@ -41,7 +41,7 @@
     <LinkButton
       href="/contact/sales?subject=Enterprise"
       class="items-center"
-      variant="gray">Contact sales</LinkButton
+      variant="gray">Talk to an expert</LinkButton
     >
   </div>
 </Section>

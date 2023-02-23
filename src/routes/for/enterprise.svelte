@@ -50,7 +50,7 @@
     href: "/contact/get-demo",
   }}
   btnSecondary={{
-    text: "Contact sales",
+    text: "Talk to an expert",
     href: "/contact/sales?subject=enterprise",
   }}
 />
