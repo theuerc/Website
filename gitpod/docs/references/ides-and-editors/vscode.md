@@ -268,6 +268,15 @@ Host *.gitpod.io
     ForwardAgent yes
 ```
 
+## Upload Files
+
+You can upload files to your workspace by dragging and dropping them into the editor. This method works with every IDE (e.g. Intellij, PyCharm, etc.)
+
+<figure>
+  <video onloadstart="this.playbackRate = 1.5;" controls playsinline autoplay loop muted class="shadow-medium w-full rounded-xl max-w-3xl mt-x-small" src="/images/editors/file-upload-drag-and-drop.webm" type="video/webm"></video>
+  <figcaption>Upload Files from local to VS Code Desktop</figcaption>
+</figure>
+
 ## Troubleshooting
 
 If you are still having issues connecting to VS Code Desktop from Gitpod, try:
