@@ -22,7 +22,7 @@
       <li>
         <a rel="nofollow" href="https://ch.linkedin.com/in/elliot-w-27962779"
           >Elliot Ward</a
-        > from Synk.
+        > from Snyk.
       </li>
       <li>
         <a
