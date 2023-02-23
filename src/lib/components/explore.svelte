@@ -12,11 +12,11 @@
     description = "Spin up fresh, automated dev environments for each task, in the cloud, in seconds - no credit card required.",
     note = "",
     link = {
-      text: "Try now",
+      text: "Start for free",
       href: "https://gitpod.io/workspaces",
     },
     secondaryLink = {
-      text: "Get a demo",
+      text: "Talk to an expert",
       href: "/contact/get-demo",
     },
     useKumquatIllustration = false,

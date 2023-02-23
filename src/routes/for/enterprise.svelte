@@ -46,7 +46,7 @@
     alt: "Enter Rug",
   }}
   btnPrimary={{
-    text: "Get a demo",
+    text: "Talk to an expert",
     href: "/contact/get-demo",
   }}
   btnSecondary={{

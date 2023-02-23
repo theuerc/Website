@@ -11,7 +11,7 @@ import { factorialQuote, sharesIoQuote, vizlibQuote } from "./customers";
 import { jetbrainsQuote } from "./jetbrains-space";
 
 export const exploreContents: ExploreSection = {
-  title: "Get demo",
+  title: "Talk to an expert",
   description:
     "Spin up fresh cloud development environments for each task, in the cloud, in seconds",
   link: {

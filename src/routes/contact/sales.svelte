@@ -30,12 +30,13 @@
   const enterpriseSubject = "Enterprise";
   const otherSubject = "Other";
   const demoSubject = "Get a demo";
-
+  
   /**Example Usecase:
    * /contact/sales?subject=enterprise
    * /contact/sales?subject=Get%20a%20demo
-   * ,,,
+   * ...
    */
+
   const subjects = [enterpriseSubject, demoSubject, "Reselling", otherSubject];
 
   onMount(() => {
