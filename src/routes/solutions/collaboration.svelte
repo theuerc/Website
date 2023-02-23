@@ -29,7 +29,7 @@
   <div
     class="items-center justify-between max-w-7xl mx-auto mt-small mb-x-large md:my-x-large lg:mb-xxx-large"
   >
-    <h2 class="h1 !mb-micro md:!mb-x-small">
+    <h2 class="h1 !mb-micro md:!mb-x-small max-w-xl">
       How Gitpod improves collaboration
     </h2>
     <p class="text-large max-w-xl">
@@ -43,9 +43,12 @@
       name: "Johannes Schickling",
       jobTitle: "Co-founder at Prisma",
     }}
+    svgClazz="h-20 w-20"
   />
 </Section>
-<AnimatedLogos />
+<Section>
+  <AnimatedLogos />
+</Section>
 <Section id="frictionless-collaboration">
   <h3 class="text-center text-3xl sm:text-5xl font-bold">
     Frictionless collaboration

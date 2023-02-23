@@ -227,3 +227,45 @@ export const collaborationFeatures: Feature[] = [
   teamsCodeTogether,
   worksOnAnyMachineFeatureForCollaboration,
 ];
+
+/**Onboarding Features,
+ * Using on /solutions/onboarding page
+ *
+ */
+
+export const worksOnAnyMachineFeatureForOnboarding: Feature = {
+  title: `Works on <t style="text-decoration-line: line-through; color: #999795;">my</t> any machine`,
+  paragraph:
+    "With a single click, developers can spin up a perfectly configured workspace in a container in the cloud - independent of the device, operating system, or IDE they use.",
+  image: {
+    src: "/images/features/works-on-any-machine.webp",
+    alt: "Works on any machine",
+    width: "100%",
+    height: "100%",
+  },
+};
+
+export const onboardDevsWithOneClick: Feature = {
+  title: "Onboard developers with one click",
+  paragraph:
+    "Developers are ready to code at the click of the button. Internal and external developers become effective on day 1.",
+  lottie: {
+    src: "/lottie/edit_workspace.json",
+    id: "edit_workspace",
+  },
+};
+
+export const debugFasterThenEver: Feature = {
+  title: "Debug faster than ever",
+  paragraph:
+    "Reduce the number of support requests in half and decrease the time spent on them to mere minutes.",
+  terminal: {
+    source: terminalSource,
+  },
+};
+
+export const onboardFeatures: Feature[] = [
+  worksOnAnyMachineFeatureForOnboarding,
+  onboardDevsWithOneClick,
+  debugFasterThenEver,
+];

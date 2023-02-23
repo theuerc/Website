@@ -1,5 +1,6 @@
 <script lang="ts">
   let clazz = "";
+  export let svgClazz = "";
   export { clazz as class };
   export let quote: string;
   export let author: { name: string; jobTitle: string } = null;
@@ -9,14 +10,14 @@
   const { name, jobTitle } = author || {};
 </script>
 
-<div class="max-w-2xl mx-auto">
+<div class="max-w-xl mx-auto">
   <Card
     size="medium"
     class="shadow-normal flex items-start relative text-left md:mx-auto py-x-small px-micro sm:p-small {clazz}"
   >
     <svg
       fill="none"
-      class="h-20 w-20"
+      class={svgClazz}
       viewBox="0 0 28 25"
       xmlns="http://www.w3.org/2000/svg"
       ><path
