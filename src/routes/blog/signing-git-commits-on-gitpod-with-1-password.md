@@ -69,19 +69,21 @@ These changes make sure of two things:
 
 - Agent forwarding is enabled for \*.gitpod.io which means all Gitpod workspaces have access to the SSH auth socket. (If you’re using an instance of Gitpod dedicated, set it to a wildcard of your internally hosted domain.)
 
-Next, we'll need to generate an SSH Key. You can do this with `ssh-keygen`. It’s best to create an SSH key with a passphrase, as 1Password can automatically enter it when prompted. (It's also neccessary for some security compliance specifications.) The command to add a passphrase to an existing key is:
+Next, we'll need to generate an SSH Key. You can do this right within the [Gitpod SSH keys](https://gitpod.io/keys) page if you have the 1Password extension installed:
+
+<figure class="flex flex-col items-center text-center">
+  <img src="/images/blog/signing-git-commits-on-gitpod-with-1-password/fill-ssh-key.webp" alt="1Password Autocompleting SSH Key"  />
+</figure>
+
+If you'd like to use an existing SSH key, you can also import that into 1Password. It's best if it's passphrase protected. The command to add a passphrase to an existing key is:
 
 ```
 $ ssh-keygen -p -f ~/.ssh/id_rsa
 ```
 
-With this, you can then load your SSH key into 1Password, and type in the passphrase you created earlier.
+With this, you can then load your SSH key into 1Password, and save the passphrase you created. Going forward, 1Password will enter your passphrase for you automatically.
 
-Add your SSH public key to Gitpod to the [Gitpod SSH keys](https://gitpod.io/keys). With 1Password 8 and its browser extension (currently supports Chrome, Safari, Brave and more), you will get the option to insert the SSH key into the browser. (This should be your public key!) This will allow us to access our Gitpod Workspace via SSH.
-
-<figure class="flex flex-col items-center text-center">
-  <img src="/images/blog/signing-git-commits-on-gitpod-with-1-password/fill-ssh-key.webp" alt="1Password Autocompleting SSH Key"  />
-</figure>
+From there, add your SSH public key to Gitpod to the [Gitpod SSH keys](https://gitpod.io/keys). With 1Password 8 and its browser extension (currently supports Chrome, Safari, Brave and more), again, you will get the option to insert the SSH key into the browser. (This should be your public key!) This will allow us to access our Gitpod Workspace via SSH.
 
 Next, add your public SSH key to Gitpod as a [user environment variable](https://gitpod.io/user/variables). We'll use this environment variable to tell git which key to use for signing. In this case, I’ve named my environment variable `SSH_SIGNING_KEY`, and I’ve set it as a global variable with a `*/*` scope. (I want every repository I use on Gitpod to use it for signing if possible.)
 
