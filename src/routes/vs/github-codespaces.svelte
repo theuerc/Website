@@ -105,7 +105,11 @@
     slot="content"
   >
     {#each featureCards as card}
-      <CardSmall class="m-macro px-xx-small relative" card={card.card}>
+      <CardSmall
+        class="m-macro px-xx-small relative"
+        card={card.card}
+        titleClassNames="h5"
+      >
         {#if card.pill}
           <Pill
             class="absolute right-x-small -top-2"
