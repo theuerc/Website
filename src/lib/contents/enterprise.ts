@@ -87,8 +87,8 @@ export const dedicatedCards: {
   },
   {
     card: {
-      title: "Low latency",
-      text: "Get faster startup times with your private instance",
+      title: "Faster Gitpod",
+      text: "Get faster startup times and lower latency",
       icon: {
         src: "/svg/icons/clock.svg",
         alt: "Clock Icon",

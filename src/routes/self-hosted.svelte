@@ -19,7 +19,7 @@
 <OpenGraph
   data={{
     description:
-      "Install a private, single-tenant instance of Gitpod on your cloud account. Gitpod Dedicated is our self-hosted alternative for large teams",
+      "Install a private, single-tenant instance of Gitpod on your cloud account. Gitpod Dedicated is our alternative to self-hosting for large teams",
     title: "Gitpod self-hosted alternative",
     keywords:
       "dedicated, self-hosted, private SaaS, single-tenant, installation",
