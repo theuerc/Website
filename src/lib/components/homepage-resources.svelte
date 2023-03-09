@@ -36,8 +36,11 @@
     Want to see a custom demo or get help finding the right solution?
   </div>
   <div class="text-center m-auto mb-small mt-x-small">
-    <LinkButton href="/contact/get-demo" class="items-center" variant="primary"
-      >Get a demo</LinkButton
+    <LinkButton
+      href="/contact/get-demo"
+      class="items-center"
+      size="large"
+      variant="primary">Get a demo</LinkButton
     >
   </div>
 </Section>
