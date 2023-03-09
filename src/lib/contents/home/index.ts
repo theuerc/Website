@@ -176,10 +176,10 @@ export const testimonials: Testimonial[] = [
     role: "Creator and Co-founder of",
     text: `
       <p>
-      Gitpod totally changed the development 
-      velocity for RedwoodJS—it removed any 
-      issues related to configurations of dev 
-      environments and made it incredibly 
+      Gitpod totally changed the development
+      velocity for RedwoodJS—it removed any
+      issues related to configurations of dev
+      environments and made it incredibly
       easy to contribute.
       </p>
     `,
@@ -193,8 +193,8 @@ export const testimonials: Testimonial[] = [
     role: "Former Chief Architect of",
     text: `
     <p>
-    Gitpod is the most exciting developer tool 
-    I have encountered since, I don’t know, 
+    Gitpod is the most exciting developer tool
+    I have encountered since, I don’t know,
     telnet maybe? Unix? It’s been a while.
     </p>
       `,
@@ -211,9 +211,9 @@ export const testimonials: Testimonial[] = [
     role: "CEO at",
     text: `
         <p>
-        Through our partnership with Gitpod, we 
-        are enabling our mutual users to accelerate 
-        productivity, save resources and time while 
+        Through our partnership with Gitpod, we
+        are enabling our mutual users to accelerate
+        productivity, save resources and time while
         strengthening security compliance
         </p>
       `,
@@ -229,8 +229,8 @@ export const testimonials: Testimonial[] = [
     role: "CTO at",
     text: `
           <p>
-          Gitpod easily saves every engineer half a 
-          day per week. The amount of productivity 
+          Gitpod easily saves every engineer half a
+          day per week. The amount of productivity
           we gain is staggering.
           </p>
       `,
@@ -246,8 +246,8 @@ export const testimonials: Testimonial[] = [
     role: "Director of Developer Experience at",
     text: `
       <p>
-      I’d estimate each engineer saves 5 to 10 
-      hours a month on dev environment 
+      I’d estimate each engineer saves 5 to 10
+      hours a month on dev environment
       issues that just don’t exist with Gitpod.
       </p>
     `,
@@ -263,7 +263,7 @@ export const testimonials: Testimonial[] = [
     role: "CTO at",
     text: `
       <p>
-      The ability for QAs to easily test a branch 
+      The ability for QAs to easily test a branch
       resulted in 20% fewer hotfixes after releases.
       </p>
     `,
@@ -280,7 +280,7 @@ export const testimonials: Testimonial[] = [
     role: "Founder of",
     text: `
         <p>
-        I would rather shut down the academy 
+        I would rather shut down the academy
         than stop using Gitpod.
         </p>
       `,
