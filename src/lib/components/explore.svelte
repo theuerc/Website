@@ -16,7 +16,7 @@
       href: "https://gitpod.io/workspaces",
     },
     secondaryLink = {
-      text: "Talk to an expert",
+      text: "Get a demo",
       href: "/contact/get-demo",
     },
     useKumquatIllustration = false,
