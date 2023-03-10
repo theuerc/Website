@@ -12,6 +12,7 @@
   import {
     automationFirstFeature,
     codespacesComparison,
+    testimonials,
   } from "$lib/contents/codespaces";
   import FeatureBoxes from "$lib/components/vs/feature-boxes.svelte";
   import Combined from "$lib/components/vs/combined.svelte";
@@ -22,6 +23,7 @@
   import CardSmall from "$lib/components/card/card-small.svelte";
   import Pill from "$lib/components/pill.svelte";
   import opensourceSvelte from "$lib/components/svgs/opensource.svelte";
+  import Testimonials from "$lib/components/index/testimonials.svelte";
 </script>
 
 <OpenGraph
@@ -39,6 +41,10 @@
   integrates with your individual stack."
   tight={true}
 />
+
+<Section class="!mt-0">
+  <Testimonials class="-mb-20 !mt-0" {testimonials} />
+</Section>
 
 <FeatureBoxes>
   <FeatureBox
