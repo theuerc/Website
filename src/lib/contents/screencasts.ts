@@ -17,7 +17,7 @@ export const demoScreencast: Screencast = {
     "See how Gitpod launches a ready-to-code project built on five containers using a Node app, .NET app, a Python app as well as Redis and Postgres databases with a simple click.",
   youtubeId: "9EBKVimskr8",
   tile: "screencast-16.jpg",
-  duration: 523,
+  duration: 303,
   tags: ["Demo"],
   href: "/screencasts/demo",
 };
