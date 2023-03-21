@@ -1,15 +1,12 @@
 ---
-title: "Introducing: Flexible Timeouts 🥳 !"
+title: Introducing Flexible Timeouts 🥳 !
 excerpt: You can now set your workspace timeout up to 24 hours using the command line, direct in your favorite editor or IDE or configuring a global default.
 date: 2023-03-21
 image: timeouts.webp
 ogImage: timeouts.webp
 alt: Input box for timeouts set in a users preferences page.
+customSlug: flexible-workspace-timeouts
 ---
-
-<script>
-  import Contributors from "$lib/components/changelog/contributors.svelte";
-</script>
 
 You can now set your workspace timeout up to 24 hours using the command line, direct in your favorite editor or IDE or configure a global default! Setting a configurable timeout is useful if you're working on a long running task, need to leave your workspace open for a while and then revisit it, or whilst collaborating or sharing previews with others.
 
