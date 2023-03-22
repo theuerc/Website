@@ -45,7 +45,7 @@ Along with other languages and tools, this base image includes:
 
 Gitpod comes with the latest stable Node.js version pre-installed but let's say your project uses a different version of `node` (say `14.8.0` for example), well the good news is that Gitpod also comes with `nvm` (a tool used to manage multiple active Node.js versions) installed. To install and configure the desired version of node: `nvm install 14.8.0` and `nvm use 14.8.0` (you can also use `nvm alias default 14.8.0` to set the default version of node) or you can setup [custom Dockerfile](/docs/introduction/languages/javascript#setting-up-a-custom-dockerfile) to install the desired version of node & other required tools.
 
-### Setting up a custom Dcokerfile
+### Setting up a custom Dockerfile
 
 `youtube: jFsbmcXCRf8`
 

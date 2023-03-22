@@ -43,7 +43,7 @@ This base image includes:
 
 Gitpod uses the latest stable version of Go by default. If you want to use a different version, you can use the [Go Version Manager](https://github.com/moovweb/gvm) to install and manage multiple versions of Go or you can following their [official guide](https://go.dev/doc/manage-install).
 
-### Setting up a custom Dcokerfile
+### Setting up a custom Dockerfile
 
 `youtube: jFsbmcXCRf8`
 
