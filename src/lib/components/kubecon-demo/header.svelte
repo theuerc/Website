@@ -1,6 +1,6 @@
 <script lang="ts">
   import CalendlyEmbed from "../get-demo/calendly-embed.svelte";
-  import HeaderDescription from "$lib/components/events/kubecon-detroit/header-description.svelte";
+  import HeaderDescription from "$lib/components/events/header-description.svelte";
 </script>
 
 <style lang="postcss">

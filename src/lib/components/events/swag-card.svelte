@@ -21,10 +21,13 @@
     <div>
       <h3 class="h4">Get your hands on some swag! 🍊</h3>
       <p class="mb-micro">
-        For a chance to win one of our Gitpod fan boxes, tweet at us (@gitpod)
-        about the best DevX you’ve ever experienced. There will be extra points
-        for tweets with photos by our booth if you’re with us onsite. We’ll pick
-        our favourites and send you a link to redeem your swag box 📦 📦 📦
+        For a chance to win one of our Gitpod fan boxes, tweet at us (<a
+          target="_blank"
+          href="https://twitter.com/gitpod">@gitpod</a
+        >) about the best DevX you’ve ever experienced. There will be extra
+        points for tweets with photos by our booth if you’re with us onsite.
+        We’ll pick our favourites and send you a link to redeem your swag box
+        📦 📦 📦
       </p>
     </div>
   </Card>

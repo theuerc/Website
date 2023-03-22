@@ -30,7 +30,25 @@
         Come by our booth, we’re excited to talk with you.
       </p>
     </div>
-    <BoothCard />
+
+    <div class="flex flex-col gap-small">
+      <BoothCard
+        title="Meet Gitpod’s CEO and CTO at KubeCon EU."
+        description="Come and meet Gitpod's CEO and CTO at KubeCon! You can schedule a meeting with them to discuss your needs and how Gitpod can help you improve developer experience in your organisation."
+        linkText="Schedule a meeting today"
+        link="/kubecon-demo"
+        image="/images/events/meet-ceo-cto.webp"
+      />
+
+      <BoothCard
+        title="#KubeCrawl + #CloudNativeFest"
+        description="Join us for the #KubeCrawl + #CloudNativeFest big celebration on the first official night of KubeCon + CloudNativeCon!"
+        linkText="Learn More"
+        link="https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/attend/experiences/"
+        image="/images/events/kubecrawl.webp"
+      />
+    </div>
+
     <div
       class="mt-micro md:mt-small grid grid-cols-1 md:grid-cols-2 gap-micro lg:gap-small"
     >

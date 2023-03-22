@@ -1,6 +1,6 @@
 <script lang="ts">
   import Section from "$lib/components/section.svelte";
-  import Quote from "$lib/components/events/kubecon-detroit/quote.svelte";
+  import Quote from "$lib/components/events/quote.svelte";
 
   import { Voices } from "$lib/contents/cde-manifesto";
 </script>

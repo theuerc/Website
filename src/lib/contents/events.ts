@@ -62,6 +62,15 @@ export const conferences: {
   year: string;
 }[] = [
   {
+    imgDark: "/images/events/kubecon-eu-2023-white.webp",
+    img: "/images/events/kubecon-eu-2023.webp",
+    text: "The CNCF's flagship conference in Amsterdam, April 2023.",
+    alt: "Kubecon EU 2023 Logo",
+    buttonText: "More on KubeCon EU 23",
+    href: "/events/kubecon-amsterdam",
+    year: "2023",
+  },
+  {
     imgDark: "/images/events/kubecon-logo-dark.png",
     img: "/images/events/kubecon-logo.png",
     text: "The CNCF's flagship conference in North America, October 2022.",
