@@ -52,7 +52,7 @@ The figure is also segmented vertically - in the upper part, we see the code vie
 
 The lower part contains the runtime view, i.e., an instantiation of your app that can be used for previewing the application logic and quickly iterating on the logic. The runtime makes use of a LocalStack container that runs inside the Gitpod environment - and allows you to conveniently deploy your cloud application assets into this sandbox, to then preview the results.
 
-![](../../../static/images/blog/localstack-and-gitpod/figure.png)
+![Architecture Diagram](../../../static/images/blog/localstack-and-gitpod/figure.png)
 
 The screenshot below illustrates how things fit together when spinning up this Gitpod workspace. In the tree view on the left-hand side of VS Code in the browser, we can see the files of your application. The main view shows the source code of your app (e.g., an AWS Lambda handler file), and the terminal view in the lower part shows the log output of the LocalStack Docker instance running in the environment.
 

@@ -36,31 +36,6 @@
       }
     }
 
-    &__icons {
-      display: flex;
-      justify-content: space-between;
-      width: 120px;
-      padding: 0 var(--macro);
-
-      @media (min-width: 1141px) {
-        width: 160px;
-      }
-
-      @media (max-width: 768px) {
-        width: 145px;
-      }
-
-      & > :global(*) {
-        height: 29px;
-        width: 29px;
-
-        @media (max-width: 1140px) {
-          height: 27px;
-          width: 27px;
-        }
-      }
-    }
-
     &__illustration {
       max-width: 700px;
       padding-left: 70px;

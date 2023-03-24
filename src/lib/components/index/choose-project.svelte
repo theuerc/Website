@@ -111,25 +111,6 @@
     width: 100%;
   }
 
-  h2 {
-    text-align: center;
-    max-width: 67.7rem;
-    margin: 0 auto;
-
-    @media (max-width: 1194px) {
-      font-size: var(--h3);
-    }
-
-    @media (max-width: 682px) {
-      max-width: 23.75rem;
-    }
-
-    @media (max-width: 382px) {
-      font-size: 1.7rem;
-      min-width: 292px;
-    }
-  }
-
   del {
     text-decoration: none;
   }
@@ -197,7 +178,7 @@
 <div class="row">
   <Section>
     <div
-      class=" text-3xl sm:text-5xl text-black font-bold text-center dark:text-important"
+      class="text-3xl sm:text-5xl text-black font-bold text-center dark:text-important"
     >
       Select project,
       <br />

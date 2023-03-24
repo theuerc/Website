@@ -9,10 +9,6 @@
 </script>
 
 <style lang="postcss">
-  h4 {
-    @apply text-p-medium mb-0;
-  }
-
   :global(body.dark) div :global(a:hover) {
     :global(h4) {
       @apply text-black;

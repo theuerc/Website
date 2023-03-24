@@ -92,7 +92,7 @@
   }
 
   .grayed {
-    @apply shadow-lg hover:bg-white dark:hover:bg-black border-0 hover:border-divider hover:border;
+    @apply shadow-lg hover:bg-white border-0 hover:border-divider hover:border;
   }
 
   .toggle-ide-type {
