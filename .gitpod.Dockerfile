@@ -1,4 +1,4 @@
-FROM gitpod/workspace-full-vnc:latest
+FROM gitpod/workspace-full-vnc:2023-03-24-02-48-18
 
 ENV CYPRESS_CACHE_FOLDER=/workspace/.cypress-cache
 
