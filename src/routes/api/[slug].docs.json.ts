@@ -75,8 +75,9 @@ export const get: RequestHandler = async ({ params }) => {
     });
 
     const frontmatter = {
+      // @ts-ignore
       ...compiledMarkdown.data.fm,
-      isIndex: filePath.endsWith("index.md"),
+      isIndex: filePath?.endsWith("index.md"),
     };
 
     return {
