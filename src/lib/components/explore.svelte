@@ -152,20 +152,20 @@
       </ButtonsWrapper>
     </div>
     <div
-      class="explore__illustration w-full bg-cover bg-left bg-[url('/images/illustration-grid.png')] dark:bg-[url('/images/illustration-grid-dark.png')]"
+      class="explore__illustration w-full bg-cover bg-left bg-[url('/images/illustration-grid.webp')] dark:bg-[url('/images/illustration-grid-dark.webp')]"
       class:kumquat-illustration={useKumquatIllustration}
     >
       <img
         src="/images/{useKumquatIllustration
           ? 'kumquat.png'
-          : 'illustration-grid.png'}"
+          : 'illustration-grid.webp'}"
         alt="Gitpod in a Nutshell"
         class="dark:hidden"
       />
       <img
         src="/images/{useKumquatIllustration
           ? 'kumquat.png'
-          : 'illustration-grid-dark.png'}"
+          : 'illustration-grid-dark.webp'}"
         alt="Gitpod in a Nutshell"
         class="hidden dark:block"
       />

@@ -47,8 +47,8 @@
           href: "https://www.youtube.com/playlist?list=PL3TSF5whlprU4vRoYBK6-QhFAbwAsoKmu",
         },
         image: {
-          src: "/images/illustration-screen.png",
-          darkSrc: "/images/illustration-screen-dark.png",
+          src: "/images/illustration-screen.webp",
+          darkSrc: "/images/illustration-screen-dark.webp",
           alt: "Illustration of a monitor with orange background",
           classNames: "scale-75",
         },
