@@ -113,4 +113,25 @@ export const heroes: Hero[] = [
     name: "Aurélie Vache",
     socialMediaUsername: "scraly#2606",
   },
+  {
+    avatar: {
+      src: "/images/heroes/louis-tournayre.webp",
+    },
+    name: "Louis Tournayre",
+    socialMediaUsername: "louidji#9103",
+  },
+  {
+    avatar: {
+      src: "/images/heroes/olivier-beautier.webp",
+    },
+    name: "Olivier Beautier",
+    socialMediaUsername: "Le Poulpe#0020",
+  },
+  {
+    avatar: {
+      src: "/images/heroes/tierry-chantier.webp",
+    },
+    name: "Thierry Chantier",
+    socialMediaUsername: "TitiMoby#8912",
+  },
 ];
