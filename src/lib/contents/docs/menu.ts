@@ -78,7 +78,10 @@ export const MENU: MenuEntry[] = [
     M("Environment Variables", "configure/projects/environment-variables"),
   ]),
 
-  M("Organizations", "configure/orgs"),
+  M("Organizations", "configure/orgs", false, [
+    M("Members", "configure/orgs/members"),
+    M("Policies", "configure/orgs/policies"),
+  ]),
 
   M("Authentication", "configure/authentication", false, [
     M("GitLab", "configure/authentication/gitlab"),
