@@ -66,7 +66,7 @@
           href="https://gitpod.io/workspaces/"
           size="large">Start for free</LinkButton
         >
-        <LinkButton variant="cta" href="contact/sales" size="large"
+        <LinkButton variant="cta" href="contact/get-demo" size="large"
           >Get a demo</LinkButton
         >
       </ButtonsWrapper>
