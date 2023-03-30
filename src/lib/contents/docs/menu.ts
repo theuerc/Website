@@ -235,9 +235,7 @@ export const MENU: MenuEntry[] = [
     M("Documentation", "help/contribute/documentation"),
     M("Features & Patches", "help/contribute/features-and-patches"),
   ]),
-  M("Public roadmap", "help/public-roadmap", false, [
-    M("Release cycle", "help/public-roadmap/release-cycle"),
-  ]),
+
   M("Troubleshooting", "help/troubleshooting", false, []),
 ];
 
