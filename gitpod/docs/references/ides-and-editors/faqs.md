@@ -41,6 +41,10 @@ There are many supported ways to edit your code in Gitpod, there is no preferred
 
 Please see the [IDEs & editors](/docs/references/ides-and-editors) documentation for more details.
 
+## How do desktop and browser differ regarding performance?
+
+Using a desktop editor like JetBrains or VS Code Desktop, files persist in the Gitpod workspace, however a copy of files is fetched to the client to improve performance. All desktop clients communicate via the SSH protocol. Most processing tasks like intellisense and auto-completion are executed in the server (the Gitpod workspace). You can optimize your in-terminal typing experience using [local echo](https://code.visualstudio.com/updates/v1_51#_local-echo) or [typeahead](https://www.jetbrains.com/help/rider/Advanced_settings.html#advanced_terminal).
+
 ## Do I need a license to use JetBrains and Gitpod?
 
 The licensing of Remote Development is handled on the local machine and is covered by your existing active IDE license. See [JetBrains documentation](https://www.jetbrains.com/help/idea/remote-development-starting-page.html#licensing) for more.
