@@ -61,3 +61,18 @@ Workspaces can be created on their own, or as part of a [Project](/docs/configur
 - [BitBucket](/docs/configure/authentication/bitbucket)
 - [GitHub Enterprise](/docs/configure/authentication/github-enterprise)
 - [Bitbucket Server](/docs/configure/authentication/bitbucket-server)
+
+
+## FAQs
+
+### No internet access over HTTPS (port 443) on Docker containers with custom network
+
+When creating a new Docker network and starting a fresh container, you might encounter issues with HTTPS requests not receiving a response. HTTP requests, however, work as expected. 
+
+This issue is likely caused by a wrong MTU (Maximum Transmission Unit) setting. To fix the problem, create a new network and specify the MTU value as 1440:
+
+```bash
+docker network create mynetwork --opt "com.docker.network.driver.mtu=1440"
+```
+
+For more discussions related to MTU value causing problems, refer to the [Gitpod Discord](https://discord.com/channels/816244985187008514/1077511515525091329).

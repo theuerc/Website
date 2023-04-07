@@ -75,3 +75,21 @@ vscode:
 So, you want to write your cool new Ruby On Rails application in Gitpod? Well, here is an idea of how to do it. Please take a look at our [minimal Rails example](https://github.com/gitpod-io/Gitpod-Ruby-On-Rails) running in Gitpod:
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/Gitpod-Ruby-On-Rails)
+
+
+## FAQs
+
+### [How to avoid the need to run "bundle install" each time I restart my workspace?](https://discord.com/channels/816244985187008514/1082108211936645182)
+
+To avoid running `bundle install` each time you restart your workspace in Gitpod, try changing your `.gitpod.yml` file configuration. Instead of using `init`, use a `before` task, as it will be re-run each time the workspace is restarted.
+
+Here's an example:
+
+```yaml
+tasks:
+  - before: bundle install
+```
+
+For more information on tasks, refer to the Gitpod [docs on tasks](https://www.gitpod.io/docs/configure/workspaces/tasks).
+
+**Note**: When a workspace is deactivated, only the workspace directory is saved and restored. Therefore, if `bundle install` creates files in various places in the file system, they may not be retained after a restart.
