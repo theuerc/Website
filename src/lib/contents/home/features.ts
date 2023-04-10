@@ -269,3 +269,70 @@ export const onboardFeatures: Feature[] = [
   onboardDevsWithOneClick,
   debugFasterThenEver,
 ];
+
+/**Software Supply Chain Security Features,
+ * Using on /solutions/supply-chain-security page
+ *
+ */
+
+export const isolatedEnvironments: Feature = {
+  title: "Isolated environments",
+  paragraph:
+    "Each Gitpod workspace or prebuild runs on a fully isolated & secured single-use container providing fast startup times without compromising on security.",
+  terminal: {
+    source: linuxSource,
+    dark: true,
+    shadow: false,
+    narrow: true,
+    skipToEnd: true,
+  },
+  moreButton: {
+    href: "/docs/references/security/faq",
+    text: "View security FAQ",
+  },
+};
+
+export const allYourDataSecured: Feature = {
+  title: "All your data secured",
+  paragraph:
+    "All data is encrypted at rest and all connections to CDEs are encrypted in transit.",
+  image: {
+    src: "/images/features/encoded-data.webp",
+    alt: "Secure data movement",
+    width: "90%",
+    height: "90%",
+  },
+};
+
+export const lockDownYourSourceCode: Feature = {
+  title: "Lock down your source code",
+  paragraph:
+    "Secure your source code by keeping it in one, centralised location that you control - the cloud.",
+  image: {
+    src: "/images/features/source-code-cloud.webp",
+    darkSrc: "/images/features/source-code-cloud-dark.webp",
+    alt: "All your data secured",
+    width: "100%",
+    height: "50%",
+  },
+};
+
+export const secureDataMovement: Feature = {
+  title: "Secure data movement",
+  paragraph:
+    "Gitpod is SOC 2 Type II compliant and conducts pentesting at least annually. The company is also GDPR compliant.",
+  image: {
+    src: "/images/features/secure-data.webp",
+    darkSrc: "/images/features/secure-data-dark.webp",
+    alt: "Secure data movement",
+    width: "75%",
+    height: "75%",
+  },
+};
+
+export const supplyChainSecurityFeatures: Feature[] = [
+  isolatedEnvironments,
+  allYourDataSecured,
+  lockDownYourSourceCode,
+  secureDataMovement,
+];
