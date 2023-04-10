@@ -67,7 +67,7 @@ Workspaces can be created on their own, or as part of a [Project](/docs/configur
 
 ### No internet access over HTTPS (port 443) on Docker containers with custom network
 
-When creating a new Docker network and starting a fresh container, you might encounter issues with HTTPS requests not receiving a response. HTTP requests, however, work as expected. 
+When creating a new Docker network and starting a fresh container, you might encounter issues with HTTPS requests not receiving a response. HTTP requests, however, work as expected.
 
 This issue is likely caused by a wrong MTU (Maximum Transmission Unit) setting. To fix the problem, create a new network and specify the MTU value as 1440:
 

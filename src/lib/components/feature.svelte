@@ -43,10 +43,10 @@
     white-space: break-spaces;
   }
 
-  /* 
+  /*
   .buttons-wrapper {
     @apply flex justify-center items-center flex-wrap space-x-4;
-  } 
+  }
 */
 
   .component-container > :global(*) {
