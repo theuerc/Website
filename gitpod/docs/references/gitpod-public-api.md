@@ -421,12 +421,12 @@ curl 'https://api.gitpod.io/gitpod.experimental.v1.TeamsService/CreateTeam' \
 
 **Response Parameters**:
 
-|   Parameter    |         Description          |  Type  |
-| :------------: | :--------------------------: | :----: |
-|      `id`      |         UUID of Team         | string |
-|     `name`     |         Name of team         | string |
-| `creationTime` |    Creation time of team     | string |
-|   `members`    |  List of members in a team   | array  |
+|   Parameter    |        Description        |  Type  |
+| :------------: | :-----------------------: | :----: |
+|      `id`      |       UUID of Team        | string |
+|     `name`     |       Name of team        | string |
+| `creationTime` |   Creation time of team   | string |
+|   `members`    | List of members in a team | array  |
 
 ### Get a team
 
@@ -515,12 +515,12 @@ func ExampleGetTeam() {
 
 **Response Parameters**:
 
-|   Parameter    |         Description          |  Type  |
-| :------------: | :--------------------------: | :----: |
-|      `id`      |         UUID of Team         | string |
-|     `name`     |         Name of team         | string |
-| `creationTime` |    Creation time of team     | string |
-|   `members`    |  List of members in a team   | array  |
+|   Parameter    |        Description        |  Type  |
+| :------------: | :-----------------------: | :----: |
+|      `id`      |       UUID of Team        | string |
+|     `name`     |       Name of team        | string |
+| `creationTime` |   Creation time of team   | string |
+|   `members`    | List of members in a team | array  |
 
 ### List all teams
 
@@ -676,12 +676,12 @@ curl 'https://api.gitpod.io/gitpod.experimental.v1.TeamsService/JoinTeam' \
 
 **Response Parameters**:
 
-|   Parameter    |         Description          |  Type  |
-| :------------: | :--------------------------: | :----: |
-|      `id`      |         UUID of Team         | string |
-|     `name`     |         Name of team         | string |
-| `creationTime` |    Creation time of team     | string |
-|   `members`    |  List of members in a team   | array  |
+|   Parameter    |        Description        |  Type  |
+| :------------: | :-----------------------: | :----: |
+|      `id`      |       UUID of Team        | string |
+|     `name`     |       Name of team        | string |
+| `creationTime` |   Creation time of team   | string |
+|   `members`    | List of members in a team | array  |
 
 ### Reset team invitation
 
