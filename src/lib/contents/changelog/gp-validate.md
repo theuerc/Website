@@ -1,11 +1,11 @@
 ---
 title: Validate your .gitpod.yml without committing ! 🤘
-alt: Lorem Ipsum
+alt: gitpod validate image banner
 date: 2023-04-11
-excerpt: Lorem Ipsum
+excerpt: Run the gp validate command to test gitpod configurations within your workspace
 image: gp-validate.jpg
 ogImage: gp-validate.jpg
-customSlug: lorem-ipsum
+customSlug: validate-gitpod-yaml-without-commit
 ---
 
 <script context="module">
