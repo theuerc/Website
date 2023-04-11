@@ -3,8 +3,8 @@ title: Validate your .gitpod.yml without committing ! 🤘
 alt: gitpod validate image banner
 date: 2023-04-11
 excerpt: Run the gp validate command to test gitpod configurations within your workspace
-image: gp-validate.jpg
-ogImage: gp-validate.jpg
+image: gp-validate.webp
+ogImage: gp-validate.webp
 customSlug: validate-gitpod-yaml-without-commit
 ---
 
