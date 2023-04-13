@@ -5,7 +5,7 @@ excerpt: Making the management and rotation of developer secrets an easy, reprod
 image: header.webp
 slug: securely-manage-development-secrets-with-doppler-and-gitpod
 teaserImage: header.webp
-tags: ["Engineering"]
+tags: ["Engineering", "Developer experience"]
 title: Securely Manage and Rotate Development Secrets with Doppler and Gitpod
 ---
 
