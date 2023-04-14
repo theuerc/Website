@@ -38,7 +38,7 @@ export const docsLinks: {
   {
     text: "Screencasts",
     href: "/screencasts",
-    description: "Watch videos to leran how to get started.",
+    description: "Watch videos to learn how to get started.",
   },
   {
     text: "Blog",
@@ -96,7 +96,7 @@ export const mobileGetStartedLinks: {
   {
     text: "Screencasts",
     href: "/screencasts",
-    description: "Watch videos to leran how to get started.",
+    description: "Watch videos to learn how to get started.",
   },
   {
     text: "Community",
