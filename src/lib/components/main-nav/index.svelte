@@ -16,7 +16,7 @@
   import GithubStars from "./github-stars.svelte";
 
   import ResourcesDropdown from "./resources-dropdown.svelte";
-  import DocsDropdown from "./docs-dropdown.svelte";
+  import SolutionsDropdown from "./solutions-dropdown.svelte";
   // import { session } from "$app/stores";
 
   let scroll: number;
@@ -100,21 +100,15 @@
         }}
       />
       <li>
-        <DocsDropdown />
+        <ResourcesDropdown />
       </li>
       <li>
-        <ResourcesDropdown />
+        <SolutionsDropdown />
       </li>
       <NavItem
         navItem={{
           href: "/for/enterprise",
           label: "Enterprise",
-        }}
-      />
-      <NavItem
-        navItem={{
-          href: "/customers",
-          label: "Customers",
           highlight: true,
         }}
       />

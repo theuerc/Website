@@ -1,10 +1,9 @@
 <script lang="ts">
-  import { docsLinks, templateLinks } from "$lib/contents/dropdown";
+  import { resourcesLinks } from "$lib/contents/dropdown";
   import { onMount } from "svelte";
 
   import { fade } from "svelte/transition";
   import Arrow from "../svgs/arrow.svelte";
-  import FullArrowRight from "$lib/components/svgs/full-arrow-right.svelte";
   import displayBanner from "$lib/stores/display-banner";
 
   let shown: boolean = false;
@@ -30,14 +29,14 @@
 </script>
 
 <style lang="postcss">
-  a.card {
+  a.items {
     &:hover,
     &:focus {
       @apply border-divider text-body bg-sand-light;
     }
   }
 
-  :global(body.dark) a.card {
+  :global(body.dark) a {
     &:hover,
     &:focus {
       @apply bg-card;
@@ -65,7 +64,7 @@
   aria-expanded={shown}
   aria-haspopup="menu"
 >
-  Docs
+  Solutions
   <Arrow
     class="ml-1.5 h-3 w-3 transform {shown ? 'rotate-180' : ''}"
     fillClass={shown ? "fill-important" : "fill-body"}
@@ -86,13 +85,12 @@
     bind:this={wrapperEl}
   >
     <div
-      class="grid grid-cols-2 mr-xx-small gap-x-large pt-x-small pb-x-large"
+      class="grid grid-cols-2 -ml-40 gap-x-macro pt-x-small pb-[108px]"
       bind:this={linksGrid}
     >
-      {#each docsLinks as { href, text, description }}
+      {#each resourcesLinks as { href, text, description }}
         <a
           class="
-            card
             py-micro
             pl-xx-small
             pr-medium
@@ -100,7 +98,8 @@
             rounded-lg
             border
             border-transparent
-            "
+            items
+		      "
           aria-selected={false}
           on:click={() => (shown = false)}
           {href}
@@ -110,28 +109,30 @@
         </a>
       {/each}
     </div>
-    <div class="border-l pl-xx-small my-x-small border-divider">
-      <p
-        class="text-base text-important pb-[4px] pt-micro font-bold gap-x-large"
-      >
-        Templates
-      </p>
-      <div class="flex flex-col gap-macro list-none">
-        {#each templateLinks as { href, text }}
-          <a class="!important" {href}>
-            <p class="text-base font-normal card">
-              {text}
-            </p>
-          </a>
-        {/each}
-      </div>
-      <a
-        class="flex mt-macro justify-start items-center text-xs"
-        href="/docs/introduction/getting-started/quickstart"
-      >
-        <FullArrowRight width="12" heightt="12" />
-        <p>&nbsp;view all</p>
-      </a>
-    </div>
   </div>
+  <a
+    class:extended={$displayBanner}
+    class="fixed top-20 right-0 w-3/12 flex justify-center bg-white dark:bg-card border-y border-divider !m-0 shadow-md dark:border-b-black dark:shadow-[0_10px_24px_0px_rgba(0,0,0,1)] group"
+    in:fade={{ duration: 300 }}
+    href="/customers"
+  >
+    <div class="flex flex-col mx-auto w-10/12 justify-start mt-6">
+      <img
+        src="/images/navbar/customer-stories-navbar.png"
+        alt="customer stories"
+        class="h-36 2xl:h-44 w-72"
+      />
+      <p
+        class="mt-4 2xl:mt-2 text-important font-bold text-small max-w-xl text-left transition-all duration-200 delay-[50ms] decoration-transparent group-focus:underline group-hover:underline"
+      >
+        Customer stories
+      </p>
+      <p
+        class="mt-2 text-important text-left text-small max-w-lg pb-xx-small !decoration-transparent !no-underline"
+      >
+        Learn how customers leverage Gitpod to improve their developer
+        experience, remote collaboration and security.
+      </p>
+    </div>
+  </a>
 {/if}

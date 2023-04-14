@@ -1,9 +1,10 @@
 <script lang="ts">
-  import { resourcesLinks } from "$lib/contents/dropdown";
+  import { docsLinks, templateLinks } from "$lib/contents/dropdown";
   import { onMount } from "svelte";
 
   import { fade } from "svelte/transition";
   import Arrow from "../svgs/arrow.svelte";
+  import FullArrowRight from "$lib/components/svgs/full-arrow-right.svelte";
   import displayBanner from "$lib/stores/display-banner";
 
   let shown: boolean = false;
@@ -29,14 +30,14 @@
 </script>
 
 <style lang="postcss">
-  a {
+  a.card {
     &:hover,
     &:focus {
       @apply border-divider text-body bg-sand-light;
     }
   }
 
-  :global(body.dark) a {
+  :global(body.dark) a.card {
     &:hover,
     &:focus {
       @apply bg-card;
@@ -85,12 +86,15 @@
     bind:this={wrapperEl}
   >
     <div
-      class="grid grid-cols-3 gap-x-large pt-x-small pb-small"
+      class="grid grid-cols-2 mr-xx-small gap-x-large pt-10 pb-x-large"
       bind:this={linksGrid}
     >
-      {#each resourcesLinks as { href, text, description }}
+      <p class="font-bold text-grey text-base ml-6">Get started</p>
+      <p class="font-bold text-grey text-base ml-6">Discover</p>
+      {#each docsLinks as { href, text, description }}
         <a
           class="
+            card
             py-micro
             pl-xx-small
             pr-medium
@@ -98,7 +102,7 @@
             rounded-lg
             border
             border-transparent
-		      "
+            "
           aria-selected={false}
           on:click={() => (shown = false)}
           {href}
@@ -107,6 +111,29 @@
           <p>{description}</p>
         </a>
       {/each}
+    </div>
+    <div class="border-l pl-xx-small my-8 border-divider">
+      <p
+        class="text-base text-important pb-[4px] pt-macro font-bold gap-x-large"
+      >
+        Templates
+      </p>
+      <div class="flex flex-col gap-macro list-none">
+        {#each templateLinks as { href, text }}
+          <a class="!important" {href}>
+            <p class="text-base font-normal card">
+              {text}
+            </p>
+          </a>
+        {/each}
+      </div>
+      <a
+        class="flex mt-macro justify-start items-center text-xs"
+        href="/docs/introduction/getting-started/quickstart"
+      >
+        <FullArrowRight width="12" heightt="12" />
+        <p>&nbsp;view all</p>
+      </a>
     </div>
   </div>
 {/if}

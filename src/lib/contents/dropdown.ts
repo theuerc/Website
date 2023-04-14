@@ -4,34 +4,19 @@ export const resourcesLinks: {
   description: string;
 }[] = [
   {
-    text: "Changelog",
-    href: "/changelog",
-    description: "Latest updates and feature releases ",
+    text: "Security",
+    href: "/solutions/supply-chain-security",
+    description: "Secure your software supply chain.",
   },
   {
-    text: "Guides",
-    href: "/guides",
-    description: "How to use Gitpod with any project",
+    text: "Collaboration",
+    href: "/solutions/collaboration",
+    description: "How Gitpod improves collaboration.",
   },
   {
-    text: "Community",
-    href: "/community",
-    description: "Connect with like-minded people",
-  },
-  {
-    text: "Blog",
-    href: "/blog",
-    description: "Articles, news and opinions",
-  },
-  {
-    text: "Screencasts",
-    href: "/screencasts",
-    description: "Short videos to get started",
-  },
-  {
-    text: "Events",
-    href: "/events",
-    description: "Upcoming events and event recordings",
+    text: "Onboarding",
+    href: "/solutions/onboarding",
+    description: "Onboarding developers to new projects quickly.",
   },
 ];
 
@@ -43,17 +28,32 @@ export const docsLinks: {
   {
     text: "Docs",
     href: "/docs",
-    description: "Access Gitpod's documentation",
+    description: "Learn how to start your first workspace.",
   },
   {
-    text: "Help center",
-    href: "/contact/support",
-    description: "View status, get help or contact support",
+    text: "Changelog",
+    href: "/changelog",
+    description: "Latest updates and feature releases.",
   },
   {
-    text: "Get started",
-    href: "/docs/introduction/getting-started",
-    description: "Guide to start your first workspace",
+    text: "Screencasts",
+    href: "/screencasts",
+    description: "Watch videos to leran how to get started.",
+  },
+  {
+    text: "Blog",
+    href: "/blog",
+    description: "Articles, news and opinions.",
+  },
+  {
+    text: "Community",
+    href: "/community",
+    description: "Always there to help and to connect with like-minded people.",
+  },
+  {
+    text: "Guides",
+    href: "/guides",
+    description: "How to use Gitpod with any project.",
   },
 ];
 
@@ -83,7 +83,7 @@ export const templateLinks: {
   },
 ];
 
-export const mobileDocsLinks: {
+export const mobileGetStartedLinks: {
   text: string;
   href: string;
   description: string;
@@ -94,13 +94,35 @@ export const mobileDocsLinks: {
     description: "Access Gitpod's documentation",
   },
   {
-    text: "Get started",
-    href: "/docs/introduction/getting-started",
-    description: "Guide to start your first workspace",
+    text: "Screencasts",
+    href: "/screencasts",
+    description: "Watch videos to leran how to get started.",
   },
   {
-    text: "Help center",
-    href: "/contact/support",
-    description: "View status, get help or contact support",
+    text: "Community",
+    href: "/community",
+    description: "Always there to help and to connect with like-minded people.",
+  },
+];
+
+export const mobileDiscoverLinks: {
+  text: string;
+  href: string;
+  description: string;
+}[] = [
+  {
+    text: "Changelog",
+    href: "/changelog",
+    description: "Latest updates and feature releases",
+  },
+  {
+    text: "Blog",
+    href: "/blog",
+    description: "Articles, news and opinions",
+  },
+  {
+    text: "Guides",
+    href: "/guides",
+    description: "How to use Gitpod with any project",
   },
 ];

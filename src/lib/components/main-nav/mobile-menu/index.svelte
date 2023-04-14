@@ -8,8 +8,8 @@
   import DashboardButton from "../dashboard-button.svelte";
   import menuState from "./state";
   import DemoButton from "../demo-button.svelte";
+  import MobileSolutionsDropdown from "./mobile-solutions-dropdown.svelte";
   import MobileResourcesDropdown from "./mobile-resources-dropdown.svelte";
-  import MobileDocsDropdown from "./mobile-docs-dropdown.svelte";
 
   export let isLoggedIn: boolean;
 
@@ -85,10 +85,10 @@
       />
     {/if}
     {#if !resourcesDropdownShown}
-      <MobileDocsDropdown bind:shown={docsDropdownShown} />
+      <MobileResourcesDropdown bind:shown={docsDropdownShown} />
     {/if}
     {#if !docsDropdownShown}
-      <MobileResourcesDropdown bind:shown={resourcesDropdownShown} />
+      <MobileSolutionsDropdown bind:shown={resourcesDropdownShown} />
     {/if}
 
     {#if !docsDropdownShown && !resourcesDropdownShown}
