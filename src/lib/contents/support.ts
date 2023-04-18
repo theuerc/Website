@@ -34,14 +34,14 @@ export const cards: Card[] = [
       text: "Join Discord",
     },
   },
-  {
-    title: "Gitpod Roadmap",
-    text: "Are you curious where Gitpod is heading to next? On the roadmap you can see our next steps.",
-    link: {
-      href: "https://www.gitpod.io/roadmap",
-      text: "View Roadmap",
-    },
-  },
+  // {
+  //   title: "Gitpod Roadmap",
+  //   text: "Are you curious where Gitpod is heading to next? On the roadmap you can see our next steps.",
+  //   link: {
+  //     href: "https://www.gitpod.io/roadmap",
+  //     text: "View Roadmap",
+  //   },
+  // },
   {
     title: "Status",
     text: "On the status page you get informed on all past and current incidents.",
