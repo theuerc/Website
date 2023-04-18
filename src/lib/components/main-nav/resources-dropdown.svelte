@@ -86,7 +86,7 @@
     bind:this={wrapperEl}
   >
     <div
-      class="grid grid-cols-2 mr-xx-small gap-x-large pt-10 pb-x-large"
+      class="grid grid-cols-2 mr-xx-small pt-10 pb-x-large max-w-3xl"
       bind:this={linksGrid}
     >
       <p class="font-bold text-grey text-base ml-6">Get started</p>
@@ -112,7 +112,7 @@
         </a>
       {/each}
     </div>
-    <div class="border-l pl-xx-small my-8 border-divider">
+    <div class="border-l pl-xx-small my-9 border-divider">
       <p
         class="text-base text-important pb-[4px] pt-macro font-bold gap-x-large"
       >

@@ -80,59 +80,62 @@
 {#if shown}
   <div
     class:extended={$displayBanner}
-    class="fixed top-20 left-0 w-screen flex justify-center bg-bg border-y border-divider !m-0 shadow-md dark:border-b-black dark:shadow-[0_10px_24px_0px_rgba(0,0,0,1)]"
+    class="fixed top-20 left-0 w-screen flex justify-between bg-bg border-y border-divider !m-0 shadow-md dark:border-b-black dark:shadow-[0_10px_24px_0px_rgba(0,0,0,1)]"
     in:fade={{ duration: 300 }}
     bind:this={wrapperEl}
   >
-    <div
-      class="grid grid-cols-2 -ml-40 gap-x-macro pt-x-small pb-[108px]"
-      bind:this={linksGrid}
+    <div class="max-w-6xl mx-auto pl-60">
+      <div
+        class="grid grid-cols-2 gap-y-micro pt-x-small pb-[108px]"
+        bind:this={linksGrid}
+      >
+        {#each resourcesLinks as { href, text, description }}
+          <a
+            class="
+              inline-block
+              py-micro
+              pl-xx-small
+              pr-medium
+              text-p-small
+              rounded-lg
+              border
+              border-transparent
+              items
+            "
+            aria-selected={false}
+            on:click={() => (shown = false)}
+            {href}
+          >
+            <p class="text-important font-bold mb-1">{text}</p>
+            <p>{description}</p>
+          </a>
+        {/each}
+      </div>
+    </div>
+    <a
+      class:extended={$displayBanner}
+      class="mr-0 w-3/12 flex justify-center bg-white dark:bg-card border-y border-divider !m-0 shadow-md dark:border-b-black dark:shadow-[0_10px_24px_0px_rgba(0,0,0,1)] group"
+      in:fade={{ duration: 300 }}
+      href="/customers"
     >
-      {#each resourcesLinks as { href, text, description }}
-        <a
-          class="
-            py-micro
-            pl-xx-small
-            pr-medium
-            text-p-small
-            rounded-lg
-            border
-            border-transparent
-            items
-		      "
-          aria-selected={false}
-          on:click={() => (shown = false)}
-          {href}
+      <div class="flex flex-col mx-auto w-10/12 justify-start mt-6">
+        <img
+          src="/images/navbar/customer-stories-navbar.png"
+          alt="customer stories"
+          class="h-36 2xl:h-44 w-72"
+        />
+        <p
+          class="mt-4 2xl:mt-2 text-important font-bold text-small max-w-xl text-left transition-all duration-200 delay-[50ms] decoration-transparent group-focus:underline group-hover:underline"
         >
-          <p class="text-important font-bold mb-1">{text}</p>
-          <p>{description}</p>
-        </a>
-      {/each}
-    </div>
+          Customer stories
+        </p>
+        <p
+          class="mt-2 text-important text-left text-small max-w-lg pb-xx-small !decoration-transparent !no-underline"
+        >
+          Learn how customers leverage Gitpod to improve their developer
+          experience, remote collaboration and security.
+        </p>
+      </div>
+    </a>
   </div>
-  <a
-    class:extended={$displayBanner}
-    class="fixed top-20 right-0 w-3/12 flex justify-center bg-white dark:bg-card border-y border-divider !m-0 shadow-md dark:border-b-black dark:shadow-[0_10px_24px_0px_rgba(0,0,0,1)] group"
-    in:fade={{ duration: 300 }}
-    href="/customers"
-  >
-    <div class="flex flex-col mx-auto w-10/12 justify-start mt-6">
-      <img
-        src="/images/navbar/customer-stories-navbar.png"
-        alt="customer stories"
-        class="h-36 2xl:h-44 w-72"
-      />
-      <p
-        class="mt-4 2xl:mt-2 text-important font-bold text-small max-w-xl text-left transition-all duration-200 delay-[50ms] decoration-transparent group-focus:underline group-hover:underline"
-      >
-        Customer stories
-      </p>
-      <p
-        class="mt-2 text-important text-left text-small max-w-lg pb-xx-small !decoration-transparent !no-underline"
-      >
-        Learn how customers leverage Gitpod to improve their developer
-        experience, remote collaboration and security.
-      </p>
-    </div>
-  </a>
 {/if}
