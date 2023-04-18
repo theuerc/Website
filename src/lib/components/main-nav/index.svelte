@@ -109,6 +109,13 @@
         navItem={{
           href: "/for/enterprise",
           label: "Enterprise",
+          highlight: false,
+        }}
+      />
+      <NavItem
+        navItem={{
+          href: "/customers",
+          label: "Customers",
           highlight: true,
         }}
       />
