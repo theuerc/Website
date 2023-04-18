@@ -25,7 +25,7 @@
   titleInline={true}
   fullWidth={true}
 >
-  <Pill slot="annotation" class="align-top" text="soon" variant="pink" />
+  <Pill slot="annotation" class="align-top" text="waitlist" variant="pink" />
 </Header>
 <div
   class="flex flex-wrap justify-center lgx:justify-start items-start mb-xxx-large"
