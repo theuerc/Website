@@ -1,9 +1,8 @@
 <div
-  class="max-w-4xl flex lgx:items-start flex-col items-center text-center lgx:text-left lgx:pt-xx-small mb-xx-small"
+  class="max-w-4xl flex lgx:items-start flex-col items-center text-left lgx:pt-xx-small mb-xx-small"
 >
-  <h2 class="h3 !mb-micro md:!mb-x-small">
-    Maximum control and security of your <br />
-    dev environments
+  <h2 class="h3 !mb-micro md:!mb-x-small max-w-xl">
+    Maximum control and security of your dev environments
   </h2>
   <div class="max-w-[460px] text-p-large">
     <p class="">

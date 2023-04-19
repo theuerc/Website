@@ -20,7 +20,7 @@
 />
 
 <Header
-  class="md:!mb-small !mb-micro"
+  class="md:!mb-small !mb-micro !text-left md:!text-center"
   title="Gitpod Dedicated"
   titleInline={true}
   fullWidth={true}
