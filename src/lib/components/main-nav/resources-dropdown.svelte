@@ -86,7 +86,7 @@
     bind:this={wrapperEl}
   >
     <div
-      class="grid grid-cols-2 mr-xx-small pt-10 pb-x-large max-w-3xl"
+      class="grid grid-cols-2 mr-xx-small pt-10 pb-x-small max-w-3xl"
       bind:this={linksGrid}
     >
       <p class="font-bold text-grey text-base ml-6">Get started</p>

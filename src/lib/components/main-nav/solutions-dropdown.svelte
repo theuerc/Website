@@ -86,7 +86,7 @@
   >
     <div class="max-w-6xl mx-auto pl-60">
       <div
-        class="grid grid-cols-2 gap-y-micro pt-x-small pb-[108px]"
+        class="grid grid-cols-2 pt-x-small pb-x-small max-w-3xl"
         bind:this={linksGrid}
       >
         {#each resourcesLinks as { href, text, description }}
