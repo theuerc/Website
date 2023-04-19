@@ -169,20 +169,6 @@
         <div class="mt-0 lg:mt-micro">
           <ThemeSwitcher />
         </div>
-        <div
-          class="border-divider border inline-flex items-center rounded-lg py-macro gap-macro px-micro"
-        >
-          <img
-            height="30"
-            width="30"
-            alt="soc 2 logo"
-            src="/images/footer/soc-logo.png"
-          />
-          <div>
-            <p class="text-fine-print text-important">SOC 2 Type II</p>
-            <p class="text-fine-print">Certified</p>
-          </div>
-        </div>
       </div>
     </div>
     <div>

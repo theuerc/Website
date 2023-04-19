@@ -41,7 +41,7 @@
 
 <div class="flex divide-x divide-divider lg:m-0 mb-xx-small">
   <button
-    class="px-macro py-1"
+    class="pr-macro py-1"
     title="Switch to System's prefered color scheme."
     on:click={setSystem}
   >
