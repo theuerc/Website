@@ -15,25 +15,20 @@ export const multiTrackDevelopmentFeature: Feature = {
 };
 
 export const reduceDeveloperToil: Feature = {
-  title: "Reduce developer toil",
+  title: "Collaborate with ease",
   paragraph:
-    "Cut the number of support requests in half and decrease the time spent on them to mere minutes. </br></br>Platform engineering teams enable developer self-service by configuring environments once and letting Gitpod take care of the rest.",
+    "Developers, designers, PMs. Anyone can share running workspaces for remote pair programming, quick code reviews, live feedback, and more.",
   lottie: {
-    src: "/lottie/edit_workspace.json",
-    id: "edit_workspace",
+    src: "/lottie/share_workspace.json",
+    id: "share-workspace",
   },
 };
 
 export const worksOnAnyMachineFeature: Feature = {
   title: `Works on <t style="text-decoration-line: line-through; color: #999795;">my</t> any machine`,
   paragraph:
-    "Say goodbye to compatibility issues and configuration drift. Create a joyful developer experience on any machine. </br></br> With a single click, spin up a fresh development environment in a container in the cloud.",
-  image: {
-    src: "/images/features/works-on-any-machine.webp",
-    alt: "Works on any machine",
-    width: "100%",
-    height: "100%",
-  },
+    "No more compatibility issues. Developers can work with the same tools, libraries, and dependencies, regardless of operating system, with a single click.",
+  previewComponent: Workspaces,
 };
 
 export const collaborationFeature: Feature = {
@@ -71,9 +66,33 @@ export const codeAnywhereFeature: Feature = {
   },
 };
 
+export const onboardNewHires: Feature = {
+  title: "Onboard new hires in an hour",
+  paragraph:
+    "Eliminate the need for setting up local environments. Open a fully configured workspace, complete with everything necessary to start coding immediately.",
+  terminal: {
+    source: linuxSource,
+    dark: true,
+    shadow: false,
+    narrow: true,
+    skipToEnd: true,
+  },
+};
+
+export const reduceTimeToResolution: Feature = {
+  title: "Reduce time to resolution",
+  paragraph:
+    "Pre-configured workspaces mean less support tickets and faster debugging time.",
+  lottie: {
+    src: "/lottie/edit_workspace.json",
+    id: "edit_workspace",
+  },
+};
+
 export const features: Feature[] = [
   worksOnAnyMachineFeature,
-  secureYourSoftwareSupplyChainFeature,
+  onboardNewHires,
+  reduceTimeToResolution,
   // {
   //   title: "Works on my machine - and yours",
   //   paragraph:
@@ -100,17 +119,16 @@ export const otherFeatures: Feature[] = [
   //     skipToEnd: true,
   //   },
   // },
+
+  // moreButton: {
+  //   href: "/docs/configure/workspaces/collaboration",
+  //   text: "More on collaboration",
+  // },
+  // },
   {
-    ...collaborationFeature,
-    // moreButton: {
-    //   href: "/docs/configure/workspaces/collaboration",
-    //   text: "More on collaboration",
-    // },
-  },
-  {
-    title: "Work at datacenter performance",
+    title: "Data center performance, less overhead",
     paragraph:
-      "Downloads all your tools and packages at datacenter internet and networking speed.</br></br>Prebuilds speed you up by building your branches in the background and large workspaces give you the power for heavy-lifting tasks. Meanwhile, your laptop battery lasts.",
+      "Pre-built environments speed up development by building branches in the background, without killing your laptop battery.",
     terminal: {
       source: terminalSource,
     },

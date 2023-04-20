@@ -85,7 +85,7 @@
     };
 
     const observerTop = new IntersectionObserver(callbackTop, {
-      threshold: [0.9],
+      threshold: [0.2],
     });
     const observerBottom = new IntersectionObserver(callbackBottom, {
       threshold: [0],

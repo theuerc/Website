@@ -55,9 +55,12 @@
     <h1 class="homeh1">
       Always<br /> ready to code.
     </h1>
-    <p id="choose-project-observer-target" class="hero__intro-text text-large">
-      Ship software faster with secure cloud <br />
-      development environments that just work.
+    <p
+      id="choose-project-observer-target"
+      class="hero__intro-text text-large max-w-xl"
+    >
+      Cloud development environments are the fastest,<br /> and more secure way,
+      to ship code.
     </p>
     <div class="hero__action">
       <ButtonsWrapper class="mt-x-small lg:mt-small mb-x-small">

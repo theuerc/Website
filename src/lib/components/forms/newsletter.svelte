@@ -9,9 +9,9 @@
   let resultMessage = "";
   let isSubmissionInProgress = false;
 
-  export let title: string = "Read our newsletter";
+  export let title: string = "Sign up for our newsletter";
   export let description: string =
-    "Access Gitpod's latest thinking, news, and insights.";
+    "Read about best practices around developer experience and more.";
 
   const formData: Form = {
     email: {
@@ -72,8 +72,8 @@
   class="flex justify-between max-w-6xl mx-auto items-center flex-wrap gap-small lg:gap-xx-large"
 >
   <div>
-    <h2 class="h3 !mb-macro lg:!mb-micro">{title}</h2>
-    <p>
+    <h2 class="h3 !mb-macro lg:!mb-micro max-w-md">{title}</h2>
+    <p class="max-w-sm">
       {#if resultMessage}{resultMessage}{:else}{description}{/if}
     </p>
   </div>
@@ -102,12 +102,11 @@
           </div>
           <div>
             <Button
-              class="w-1/5"
               isLoading={isSubmissionInProgress}
               variant="primary"
               size="large"
               disabled={isSubmittedOnce}
-              type="submit">Subscribe</Button
+              type="submit">Sign up</Button
             >
           </div>
         </div>

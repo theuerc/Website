@@ -71,7 +71,7 @@
           <h2 class="h3">{@html title}</h2>
         {/if}
         <p
-          class="mt-micro"
+          class="mt-micro max-w-lg"
           class:mb-xx-small={moreButton || secondaryButton}
           class:md:mb-x-small={moreButton || secondaryButton}
         >

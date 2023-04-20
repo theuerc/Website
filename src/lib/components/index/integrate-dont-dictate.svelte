@@ -28,17 +28,16 @@
 
 <Card size="medium" class="m-auto shadow-highlight w-10/12">
   <Section class="text-center {clazz}" {...$$restProps}>
-    <h2 class="text-2xl sm:text-[32px] text-left ml-4 sm:ml-16">
-      Integrate, don't dictate
+    <h2 class="text-2xl sm:text-[32px] text-left ml-4 sm:ml-16 mb-4">
+      Integrate into your existing dev stack
     </h2>
-    <p class="text-left text-lg sm:text-2xl ml-4 sm:ml-16 mb-8">
-      Control every detail of your developer experience.
-    </p>
-    <div class="flex flex-wrap items-center justify-evenly mb-6 ml-6 mr-6">
-      <div class="grid grid-rows-2 grid-flow-col">
+    <div
+      class="flex flex-wrap items-center mx-auto justify-evenly mb-6 ml-6 mr-6"
+    >
+      <div class="grid grid-rows-2 grid-flow-col gap-x-small">
         <!-- Git Provider options -->
         <div
-          class="mt-4 text-left items-left bg-sand-light dark:bg-black py-micro pl-xx-small pr-medium text-p-small rounded-2xl border border-transparent w-64 sm:w-80"
+          class="mt-4 text-left items-left bg-sand-light dark:bg-black py-micro pl-xx-small text-p-small rounded-2xl border border-transparent w-64 sm:w-80"
         >
           <p class="text-sm sm:text-lg text-important font-bold">
             Connect Git provider
@@ -65,10 +64,10 @@
 
         <!-- Cloud Services Options -->
         <div
-          class="mt-4 text-left items-left bg-sand-light dark:bg-black py-micro pl-xx-small pr-medium text-p-small rounded-2xl border border-transparent w-64 sm:w-80"
+          class="mt-4 text-left items-left bg-sand-light dark:bg-black py-micro pl-xx-small text-p-small rounded-2xl border border-transparent w-64 sm:w-80"
         >
           <p class="text-sm sm:text-lg text-important font-bold">
-            Run in your cloud or ours
+            Select your cloud - yours or ours
           </p>
 
           <div
@@ -169,7 +168,12 @@
             <img
               src="/svg/icons/more-options.svg"
               alt="More options"
-              class="icon"
+              class="icon block dark:hidden"
+            />
+            <img
+              src="/svg/icons/more-options-dark.svg"
+              alt="More options"
+              class="icon hidden dark:block"
             />
           </div>
         </div>
@@ -215,7 +219,12 @@
             <img
               src="/svg/icons/more-options.svg"
               alt="More options"
-              class="icon"
+              class="icon block dark:hidden"
+            />
+            <img
+              src="/svg/icons/more-options-dark.svg"
+              alt="More options"
+              class="icon hidden dark:block"
             />
           </div>
         </div>

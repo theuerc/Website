@@ -29,7 +29,7 @@
 
 <Section class={clazz} {...$$restProps}>
   <div class="row">
-    <div class="text-center">
+    <div class="text-left sm:text-center">
       {#if title}
         <h2>{title}</h2>
       {/if}
@@ -37,6 +37,8 @@
         <p class="text-large mt-xx-small mb-medium">
           {text}
         </p>
+      {:else}
+        <p class="mb-10" />
       {/if}
     </div>
     {#if testimonials.length <= 3}

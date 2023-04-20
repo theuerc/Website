@@ -395,18 +395,18 @@ export const ides: Ide[] = [
 export const featureTitles: FeatureTitle[] = [
   {
     main: "<5 min",
-    sub: "onboarding time for new developers",
+    sub: "to onboard new developers",
   },
   {
     main: "40%",
-    sub: "fewer issues across dev lifecycle",
+    sub: "fewer bugs across development lifecylce",
   },
   {
     main: "5h",
-    sub: "productivity gain per week per developer",
+    sub: "saved per developer per week",
   },
   {
     main: "45%",
-    sub: "improvement in developer happiness",
+    sub: "increase in developer satisfaction (NPS)",
   },
 ];
