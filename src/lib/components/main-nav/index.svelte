@@ -116,7 +116,7 @@
         navItem={{
           href: "/customers",
           label: "Customers",
-          highlight: true,
+          highlight: false,
         }}
       />
       <NavItem
