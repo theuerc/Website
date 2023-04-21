@@ -3,10 +3,8 @@
 </script>
 
 <script lang="ts">
-  import UsedBy from "$lib/components/index/used-by.svelte";
   import {
     featureCards,
-    partnershipCards,
     integrateFeatures,
     otherFeatures,
     quotes,
@@ -15,15 +13,14 @@
   import Quotes from "$lib/components/quotes.svelte";
   import SectionCommon from "$lib/components/section-common.svelte";
   import CardSmall from "$lib/components/card/card-small.svelte";
-  import Partnership from "$lib/components/enterprise/partnership.svelte";
   import Integrate from "$lib/components/enterprise/integrate.svelte";
   import OpenGraph from "$lib/components/open-graph.svelte";
   import Hero from "$lib/components/hero.svelte";
+  import Explore from "$lib/components/explore.svelte";
   import SectionFeatures from "$lib/components/section-features.svelte";
-  import { featureTitles } from "$lib/contents/home";
-  import FeatureTitles from "$lib/components/feature-titles.svelte";
+  import AnimatedLogos from "$lib/components/animated-logos.svelte";
+  import Titles from "$lib/components/index/titles.svelte";
   import Pill from "$lib/components/pill.svelte";
-  import Whitepaper from "$lib/components/cde/whitepaper.svelte";
 </script>
 
 <OpenGraph
@@ -32,44 +29,32 @@
     description:
       "Gitpod remote developer environments help enterprises ship faster and more securely. Engineering teams improve onboarding, collaboration, and security using Gitpod.",
     keywords:
-      "cloud dev environment, remote development, developer onboarding, developer collaboration, cloud development, VDI",
+      "cloud dev environment, remote development, developer onboarding, developer collaboration, cloud development, VDI, Gitpod for enterprise, enterprise, dedicated, gitpod dedicated",
   }}
 />
 
 <Hero
   subtitle="Enterprise"
-  title="Engineering Teams get more done with Gitpod"
-  text="Unleash developer productivity and collaboration by supercharging how you develop."
+  title="Engineering orgs get more done with CDEs"
+  text="Consistent developer experience, improved collaboration, higher security, more software shipped."
   image={{
-    src: "/images/enterprise/enter-rug.png",
-    darkSrc: "/images/enterprise/enter-rug-dark.png",
+    src: "/images/enterprise/enterprise-hub.webp",
     alt: "Enter Rug",
+    isCut: true,
   }}
   btnPrimary={{
-    text: "Talk to an expert",
-    href: "/contact/sales?subject=enterprise",
-  }}
-  btnSecondary={{
     text: "Get a demo",
     href: "/contact/get-demo",
   }}
+  btnSecondary={{
+    text: "View pricing",
+    href: "/pricing",
+  }}
 />
 
-<FeatureTitles
-  {featureTitles}
-  featureTitlePadding="px-macro py-xx-small sm:px-small sm:py-x-small"
-/>
-
-<UsedBy
-  class="py-small"
-  title="Used by world-leading companies"
-  isCard={false}
-/>
-<SectionFeatures
-  title="Your engineering team, more productive"
-  features={otherFeatures}
-/>
-<SectionCommon title="Your cloud or our cloud">
+<AnimatedLogos />
+<Titles />
+<SectionCommon title="Deployment options">
   <div
     class="flex flex-wrap justify-center mt-small max-w-5xl mx-auto"
     slot="content"
@@ -91,10 +76,24 @@
     {/each}
   </div>
 </SectionCommon>
+<SectionFeatures
+  title="Ship faster, and more securely."
+  features={otherFeatures}
+/>
 
 <Section>
   <Quotes {quotes} />
 </Section>
 <Integrate features={integrateFeatures} />
-<Partnership partnershipItems={partnershipCards} />
-<Whitepaper />
+<Explore
+  contents={{
+    title: "Get started",
+    link: {
+      href: "/contact/sales?subject=enterprise",
+      text: "Contact sales",
+    },
+    secondaryLink: null,
+    description:
+      "Spin up fresh, automated dev environments for each task, in the cloud, in seconds.",
+  }}
+/>

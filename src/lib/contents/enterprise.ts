@@ -32,15 +32,15 @@ export const featureCards: {
 }[] = [
   {
     card: {
-      title: "Gitpod.io",
-      text: "Use Gitpod in our secure cloud with minimal setup time and effort. Scale users as you need with full flexibility. Reduce operational overhead.",
+      title: "SaaS",
+      text: "Use Gitpod CDEs in our secure cloud with minimal setup time and effort. Scales with your usage.",
       icon: {
         src: "/svg/icons/cloud.svg",
         alt: "Cloud Icon",
       },
       link: {
-        href: "/contact/sales?subject=enterprise",
-        text: "Talk to sales",
+        href: "/contact/get-demo",
+        text: "Get a demo",
       },
     },
   },
@@ -50,8 +50,8 @@ export const featureCards: {
       variant: "pink",
     },
     card: {
-      title: "Gitpod Dedicated",
-      text: "In your cloud or ours, run a private instance of Gitpod managed by us. Meet high security and compliance requirements while leveraging the ease of cloud development.",
+      title: "Dedicated",
+      text: "Maximize security. Run a private instance of Gitpod managed by us in your cloud or ours.",
       icon: {
         src: "/svg/icons/secure.svg",
         alt: "Cloud Icon",
@@ -170,9 +170,9 @@ export const integrateFeatures: verticalFeature[] = [
 ];
 
 const multiTrackDevelopmentFeature: Feature = {
-  title: "Onboard developers with one click",
+  title: "Onboard developers in seconds",
   paragraph:
-    "Developers are ready to code at the click of the button. Internal and external developers become effective on day 1.",
+    "Effective day 1. Developers are ready to code with the click of a button.",
   lottie: {
     src: "/lottie/edit_workspace.json",
     id: "edit_workspace",
@@ -180,9 +180,9 @@ const multiTrackDevelopmentFeature: Feature = {
 };
 
 const collaborationFeature: Feature = {
-  title: "Enable faster collaboration across teams",
+  title: "Faster collaboration across teams",
   paragraph:
-    "Workspaces can be shared in real time, in seconds. Use preview environments for quick and easy collaboration across your entire product org.",
+    "Pair programming, code reviews, live debugging. Workspaces can be shared in real-time across multiple users.",
   lottie: {
     src: "/lottie/share_workspace.json",
     id: "share-workspace",
@@ -190,9 +190,9 @@ const collaborationFeature: Feature = {
 };
 
 const codeAnywhereFeature: Feature = {
-  title: "Let your organization work from anywhere, on any device",
+  title: "Let your team work from anywhere, on any device",
   paragraph:
-    "Gitpod moves the workload to the cloud. No need to ship overpowered laptops around the world. Use any computer to code securely.",
+    "Gitpod CDEs move your workload to the cloud. No need to ship expensive hardware around the world - use any computer to code securely.",
   image: {
     src: "/images/features/ipad.webp",
     alt: "Gitpod Workspace on an iPad.",
@@ -210,9 +210,9 @@ export const otherFeatures: Feature[] = [
     ...collaborationFeature,
   },
   {
-    title: "Protect your company source code from malicious attacks",
+    title: "Secure your environments",
     paragraph:
-      "Gitpod never stores source code locally. No matter what device your developers use or where they are located. Gitpod is secure by design.",
+      "Each Gitpod workspace or prebuild runs on a fully isolated & secured single-use container providing fast startup times without compromising on security.",
     terminal: {
       source: linuxSource,
       dark: true,

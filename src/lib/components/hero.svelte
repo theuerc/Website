@@ -54,8 +54,8 @@
     {#if subtitle}
       <p class="h5 font-bold text-sub mb-xx-small">{subtitle}</p>
     {/if}
-    <h1 class="h1">{title}</h1>
-    <p class="mx-auto lg:mx-0 max-w-lg lgx:max-w-none text-large mb-x-small">
+    <h1 class="h1 max-w-2xl">{title}</h1>
+    <p class="mx-auto lg:mx-0 max-w-lg lgx:max-w-2xl text-large mb-x-small">
       {text}
     </p>
     <ButtonsWrapper class="justify-center lg:justify-start">
@@ -89,7 +89,7 @@
       lg:block {darkSrc ? 'dark:lg:hidden' : ''}
       w-[35vw]
       {isCut
-        ? 'xl:transform xl:translate-x-24 xl:translate-y-[20%] xl:scale-150'
+        ? 'xl:transform xl:-translate-x-8 xl:translate-y-[10%] xl:scale-150'
         : 'absolute right-0 top-1/2 transform -translate-y-[40%]'}
     "
       {src}
