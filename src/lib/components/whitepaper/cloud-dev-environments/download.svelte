@@ -1,6 +1,5 @@
 <script lang="ts">
   import type { EmailToType } from "$lib/api/api";
-  import validator from "validator";
   import InputsHalf from "$lib/components/contact/inputs-half.svelte";
   import Input from "$lib/components/ui-library/input/input.svelte";
   import type { Form } from "$lib/types/form";
@@ -29,11 +28,6 @@
       valid: false,
       value: "",
     },
-    companyWebsite: {
-      el: null,
-      valid: false,
-      value: "",
-    },
   };
 
   let isFormDirty = false;
@@ -54,7 +48,6 @@
     trackEvent("whitepaper_downloaded", {
       name: formData.name.value,
       email: formData.email.value,
-      companyWebsite: formData.companyWebsite.value,
     });
 
     goto(
@@ -68,7 +61,6 @@
           type: toType,
           name: formData.name.value,
           email: formData.email.value,
-          company: formData.companyWebsite.value,
         }),
       });
 
@@ -93,7 +85,7 @@
 </script>
 
 <Wrapper
-  class="px-xx-small py-x-small sm:p-x-small xl:px-small xl:py-x-small {clazz}"
+  class="px-xx-small py-x-small sm:p-x-small xl:px-small xl:py-x-small !mx-auto {clazz}"
 >
   <div bind:this={sectionStart}>
     {#if isEmailSent}
@@ -135,23 +127,6 @@
               on:change={() => {
                 formData.email.valid =
                   formData.email.value && formData.email.el.checkValidity();
-              }}
-            />
-          </div>
-        </InputsHalf>
-        <InputsHalf>
-          <div>
-            <Input
-              hasError={isFormDirty && !formData.companyWebsite.valid}
-              label="Company website*"
-              id="company"
-              name="website"
-              bind:value={formData.companyWebsite.value}
-              bind:element={formData.companyWebsite.el}
-              on:change={() => {
-                formData.companyWebsite.valid =
-                  validator.isURL(formData.companyWebsite.value) &&
-                  formData.companyWebsite.el.checkValidity();
               }}
             />
           </div>

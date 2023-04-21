@@ -9,13 +9,13 @@ export const post: RequestHandler = async ({ request }) => {
   try {
     const body = await request.json();
 
-    if (!body.email || !body.type || !body.name || !body.company) {
+    if (!body.email || !body.type || !body.name) {
       return { status: 400 };
     }
 
     const isSavedInSheet = await saveToSpreadsheet({
       sheetTitle: whitepaperMap[body.type],
-      data: [new Date(), body.name, body.email, body.company],
+      data: [new Date(), body.name, body.email],
     });
 
     if (isSavedInSheet === "duplicate") {

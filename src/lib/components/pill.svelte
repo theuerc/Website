@@ -14,7 +14,7 @@
     : 'px-3'} py-0.5 text-xs font-semibold text-important rounded-lg shadow-light {variant ===
   'gray'
     ? 'bg-sand-dark dark:bg-light-black'
-    : 'dark:text-black'} whitespace-nowrap {clazz}"
+    : 'dark:text-black'}  {clazz}"
   class:bg-salmon={variant === "pink"}
   class:bg-tertiary={variant === "orange"}
   class:bg-violet={variant === "violet"}

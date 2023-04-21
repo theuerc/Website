@@ -38,7 +38,7 @@
   </div>
   <Download
     toType="cde-whitepaper"
-    class="hidden lgx:block"
+    class="hidden lgx:block sticky left-full lgx:top-40"
     eventType="Whitepaper"
   />
 </div>

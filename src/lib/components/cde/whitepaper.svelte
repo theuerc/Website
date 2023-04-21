@@ -4,15 +4,15 @@
   import WhitepaperInfo from "./whitepaper-info.svelte";
 </script>
 
-<Section class="flex items-center gap-small lg:gap-0 flex-wrap">
-  <div class="w-full pr-x-small lg:w-1/2">
+<Section class="flex flex-col items-center flex-wrap">
+  <div class="w-full mx-auto mb-micro sm:mb-small">
     <WhitepaperInfo
-      description="Curious why many of the largest tech companies are adopting CDEs? Our whitepaper describes 9 measurable benefits of CDEs that are relevant to engineering leaders who want to remove friction from their teams and increase security."
-      title="CDEs for enterprises"
-      label="Whitepaper"
+      title="CDEs for large teams"
+      description="Curious why many of the largest companies have adopted CDEs? This white paper explores CDE benefits for engineering teams."
+      label="White paper"
     />
   </div>
-  <div class="w-full lg:w-1/2">
+  <div class="w-full mx-auto">
     <Download
       class="mx-auto lg:m-0"
       toType="cde-whitepaper"

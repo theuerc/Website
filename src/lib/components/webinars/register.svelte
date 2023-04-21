@@ -79,7 +79,7 @@
 </script>
 
 <Wrapper
-  class="px-xx-small py-x-small sm:p-x-small xl:px-small xl:py-x-small {clazz}"
+  class="sticky left-full lgx:top-40 px-xx-small py-x-small sm:p-x-small xl:px-small xl:py-x-small {clazz}"
 >
   <div bind:this={sectionStart}>
     {#if isEmailSent}

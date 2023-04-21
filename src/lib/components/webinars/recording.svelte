@@ -11,7 +11,7 @@
   const handleClose = () => (isModalOpen = false);
 </script>
 
-<Wrapper class="p-xx-small md:p-small {clazz}">
+<Wrapper class="sticky left-full lgx:top-40 p-xx-small md:p-small {clazz}">
   <h2 class="h5">Watch the recording</h2>
   <button
     on:click={() => {
