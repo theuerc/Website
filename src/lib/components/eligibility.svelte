@@ -8,7 +8,7 @@
   export let ulMaxWidth: string;
 </script>
 
-<Section class="text-center">
+<Section class="text-center max-w-3xl mx-auto">
   <h2>Eligibility criteria</h2>
   <p class="text-large">
     {text}

@@ -8,7 +8,7 @@ export const quotes: Quote[] = [
     author: "Sid Sijbrandij",
     jobTitle: "Co-founder and CEO at GitLab",
     companyLogo: {
-      src: "/svg/blog/gitlab.svg",
+      src: "/svg/gitlab.svg",
       alt: "GitLab",
     },
   },
@@ -80,7 +80,7 @@ export const jetbrains_quotes: Quote[] = [
 export const brands: Brand[] = [
   {
     alt: "GitLab",
-    logo: "svg/blog/gitlab.svg",
+    logo: "svg/gitlab.svg",
   },
   {
     alt: "VMware",
