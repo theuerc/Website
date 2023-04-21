@@ -15,12 +15,11 @@ export const pricingPlans: Pricing[] = [
   {
     title: "Individual",
     description: "For single users",
-    prependedPrice: "From",
-    showCurrency: true,
-    price: `0`,
+    prependedPrice: "Pay-as-you-go",
+    showCurrency: false,
     features: [
-      "Use Gitpod for free with 500 credits/mo or up to 50 hours",
-      `Upgrade to 1,000 credits for ${
+      "50h / month free",
+      `1,000 credits for ${
         isEurope() ? "€" : "$"
       }9/mo. Pay-as-you-go after that`,
       "Workspace classes, prebuilds, and multi-IDE support",
@@ -31,14 +30,13 @@ export const pricingPlans: Pricing[] = [
   },
   {
     title: "Organization",
-    description: "For organizations of any size",
-    prependedPrice: "From",
+    description: "For orgs of any size",
     showCurrency: true,
     price: `0.36/hour`,
     features: [
-      "Create an organization for free",
-      "Manage organization billing in one account",
-      "Invite additional organization members at no extra charge",
+      "Create a team for free",
+      "Add unlimited team members",
+      "Manage billing from a central account with pay-as-you-go",
     ],
     btnText: "Create organization",
     btnHref: "https://gitpod.io/orgs/new",
@@ -46,12 +44,13 @@ export const pricingPlans: Pricing[] = [
   },
   {
     title: "Enterprise",
-    price: "Custom",
-    description: "For orgs with high security and support needs",
+    price: "Contact us",
+    description: "For orgs with custom needs",
     features: [
       "Deployment options: run Gitpod in your cloud or ours",
       "VPC peering and private links to your dev resources",
       "SLA and premium support",
+      "SSO (soon)",
     ],
     btnText: "Talk to sales",
     btnHref: "/contact/sales?subject=enterprise",
@@ -63,9 +62,9 @@ export const pricingPlans: Pricing[] = [
 export const empowermentFeatures: Card[] = [
   {
     title: "Pro OSS developers",
-    text: "Professional open-source developers, can apply for our complimentary Open Source plan.",
+    text: "Professional open source developers can apply for our OSS program.",
     link: {
-      text: "View OSS Program",
+      text: "Apply today",
       href: "/for/opensource",
     },
   },
@@ -73,7 +72,7 @@ export const empowermentFeatures: Card[] = [
     title: "Startups",
     text: "Startups can get all our services at a 50% discount, for up to 2 years, no matter how fast your developers and workloads scale.",
     link: {
-      text: "View Startups Program",
+      text: "View Startup Program",
       href: "/for/startups",
     },
   },

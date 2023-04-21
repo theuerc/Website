@@ -18,7 +18,7 @@
   export let variant: "primary" | "secondary" | "cta" = "cta";
   export let btnSize: ButtonSizes = "medium";
   export let styles: string = "";
-  export let textAlign: "left" | "center" | "right" = "center";
+  export let textAlign: "left" | "center" | "right" = "left";
 
   const alignmentMap = {
     left: "text-left",
@@ -30,7 +30,7 @@
 </script>
 
 <div
-  class="flex h-full flex-col justify-between w-full items-center text-center {clazz}"
+  class="flex h-full flex-col justify-between w-full items-start text-left {clazz}"
   style={styles}
 >
   <div>
@@ -38,7 +38,7 @@
       <img
         src={icon.src}
         alt={icon.alt || title}
-        class="{iconClassNames} mb-xx-small mx-auto"
+        class="{iconClassNames} mb-xx-small"
         style="transform: {icon.transform || transform}"
       />
     {:else if icon}
@@ -48,7 +48,7 @@
       >
         <svelte:component
           this={icon}
-          class="mx-auto {iconClassNames}"
+          class={iconClassNames}
           style="transform: {transform}"
         />
       </div>

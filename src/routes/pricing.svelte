@@ -8,13 +8,13 @@
   import OpenGraph from "$lib/components/open-graph.svelte";
   import PlansAndPricing from "$lib/components/pricing/plans-and-pricing.svelte";
   import { pricingPlans, pricingTable } from "$lib/contents/pricing";
-  import UsedBy from "$lib/components/index/used-by.svelte";
   import Empower from "$lib/components/pricing/empower.svelte";
   import FeatureTable from "$lib/components/ui-library/feature-table/feature-table.svelte";
   import SectionCommon from "$lib/components/section-common.svelte";
   import PayAsYouGoCard from "$lib/components/pricing/pay-as-you-go-card.svelte";
   import Calculator from "$lib/components/pricing/calculator/index.svelte";
   import Section from "$lib/components/section.svelte";
+  import LinkButton from "$lib/components/ui-library/link-button/link-button.svelte";
 </script>
 
 <OpenGraph
@@ -33,21 +33,21 @@
       Pricing calculator
     </h2>
     <p class="text-large text-center mx-auto">
-      Get a cost estimate for your individual or your organization’s usage of
-      Gitpod.
+      Estimate costs for Individual and Organization packages.
     </p>
-    <p class="text-center mx-auto">
-      <a href="/docs/configure/billing">Learn more</a> about billing and credits.
-    </p>
+    <div class="text-center mt-micro md:mt-x-small">
+      <LinkButton variant="cta" size="large" href="/docs/configure/billing"
+        >More about billing and credits</LinkButton
+      >
+    </div>
   </div>
   <Calculator />
 </Section>
 
-<UsedBy title="Used by +750k developers" isCard={false} />
 <SectionCommon
   titleClassNames="!mb-micro"
   title="Compare features"
-  text="Start using Gitpod for free. Upgrade to flexible pricing and create a organization in your dashboard any time."
+  text="Start using Gitpod CDEs for free, upgrade anytime."
   textClassNames="mb-micro md:mb-small"
   isTitleADeepLink={true}
 >

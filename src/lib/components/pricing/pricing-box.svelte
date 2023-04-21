@@ -60,7 +60,7 @@
     <p class="text-grey mb-micro font-bold">
       {@html `${prependedPrice ? prependedPrice : ""} ${
         showCurrency ? (isEurope() ? "€" : "$") : ""
-      }${price}`}
+      }${price || ""}`}
     </p>
     <h2 class="h4 !mb-1">{title}</h2>
     {#if description}

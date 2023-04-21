@@ -9,7 +9,7 @@ export type Pricing = {
   title: string;
   prependedPrice?: string;
   showCurrency?: boolean;
-  price: string;
+  price?: string;
   description: string;
   features?: Features;
   btnText?: string;

@@ -7,16 +7,11 @@
 </script>
 
 <Section>
-  <Faqs useStructuredData={false} headlineClasses="!mb-micro" faq={pricingFAQ}>
-    <p slot="subheading" class="text-p-large mb-x-small text-center">
-      Find all the details of our flexible pricing in our docs.
-    </p>
-  </Faqs>
-
-  <h3 class="h3 md:mt-xx-large mt-small !mb-micro md:!mb-x-small text-center">
-    Existing customers on old pricing model
-  </h3>
-  <Faqs useStructuredData={false} faq={faqOldPlan} />
+  <Faqs
+    useStructuredData={false}
+    headlineClasses="!mb-micro"
+    faq={pricingFAQ}
+  />
 
   <StructuredData
     faq={{

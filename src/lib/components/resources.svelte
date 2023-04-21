@@ -10,8 +10,9 @@
   {#each cards as card}
     <Card
       {card}
-      class="sm:mx-macro mb-micro 2xl:mb-x-small text-center"
+      class="sm:mx-macro mb-micro 2xl:mb-x-small text-left"
       {headingLevel}
+      textAlign="left"
     />
   {/each}
 </div>

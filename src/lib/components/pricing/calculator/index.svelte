@@ -22,7 +22,7 @@
     <div class="flex-col flex gap-medium">
       <div class="relative">
         <label class="h5 text-important mb-small font-bold" for="members"
-          >Total members</label
+          >Total users</label
         >
         <Range
           id="members"
@@ -36,7 +36,7 @@
           <span class="text-important"
             >{members}{members === 100 ? "+" : ""}</span
           >
-          member{members > 1 ? "s" : ""}
+          user{members > 1 ? "s" : ""}
         </p>
       </div>
       <div class="relative">
@@ -44,7 +44,7 @@
           ><Tooltip
             class="flex items-center gap-macro"
             title="weekly hours worked with Gitpod per organization member"
-            >Weekly hours/member</Tooltip
+            >Weekly hours / user</Tooltip
           ></label
         >
         <Range

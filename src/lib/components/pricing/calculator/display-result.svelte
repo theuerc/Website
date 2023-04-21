@@ -64,11 +64,25 @@
 </script>
 
 <div class="flex flex-col">
-  <p class="font-bold text-body">For all members per month</p>
-  <p class="text-grey">(excl. VAT)</p>
+  {#if members >= 100}<br />
+  {:else}
+    <p class="text-body">
+      {#if displayValue < 9}
+        For individual users only
+      {:else if displayValue == 9}
+        Per user per month <span class="text-grey !font-normal"
+          >(excl. VAT)</span
+        >
+      {:else}
+        For all users per month <span class="text-grey !font-normal"
+          >(excl. VAT)</span
+        >
+      {/if}
+    </p>
+  {/if}
   <p class="h2 mt-micro font-bold text-important">
     {members >= 100
-      ? "custom"
+      ? "Custom"
       : `${isEurope() ? "€" : "$"}${displayValue
           .toFixed(0)
           .toString()
@@ -76,31 +90,28 @@
   </p>
   <div>
     {#if members >= 100}
-      <p>
-        For large organizations of 100+ members, please Talk to an expert to
-        receive a custom quote.
-      </p>
+      <p>Custom pricing for teams 100+</p>
       <br />
       <LinkButton
         variant="primary"
         size="large"
         href="/contact/sales?subject=enterprise"
       >
-        Talk to Sales
+        Get a quote
       </LinkButton>
     {:else if members === 1}
       <div class="mb-xx-small">
         {#if displayValue < 9}
           <TickList
-            textClassNames="max-w-sm"
-            list={["Includes 500 free credits per month for personal usage"]}
+            textClassNames="max-w-xs"
+            list={["Includes 500 credits per month for free"]}
           />
         {:else}
           <TickList
-            textClassNames="max-w-sm"
+            textClassNames="max-w-xs"
             list={[
-              "Fixed price includes 1,000 credits for up to 100 hours per month",
-              "Once 1,000 credits are used up, continue with pay-as-you-go",
+              "Includes 1,000 credits for up to 100 hours per month",
+              "Pay-as-you-go after 1,000 credits are used",
             ]}
           />
         {/if}
@@ -111,10 +122,9 @@
     {:else}
       <div class="mb-xx-small">
         <TickList
-          textClassNames="max-w-sm"
+          textClassNames="max-w-xs"
           list={[
-            "Pay for total organization usage, not individual plans",
-            "Manage billing from a central account",
+            "Pay for total team usage and manage billing from a central account",
           ]}
         />
       </div>

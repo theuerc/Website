@@ -26,7 +26,7 @@
   {#if title}
     <h1
       class:inline={titleInline}
-      class="h1 !mb-micro md:!mb-x-small {titleClasses}"
+      class="h1 !mb-micro md:!mb-mciro {titleClasses}"
     >
       {@html title}
     </h1>
