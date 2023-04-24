@@ -27,8 +27,6 @@ Your invoice will show the total amount of credits consumed in a billing period.
 
 The personal billing page is located in your [account settings](https://gitpod.io/account).
 
-> 💡 If you do not see "Billing" in your settings, cancel your existing plan or organization plan first.
-
 The Gitpod Free plan comes with 500 free credits, renewed monthly. These credits can be used for all workspace classes. Unused credits expire at the end of each month.
 
 Configuring a Personal billing plan in your user billing settings will increase your monthly credit allowance from 500 to 1000. Additional usage will be charged at the pay-as-you-go rate.
@@ -50,8 +48,6 @@ If you are a member of an organization with billing, you can select the organiza
 ## Configure organization billing
 
 Organization owners can configure billing for an organization in their organization settings.
-
-> 💡 You may need to cancel your existing Professional or Unleashed organization-billing plan first.
 
 ![Configure Team Billing](../../static/images/docs/billing/configure-team-billing.png)
 
@@ -75,15 +71,12 @@ You can see the details of your personal usage when you click on "View Usage →
 
 ## Old pricing plans
 
-Users with old paid plans, may need to cancel those plans before configuring their personal or organization billing accounts.
-
-- [Organization plans](/docs/configure/billing/org-plans)
-- [Organization billing](/docs/configure/billing/org-billing)
-
+All old seat-based plans have been faded out. If you had one of those, and need help of any kind related to those, please contact support at support@gitpod.io.
 
 ## FAQs
 
 ### [How can I limit or optimize prebuild costs?](https://discord.com/channels/816244985187008514/1070648758716600371)
+
 <!-- DISCORD_BOT_FAQ - DO NOT REMOVE -->
 
 There are a few built-in Gitpod features that can optimize your prebuild costs, such as:
