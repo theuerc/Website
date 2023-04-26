@@ -37,7 +37,8 @@ The best way to get see the power of Gitpod, is to try it out by starting your f
 To start your first workspace:
 
 1. Navigate to a GitHub, GitLab or Bitbucket repository.
-2. Open the repo in Gitpod by prefixing the URL with: `gitpod.io/#`
+2. Open the repo in Gitpod by prefixing the URL with: `gitpod.io/#`.
+3. Confirm the workspace creation.
 
 For example, click this link to open the NodeJS project in a Gitpod workspace:
 
