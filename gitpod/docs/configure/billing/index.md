@@ -11,9 +11,9 @@ title: Billing
 
 Gitpod charges for usage based on how long workspaces run, and the resources consumed by different [workspace classes](/docs/configure/workspaces/workspace-classes). Metered usage also includes [prebuilds](/docs/configure/projects/prebuilds).
 
-As an individual user, you receive a free usage allowance so that you can try Gitpod without a billing account. A personal billing account is required for additional usage beyond that.
+All users receive a free usage allowance to try Gitpod without a billing account. 
 
-Organization billing accounts provide a way to pay for organization members' usage when they run workspaces on organization projects.
+Organization billing accounts provide a way to pay for organization members' usage.
 
 ## Credits
 
@@ -24,6 +24,8 @@ Larger [workspace classes](/docs/configure/workspaces/workspace-classes) use cre
 Your invoice will show the total amount of credits consumed in a billing period.
 
 ## Configure personal billing
+
+> **Note:** Personal accounts and this billing method are now deprecated. No action is needed as conversion to an organization will be automatic. [Read more](https://www.gitpod.io/blog/organizations).
 
 The personal billing page is located in your [account settings](https://gitpod.io/account).
 
