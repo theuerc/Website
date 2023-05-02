@@ -98,6 +98,70 @@ export const overviewCards = [
 ];
 
 export const contributionHighlights: Record<string, ContentCard[]> = {
+  "April 2023": [
+    {
+      badge: "Gitpod Community",
+      contributor: "Gitpod Community",
+      title: "Gitpod x DevX in Berlin and Munich",
+      text: "Gitpod organises DevX meetups in Berlin and Munich",
+      link: {
+        href: "https://guild.host/gitpod",
+        text: "View out Guild page",
+      },
+    },
+    {
+      badge: "Content",
+      contributor: "Jean-Phi Baconnais",
+      title: "Gitpod and Google Cloud",
+      text: "A new Gitpod template for Google cloud",
+      link: {
+        href: "https://twitter.com/ZenikaIT/status/1650750235348545536",
+        text: "Read post",
+      },
+    },
+    {
+      badge: "Gitpod Community",
+      contributor: "Gitpod Community",
+      title: "KubeconEU Livestream with Gitpod",
+      text: "Livestream Pre-KubeconEU discussing all the things to come at this massive conference",
+      link: {
+        href: "https://www.youtube.com/watch?v=Hd0L1C6pVr4",
+        text: "Watch Stream",
+      },
+    },
+  ],
+  "March 2023": [
+    {
+      badge: "Community office hours",
+      contributor: "Henit & Palani",
+      title: "Gitpod Raycast Extension",
+      text: "Henit & Palani lead this office hours session to show us their new Gitpod Raycast extension",
+      link: {
+        href: "https://youtu.be/X_8O9soJ-Mg",
+        text: "Watch Recording",
+      },
+    },
+    {
+      badge: "Gitpod Community",
+      contributor: "Gitpod Community",
+      title: "Gitpod Amsterdam and Brest",
+      text: "Our community continues to have more in person meetups all over the world",
+      link: {
+        href: "https://guild.host/gitpod",
+        text: "View our Guild page",
+      },
+    },
+    {
+      badge: "Content",
+      contributor: "Thilo Maier",
+      title: "Customise Gitpod",
+      text: "Five awesome ways to customise your Gitpod workspaces",
+      link: {
+        href: "https://maier.tech/posts/five-ways-to-customize-a-gitpod-workspace",
+        text: "Read post",
+      },
+    },
+  ],
   "February 2023": [
     {
       badge: "Content",
