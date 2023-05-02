@@ -29,5 +29,6 @@
 | Gong.io, Inc                 | United States of America | Meeting Transcript Service                                               |
 | Lacework, Inc                | United States of America | Threat Detection Solution                                                |
 | StrongDM, Inc                | United States of America | Access Management Platform                                               |
+| Metabase, Inc                | United States of America | Business Analytics and Reporting Service                                 |
 
 </div>
