@@ -11,10 +11,6 @@ title: Billing
 
 Gitpod charges for usage based on how long workspaces run, and the resources consumed by different [workspace classes](/docs/configure/workspaces/workspace-classes). Metered usage also includes [prebuilds](/docs/configure/projects/prebuilds).
 
-All users receive a free usage allowance to try Gitpod without a billing account. 
-
-Organization billing accounts provide a way to pay for organization members' usage.
-
 ## Credits
 
 Gitpod usage is measured in **credits**.
@@ -23,57 +19,39 @@ Larger [workspace classes](/docs/configure/workspaces/workspace-classes) use cre
 
 Your invoice will show the total amount of credits consumed in a billing period.
 
-## Configure personal billing
+## Free tier
 
-> **Note:** Personal accounts and this billing method are now deprecated. No action is needed as conversion to an organization will be automatic. [Read more](https://www.gitpod.io/blog/organizations).
+All users receive a free usage allowance of up to 500 credits per month to try Gitpod in their first created organization.
 
-The personal billing page is located in your [account settings](https://gitpod.io/account).
+## Configure billing
 
-The Gitpod Free plan comes with 500 free credits, renewed monthly. These credits can be used for all workspace classes. Unused credits expire at the end of each month.
+Organization owners can set up billing in the organization settings by clicking "Upgrade Plan".
 
-Configuring a Personal billing plan in your user billing settings will increase your monthly credit allowance from 500 to 1000. Additional usage will be charged at the pay-as-you-go rate.
+![Configure Billing](../../static/images/docs/billing/configure-org-billing.png)
 
-![Configure Personal billing](../../static/images/docs/billing/configure-personal-billing.png)
+Once billing is configured, Gitpod will charge the organization billing account for usage by organization members.
 
-You can add a payment method with credit card details in Euros or Dollars.
-
-![Add payment details](../../static/images/docs/billing/add-personal-payment-details.png)
-
-Once billing has been configured, use the "Manage Plan" button to modify your payment details or cancel.
-
-![Active Personal billing](../../static/images/docs/billing/active-personal-billing.png)
-
-If you are a member of an organization with billing, you can select the organization to pay for all your personal usage under "Default Billing Account".
-
-![Select default billing account](../../static/images/docs/billing/select-default-billing-account.png)
-
-## Configure organization billing
-
-Organization owners can configure billing for an organization in their organization settings.
-
-![Configure Team Billing](../../static/images/docs/billing/configure-team-billing.png)
-
-Once organization billing is configured, Gitpod will charge the organization billing account for usage by organization members, when they start workspaces on organization projects, and for prebuild usage on organization projects.
-
-![Active Team billing](../../static/images/docs/billing/active-team-billing.png)
+![Active billing](../../static/images/docs/billing/active-org-billing.png)
 
 ## Configure a usage limit
 
-The usage limit prevents workspaces from starting once the limit has been reached. It will not stop running workspaces.
+The usage limit prevents workspaces from starting once the limit has been reached.
 
 To change the usage limit, look for "Update limit" in the BALANCE section of your personal or organization billing settings, after you have configured billing.
 
-![Active Team billing](../../static/images/docs/billing/update-usage-limit-2.png)
+![Active billing](../../static/images/docs/billing/update-usage-limit-2.png)
+
+Note that it will not stop running workspaces.
 
 ## View usage details
 
-You can see the details of your personal usage when you click on "View Usage →" in your personal billing settings. Organization owners can view usage details for their organization.
+Organization owners can view usage details for their organization.
 
-![Active Team billing](../../static/images/docs/billing/view-team-usage-details.png)
+![View usage](../../static/images/docs/billing/view-org-usage-details.png)
 
 ## Old pricing plans
 
-All old seat-based plans have been faded out. If you had one of those, and need help of any kind related to those, please contact support at support@gitpod.io.
+All old seat-based or personal plans have been faded out. If you had one of those, and need help of any kind related to those, please contact support at support@gitpod.io.
 
 ## FAQs
 
