@@ -37,7 +37,7 @@ Workspaces can be created on their own, or as part of a [Project](/docs/configur
 
 ## Projects
 
-[Projects](/docs/configure/projects) are the connection between Gitpod and one or more git repositories and allow you to manage [Prebuilds](/docs/configure/projects/prebuilds). Projects can be associated with your personal account, or associated with [Organizations](/docs/configure/orgs).
+[Projects](/docs/configure/projects) are the connection between Gitpod and one or more git repositories and allow you to manage [Prebuilds](/docs/configure/projects/prebuilds). Like Workspaces, Projects are always associated with an [Organization](/docs/configure/orgs).
 
 - [Prebuilds](/docs/configure/projects/prebuilds)
 - [Incremental Prebuilds](/docs/configure/projects/incremental-prebuilds)
@@ -55,7 +55,6 @@ Workspaces can be created on their own, or as part of a [Project](/docs/configur
 - [BitBucket](/docs/configure/authentication/bitbucket)
 - [GitHub Enterprise](/docs/configure/authentication/github-enterprise)
 - [Bitbucket Server](/docs/configure/authentication/bitbucket-server)
-
 
 ## FAQs
 
