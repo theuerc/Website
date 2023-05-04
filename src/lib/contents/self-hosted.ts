@@ -76,7 +76,7 @@ export const communityPlanTableData: FeatureTableColumn = {
     label: "Install now",
     href: "/docs/configure/self-hosted/latest",
   },
-  enteries: [
+  entries: [
     {
       users: "≤10 users",
       items: [
@@ -261,7 +261,7 @@ export const organizationPlanTableData: FeatureTableColumn = {
     label: "Register and Install Now",
     href: "/docs/configure/self-hosted/latest",
   },
-  enteries: [
+  entries: [
     {
       users: ">10 users",
       items: [

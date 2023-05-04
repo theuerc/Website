@@ -168,7 +168,7 @@ export const gitpodColumns: FeatureTableColumn = {
       path: "/images/gitpod-logo.svg",
     },
   },
-  enteries: [
+  entries: [
     {
       items: [
         {
@@ -235,7 +235,7 @@ export const codespacesColumn: FeatureTableColumn = {
     // @ts-ignore
     image: githubMarkSvelte,
   },
-  enteries: [
+  entries: [
     {
       items: [
         {

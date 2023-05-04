@@ -40,7 +40,7 @@ export type FeatureTableColumn = {
   };
   isHighlighted?: boolean;
   header: FeatureTableHeader;
-  enteries: FeatureTableColumnEntry[];
+  entries: FeatureTableColumnEntry[];
 };
 
 export type FeatureTableToc = {

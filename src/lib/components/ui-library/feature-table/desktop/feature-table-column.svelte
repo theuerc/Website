@@ -7,8 +7,8 @@
 
   export let featureData: FeatureTableColumn;
 
-  const hasASingleEntry = featureData.enteries.length === 1;
-  const firstEntry = featureData.enteries[0];
+  const hasASingleEntry = featureData.entries.length === 1;
+  const firstEntry = featureData.entries[0];
 </script>
 
 <Card size="small" class="p-4" brandShadow={featureData.isHighlighted}>
@@ -33,7 +33,7 @@
       {/each}
     {:else}
       <div class="flex justify-around px-small gap-xx-small">
-        {#each featureData.enteries as entry}
+        {#each featureData.entries as entry}
           <div class="grid grid-cols-1 auto-rows-[3rem] flex-1">
             <h4 class="h5 text-center border-b border-divider">
               {entry.users}

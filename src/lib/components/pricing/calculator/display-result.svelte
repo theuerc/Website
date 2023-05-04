@@ -67,17 +67,9 @@
   {#if members >= 100}<br />
   {:else}
     <p class="text-body">
-      {#if displayValue < 9}
-        For individual users only
-      {:else if displayValue == 9}
-        Per user per month <span class="text-grey !font-normal"
-          >(excl. VAT)</span
-        >
-      {:else}
-        For all users per month <span class="text-grey !font-normal"
-          >(excl. VAT)</span
-        >
-      {/if}
+      For all users per month <span class="text-grey !font-normal"
+        >(excl. VAT)</span
+      >
     </p>
   {/if}
   <p class="h2 mt-micro font-bold text-important">

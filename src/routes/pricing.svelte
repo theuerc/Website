@@ -33,7 +33,7 @@
       Pricing calculator
     </h2>
     <p class="text-large text-center mx-auto">
-      Estimate costs for Individual and Organization packages.
+      Estimate costs for your Organization.
     </p>
     <div class="text-center mt-micro md:mt-x-small">
       <LinkButton variant="cta" size="large" href="/docs/configure/billing"

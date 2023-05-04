@@ -77,7 +77,7 @@ export const bobTableData: FeatureTableColumn = {
       height: "h-20",
     },
   },
-  enteries: [
+  entries: [
     {
       items: [
         {
@@ -142,7 +142,7 @@ export const aliceTableData: FeatureTableColumn = {
       height: "h-20",
     },
   },
-  enteries: [
+  entries: [
     {
       items: [
         {

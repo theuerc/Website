@@ -26,7 +26,7 @@
     size="large"
     href="https://gitpod.io/login"
     data-analytics={`{"context":"pricing"}`}
-    >Start with 50 hours free</LinkButton
+    >Start with 50h/month for free</LinkButton
   >
 </div>
 <div class="mt-small">

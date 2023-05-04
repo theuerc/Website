@@ -62,7 +62,7 @@ export const gitpodTableData: FeatureTableColumn = {
       path: "/svg/media-kit/logo-mark.svg",
     },
   },
-  enteries: [
+  entries: [
     {
       items: [
         {
@@ -122,7 +122,7 @@ export const jetbrainsTableData: FeatureTableColumn = {
       path: "/svg/jetbrains-space/space.svg",
     },
   },
-  enteries: [
+  entries: [
     {
       items: [
         {

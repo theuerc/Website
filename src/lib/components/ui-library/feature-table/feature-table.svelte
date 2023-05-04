@@ -5,7 +5,7 @@
   import FeatureTableColumnMobile from "./mobile/feature-table-column-mobile.svelte";
   export let tableData: FeatureTable;
   export let footnote: string = "";
-  let custom = tableData.columns.some((column) => column.enteries.length > 1);
+  let custom = tableData.columns.some((column) => column.entries.length > 1);
 
   const colMap = {
     2: "md:grid-cols-2",
@@ -17,7 +17,7 @@
 
 <style lang="postcss">
   .custom {
-    grid-template-columns: 1.2fr 2.2fr 1fr 1fr;
+    grid-template-columns: 1.2fr 2.2fr 1fr;
 
     @media (max-width: 1285px) {
       @apply hidden;

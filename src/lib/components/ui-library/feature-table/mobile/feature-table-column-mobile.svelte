@@ -6,8 +6,8 @@
   import type { FeatureTableColumn } from "../feature-table";
 
   export let featureData: FeatureTableColumn;
-  const hasASingleEntry = featureData.enteries.length === 1;
-  const firstEntry = featureData.enteries[0];
+  const hasASingleEntry = featureData.entries.length === 1;
+  const firstEntry = featureData.entries[0];
 
   let isShown: boolean = false;
 </script>
@@ -34,7 +34,7 @@
             <FeatureTableItemMobile definition={item} />
           {/each}
         {:else}
-          {#each featureData.enteries as entry}
+          {#each featureData.entries as entry}
             <div
               class="grid grid-cols-1 auto-rows-[4rem] gap-8 bg-white dark:bg-bg rounded-2xl p-xx-small text-center"
             >

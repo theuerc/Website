@@ -13,30 +13,26 @@ import githubMarkSvelte from "$lib/components/svgs/github-mark.svelte";
 
 export const pricingPlans: Pricing[] = [
   {
-    title: "Individual",
-    description: "For single users",
-    prependedPrice: "Pay-as-you-go",
-    showCurrency: false,
+    title: "Starter",
+    description: "Discover Gitpod",
+    price: "Free",
     features: [
-      "50h / month free",
-      `1,000 credits for ${
-        isEurope() ? "€" : "$"
-      }9/mo. Pay-as-you-go after that`,
-      "Workspace classes, prebuilds, and multi-IDE support",
+      "50 hours per month for free",
+      "Access to all workspace classes, prebuilds, and IDEs",
     ],
     btnText: "Start for free",
     btnHref: "https://gitpod.io/login",
-    trackingName: "individual",
+    trackingName: "organization",
   },
   {
     title: "Organization",
     description: "For orgs of any size",
-    showCurrency: true,
-    price: `0.36/hour`,
+    price: "Pay-as-you-go",
     features: [
-      "Create a team for free",
-      "Add unlimited team members",
-      "Manage billing from a central account with pay-as-you-go",
+      `1,000 credits for ${
+        isEurope() ? "€" : "$"
+      }9/mo. Pay-as-you-go after that`,
+      "Custom workspace timeouts",
     ],
     btnText: "Create organization",
     btnHref: "https://gitpod.io/orgs/new",
@@ -44,13 +40,13 @@ export const pricingPlans: Pricing[] = [
   },
   {
     title: "Enterprise",
-    price: "Contact us",
     description: "For orgs with custom needs",
+    price: "Contact Us",
     features: [
       "Deployment options: run Gitpod in your cloud or ours",
       "VPC peering and private links to your dev resources",
+      "Single sign-on (SSO)",
       "SLA and premium support",
-      "SSO (soon)",
     ],
     btnText: "Talk to sales",
     btnHref: "/contact/sales?subject=enterprise",
@@ -78,15 +74,15 @@ export const empowermentFeatures: Card[] = [
   },
 ];
 
-export const indivdualPlanTableData: FeatureTableColumn = {
+export const starterPlanTableData: FeatureTableColumn = {
   link: {
     href: "https://gitpod.io/login",
     label: "Sign up",
   },
   header: {
-    headline: "Individual",
+    headline: "Starter",
   },
-  enteries: [
+  entries: [
     {
       users: "Free",
       items: [
@@ -193,131 +189,7 @@ export const indivdualPlanTableData: FeatureTableColumn = {
         },
         {
           term: "Centralized organization billing",
-          availability: false,
-        },
-        {
-          term: "Admin dashboard",
-          availability: false,
-        },
-        {
-          term: "Premium support",
-          availability: false,
-        },
-        {
-          term: "SLAs",
-          availability: false,
-        },
-      ],
-    },
-    {
-      users: "Paid",
-      items: [
-        {
-          isHeadline: true,
-          term: "CREDIT LOGIC",
-          text: "",
-        },
-        {
-          term: "Base price",
-          isCurrency: true,
-          text: "9/ mo",
-        },
-        {
-          term: "Credits in base price",
-          text: "1000",
-        },
-        {
-          term: "Additional credits",
-          isCurrency: true,
-          text: "0.036 / credit",
-        },
-        {
-          isHeadline: true,
-          term: "FEATURES",
-          text: "",
-        },
-        {
-          term: "Workspace classes",
           availability: true,
-        },
-        {
-          term: "Parallel workspaces",
-          text: "16",
-        },
-        {
-          term: "Inactivity timeout",
-          text: "60 mins",
-        },
-        {
-          term: "Timeout boost",
-          availability: true,
-        },
-        {
-          term: "Public & private repos",
-          availability: true,
-        },
-        {
-          term: "Snapshots",
-          availability: true,
-        },
-        {
-          term: "Prebuilds",
-          availability: true,
-        },
-        {
-          term: "Encrypted backups",
-          availability: true,
-        },
-        {
-          term: "Multi-IDE support",
-          availability: true,
-        },
-
-        {
-          term: "GitLab",
-          availability: true,
-        },
-        {
-          term: "GitHub",
-          availability: true,
-        },
-        {
-          term: "Bitbucket",
-          availability: true,
-        },
-        {
-          isHeadline: true,
-          term: "DEPLOYMENT",
-          text: "",
-        },
-        {
-          term: "Private, isolated instance",
-          availability: false,
-        },
-        {
-          term: "Private connections",
-          availability: false,
-        },
-        {
-          term: "Cloud region of choice",
-          availability: false,
-        },
-        {
-          term: "Run in your cloud",
-          availability: false,
-        },
-        {
-          isHeadline: true,
-          term: "ADMIN & SUPPORT",
-          text: "",
-        },
-        {
-          term: "Single sign-on",
-          availability: false,
-        },
-        {
-          term: "Centralized organization billing",
-          availability: false,
         },
         {
           term: "Admin dashboard",
@@ -338,15 +210,13 @@ export const indivdualPlanTableData: FeatureTableColumn = {
 
 export const organizationPlanTableData: FeatureTableColumn = {
   link: {
-    href: "https://gitpod.io/orgs/new",
-    label: "Create organization",
+    href: "https://gitpod.io/login",
+    label: "Sign up",
   },
-  isHighlighted: true,
   header: {
     headline: "Organization",
-    isMostPopular: false,
   },
-  enteries: [
+  entries: [
     {
       users: "Pay-as-you-go",
       items: [
@@ -410,6 +280,7 @@ export const organizationPlanTableData: FeatureTableColumn = {
           term: "Multi-IDE support",
           availability: true,
         },
+
         {
           term: "GitLab",
           availability: true,
@@ -474,6 +345,7 @@ export const organizationPlanTableData: FeatureTableColumn = {
 };
 
 export const dedicatedPlanTableData: FeatureTableColumn = {
+  isHighlighted: true,
   link: {
     href: "/contact/sales",
     label: "Talk to sales",
@@ -481,7 +353,7 @@ export const dedicatedPlanTableData: FeatureTableColumn = {
   header: {
     headline: "Enterprise",
   },
-  enteries: [
+  entries: [
     {
       users: "Custom",
       items: [
@@ -819,7 +691,7 @@ export const pricingTableToc: FeatureTableToc[] = [
 export const pricingTable: FeatureTable = {
   toc: pricingTableToc,
   columns: [
-    indivdualPlanTableData,
+    starterPlanTableData,
     organizationPlanTableData,
     dedicatedPlanTableData,
   ],
