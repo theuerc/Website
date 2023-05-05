@@ -42,6 +42,10 @@ To see a minimal project with Pandas installed and configured, please check out 
 
 Pandas Team has their official docs on how to use Gitpod for Pandas development. Please check out [Pandas Team's Gitpod guide](https://pandas.pydata.org/docs/dev/development/contributing_gitpod.html).
 
+## Jupyter Notebooks in VSCode
+
+For the best experience with Jupyter, please open your Gitpod workspaces in [VSCode Desktop](/docs/references/ides-and-editors/vscode).
+
 ## Python Versions
 
 Run `pyenv versions` to see which Python versions are pre-installed in Gitpod.
