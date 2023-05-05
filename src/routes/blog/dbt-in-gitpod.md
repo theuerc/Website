@@ -125,7 +125,9 @@ The dev environment created by the demo project is a starting point, mostly repl
 
 You can use Gitpod for free for up to 50 hours a month and onboard your team at no extra cost per user via our pay-as-you-go organizational pricing. Experience how easy it is to get started with dbt in Gitpod by going to one of the projects or following along the video walkthrough below. Feel free to reach out to [me](https://www.linkedin.com/in/jakob-herold/) to provide feedback or discuss how to use Gitpod in your data team.
 
-<LinkButton href="https://github.com/gitpod-samples/template-dbt-bigquery" variant="primary" size="large">dbt + BigQuery</LinkButton>
-<LinkButton href="https://github.com/gitpod-samples/template-dbt-snowflake" variant="primary" size="large">dbt + Snowflake</LinkButton>
+<LinkButton href="https://github.com/gitpod-samples/template-dbt-bigquery" variant="primary" size="medium">dbt + BigQuery</LinkButton>
+<LinkButton href="https://github.com/gitpod-samples/template-dbt-snowflake" variant="cta" size="medium">dbt + Snowflake</LinkButton>
+
+## Video Demo
 
 <div style="position: relative; padding-bottom: 64.63195691202873%; height: 0;"><iframe src="https://www.loom.com/embed/803d19417e5a48ac8617e7c9582acf42?hide_owner=true&hide_title=true&hideEmbedTopBar=true" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
