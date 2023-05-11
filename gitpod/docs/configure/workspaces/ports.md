@@ -207,6 +207,31 @@ Using [SSH command-line](/docs/references/ides-and-editors/command-line) access 
 
 `ssh -L 3000:localhost:3000 <workspace-ssh-connection>`
 
+
+### Local reverse port forwarding via SSH
+
+If you have a port open in your local machine but you want to access it inside Gitpod via SSH, you could do the following:
+
+- [Copy the SSH command for a workspace](/docs/references/ides-and-editors/command-line#workspace-ssh-approaches).
+- Paste the SSH command on your **local machine terminal**.
+- Append `-N -R <port>:localhost:<port>` to the command and press enter, make sure to change the <port>.
+  - Assuming the port is `5000`, it would look like `-N -R 5000:localhost:5000`.
+
+Now, from your Gitpod workspace, you can access it via `localhost:5000`.
+
+**Example Scenario:**
+
+- You start a HTTP file server on port 5000 **on your local machine**: `python3 -m http.server 5000`.
+
+- Start reverse port forwarding from a different terminal **on your local machine** to access it **from your Gitpod workspace**:
+
+```bash
+ssh 'some-special-ws-id@gitpod.io' -N -R 5000:localhost:5000
+```
+
+- Now run `curl -L http://localhost:9000` **inside your Gitpod workspace**, which will hit the port 5000 **on your local machine's** HTTP server.
+
+
 ### Cross-Origin Resource Sharing (CORS)
 
 If you start a server on a private port, let's say 5001, and want to connect to it from your web application which runs on a different port, e.g. 3000, you have to configure your requests. This is necessary because Gitpod requires credentials for private ports. Without credentials, Gitpod cannot verify that the request is made by an authorized user.

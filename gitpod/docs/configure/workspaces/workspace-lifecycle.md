@@ -20,7 +20,9 @@ The state of the workspace is indicated by the color of the workspace indicator.
 3. 🟠 **Stopping** - Workspace being stopped, backups performing.
 4. 🔴 **Stopped** - Workspace no longer accessible. File system preserved for restart.
 
-> **Important:** Only files in the `/workspace` directory are kept between state transitions.
+> **Important:**
+> - Only files in the `/workspace` directory are kept between state transitions.
+> - Any changes made to `/workspace` from a [custom Dockerfile](/docs/configure/workspaces/workspace-image#use-a-custom-dockerfile) will be overwritten/overlaid by a mount.
 
 The following describes each workspace status in detail, including what can cause a workspace to transition from one status to another.
 

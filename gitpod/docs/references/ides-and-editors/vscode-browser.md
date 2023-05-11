@@ -5,6 +5,7 @@ title: VS Code Browser
 
 <script context="module">
   export const prerender = true;
+  import Keybind from "$lib/components/keybind.svelte";
 </script>
 
 # VS Code Browser
@@ -30,3 +31,17 @@ You can upload files to your workspace by dragging and dropping them into the ed
   <video onloadstart="this.playbackRate = 1.5;" controls playsinline autoplay loop muted class="shadow-medium w-full rounded-xl max-w-3xl mt-x-small" src="/images/editors/file-upload-ui-button.webm" type="video/webm"></video>
   <figcaption>Upload Files from local to VS Code Browser</figcaption>
 </figure>
+
+## FAQs
+
+## Is it possible to intercept shortcuts like cmd+w in VSCode browser?
+
+It is not possible to intercept <Keybind>Cmd + W</Keybind> directly in browsers like Chrome or Firefox, as it would require overriding the native keyboard shortcut.
+
+### Recommended Solution
+
+- Use [Gitpod with VS Code Desktop](/docs/references/ides-and-editors/vscode) for the best keyboard experience.
+
+### Alternative Solution
+
+You can also install Gitpod as a <abbr title="Progressive Web App">PWA</abbr>. If you're interested in this approach, you can follow the instructions listed in the accompanying GitHub Issue [here](https://github.com/gitpod-io/gitpod/issues/1445#issuecomment-1028706854).

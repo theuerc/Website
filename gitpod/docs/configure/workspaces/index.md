@@ -111,3 +111,17 @@ Open the commit in a new workspace by either:
 3. Installing, and using the [Gitpod Browser Extension](/docs/configure/user-settings/browser-extension#browser-extension)
 
 > **Important:** You must commit the `.gitpod.yml` to the root of the repository and start a new workspace for changes to apply (a workspace restart is not sufficient).
+
+## FAQs
+
+### [IP addresses of Gitpod workspace](https://discord.com/channels/816244985187008514/1099925986088333424)
+
+**Q: How can I connect to an Azure SQL instance from a Gitpod.io workspace? Is there a way to get a public IP to whitelist?**
+
+A: Gitpod workspaces do not have dedicated static IPs. However, you can use a proxy server IP and link it with your Gitpod workspaces using Tailscale integration. For more information, refer to [Gitpod's Tailscale Integration documentation](https://www.gitpod.io/docs/integrations/tailscale).
+
+### [Is it possible to run a Kubernetes cluster in a Gitpod workspace using minikube or kind (or other alternatives)?](https://discord.com/channels/816244985187008514/1094565343038550016)
+
+You cannot run a Kubernetes cluster directly in a Gitpod workspace using minikube or kind. However, you can run it through QEMU using the following Gitpod template: [template-k3s](https://github.com/gitpod-io/template-k3s). You can also use [template-nixos](https://github.com/gitpod-io/template-nixos).
+
+Relevant GitHub issue: https://github.com/gitpod-io/gitpod/issues/4889
