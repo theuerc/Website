@@ -560,18 +560,18 @@
         <a href="https://allaboutdnt.com/#adjust-settings">this guide.</a>
       </p>
 
-      <h3 class="mx-0 my-4">Mode Analytics</h3>
+      <h3 class="mx-0 my-4">Metabase</h3>
       <p class="mb-4">
-        We use Mode Analytics, provided by Mode Analytics, Inc., to explore and
-        analyse usage data that may contain data captured by <a
-          href="#segment-io">Segment</a
+        We use Metabase, provided by Metabase, Inc., to explore and analyse
+        usage data that may contain data captured by <a href="#segment-io"
+          >Segment</a
         >
-        from the Website and Product. Mode Analytics operates in
-        <a href="https://mode.com/gdpr/">compliance with the GDPR</a>.
+        from the Website and Product. Metabase operates in
+        <a href="https://metabase.com/security">compliance with the GDPR</a>.
       </p>
       <p class="mb-4">
-        You can also find more information in Mode's privacy policy: <a
-          href="https://mode.com/privacy/">https://mode.com/privacy/</a
+        You can also find more information in Metabase's privacy policy: <a
+          href="https://metabase.com/privacy/">https://metabase.com/privacy/</a
         >.
       </p>
 
