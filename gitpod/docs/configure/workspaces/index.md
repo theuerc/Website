@@ -81,7 +81,7 @@ You can use the `gp validate` command to test various configuration setups: simp
 
 <!-- | `gp validate --from="prebuild"` | `before` + `command`          | -->
 
-> **Tip:** For improved speed and convienience whilst updating your workspace configuration, consider starting your worksapce using a large [Workspace Class](/docs/configure/workspaces/workspace-classes).
+> **Tip:** For improved speed and convenience while updating your workspace configuration, consider starting your workspace using a large [Workspace Class](/docs/configure/workspaces/workspace-classes).
 
 ### Validate a workspace start
 
