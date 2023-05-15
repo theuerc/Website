@@ -73,7 +73,7 @@ See [User Settings](/docs/configure/user-settings) for more ways to customize Gi
 
 ## Step 3: Gitpodify a project
 
-Opening a repository in Gitpod starts a workspace and clones the source code. To start developing though, you would then have to install any required dependencies, run any build scripts and start servers. Luckily, with Gitpod, we can automate all of those steps.
+Gitpod uses a `.gitpod.yml` file located at the root of your repository to unlock all benefits. It defines the processes to start for your project (e.g. a database or webserver), installs the required tools, editor extensions or IDE plugins. To get started:
 
 1. Add a `.gitpod.yml` at the root of your repository.
    - You can use `gp init` to quickly generate the `.gitpod.yml` file.
