@@ -33,4 +33,4 @@ In line with this new approach, Gitpod has also made changes to the create works
 
 ## Timeline
 
-Gitpod will roll out this change over the in the next few weeks and will inform users within the product when this happens. You don't need to do anything. If you have any questions or need assistance, please reach out to [Gitpod’s support team](/support).
+Gitpod will roll out this change over the next few weeks and will inform users within the product when this happens. You don't need to do anything. If you have any questions or need assistance, please reach out to [Gitpod’s support team](/support).
