@@ -11,6 +11,14 @@ title: Billing
 
 Gitpod charges for usage based on how long workspaces run, and the resources consumed by different [workspace classes](/docs/configure/workspaces/workspace-classes). Metered usage also includes [prebuilds](/docs/configure/projects/prebuilds).
 
+To view and manage your organization's billing in Gitpod:
+
+- Click on the top-left dropdown
+- Select your organization's name
+- Click on the top-left dropdown again
+- Click on **Settings**
+- In the left menu, click on **Billing**
+
 ## Credits
 
 Gitpod usage is measured in **credits**.
