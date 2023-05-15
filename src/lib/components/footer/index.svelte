@@ -22,9 +22,14 @@
       icon: "/svg/brands/discord.svg",
     },
     {
-      href: "https://www.developerexperience.us",
-      alt: "DevX community logo",
-      icon: "/svg/brands/devx.svg",
+      href: "https://www.linkedin.com/company/gitpod/",
+      alt: "LinkedIn",
+      icon: "/svg/brands/linkedin.svg",
+    },
+    {
+      href: "https://staging.bsky.app/profile/gitpod.io",
+      alt: "BlueSky",
+      icon: "/svg/brands/bluesky.svg",
     },
   ];
 
