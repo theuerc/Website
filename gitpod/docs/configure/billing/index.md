@@ -19,6 +19,8 @@ To view and manage your organization's billing in Gitpod:
 - Click on **Settings**
 - In the left menu, click on **Billing**
 
+> **Note:** You need to be an owner of the organization to access the **Billing** page[[1](/docs/configure/orgs/members)].
+
 ## Credits
 
 Gitpod usage is measured in **credits**.
