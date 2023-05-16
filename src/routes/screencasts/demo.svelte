@@ -8,13 +8,11 @@
 </script>
 
 <script lang="ts">
-  import EditInGitpod from "$lib/components/docs/edit-in-gitpod.svelte";
   import Body from "$lib/components/screencasts/body.svelte";
   import GetStartedSmall from "$lib/components/screencasts/get-started-small.svelte";
   import { demoScreencast } from "$lib/contents/screencasts";
   import type { BlogPost } from "$lib/types/blog-post";
   import MoreArticles from "$lib/components/more-articles.svelte";
-  import Explore from "$lib/components/explore.svelte";
   import type { Load } from "@sveltejs/kit";
   import { getPosts } from "$lib/utils/content";
   export let allPosts: any;
@@ -28,33 +26,45 @@
 </script>
 
 <Body
-  title="Watch a demo"
-  description="Unleash developer productivity by supercharging how you develop."
+  title="Gitpod's developer platform"
+  description="Watch a short demo of Gitpod CDEs to learn how to developer faster <br/> and more securely."
   screencast={demoScreencast}
   hideDescription={true}
 >
   <div slot="custom">
     <h2 class="h5 mt-micro mb-2">Gitpod Demo</h2>
-    <p>
+    <p class="max-w-xl">
       See how Gitpod launches a ready-to-code project built on five containers
       using a Node app, .NET app, a Python app as well as Redis and Postgres
       databases with a simple click.
     </p>
 
-    <h3 class="h5 my-xx-small">Try it yourself</h3>
-    <EditInGitpod
-      text="Open in Gitpod"
-      url="https://gitpod.io/#https://github.com/gitpod-io/voting-app"
-    />
-    <p class="mt-x-small md:mb-24">
-      Do you still have questions? <a href="/contact/sales?subject=enterprise"
-        >Talk to an expert.</a
+    <div class="flex flex-row my-xx-small items-center space-x-2">
+      <p class="text-important font-bold text-md md:text-xl">
+        Try it yourself:
+      </p>
+      <a
+        href="https://gitpod.io/#https://github.com/gitpod-io/voting-app"
+        target="_blank"
+        data-analytics={`{"context":"screencast_page"}`}
+        ><img
+          src="/svg/open-in-gitpod.svg"
+          alt="Open in Gitpod"
+          class="h-3/4 md:h-full w-3/4 md:w-full"
+        /></a
       >
-    </p>
+    </div>
   </div>
 </Body>
 
-<GetStartedSmall />
+<div class="mt-x-large md:mt-xxx-large">
+  <GetStartedSmall />
+  <p class="mt-6 md:mb-24 max-w-full mx-auto text-center text-base">
+    Do you still have questions? Please <a href="/contact/sales"
+      >Contact sales</a
+    >.
+  </p>
+</div>
 
 <MoreArticles
   title="Helpful resources"
@@ -71,13 +81,4 @@
       isNotAnActualPost: true,
     },
   ]}
-/>
-
-<Explore
-  contents={{
-    secondaryLink: {
-      href: "/contact/sales?subject=enterprise",
-      text: "Talk to an expert",
-    },
-  }}
 />

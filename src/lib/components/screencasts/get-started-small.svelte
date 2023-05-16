@@ -15,11 +15,12 @@
   <div>
     <h3 class="h4">Get started</h3>
     <p class="mb-micro">
-      Spin up fresh cloud development environments for each task, in the cloud,
-      in seconds.
+      Spin up fresh, automated dev environments for each task, in the cloud, in
+      seconds.
     </p>
-    <LinkButton href="/#get-started" variant="primary"
+    <LinkButton href="https://gitpod.io/workspaces/" variant="primary"
       >Start for free</LinkButton
     >
+    <LinkButton href="/docs" variant="gray">View docs</LinkButton>
   </div>
 </Card>

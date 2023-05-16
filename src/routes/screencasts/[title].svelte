@@ -14,7 +14,6 @@
 <script lang="ts">
   import type { Screencast as ScreencastType } from "$lib/types/screencasts";
   import { stringToBeautifiedFragment } from "$lib/utils/helpers";
-  import CalloutSecondary from "$lib/components/callout-secondary.svelte";
   import Explore from "$lib/components/explore.svelte";
   import SectionCommon from "$lib/components/section-common.svelte";
   import ScreencastsGrid from "$lib/components/screencasts/screencasts-grid.svelte";
@@ -56,7 +55,7 @@
 <Body {screencast} />
 
 {#if nextScreencasts.length}
-  <SectionCommon title="Next up...">
+  <SectionCommon title="Next up">
     <ScreencastsGrid
       headlineOrder="h3"
       screencasts={nextScreencasts.slice(0, isAMobileDevice ? 3 : 6)}
@@ -64,15 +63,4 @@
     />
   </SectionCommon>
 {/if}
-
-<CalloutSecondary
-  title="View full screencast playlist"
-  text="Have a look at our full playlist to learn even more about specific topics."
-  link={{
-    href: "/screencasts",
-    text: "View all screencasts",
-  }}
-  isGetADemoLinkShown={false}
-/>
-
 <Explore />

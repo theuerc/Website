@@ -49,7 +49,7 @@
 />
 
 <Header
-  title="Full screencast playlist"
+  title="A video playlist."
   text="Learn how to be always ready-to-code by following these short videos."
   tight={true}
 />

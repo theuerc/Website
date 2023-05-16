@@ -8,8 +8,8 @@
   export let contents: ExploreSection = {};
 
   const {
-    title = "Get Started <span>for&nbsp;Free</span>",
-    description = "Spin up fresh, automated dev environments for each task, in the cloud, in seconds - no credit card required.",
+    title = "Get started",
+    description = "Dev environments pre-configured with all the dependencies required to code in seconds.",
     note = "",
     link = {
       text: "Start for free",
