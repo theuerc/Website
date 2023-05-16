@@ -8,15 +8,15 @@ export const featureTitles: FeatureTitle[] = [
   },
   {
     main: "A welcoming community of",
-    sub: "+6k",
+    sub: "6k+",
   },
   {
     main: "A devoted team of",
-    sub: "+50",
+    sub: "50+",
   },
   {
     main: "A user base of",
-    sub: "+750k",
+    sub: "900K+",
   },
 ];
 

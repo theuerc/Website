@@ -106,8 +106,8 @@ export const quotes: Quote[] = [
 ];
 
 export const developFeature: Feature = {
-  title: "Develop like Google, Facebook or&nbsp;Shopify",
+  title: "Develop like Google, Facebook, Shopify, Uber, Stripe and Slack",
   paragraph:
-    "What big tech companies are trying to build internally, Gitpod is bringing to the rest of the world: container-based development in the&nbsp;cloud.",
+    "What big tech companies are trying to build internally, Gitpod’s developer platform is bringing to the rest of the world. Read more about the benefits of CDEs for organizations.",
   previewComponent: developLikeSvelte,
 };

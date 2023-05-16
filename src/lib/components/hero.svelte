@@ -55,7 +55,7 @@
       <p class="h5 font-bold text-sub mb-xx-small">{subtitle}</p>
     {/if}
     <h1 class="h1 max-w-2xl">{title}</h1>
-    <p class="mx-auto lg:mx-0 max-w-lg lgx:max-w-2xl text-large mb-x-small">
+    <p class="mx-auto lg:mx-0 max-w-lg lgx:max-w-xl text-large mb-x-small">
       {text}
     </p>
     <ButtonsWrapper class="justify-center lg:justify-start">

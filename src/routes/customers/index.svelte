@@ -3,18 +3,16 @@
 </script>
 
 <script lang="ts">
-  import CompanyBenefits from "$lib/components/customers/company-benefits.svelte";
   import Stories from "$lib/components/customers/stories.svelte";
   import Explore from "$lib/components/explore.svelte";
   import Hero from "$lib/components/hero.svelte";
   import Testimonials from "$lib/components/index/testimonials.svelte";
-  import UsedBy from "$lib/components/index/used-by.svelte";
   import OpenGraph from "$lib/components/open-graph.svelte";
-  import Quotes from "$lib/components/quotes.svelte";
   import SectionFeatures from "$lib/components/section-features.svelte";
-  import Section from "$lib/components/section.svelte";
-  import { developFeature, quotes, benefits } from "$lib/contents/customers";
+  import { developFeature } from "$lib/contents/customers";
+  import Quote from "$lib/components/solutions/quote.svelte";
   import { testimonials } from "$lib/contents/home/index";
+  import AnimatedLogos from "$lib/components/animated-logos.svelte";
   import { page } from "$app/stores";
   import Whitepaper from "$lib/components/cde/whitepaper.svelte";
 
@@ -37,63 +35,57 @@
   }}
 />
 
-<Hero
-  title="You are in good company"
-  text="Learn how other customers leverage Gitpod to improve their developer experience, remote collaboration and security."
-  image={{
-    src: "/images/customers/hero.png",
-    alt: "Workspace setup",
-    isCut: false,
-  }}
-  btnPrimary={{
-    href: "#stories",
-    text: "View stories",
-  }}
-  btnSecondary={{
-    href: "/contact/sales?subject=enterprise",
-    text: "Talk to an expert",
-  }}
-/>
+<div
+  class="flex flex-col lg:flex-row sm:mt-x-large items-center justify-between space-x-0 md:space-x-1"
+>
+  <Hero
+    title="You are in good company"
+    text="Learn how developers use Gitpod CDEs to increase velocity, improve collaboration and gain control of their development."
+    btnPrimary={{
+      href: "https://gitpod.io/workspaces",
+      text: "Start for free",
+    }}
+    btnSecondary={{
+      href: "/contact/get-demo",
+      text: "Get a demo",
+    }}
+  />
+  <Quote
+    quote="
+    Gitpod reduces developer downtime to nearly zero. Running in the cloud enables new ways of working together that were not possible before."
+    author={{
+      name: "Roger Goldfiner",
+      jobTitle: "Senior Staff Software Engineer at Quizlet",
+    }}
+    svgClazz="h-16 w-36"
+  />
+</div>
 
-<CompanyBenefits {benefits} class="lg:pt-16" />
-
-<Section>
-  <Quotes {quotes} />
-</Section>
-
+<AnimatedLogos />
 <SectionFeatures
   title="Accelerate your workflow"
   text="Spin up fresh, cloud development environments for each task, fully automated, in seconds."
   features={[{ ...developFeature, headingLevel: "h3" }]}
   type="box"
 />
-
 <Stories
-  title="Featured Customer Stories"
-  text="Read how our customers improved their development workflows"
+  title="Meet some of our customers."
+  text="Gitpod enables companies of any size to deliver product faster."
   id="stories"
   {customers}
   class="max-w-7xl lg:grid-cols-3 xl:px-4"
 />
-
-<UsedBy
-  isCard={false}
-  class="py-small"
-  title="Trusted by +750k developers"
-  isCustomerStoriesLinkShown={false}
-/>
-
 <Whitepaper />
-<br />
-<Testimonials {testimonials} style="margin-top: var(--small);" />
+<Testimonials {testimonials} title="Trusted by small teams and large orgs." />
 
 <Explore
   contents={{
+    title: "Join developers, everywhere.",
     description:
-      "Spin up fresh cloud development environments for each task, in the cloud, in seconds - no contracts or banking details&nbsp;required.",
+      "Dev environments pre-configured with all the dependencies required to code in seconds.",
     secondaryLink: {
-      href: "https://www.notion.so/gitpod/Gitpod-Onboarding-Guides-Stages-1-3-d97968210ad2408789e968597fe4633c",
-      text: "View onboarding guides",
+      href: "/contact/get-demo",
+      text: "Get a demo",
     },
   }}
 />

@@ -23,4 +23,4 @@
 
 <Titles />
 
-<UsedBy title="Speeding up +750k developers in teams like" isCard={false} />
+<UsedBy title="Speeding up 900K+ developers in teams like" isCard={false} />
