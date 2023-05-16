@@ -48,33 +48,33 @@
   <Header
     centered={false}
     title="Changelog"
-    text="A sum-up of Gitpod’s latest product improvements, feature releases<br class='hidden xl:block'> and community contributions."
-    class="w-full"
+    text="Gitpod’s latest product improvements, feature releases and community contributions."
+    class="w-full pb-x-small"
     textAlign="left"
   >
     <ButtonsWrapper slot="content" class="pt-x-small">
-      <TwitterFollowButton variant="primary" />
       <LinkButton
         target="_blank"
         data-analytics={`{"context":"dashboard"}`}
         href="https://gitpod.io/notifications"
-        variant="secondary"
-        size="medium">Signup for the Newsletter</LinkButton
+        variant="primary"
+        size="medium">Signup for the newsletter</LinkButton
       >
       <LinkButton
         target="_blank"
         data-analytics={`{"context":"changelog"}`}
         href="https://gitpod.io/changelog/rss.xml"
-        variant="gray"
+        variant="secondary"
         size="medium"
         ><RSS class="inline-block my-0 mx-1 h-4 w-4" />Subscribe to RSS</LinkButton
       >
+      <TwitterFollowButton variant="cta" />
     </ButtonsWrapper>
   </Header>
 </div>
 
 <div
-  class="flex flex-col space-y-x-large md:space-y-xxx-large divide-y divide-divider"
+  class="flex flex-col space-y-x-large md:space-y-xxx-large divide-y divide-divider pt-x-large md:pt-xx-large border-y border-divider"
 >
   {#each changelogEntries as { date, title, content, image, alt, customSlug }, i}
     <div

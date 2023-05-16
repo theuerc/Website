@@ -6,7 +6,7 @@
 
 <a
   {href}
-  class="h3 text-h4 !text-important block no-underline font-semibold transition-all duration-200 hover:underline focus:underline hover:decoration-2 focus:decoration-2 {clazz}"
+  class="text-2xl !text-[#999795] block no-underline font-normal transition-all duration-200 hover:underline focus:underline hover:decoration-2 focus:decoration-2 {clazz}"
 >
   <slot />
 </a>
