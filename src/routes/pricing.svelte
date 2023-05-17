@@ -11,7 +11,6 @@
   import Empower from "$lib/components/pricing/empower.svelte";
   import FeatureTable from "$lib/components/ui-library/feature-table/feature-table.svelte";
   import SectionCommon from "$lib/components/section-common.svelte";
-  import PayAsYouGoCard from "$lib/components/pricing/pay-as-you-go-card.svelte";
   import Calculator from "$lib/components/pricing/calculator/index.svelte";
   import Section from "$lib/components/section.svelte";
   import LinkButton from "$lib/components/ui-library/link-button/link-button.svelte";
@@ -53,8 +52,6 @@
 >
   <div slot="content">
     <FeatureTable tableData={pricingTable} />
-
-    <PayAsYouGoCard class="mt-small md:mt-xx-large" />
   </div>
 </SectionCommon>
 <Empower />
