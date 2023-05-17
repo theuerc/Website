@@ -7,7 +7,6 @@
   import { tick } from "svelte";
   import Button from "$lib/components/ui-library/button/button.svelte";
   import SubmissionSuccess from "$lib/components/submission-success.svelte";
-  import Wrapper from "$lib/components/webinars/wrapper.svelte";
   import { goto } from "$app/navigation";
   import { trackEvent } from "$lib/components/segment.svelte";
 
@@ -84,77 +83,75 @@
   };
 </script>
 
-<Wrapper
-  class="px-xx-small py-x-small sm:p-x-small xl:px-small xl:py-x-small !mx-auto {clazz}"
->
-  <div bind:this={sectionStart}>
-    {#if isEmailSent}
-      <SubmissionSuccess class="-mb-x-small" title="Thanks for downloading" />
-    {:else}
-      <form
-        class="space-y-micro md:space-y-xx-small"
-        on:submit|preventDefault={handleSubmit}
-        novalidate
-      >
-        <h2 class="h5 !mt-0">Download {eventType}</h2>
-        <InputsHalf>
-          <div>
-            <Input
-              hasError={isFormDirty && !formData.name.valid}
-              label="Full name*"
-              id="name"
-              name="full-name"
-              bind:value={formData.name.value}
-              bind:element={formData.name.el}
-              type="text"
-              autocomplete="name"
-              on:change={() => {
-                formData.name.valid =
-                  formData.name.value && formData.name.el.checkValidity();
-              }}
-            />
-          </div>
-          <div>
-            <Input
-              hasError={isFormDirty && !formData.email.valid}
-              label="Work email*"
-              id="email"
-              name="work-email"
-              bind:value={formData.email.value}
-              bind:element={formData.email.el}
-              type="email"
-              autocomplete="email"
-              on:change={() => {
-                formData.email.valid =
-                  formData.email.value && formData.email.el.checkValidity();
-              }}
-            />
-          </div>
-        </InputsHalf>
+<div bind:this={sectionStart}>
+  {#if isEmailSent}
+    <SubmissionSuccess class="-mb-x-small" title="Thanks for downloading" />
+  {:else}
+    <form
+      class="space-y-micro md:space-y-xx-small"
+      on:submit|preventDefault={handleSubmit}
+      novalidate
+    >
+      <h2 class="h5 !mt-0">Download {eventType}</h2>
+      <InputsHalf>
         <div>
-          <p class="text-sm max-w-lg">
-            By submitting this form, I confirm that I acknowledge the collection
-            and processing of personal data by Gitpod, as further described in
-            the <a class="!underline" href="/privacy">Privacy Policy.</a>
-          </p>
+          <Input
+            hasError={isFormDirty && !formData.name.valid}
+            label="Full name*"
+            id="name"
+            name="full-name"
+            bind:value={formData.name.value}
+            bind:element={formData.name.el}
+            type="text"
+            autocomplete="name"
+            on:change={() => {
+              formData.name.valid =
+                formData.name.value && formData.name.el.checkValidity();
+            }}
+          />
         </div>
-        <Button
-          class="flex gap-micro"
-          variant="primary"
-          size="large"
-          type="submit"
-          isLoading={isSubmissionInProgress}
-          disabled={(isFormDirty && !isFormValid) || isSubmissionInProgress}
-        >
-          <img src="/svg/download.svg" alt="download icon" />
-          Download now
-        </Button>
-        {#if isFormDirty && !isFormValid}
-          <legend class="text-xs text-error block mt-1 mb-2">
-            Please fill out all required fields above
-          </legend>
-        {/if}
-      </form>
-    {/if}
-  </div>
-</Wrapper>
+        <div>
+          <Input
+            hasError={isFormDirty && !formData.email.valid}
+            label="Work email*"
+            id="email"
+            name="work-email"
+            bind:value={formData.email.value}
+            bind:element={formData.email.el}
+            type="email"
+            autocomplete="email"
+            on:change={() => {
+              formData.email.valid =
+                formData.email.value && formData.email.el.checkValidity();
+            }}
+          />
+        </div>
+      </InputsHalf>
+      <div>
+        <p class="text-sm max-w-lg">
+          By submitting this form, I confirm that I acknowledge the collection
+          and processing of personal data by Gitpod, as further described in the <a
+            class="!underline"
+            href="/privacy">Privacy Policy.</a
+          >
+        </p>
+      </div>
+      <Button
+        class="flex gap-micro"
+        variant="primary"
+        size="large"
+        type="submit"
+        isLoading={isSubmissionInProgress}
+        disabled={(isFormDirty && !isFormValid) || isSubmissionInProgress}
+      >
+        <img src="/svg/download.svg" alt="download icon" />
+        Download now
+      </Button>
+      {#if isFormDirty && !isFormValid}
+        <legend class="text-xs text-error block mt-1 mb-2">
+          Please fill out all required fields above
+        </legend>
+      {/if}
+    </form>
+  {/if}
+</div>

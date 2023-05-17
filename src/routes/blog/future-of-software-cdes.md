@@ -16,6 +16,7 @@ title: The future of writing software happens in Cloud Development Environments 
 <script>
   import Quotes from "$lib/components/blog/cde-quotes.svelte";
   import Download from "$lib/components/whitepaper/cloud-dev-environments/download.svelte";
+  import Wrapper from "$lib/components/webinars/wrapper.svelte";
 </script>
 
 **TL;DR**
@@ -86,8 +87,12 @@ So.. what will we do with the additional capital? We want CDEs to become the sta
 
 We want to build a lasting company on top of a paradigm shift that will change how the world writes software - for the better.
 
-<Download
-      class="mx-auto lg:m-0"
+<Wrapper
+class="px-xx-small py-x-small sm:p-x-small xl:px-small xl:py-x-small !mx-auto">
+
+<Download class="mx-auto lg:m-0"
       toType="cde-whitepaper"
       eventType="Whitepaper"
-    />
+/>
+
+</Wrapper>

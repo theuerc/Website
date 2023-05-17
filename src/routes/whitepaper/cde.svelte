@@ -5,6 +5,7 @@
 <script lang="ts">
   import Hero from "$lib/components/whitepaper/cloud-dev-environments/hero.svelte";
   import Download from "$lib/components/whitepaper/cloud-dev-environments/download.svelte";
+  import Wrapper from "$lib/components/webinars/wrapper.svelte";
   import YoullLearn from "$lib/components/whitepaper/cloud-dev-environments/youll-learn.svelte";
   import VoicesFromTheIndustry from "$lib/components/whitepaper/cloud-dev-environments/voices-from-the-industry.svelte";
   import Articles from "$lib/components/articles.svelte";
@@ -28,19 +29,28 @@
       label="Whitepaper"
     />
 
-    <Download
-      class="lgx:hidden"
-      toType="cde-whitepaper"
-      eventType="Whitepaper"
-    />
+    <Wrapper
+      class="lgx:hidden px-xx-small py-x-small sm:p-x-small xl:px-small xl:py-large !mx-auto "
+    >
+      <Download
+        class="lgx:hidden"
+        toType="cde-whitepaper"
+        eventType="Whitepaper"
+      />
+    </Wrapper>
+
     <YoullLearn />
     <VoicesFromTheIndustry />
   </div>
-  <Download
-    toType="cde-whitepaper"
-    class="hidden lgx:block sticky left-full lgx:top-40"
-    eventType="Whitepaper"
-  />
+  <Wrapper
+    class="hidden lgx:block px-xx-small py-x-small sm:p-x-small xl:px-small xl:py-x-small !mx-auto sticky left-full lgx:top-40"
+  >
+    <Download
+      toType="cde-whitepaper"
+      class="hidden lgx:block sticky left-full lgx:top-40"
+      eventType="Whitepaper"
+    />
+  </Wrapper>
 </div>
 <Articles
   title="Additional resources"

@@ -8,13 +8,11 @@
   import Hero from "$lib/components/hero.svelte";
   import Testimonials from "$lib/components/index/testimonials.svelte";
   import OpenGraph from "$lib/components/open-graph.svelte";
-  import SectionFeatures from "$lib/components/section-features.svelte";
-  import { developFeature } from "$lib/contents/customers";
+  import FeatureBoxWhitepaper from "$lib/components/feature-box-whitepaper.svelte";
   import Quote from "$lib/components/solutions/quote.svelte";
   import { testimonials } from "$lib/contents/home/index";
   import AnimatedLogos from "$lib/components/animated-logos.svelte";
   import { page } from "$app/stores";
-  import Whitepaper from "$lib/components/cde/whitepaper.svelte";
 
   let customers = $page.stuff.customers;
 </script>
@@ -62,12 +60,7 @@
 </div>
 
 <AnimatedLogos />
-<SectionFeatures
-  title="Accelerate your workflow"
-  text="Spin up fresh, cloud development environments for each task, fully automated, in seconds."
-  features={[{ ...developFeature, headingLevel: "h3" }]}
-  type="box"
-/>
+<FeatureBoxWhitepaper />
 <Stories
   title="Meet some of our customers."
   text="Gitpod enables companies of any size to deliver product faster."
@@ -75,7 +68,6 @@
   {customers}
   class="max-w-7xl lg:grid-cols-3 xl:px-4"
 />
-<Whitepaper />
 <Testimonials {testimonials} title="Trusted by small teams and large orgs." />
 
 <Explore

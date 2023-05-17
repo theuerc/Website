@@ -1,5 +1,6 @@
 <script lang="ts">
   import Download from "$lib/components/whitepaper/cloud-dev-environments/download.svelte";
+  import Wrapper from "$lib/components/webinars/wrapper.svelte";
   import Section from "$lib/components/section.svelte";
   import WhitepaperInfo from "./whitepaper-info.svelte";
 </script>
@@ -13,10 +14,14 @@
     />
   </div>
   <div class="w-full mx-auto">
-    <Download
-      class="mx-auto lg:m-0"
-      toType="cde-whitepaper"
-      eventType="Whitepaper"
-    />
+    <Wrapper
+      class="px-xx-small py-x-small sm:p-x-small xl:px-small xl:py-x-small !mx-auto"
+    >
+      <Download
+        class="mx-auto lg:m-0"
+        toType="cde-whitepaper"
+        eventType="Whitepaper"
+      />
+    </Wrapper>
   </div>
 </Section>
