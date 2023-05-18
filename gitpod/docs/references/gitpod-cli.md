@@ -9,7 +9,9 @@ title: Gitpod CLI
 
 # Gitpod CLI
 
-Gitpod supports a command line interface that is available in each workspace terminal called `gp`:
+Gitpod workspaces include a command-line-utility (`gp`) that comes installed in all workspaces and prebuilds.
+
+> **Note:** The `gp` CLI is intended only to work inside a Gitpod workspace, and is not intended to be installed on your a local, or other machine.
 
 ```text
 Command line interface for Gitpod
