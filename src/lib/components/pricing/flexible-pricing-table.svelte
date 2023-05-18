@@ -41,7 +41,8 @@
       >
     </tr>
   </table>
-  <p class="text-fine-print mt-micro text-left max-w-md">
-    Note: metered usage includes prebuilds. Storage metering will begin in 2023.
+  <p class="text-fine-print mt-micro text-left max-w-lg">
+    Note: metered usage includes prebuilds. Storage metering is planned to start
+    in the near future.
   </p>
 </div>
