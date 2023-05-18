@@ -20,7 +20,7 @@
       <Download
         class="mx-auto lg:m-0"
         toType="cde-whitepaper"
-        eventType="Whitepaper"
+        eventType="White paper"
       />
     </Wrapper>
   </div>

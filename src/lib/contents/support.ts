@@ -83,7 +83,7 @@ export const interestingReads: Card[] = [
     text: "<p class='text-base'>Our whitepaper explores a business perspective on CDEs and their benefits for engineering teams.</p>",
     link: {
       href: "/whitepaper/cde",
-      text: "Get whitepaper",
+      text: "Get white paper",
       btnVariant: "secondary",
     },
   },

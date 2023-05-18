@@ -17,7 +17,7 @@
   data={{
     title: "Cloud Development Environments (CDEs) for engineering teams",
     description:
-      "Read our whitepaper on the business benefits of Cloud Development Environments (CDEs) for engineering teams and large organizations.",
+      "Read our White paper on the business benefits of Cloud Development Environments (CDEs) for engineering teams and large organizations.",
   }}
 />
 
@@ -26,7 +26,7 @@
     <Hero
       description="Curious why many of the largest tech companies are adopting CDEs? Our whitepaper explores a business perspective on CDEs and their benefits for engineering teams."
       title="CDEs for large engineering orgs"
-      label="Whitepaper"
+      label="White paper"
     />
 
     <Wrapper
@@ -35,7 +35,7 @@
       <Download
         class="lgx:hidden"
         toType="cde-whitepaper"
-        eventType="Whitepaper"
+        eventType="White paper"
       />
     </Wrapper>
 
@@ -48,7 +48,7 @@
     <Download
       toType="cde-whitepaper"
       class="hidden lgx:block sticky left-full lgx:top-40"
-      eventType="Whitepaper"
+      eventType="White paper"
     />
   </Wrapper>
 </div>
