@@ -9,7 +9,7 @@ import Astrato from "$lib/components/svgs/brands/astrato.svelte";
 import CodeInstitute from "$lib/components/svgs/brands/code-institute.svelte";
 import Redwood from "$lib/components/svgs/brands/redwood.svelte";
 import Jetbrains from "$lib/components/svgs/brands/jetbrains.svelte";
-import Dynatrace from "$lib/components/svgs/brands/dynatrace.svelte";
+import Dynatrace from "$lib/components/svgs/brands/logo-dtrace.svelte";
 import EquipmentShare from "$lib/components/svgs/brands/equipmentshare.svelte";
 import FourGeeks from "$lib/components/svgs/brands/fourgeeks.svelte";
 import type { Brand } from "$lib/types/brand";
@@ -92,6 +92,7 @@ export const equipmentShare: Brand = {
   alt: "Equipmentshare",
   transform: "scale(1.6)",
 };
+
 export const dynatrace: Brand = {
   logo: Dynatrace,
   alt: "Dynatrace",
