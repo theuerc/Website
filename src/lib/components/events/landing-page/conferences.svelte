@@ -10,8 +10,8 @@
   <div class="mb-x-small md:mb-medium">
     <h2 class="text-center h2 mb-macro md:!mb-micro">Conferences</h2>
     <p class="text-large text-center mx-auto max-w-4xl">
-      In addition to hosting the annual virtual DevX Conf event, Gitpod is
-      involved in sponsoring and speaking at conferences around the world.
+      In addition to hosting our annual DevX Conf event, Gitpod is involved in
+      sponsoring and speaking at conferences around the world.
     </p>
   </div>
   <div class="flex justify-center gap-xx-small flex-wrap">

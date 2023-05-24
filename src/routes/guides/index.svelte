@@ -20,14 +20,15 @@
 
 <OpenGraph
   data={{
-    description: "Follow these guides to use Gitpod with any project",
-    title: "Guides",
+    description:
+      "Use these guides to get started with Gitpod CDEs in any project",
+    title: "Gitpod Guides",
   }}
 />
 
 <Header
   title="Guides"
-  text="Follow these guides to use Gitpod with any project"
+  text="Use these guides to get started with Gitpod CDEs in any project"
   tight={true}
 />
 
