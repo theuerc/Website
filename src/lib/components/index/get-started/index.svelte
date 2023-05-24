@@ -36,7 +36,7 @@
 
     {#if exampleFlagValue}
       <Card
-        class="hidden md:block p-xx-small sm:py-small  basis-[50%] sm:px-x-small xl:p-medium text-center"
+        class="p-xx-small sm:py-small basis-[50%] sm:px-x-small xl:p-medium text-center"
         size="small"
       >
         <LaunchExampleWorkspace />

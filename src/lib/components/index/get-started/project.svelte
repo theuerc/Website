@@ -48,7 +48,7 @@
       </div>
     </div>
     <Button
-      class="hidden transition-all duration-200 delay-[50ms] group-hover:inline-block"
+      class="hidden transition-all duration-200 delay-[50ms] md:group-hover:inline-block"
       variant="tertiary"
       size="medium">Launch workspace</Button
     >
