@@ -141,6 +141,7 @@
         aria-hidden="true"
       />
       <input
+        enterkeyhint="done"
         bind:this={docSearchInput}
         type="search"
         {placeholder}

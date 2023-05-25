@@ -44,6 +44,7 @@
     bind:this={element}
     class="bg-card text-important box-border w-full rounded-lg py-2 px-4 border-[1px] border-divider {className}"
     type="text"
+    enterkeyhint="done"
     {...$$restProps}
   />
 {:else if type === "email"}
@@ -55,6 +56,7 @@
     bind:this={element}
     class="bg-card text-important box-border w-full rounded-lg py-2 px-4 border-[1px] border-divider placeholder:text-body {className}"
     type="email"
+    enterkeyhint="done"
     {...$$restProps}
   />
 {:else if type === "tel"}
@@ -66,6 +68,7 @@
     bind:this={element}
     class="bg-card text-important box-border w-full rounded-lg py-2 px-4 border-[1px] border-divider placeholder:text-body {className}"
     type="tel"
+    enterkeyhint="done"
     {...$$restProps}
   />{/if}
 {#if hasError}

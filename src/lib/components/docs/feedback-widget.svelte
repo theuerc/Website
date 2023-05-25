@@ -96,6 +96,7 @@
               autocorrect="off"
               type="text"
               class="mb-0 text-xs"
+              enterkeyhint="done"
             />
             <Input
               bind:value={email}
@@ -104,6 +105,7 @@
               width="100%"
               placeholder="Email (optional)"
               class="text-xs"
+              enterkeyhint="done"
             />
           </div>
           <div class="mt-micro">

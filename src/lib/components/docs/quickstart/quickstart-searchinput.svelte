@@ -14,6 +14,7 @@
         aria-hidden="true"
       />
       <input
+        enterkeyhint="done"
         bind:value={$searchQuery}
         type="search"
         placeholder="Search Templates"

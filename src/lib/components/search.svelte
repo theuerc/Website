@@ -18,6 +18,7 @@
     aria-hidden="true"
   />
   <input
+    enterkeyhint="done"
     type="text"
     {placeholder}
     bind:value
