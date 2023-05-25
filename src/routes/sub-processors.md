@@ -14,10 +14,11 @@
 
 </div>
 
+Gitpod Public SaaS:
+
 | Processor entity name        | Location                 | Description of processing                                                |
 | ---------------------------- | ------------------------ | ------------------------------------------------------------------------ |
 | Google, LLC                  | United States of America | Cloud Infrastructure for gitpod.io                                       |
-| Amazon Web Services, Inc.    | United States of America | Cloud Infrastructure for Gitpod Dedicated                                |
 | Google, LLC                  | United States of America | Business Emails and Collaboration                                        |
 | Slack Technologies, LLC      | United States of America | Instant Messaging and Collaboration                                      |
 | FrontApp, Inc                | United States of America | Platform to handle customer support inquiries and questions              |
@@ -30,5 +31,12 @@
 | Lacework, Inc                | United States of America | Threat Detection Solution                                                |
 | StrongDM, Inc                | United States of America | Access Management Platform                                               |
 | Metabase, Inc                | United States of America | Business Analytics and Reporting Service                                 |
+
+Gitpod Dedicated:
+
+| Processor entity name     | Location                 | Description of processing                                   |
+| ------------------------- | ------------------------ | ----------------------------------------------------------- |
+| Amazon Web Services, Inc. | United States of America | Cloud Infrastructure for Gitpod Dedicated                   |
+| FrontApp, Inc             | United States of America | Platform to handle customer support inquiries and questions |
 
 </div>
