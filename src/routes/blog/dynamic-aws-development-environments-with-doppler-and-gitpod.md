@@ -4,8 +4,8 @@ date: Tuesday, 28 Mar 2023 11:00:00 UTC
 excerpt: Provision limited, disposable access to AWS development environments with Gitpod and Doppler
 slug: dynamic-aws-development-environments-with-doppler-and-gitpod
 tags: ["Engineering", "Developer experience"]
-image: aws-dev-env.webp
-teaserImage: aws-dev-env-small.webp
+image: aws-dev-env-small.webp
+teaserImage: aws-dev-env.webp
 title: Dynamic AWS Development Environments with Doppler and Gitpod
 ---
 

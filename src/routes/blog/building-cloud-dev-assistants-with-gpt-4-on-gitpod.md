@@ -5,7 +5,7 @@ excerpt: GPT-4 has been a massive breakthrough for the power of Large Language M
 slug: building-cloud-dev-assistants-with-gpt-4-on-gitpod
 tags: ["Engineering"]
 image: header.webp
-teaserImage: header.webp
+teaserImage: teaser.webp
 title: Building Cloud Dev Assistants with GPT-4 and Pinecone on Gitpod
 ---
 
