@@ -46,17 +46,13 @@
     ⚠️ Self-hosted as a product is no longer supported
   </div>
   <p>
-    The last official update of this product is the
-    <a href="https://www.gitpod.io/changelog/november-self-hosted-release"
-      >November 2022 self-hosted release</a
-    >. We no longer sell commercial self-hosted licenses. If you want to
-    self-host Gitpod, you can still request our
-    <a href="https://www.gitpod.io/community-license">free community license</a
-    >. However, we no longer offer support or updates for it. If you are
-    interested in an isolated, private installation of Gitpod, take a look at
-    <a href="/dedicated">Gitpod Dedicated</a>. Read
-    <a href="/blog/introducing-gitpod-dedicated">our blog on Gitpod Dedicated</a
-    > to learn why we made the decision to discontinue self-hosted.
+    The last update of Gitpod Self-hosted product was
+    <a href="/changelog/november-self-hosted-release">November 2022</a>. Users
+    can still request our
+    <a href="/community-license">free community license</a>
+    however there will be no support or updates to the product. If you are interested
+    in an isolated, private installation of Gitpod, take a look at
+    <a href="/dedicated">Gitpod Dedicated</a>.
   </p>
 </CalloutCard>
 

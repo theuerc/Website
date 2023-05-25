@@ -157,18 +157,18 @@
   <div slot="content" bind:this={sectionStart}>
     <h1 class="h2">Receive the free community license via&nbsp;email</h1>
     <p>
-      <b>Self-hosted as a product is no longer supported</b> <br /> The last
-      official update of this product is the
-      <a href="https://www.gitpod.io/changelog/november-self-hosted-release"
-        >November 2022 self-hosted release</a
-      >. However, we no longer offer support or updates for it. You can still
-      request our free community license below, but we no longer sell commercial
-      self-hosted licenses. If you are interested in an isolated, private
-      installation of Gitpod, take a look at
-      <a href="https://www.gitpod.io/dedicated">Gitpod Dedicated</a>. Read
-      <a href="/blog/introducing-gitpod-dedicated"
-        >our blog on Gitpod Dedicated</a
-      > to learn why we made the decision to discontinue self-hosted.
+      <b
+        >⚠️ Gitpod Self-hosted is <a
+          href="https://www.gitpod.io/blog/introducing-gitpod-dedicated"
+          >no longer supported</a
+        ></b
+      > <br /> The last update of Gitpod Self-hosted product was
+      <a href="/changelog/november-self-hosted-release">November 2022</a>. Users
+      can still request our
+      <a href="/community-license">free community license</a>
+      however there will be no support or updates to the product. If you are interested
+      in an isolated, private installation of Gitpod, take a look at
+      <a href="/dedicated">Gitpod Dedicated</a>.
     </p>
   </div>
 </Header>

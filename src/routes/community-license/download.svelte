@@ -43,17 +43,13 @@
 
 <CalloutCard class="text-black text-p-small max-w-xl gap-small mx-auto my-8">
   <p>
-    The last official update of this product is the
-    <a
-      class="dark:hover:text-black !underline"
-      href="https://www.gitpod.io/changelog/november-self-hosted-release"
-      >November 2022 self-hosted release</a
-    >. However, we no longer offer support or updates for it and no longer sell
-    commercial self-hosted licenses. If you are interested in an isolated,
-    private installation of Gitpod, take a look at
-    <a class="dark:hover:text-black !underline" href="/dedicated"
-      >Gitpod Dedicated</a
-    >.
+    The last update of Gitpod Self-hosted product was
+    <a href="/changelog/november-self-hosted-release">November 2022</a>. Users
+    can still request our
+    <a href="/community-license">free community license</a>
+    however there will be no support or updates to the product. If you are interested
+    in an isolated, private installation of Gitpod, take a look at
+    <a href="/dedicated">Gitpod Dedicated</a>.
     <br />
     <br />
     Read
