@@ -54,7 +54,7 @@
     Frictionless collaboration
   </h3>
   <p
-    class="text-center text-lg sm:text-2xl mt-xx-small mb-x-small mx-auto max-w-2xl"
+    class="text-center text-lg sm:text-2xl lg:pt-x-large mb-x-small mx-auto max-w-2xl"
   >
     Learn <a href="/customers/quizlet"
       >how Quizlet enhanced collaboration with designers and product managers

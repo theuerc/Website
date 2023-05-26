@@ -24,7 +24,7 @@
   }}
 />
 
-<div class="flex flex-col lg:flex-row sm:mt-x-large">
+<div class="flex flex-col lg:flex-row lg:pt-x-large">
   <div class="items-center justify-between max-w-7xl mx-auto mt-small">
     <h2 class="h1 !mb-micro md:!mb-x-small max-w-2xl">
       Onboarding made simple

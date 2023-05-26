@@ -29,7 +29,7 @@
   }}
 />
 
-<div class="flex flex-col lg:flex-row mt-xx-small md:mt-xx-large">
+<div class="flex flex-col lg:flex-row lg:pt-x-large">
   <div class="items-center justify-between max-w-7xl mx-auto mt-small">
     <h2 class="h1 !mb-micro md:!mb-x-small max-w-xl">
       Secure your software supply chain with CDEs
