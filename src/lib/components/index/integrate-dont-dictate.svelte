@@ -26,9 +26,9 @@
   }
 </style>
 
-<Card size="medium" class="m-auto shadow-highlight w-10/12">
+<Card size="medium" class="m-auto shadow-highlight w-11/12 md:w-10/12">
   <Section class="text-center {clazz}" {...$$restProps}>
-    <h2 class="text-2xl sm:text-[32px] text-left ml-4 sm:ml-16 mb-4">
+    <h2 class="text-2xl sm:text-[32px] text-center sm:text-left sm:ml-16 mb-4">
       Integrate with your existing development infrastructure
     </h2>
     <div
@@ -37,7 +37,7 @@
       <div class="grid grid-rows-2 grid-flow-col gap-x-small">
         <!-- Git Provider options -->
         <div
-          class="mt-4 text-left items-left bg-sand-light dark:bg-black py-micro pl-xx-small text-p-small rounded-2xl border border-transparent w-64 sm:w-80"
+          class="mt-4 text-left items-left bg-sand-light dark:bg-black py-micro pl-xx-small text-p-small rounded-2xl border border-transparent w-72 sm:w-80"
         >
           <p class="text-sm sm:text-lg text-important font-bold">
             Connect Git provider
@@ -64,7 +64,7 @@
 
         <!-- Cloud Services Options -->
         <div
-          class="mt-4 text-left items-left bg-sand-light dark:bg-black py-micro pl-xx-small text-p-small rounded-2xl border border-transparent w-64 sm:w-80"
+          class="mt-4 text-left items-left bg-sand-light dark:bg-black py-micro pl-xx-small text-p-small rounded-2xl border border-transparent w-72 sm:w-80"
         >
           <p class="text-sm sm:text-lg text-important font-bold">
             Select your cloud - yours or ours
@@ -108,14 +108,14 @@
       <div class="grid grid-rows-1">
         <!-- long IDE Section in center -->
         <div
-          class="mt-4 text-left items-left bg-sand-light dark:bg-black py-micro pl-xx-small pr-medium text-p-small rounded-2xl border border-transparent w-64 sm:w-80"
+          class="mt-4 text-left items-left bg-sand-light dark:bg-black py-micro pl-xx-small pr-medium text-p-small rounded-2xl border border-transparent w-72 sm:w-80"
         >
           <p class="text-sm sm:text-lg text-important font-bold mb-4">
             Choose IDEs and editors
           </p>
 
           <div
-            class="items-center grid grid-cols-4 gap-x-3 gap-y-2 sm:gap-x-4 sm:gap-y-6 w-56 sm:w-72"
+            class="items-center grid grid-cols-5 md:grid-cols-4 gap-x-3 gap-y-2 sm:gap-x-4 sm:gap-y-6 w-56 sm:w-72"
           >
             <img src="/svg/index/vscode.svg" alt="VS Code" class="ide-icon" />
             <img src="/svg/index/goland.svg" alt="GoLand" class="ide-icon" />
@@ -149,15 +149,13 @@
       <div class="grid grid-rows-2 grid-flow-col">
         <!-- Customize Themes & Extensions  -->
         <div
-          class="mt-4 text-left items-left bg-sand-light dark:bg-black py-micro pl-xx-small text-p-small rounded-2xl border border-transparent w-64 sm:w-80"
+          class="mt-4 text-left items-left bg-sand-light dark:bg-black py-micro pl-xx-small text-p-small rounded-2xl border border-transparent w-72 sm:w-80"
         >
           <p class="text-sm sm:text-lg text-important font-bold">
             Customize themes and extensions
           </p>
 
-          <div
-            class="flex items-center mt-4 gap-x-4 sm:gap-x-6 w-56 sm:w-72 mx-auto"
-          >
+          <div class="flex items-center mt-4 gap-x-4 sm:gap-x-6 mx-auto">
             <img src="/svg/brands/prettier.png" alt="Prettier" class="icon" />
             <img
               src="/svg/brands/copilot.png"
@@ -180,7 +178,7 @@
 
         <!-- Connect any dev resource -->
         <div
-          class="mt-4 text-left items-left bg-sand-light dark:bg-black py-micro pl-xx-small text-p-small rounded-2xl border border-transparent w-64 sm:w-80"
+          class="mt-4 text-left items-left bg-sand-light dark:bg-black py-micro pl-xx-small text-p-small rounded-2xl border border-transparent w-72 sm:w-80"
         >
           <p class="text-sm sm:text-lg text-important font-bold">
             Connect any dev resource

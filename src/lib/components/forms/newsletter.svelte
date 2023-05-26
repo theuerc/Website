@@ -100,10 +100,10 @@
               class="bg-bg w-full"
             />
             <div>
-              <p class="text-xs mt-3 md:mt-6">
+              <p class="text-xs mt-3 md:mt-6 max-w-sm">
                 By submitting this form, I confirm that I acknowledge the
                 collection and processing of personal data by Gitpod, as further
-                described in the <br /><a class="!underline" href="/privacy"
+                described in the <a class="!underline" href="/privacy"
                   >Privacy Policy.</a
                 >
               </p>

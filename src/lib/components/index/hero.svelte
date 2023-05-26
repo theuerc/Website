@@ -57,10 +57,10 @@
     </h1>
     <p
       id="choose-project-observer-target"
-      class="hero__intro-text text-large max-w-2xl"
+      class="hero__intro-text text-large max-w-xl"
     >
-      The developer platform for on-demand cloud <br /> development
-      environments. Create software faster <br />and more securely.
+      The developer platform for on-demand cloud development environments.
+      Create software faster and more securely.
     </p>
     <div class="hero__action">
       <ButtonsWrapper class="mt-x-small lg:mt-small mb-x-small">

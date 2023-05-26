@@ -61,7 +61,7 @@
 </Section>
 
 <Section
-  class="translate-y-6 md:translate-y-[5.5rem] items-center mx-auto w-11/12"
+  class="translate-y-6 md:translate-y-[5.5rem] items-center mx-auto w-full md:w-11/12"
 >
   <h3 class="text-left sm:text-center text-2xl sm:text-5xl font-bold">
     What's a cloud development environment?
