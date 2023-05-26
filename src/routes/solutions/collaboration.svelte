@@ -25,14 +25,14 @@
   }}
 />
 
-<div class="flex flex-col lg:flex-row sm:mt-x-large">
+<div class="flex flex-col lg:flex-row lg:pt-x-large">
   <div
-    class="items-center justify-between max-w-7xl mx-auto mt-small md:my-x-large"
+    class="items-center justify-between max-w-7xl mx-auto py-xx-small md:my-x-large"
   >
-    <h2 class="h1 !mb-micro md:!mb-x-small max-w-xl">
+    <h2 class="h1 !mb-micro md:!mb-x-small max-w-2xl">
       How Gitpod improves collaboration
     </h2>
-    <p class="text-large max-w-xl">
+    <p class="text-large mb-macro max-w-xl">
       Gitpod gives a perfect development environment to everyone on the team.
     </p>
   </div>

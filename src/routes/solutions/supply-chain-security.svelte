@@ -30,11 +30,13 @@
 />
 
 <div class="flex flex-col lg:flex-row lg:pt-x-large">
-  <div class="items-center justify-between max-w-7xl mx-auto mt-small">
-    <h2 class="h1 !mb-micro md:!mb-x-small max-w-xl">
+  <div
+    class="items-center justify-between max-w-7xl mx-auto py-micro md:py-medium"
+  >
+    <h2 class="h1 !mb-micro md:!mb-x-small max-w-2xl">
       Secure your software supply chain with CDEs
     </h2>
-    <p class="text-large max-w-xl mb-x-large md:mb-0">
+    <p class="text-large max-w-xl mb-macro">
       Extend security policies to the development lifecycle with centralized
       control of dev environments and changes to those environments.
     </p>

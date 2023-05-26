@@ -25,11 +25,13 @@
 />
 
 <div class="flex flex-col lg:flex-row lg:pt-x-large">
-  <div class="items-center justify-between max-w-7xl mx-auto mt-small">
+  <div
+    class="items-center justify-between max-w-7xl py-micro md:py-xx-large mx-auto my-macro"
+  >
     <h2 class="h1 !mb-micro md:!mb-x-small max-w-2xl">
       Onboarding made simple
     </h2>
-    <p class="text-large max-w-lg">
+    <p class="text-large max-w-lg mb-xx-small">
       Get developers ready-to-code quickly and easily, from anywhere in the
       world, on any machine.
     </p>
