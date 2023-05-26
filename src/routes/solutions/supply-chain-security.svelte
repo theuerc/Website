@@ -3,10 +3,15 @@
 </script>
 
 <script lang="ts">
-  import { supplyChainSecurityFeatures } from "$lib/contents/home/features";
+  import {
+    supplyChainSecurityFeatures,
+    featureCards,
+  } from "$lib/contents/home/features";
   import SectionFeatures from "$lib/components/section-features.svelte";
   import Quotes from "$lib/components/quotes.svelte";
   import { quotes } from "$lib/contents/customers";
+  import Card from "$lib/components/card/card.svelte";
+  import SectionCommon from "$lib/components/section-common.svelte";
   import OpenGraph from "$lib/components/open-graph.svelte";
   import Section from "$lib/components/section.svelte";
   import Quote from "$lib/components/solutions/quote.svelte";
@@ -27,11 +32,11 @@
 <div class="flex flex-col lg:flex-row mt-xx-small md:mt-xx-large">
   <div class="items-center justify-between max-w-7xl mx-auto mt-small">
     <h2 class="h1 !mb-micro md:!mb-x-small max-w-xl">
-      Secure your software supply chain
+      Secure your software supply chain with CDEs
     </h2>
     <p class="text-large max-w-xl mb-x-large md:mb-0">
-      With <a href="/cde">CDEs</a>, source code is stored in a secure and
-      controlled environment - the cloud.
+      Extend security policies to the development lifecycle with centralized
+      control of dev environments and changes to those environments.
     </p>
   </div>
   <Quote
@@ -44,13 +49,28 @@
   />
 </div>
 <div class="mt-x-large md:mt-xxx-large mb-x-large sm:mb-0">
-  <AnimatedLogos />
+  <AnimatedLogos title="Securing 900K+ developers in organizations like" />
 </div>
 
 <SectionFeatures
-  title="Maximize control, minimize overhead"
+  title="Maximize control, minimal overhead"
   features={supplyChainSecurityFeatures}
 />
+<SectionCommon title="Your cloud or ours">
+  <div
+    class="flex flex-wrap justify-center mt-small max-w-5xl mx-auto"
+    slot="content"
+  >
+    {#each featureCards as card}
+      <Card
+        class="m-macro relative !w-[368px]"
+        card={card.card}
+        titleClassNames="h5"
+        textAlign="left"
+      />
+    {/each}
+  </div>
+</SectionCommon>
 
 <Section>
   <Quotes {quotes} class="max-w-7xl mx-auto" />
