@@ -99,7 +99,7 @@ You can install a plugin only for **your current workspace** following these ste
 You can share a plugin on **{title} backend** with everybody working on the repository by adding it to [.gitpod.yml](/docs/references/gitpod-yml) and pushing to your Git repository.
 Each workspace is preconfigured with plugins from the `gitpod.yml` configuration file. For example:
 
-```yaml
+```yml
 jetbrains:
   intellij:
     plugins:
@@ -123,7 +123,7 @@ It is not yet possible to install plugins on **{title} backend** for your user t
 
 You can adjust JVM options for {title} backend, especially if you want to increase the `-Xmx` memory size. For example:
 
-```yaml
+```yml
 jetbrains:
   intellij:
     vmoptions: "-Xmx4g"
@@ -201,7 +201,7 @@ To leverage it:
 - configure prebuilds for your repository, refer to [Prebuilds](/docs/configure/projects/prebuilds);
 - enable indexing for {title} in prebuilds by editing [.gitpod.yml](/docs/references/gitpod-yml) in your repository:
 
-```yaml
+```yml
 jetbrains:
   intellij:
     prebuilds:

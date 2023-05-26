@@ -17,7 +17,7 @@ If your software project is comprised of multiple source control repositories it
 
 The `additionalRepositories` key is an array of repositories which contains two properties which define the source control `url` to clone and the `checkoutLocation` of where the repository is cloned is under `/workspaces`
 
-```yaml
+```yml
 # example .gitpod.yml from https://github.com/gitpod-io/demo-multi-repo-frontend
 additionalRepositories:
   - url: https://github.com/gitpod-io/demo-multi-repo-backend
@@ -33,7 +33,7 @@ When the above configuration is defined then the following additional steps happ
 
 After all of the source control repositories have been cloned then the `before`, `init` and `command` [tasks](https://www.gitpod.io/docs/configure/workspaces/tasks) are executed as per normal. If you need to run commands (such as package installation or compilation) on the source control repositories which have been cloned then change your working directory the `checkoutLocation` location using the `before` task.
 
-```yaml
+```yml
 # example .gitpod.yml from https://github.com/gitpod-io/demo-multi-repo-frontend
 additionalRepositories:
   - url: https://github.com/gitpod-io/demo-multi-repo-backend
@@ -66,7 +66,7 @@ Try it out at https://github.com/gitpod-io/demo-multi-repo-frontend
 
 The optional `mainConfiguration` configuration key when configured in additional repositories points to the repository with the main [.gitpod.yml](/docs/references/gitpod-yml) file and makes it possible to open the same workspace from any issue, branch or other context URL from any of the participating repositories. Since the main configuration is used for prebuilds, those will show up under the main project.
 
-```yaml
+```yml
 # example .gitpod.yml from https://github.com/gitpod-io/demo-multi-repo-backend
 mainConfiguration: https://github.com/gitpod-io/demo-multi-repo-frontend
 ```
@@ -104,7 +104,7 @@ To do so:
 
 3. Specify your `.code-workspace` file path on `.gitpod.yml`:
 
-```yaml
+```yml
 workspaceLocation: frontend/main.code-workspace # Relative to /workspace dir
 ```
 
@@ -119,7 +119,7 @@ workspaceLocation: frontend/main.code-workspace # Relative to /workspace dir
 
 If you want to create multiple instances of one repository with different branches, you could use such a method:
 
-```yaml
+```yml
 tasks:
   - name: Multi branch
     before: |

@@ -70,7 +70,7 @@ If you want to access services running in your workspace, e.g. a development HTT
 1. On-the-fly: when you start a process which listens on a port in your workspace, Gitpod will ask you if you want to expose that port to the internet.
 2. In your configuration: if you already know that you want a particular port exposed, you can configure it in the .gitpod.yml file and skip the extra click later on. For example:
 
-```yaml
+```yml
 ports:
   - port: 3000
 ```
@@ -81,7 +81,7 @@ Gitpod allows you to configure start tasks in the .gitpod.yml file.
 
 For instance, the start script for this repository is defined as:
 
-```yaml
+```yml
 tasks:
   - init: npm install
     command: npm start
@@ -89,7 +89,7 @@ tasks:
 
 You can have multiple tasks, which are opened on separated terminals.
 
-```yaml
+```yml
 tasks:
   - init: npm install
     command: npm start
@@ -102,7 +102,7 @@ The init property can be used to specify shell commands that should only be exec
 
 In our case the `init` command is
 
-```yaml
+```yml
 tasks:
   - init: npm install
 ```

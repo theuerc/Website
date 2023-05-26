@@ -192,7 +192,7 @@ Inside your workspace, Open the terminal & run the following steps:
 - Step 2: `cp $HOME/.bash_history /workspace/.persist`
 - Step 3: Add the following task inside `.gitpod.yml`:
 
-```yaml
+```yml
 tasks:
   - name: Restore persist
     before: |

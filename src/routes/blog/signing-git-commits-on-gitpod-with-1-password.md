@@ -132,7 +132,7 @@ If we look at Github for our commit, we should now see a verified badge next to 
 
 To enable git commit signing every time we open our repository, must set our git preferences in `.gitpod.yml` as a task, and again, ensure have set an environment variable for our `SSH_SIGNING_KEY` in our [environment variables](https://gitpod.io/variables):
 
-```yaml
+```yml
 tasks:
   - name: Local terminal
 	init: git config --global gpg.format ssh && git config --global user.signingkey "$SSH_SIGNING_KEY" && git config commit.gpgsign true --global

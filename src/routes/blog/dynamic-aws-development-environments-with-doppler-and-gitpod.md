@@ -55,7 +55,7 @@ You’ll notice that I also used the `gitpod/workspace-python-3.11:latest` as my
 
 Next, we’ll need to create a `doppler.yaml` in the root of our repository to let Doppler know which project the repo is associated with, and which environment we’re running in:
 
-```yaml
+```yml
 setup:
   project: dynamic-secrets-gitpod
   config: dev
@@ -63,7 +63,7 @@ setup:
 
 With this, I can finally set my `.gitpod.yml`, so that I configure Doppler access, and then inject my disposable AWS credentials into my CDE. All together, my file looks like this:
 
-```yaml
+```yml
 image:
   file: .gitpod.Dockerfile
 

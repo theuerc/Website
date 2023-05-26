@@ -35,7 +35,7 @@ The possibilities to fine-tune the developer experience when using Gitpod on you
 You can now specify multiple tasks. Each task will have its own terminal view on start. You can even specify where those terminals whould be opened.
 The following config, for instance, will make sure that two terminals are opened next to each other.
 
-```yaml
+```yml
 tasks:
   - command: echo 'left'
   - command: echo 'right'
@@ -66,7 +66,7 @@ You can now specify the default behavior on port detection. By default users get
 
 This behavior can now be pre-configured so users are not bothered with annoying notifications. Here is an example where we configure port `8080` to automatically open in a web preview pane:
 
-```yaml
+```yml
 ports:
   - port: 8080
     onOpen: open-preview

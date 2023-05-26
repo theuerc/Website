@@ -63,7 +63,7 @@ The property `onOpen` configures port opening behaviors:
 
 **Example**: Open a browser tab for port 8080
 
-```yaml
+```yml
 ports:
   - name: Web App
     description: The main application web server
@@ -155,7 +155,7 @@ All port configurations can be applied to ranges as well as single ports.
 
 Ports won't be shown in VS Code's <Action>PORTS</Action> view or in the [Gitpod CLI](/docs/references/gitpod-cli) until they are opened.
 
-```yaml
+```yml
 ports:
   - port: 3000-8999
     onOpen: ignore
@@ -207,7 +207,6 @@ Using [SSH command-line](/docs/references/ides-and-editors/command-line) access 
 
 `ssh -L 3000:localhost:3000 <workspace-ssh-connection>`
 
-
 ### Local reverse port forwarding via SSH
 
 If you have a port open in your local machine but you want to access it inside Gitpod via SSH, you could do the following:
@@ -230,7 +229,6 @@ ssh 'some-special-ws-id@gitpod.io' -N -R 5000:localhost:5000
 ```
 
 - Now run `curl -L http://localhost:9000` **inside your Gitpod workspace**, which will hit the port 5000 **on your local machine's** HTTP server.
-
 
 ### Cross-Origin Resource Sharing (CORS)
 

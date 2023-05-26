@@ -35,7 +35,7 @@ RUN curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.gpg | sudo apt-key
 
 2. Start `tailscale` on workspace start and maintain the machine state across workspaces by adding the following tasks to your `.gitpod.yml`.
 
-```yaml
+```yml
 tasks:
   - name: tailscaled
     command: |

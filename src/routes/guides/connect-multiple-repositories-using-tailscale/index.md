@@ -64,7 +64,7 @@ The “Connect to Tailscale” task will prompt you to log in. We only need to d
 
 The “Restore Tailscale daemon” task launches Tailscale and puts it in the background. It connects the workspace to your “tailnet” using your previously saved Tailscale token.
 
-```yaml
+```yml
 tasks:
   - name: Restore Tailscale daemon
     command: |
@@ -119,7 +119,7 @@ You can set the result as an environment variable so that your application can u
 
 In this example, this task looks for `backend-service` and sets an environment variable named `API_URL` pointing to it before launching the application.
 
-```yaml
+```yml
 - name: Start application
   init: npm install
   command: |
@@ -141,7 +141,7 @@ To try this out, add this task to the tasks list in your `.gitpod.yml` file, com
 
 ## Sample `.gitpod.yml`
 
-```yaml
+```yml
 image: gitpod:workspace/full
 ports:
   - port: 3000

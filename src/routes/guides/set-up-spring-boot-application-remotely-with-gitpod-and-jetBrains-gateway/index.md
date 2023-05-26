@@ -112,7 +112,7 @@ Hence, improving the developer experience on Gitpod ✨
 
 Here is the `.gitpod.yml`, used in our template. It runs Gradle build when you open the workspace.
 
-```yaml
+```yml
 tasks:
   - init: ./gradlew build
 ```

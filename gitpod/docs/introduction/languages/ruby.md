@@ -63,7 +63,7 @@ With the Ruby test explorer, you can run unit tests from within the Gitpod UI.
 ![Ruby test explorer example](../../../static/images/docs/ruby_test_ui.png)
 To add this extension to your repository, simply add these lines to your [.gitpod.yml](/docs/references/gitpod-yml) configuration file:
 
-```YAML
+```yml
 vscode:
   extensions:
     - connorshea.vscode-ruby-test-adapter@0.9.0
@@ -76,7 +76,6 @@ So, you want to write your cool new Ruby On Rails application in Gitpod? Well, h
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/Gitpod-Ruby-On-Rails)
 
-
 ## FAQs
 
 ### [How to avoid the need to run "bundle install" each time I restart my workspace?](https://discord.com/channels/816244985187008514/1082108211936645182)
@@ -85,7 +84,7 @@ To avoid running `bundle install` each time you restart your workspace in Gitpod
 
 Here's an example:
 
-```yaml
+```yml
 tasks:
   - before: bundle install
 ```

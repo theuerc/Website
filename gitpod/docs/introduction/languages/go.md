@@ -63,7 +63,7 @@ touch .gitpod.Dockerfile
 
 3. Reference your newly created Dockerfile in your `.gitpod.yml`
 
-```yaml
+```yml
 image:
   file: .gitpod.Dockerfile
 ```
@@ -120,7 +120,7 @@ RUN sudo apt-get install go-dep
 
 Also, don't forget to reference the above Dockerfile in your `.gitpod.yml` configuration file, like so:
 
-```YAML
+```yml
 image:
   file: .gitpod.Dockerfile
 
@@ -206,7 +206,7 @@ src/[repository-provider]/[repository-owner]/[repository-name]
 in the `$GOPATH`. Using the `.gitpod.yml` file, you can bring about such a workspace layout. Here is
 how we do that for the example <a href="https://github.com/gitpod-io/definitely-gp/blob/master/go-gin-app/.gitpod.yml" target="_blank">go-gin-app</a> repository:
 
-```yaml
+```yml
 ---
 checkoutLocation: "src/github.com/demo-apps/go-gin-app"
 workspaceLocation: "."

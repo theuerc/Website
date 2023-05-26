@@ -25,13 +25,13 @@ title: .NET in Gitpod
 
 To get all the .NET tools that you need pre-installed in your Gitpod workspaces, use the following base image in your [.gitpod.yml](/docs/references/gitpod-yml):
 
-```YAML
+```yml
 image: gitpod/workspace-dotnet
 ```
 
 If your project requires a GUI or Virtual Desktop, please use this image instead:
 
-```YAML
+```yml
 image: gitpod/workspace-dotnet-vnc
 ```
 
@@ -59,7 +59,7 @@ The official C# extension from Microsoft [is proprietary](https://aka.ms/VSCode-
 
 To add this extension to your repository, add the following to your [.gitpod.yml](/docs/references/gitpod-yml):
 
-```yaml
+```yml
 vscode:
   extensions:
     - muhammad-sammy.csharp
@@ -81,7 +81,7 @@ The [Ionide-fsharp](https://ionide.io/) extensin gives F# developers the followi
 
 To add this extension to your repository, add the following to your [.gitpod.yml](/docs/references/gitpod-yml):
 
-```yaml
+```yml
 vscode:
   extensions:
     - Ionide.Ionide-fsharp@4.6.2:yBkAE6j7z7gJ5WEcyMjEOg==

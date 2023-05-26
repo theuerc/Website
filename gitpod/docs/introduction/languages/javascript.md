@@ -65,7 +65,7 @@ touch .gitpod.Dockerfile
 
 3. Reference your newly created Dockerfile in your `.gitpod.yml`
 
-```yaml
+```yml
 image:
   file: .gitpod.Dockerfile
 ```
@@ -114,14 +114,14 @@ Start tasks are processes that are initiated on every workspace start. Depending
 
 **Example with npm**
 
-```yaml
+```yml
 tasks:
   - init: npm install && npm run build
 ```
 
 **Example with yarn**
 
-```yaml
+```yml
 tasks:
   - init: yarn install && yarn build
 ```
@@ -156,7 +156,7 @@ To run your application, you have two options:
 
 **Example with npm**
 
-```yaml
+```yml
 tasks:
   - init: npm install && npm run build
     command: npm run dev
@@ -164,7 +164,7 @@ tasks:
 
 **Example with yarn**
 
-```yaml
+```yml
 tasks:
   - init: yarn install && yarn build
     command: yarn start
@@ -186,7 +186,7 @@ gp tasks
 
 If your project's `package.json` does not mention ESLint as a dependency then you have to install it first. For installing it add the following to the end of the `init` phase of your [.gitpod.yml](/docs/references/gitpod-yml) as shown:
 
-```yaml
+```yml
 tasks:
   - init: npm install && npm run build && npm install -g eslint
 ```
@@ -223,7 +223,7 @@ export default defineConfig({
 
 In your `.gitpod.yml` file, you should export the workspace url for the port your server runs into the environment.
 
-```yaml title=".gitpod.yml"
+```yml title=".gitpod.yml"
 tasks:
   - init: npm install
     command: |

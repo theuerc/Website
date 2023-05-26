@@ -73,7 +73,7 @@ Let's say you are a developer working in a production environment and need to ch
 
 Here is the example:
 
-```yaml
+```yml
 # Commands to start on workspace startup
 tasks:
   - name: Setup & Build

@@ -63,7 +63,7 @@ But some secrets don’t fit well within the environment variable paradigm. Thes
 
 For reference, here’s how I’ve set up my ngrok account (with a configuration file which must live within my home directory) with Doppler to have a static URL for testing my OAuth 2.0 flow:
 
-```yaml
+```yml
 # in ngrok.yml
 authtoken: { { .NGROK_AUTH_TOKEN } }
 region: us
@@ -99,7 +99,7 @@ In my case, I’ve scoped my Doppler token to only be injected in my specific re
 
 Once this is done, I can then set a project and environment with a `doppler.yaml` file within my repository. I’ve done the bare minimum in my repository for a compliant Doppler configuration:
 
-```yaml
+```yml
 setup:
   project: fastapi-openid-connect-playground
   config: dev

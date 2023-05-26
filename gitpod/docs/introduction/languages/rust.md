@@ -144,7 +144,7 @@ ENV RUST_LLDB=/usr/bin/lldb-8
 
 Next, add the following to your [.gitpod.yml](/docs/references/gitpod-yml) file:
 
-```yaml
+```yml
 image:
   file: .gitpod.Dockerfile
 ```

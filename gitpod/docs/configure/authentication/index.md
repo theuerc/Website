@@ -29,7 +29,7 @@ Run `gp init` on your terminal or manually create a file called `.gitpod.yml`
 
 1. Put the following line in your `.gitpod.yml`:
 
-```yaml
+```yml
 image:
   file: .gitpod.Dockerfile
 ```

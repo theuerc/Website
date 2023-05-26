@@ -194,7 +194,7 @@ To get PostgreSQL for your project, you can use our dedicated [PostgreSQL image]
 
 Simply put the following line to your `.gitpod.yml` file:
 
-```yaml
+```yml
 image: gitpod/workspace-postgres
 ```
 

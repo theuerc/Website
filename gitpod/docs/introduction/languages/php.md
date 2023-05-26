@@ -49,7 +49,7 @@ RUN sudo update-alternatives --set php $(which php7.4)
 
 Secondly, reference the above Dockerfile in your `.gitpod.yml` configuration file, like so:
 
-```yaml
+```yml
 image:
   file: .gitpod.Dockerfile
 ```
@@ -74,7 +74,7 @@ RUN sudo install-packages php-xdebug
 
 Second, reference the above Dockerfile in a [.gitpod.yml](/docs/references/gitpod-yml) file, and then also install the extension, like so:
 
-```yaml
+```yml
 image:
   file: .gitpod.Dockerfile
 

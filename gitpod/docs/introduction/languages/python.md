@@ -68,7 +68,7 @@ RUN pyenv install 3.11 \
 
 You can start building your project when, or even [before](/docs/configure/projects/prebuilds) you start your Gitpod workspace. Are you using a `requirements.txt` file to manage dependencies? If so, add this to your [.gitpod.yml](/docs/references/gitpod-yml) to automatically pre-install all dependencies when starting a workspace:
 
-```yaml
+```yml
 tasks:
   - init: pip3 install -r requirements.txt
     command: python3 main.py
@@ -101,7 +101,7 @@ While the most popular Python VSCode extensions are built into Gitpod, here are 
 ARepl for Python is helpful for constantly checking your code and debugging.
 To install this extension for your repository, add the following to your [.gitpod.yml](/docs/references/gitpod-yml):
 
-```yaml
+```yml
 vscode:
   extensions:
     - almenon.arepl
@@ -113,7 +113,7 @@ vscode:
 Easily test your python code with the Python Test Explorer.
 To add this to your repository add the following to your [.gitpod.yml](/docs/references/gitpod-yml)
 
-```yaml
+```yml
 vscode:
   extensions:
     - littlefoxteam.vscode-python-test-adapter@0.3.16:tZ/6xOSSdKUaq6JCUVkD+A==
@@ -141,7 +141,7 @@ RUN pip3 install -U -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/u
 
 Here is a corresponding [.gitpod.yml](/docs/references/gitpod-yml) example:
 
-```yaml
+```yml
 image:
   file: .gitpod.Dockerfile
 

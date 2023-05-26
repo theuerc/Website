@@ -23,7 +23,7 @@ RUN brew install scala
 
 Additionally create a file called [.gitpod.yml](/docs/references/gitpod-yml) and add the following:
 
-```YAML
+```yml
 image:
   file: .gitpod.Dockerfile
 ```
@@ -120,7 +120,7 @@ You will notice that all the `brew install` commands are on the same line. We re
 
 Additionally, your [.gitpod.yml](/docs/references/gitpod-yml) file should still look like this:
 
-```YAML
+```yml
 image:
   file: .gitpod.Dockerfile
 ```

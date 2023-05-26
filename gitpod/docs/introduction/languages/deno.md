@@ -26,7 +26,7 @@ RUN /home/gitpod/.deno/bin/deno completions bash > /home/gitpod/.bashrc.d/90-den
 
 And configure this Dockerfile in your [.gitpod.yml](/docs/references/gitpod-yml):
 
-```YAML
+```yml
 image:
   file: .gitpod.Dockerfile
 ```

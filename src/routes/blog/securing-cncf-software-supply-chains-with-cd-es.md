@@ -79,7 +79,7 @@ Additionally, signed commits can be used as a part of a secure software update s
 
 Enabling [verified commits with 1Password and SSH forwarding](https://www.gitpod.io/blog/signing-git-commits-on-gitpod-with-1-password) is just a few lines in your `.gitpod.yml` once enabled:
 
-```yaml
+```yml
 tasks:
   - name: Local terminal
 	init: git config --global gpg.format ssh && git config --global user.signingkey "$SSH_SIGNING_KEY" && git config commit.gpgsign true --global

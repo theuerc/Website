@@ -37,7 +37,7 @@ Then commit and push both files to your repository. After that, every new Gitpod
 ![R extension](../../../static/images/docs/RGitpod.png)
 To install the R extension to your repository, add the following to your [.gitpod.yml](/docs/references/gitpod-yml) file:
 
-```yaml
+```yml
 vscode:
   extensions:
     - Ikuyadeu.r@1.2.1:z5vr1v1bfS++U/aHLSXQ6Q==

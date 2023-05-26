@@ -83,7 +83,7 @@ touch .gitpod.Dockerfile
 
 3. Reference your newly created Dockerfile in your `.gitpod.yml`
 
-```yaml
+```yml
 image:
   file: .gitpod.Dockerfile
 ```
@@ -132,14 +132,14 @@ Start tasks are processes that are initiated on every workspace start. Depending
 
 **Example with Gradle**
 
-```yaml
+```yml
 tasks:
   - init: gradle build
 ```
 
 **Example with Maven**
 
-```yaml
+```yml
 tasks:
   - init: mvn package
 ```
@@ -175,7 +175,7 @@ To run your application, you have two options:
 
 **Example with Gradle**
 
-```yaml
+```yml
 tasks:
   - init: gradle build
     command: gradle run
@@ -183,7 +183,7 @@ tasks:
 
 **Example with Maven**
 
-```yaml
+```yml
 tasks:
   - init: mvn package
     command: mvn exec:java
@@ -219,7 +219,7 @@ If you want to configure ports, such as: their visibility, what Gitpod does when
 
 For example, add the following to your `.gitpod.yml` to configure port `3000` to open in your browser on workspace start.
 
-```yaml
+```yml
 ports:
   - port: 3000
     onOpen: open-browser
@@ -237,7 +237,7 @@ To ensure your localhost address works with Gitpod, you have two options:
 
 **Example:** Using the `DEV_ENVIRONMENT_HOST` environment variable instead of localhost within the application, configured in the `command` of the `.gitpod.yml` start tasks.
 
-```yaml
+```yml
 tasks:
   - command: |
     export DEV_ENVIRONMENT_HOST=`gp url 3000`
@@ -268,7 +268,7 @@ See [configuring ports](/docs/configure/workspaces/ports) for more.
 
 To set default plugins to be installed for all users starting a workspace for the project, add a list of the JetBrains plugin identifiers to your `.gitpod.yml` under `vscode.extensions`.
 
-```yaml
+```yml
 vscode:
   extensions:
     - vscjava.vscode-java-pack
@@ -280,7 +280,7 @@ See [.gitpod.yml reference](/docs/references/gitpod-yml) for more.
 
 Launch configurations can be shared by committing the `.vscode/launch.json` file to version control. To use a launch configuration with Java, need Java version 11 or above, and some VS Code extensions. Assuming you have configured your base image with a compatible JDK version as described above, a simple way to get set up is by adding the Extension Pack for Java will configure the correct VS Code extensions. Alternatively, you can selectively choose the extensions to install.
 
-```yaml
+```yml
 vscode:
   extensions:
     - vscjava.vscode-java-pack
@@ -305,7 +305,7 @@ See [JetBrains Run/Debug configuration](https://www.jetbrains.com/help/idea/run-
 
 To set default extensions to be installed for all users starting a workspace for the project, add a list of the VS Code extension identifiers to your `.gitpod.yml`.
 
-```yaml
+```yml
 jetbrains:
   intellij:
     plugins:
@@ -330,7 +330,7 @@ Gitpod currently has early support for improved indexing performance with JetBra
 
 **Example:** Index both the stable and latest of the IntelliJ IDE
 
-```yaml
+```yml
 jetbrains:
   intellij:
     prebuilds:

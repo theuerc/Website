@@ -119,7 +119,7 @@ You can install a plugin only for **your current workspace** following these ste
 You can share a plugin on **{title} backend** with everybody working on the repository by adding it to [.gitpod.yml](/docs/references/gitpod-yml) and pushing to your Git repository.
 Each workspace is preconfigured with plugins from the `gitpod.yml` configuration file. For example:
 
-```yaml
+```yml
 jetbrains:
   rider:
     plugins:
@@ -143,7 +143,7 @@ It is not yet possible to install plugins on **{title} backend** for your user t
 
 You can adjust JVM options for {title} backend, especially if you want to increase the `-Xmx` memory size. For example:
 
-```yaml
+```yml
 jetbrains:
   rider:
     vmoptions: "-Xmx4g"

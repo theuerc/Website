@@ -74,7 +74,7 @@ Once that’s all good, he looks for onboarding instructions and works his way t
 
 Alice creates a `.gitpod.yml` configuration file at the root of her project, then adds [start tasks](/docs/configure/workspaces/tasks) such as the following:
 
-```yaml
+```yml
 tasks:
   - init: npm install
     command: npm run dev

@@ -41,7 +41,7 @@ RUN brew install shellcheck
 
 You should also install the shellcheck VS Code extension in Gitpod, by adding a [.gitpod.yml](/docs/references/gitpod-yml) configuration file to your repository that looks like this (notice the `vscode` extensions section):
 
-```yaml
+```yml
 image:
   file: .gitpod.Dockerfile
 
@@ -69,7 +69,7 @@ RUN npm i -g bash-language-server
 Also the following in your
 [.gitpod.yml](/docs/references/gitpod-yml)
 
-```yaml
+```yml
 vscode:
   extensions:
     - mads-hartmann.bash-ide-vscode@1.4.0:/qx+rdXE/fGTGWhelNf3aQ==

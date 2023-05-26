@@ -51,7 +51,7 @@ Vetur provides syntax highlighting, snippets, Emmet support, linting/error check
 
 To add this extension to your repository add the following to your [.gitpod.yml](/docs/references/gitpod-yml)
 
-```yaml
+```yml
 vscode:
   extensions:
     - octref.vetur@0.23.0:TEzauMObB6f3i2JqlvrOpA==

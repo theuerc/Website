@@ -27,7 +27,7 @@ See the [.gitpod.yml reference](/docs/references/gitpod-yml) page for more.
 
 ### A gitpod.yml example
 
-```yaml
+```yml
 image: gitpod/workspace-full
 
 # Commands that will run on workspace start

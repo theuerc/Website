@@ -30,14 +30,14 @@ There are at least two ways to configure the Java version for each new Gitpod wo
 
 Gitpod workspaces can be configured with [`.gitpod.yml`](https://www.gitpod.io/docs/configure/workspaces). We can specify [startup task(s)](https://www.gitpod.io/docs/configure/workspaces/tasks) that will execute shell commands for us:
 
-```yaml
+```yml
 tasks:
   - before: sdk install java 17.0.4.1-tem
 ```
 
 This is almost good. The problem is that `sdk install` prompts the user to set the installed version as a default. There's no flag to run the command in non-interactive mode, but there is a [hacky workaround](https://github.com/sdkman/sdkman-cli/issues/101#issuecomment-155938383):
 
-```yaml
+```yml
 tasks:
   - before: sdk install java 17.0.4.1-tem < /dev/null
 ```
@@ -52,7 +52,7 @@ Gitpod gives an option to use a [custom Docker image](https://www.gitpod.io/docs
 
 Remove the `before` task from `.gitpod.yml` and instead set the `image.file` property to `.gitpod.Dockerfile.`
 
-```yaml
+```yml
 image:
   file: .gitpod.Dockerfile
 ```
@@ -119,7 +119,7 @@ Now, two important points:
 
 Finally, use `.gitpod.Dockerfile` from your `.gitpod.yml`:
 
-```yaml
+```yml
 image:
   file: .gitpod.Dockerfile
 ```

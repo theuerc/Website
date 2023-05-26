@@ -86,7 +86,7 @@ For more, see the [.gitpod.yml reference](/docs/references/gitpod-yml) and [conf
 
 ### A gitpod.yml example
 
-```yaml
+```yml
 image: gitpod/workspace-full
 
 # Commands that will run on workspace start

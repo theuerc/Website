@@ -82,7 +82,7 @@ You can configure where terminals open using the `openMode` properties below.
 Please note that this information is used if no previous terminals in the layout exist.
 Snapshots will first try to reuse existing terminals in the layout, before opening new ones.
 
-```yaml
+```yml
 tasks:
   - name: Static Server
     command: python3 -m http.server 8080
@@ -118,7 +118,7 @@ The examples below are common use cases you can get inspired by and adjust for y
 
 Each task contains a single `npm` command. The `init` task terminates once the dependencies are installed while the `command` task starts a development server and does not terminate.
 
-```yaml
+```yml
 tasks:
   - name: Dev Server
     init: npm install
@@ -133,7 +133,7 @@ In the following example, the `init` task installs dependencies and configures a
 
 > **Note**: In case of multiple terminals, there is no guarantee on the order in which tasks execute. The only guarantee you have is that `before`, `init` and `command` execute in that sequence **per terminal**.
 
-```yaml
+```yml
 tasks:
   - name: Dependencies & Database
     init: |
@@ -148,7 +148,7 @@ tasks:
 
 When working with multiple terminals, you may have a situation where terminal 1 runs build scripts and terminal 2 and 3 require that these scripts complete first. This can be achieved with [`gp sync-await`](/docs/references/gitpod-cli#sync-await) and [`gp sync-done`](/docs/references/gitpod-cli#sync-done).
 
-```yaml
+```yml
 tasks:
   - name: Rails
     init: >
@@ -177,7 +177,7 @@ Let's say you have a web app dev server that takes a moment to start up to liste
 
 You can achieve this with two terminals and the `gp ports await` CLI command.
 
-```yaml
+```yml
 tasks:
   - name: Dev Server
     init: npm install
@@ -193,7 +193,7 @@ tasks:
 
 If you wish to halt an entire task with for an error within the task script, then you could do the following:
 
-```yaml
+```yml
 tasks:
   - init: |
       (

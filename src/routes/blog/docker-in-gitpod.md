@@ -43,7 +43,7 @@ That was way too tedious for everyone to start playing around.
 
 To improve this experience we introduced[ Dockerfile support (#62)](https://github.com/gitpod-io/gitpod/issues/62), which lets you reference your Dockerfile directly from inside your .gitpod.yml file:
 
-```yaml
+```yml
 image:
   file: docker/Dockerfile
 ```
@@ -59,7 +59,7 @@ Gitpod to the rescue!
 
 I went to [gitpod-io/definitely-gp](https://github.com/gitpod-io/definitely-gp/) and added a [*.*gitpod.yml](https://github.com/gitpod-io/definitely-gp/blob/master/rust-web-with-rocket/.gitpod.yml) and [Dockerfile](https://github.com/gitpod-io/definitely-gp/blob/master/rust-web-with-rocket/Dockerfile) there. The *.*gitpod.yml file looks like this:
 
-```yaml
+```yml
 image:
   file: Dockerfile
 tasks:

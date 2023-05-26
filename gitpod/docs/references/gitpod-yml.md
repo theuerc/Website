@@ -76,7 +76,7 @@ Defines additional source control repositories to clone and where the repository
 
 **Example**
 
-```yaml
+```yml
 additionalRepositories:
   - url: https://github.com/gitpod-io/demo-multi-repo-backend
     # checkoutLocation is optional and relative to /workspaces.
@@ -96,7 +96,7 @@ If you need to run commands (such as package installation or compilation) on the
 
 **Example**
 
-```yaml
+```yml
 # example .gitpod.yml from https://github.com/gitpod-io/demo-multi-repo-frontend
 additionalRepositories:
   - url: https://github.com/gitpod-io/demo-multi-repo-backend
@@ -141,7 +141,7 @@ In most cases, this is not needed. If you work on an older Go project, please se
 
 **Example**
 
-```yaml
+```yml
 checkoutLocation: "go/src/github.com/demo-apps/go-gin-app"
 ```
 
@@ -161,14 +161,14 @@ For most cases, setting the `coreDump` property is not required. However, it can
 
 **Example**
 
-```yaml
+```yml
 coreDump:
   enabled: true
 ```
 
 You can also set custom size values for the generated core files using the `softLimit` and `hardLimit` values (see example below). The setting `softLimit` configures the upper limit on the size of the core dump file that will be produced if a process receives a core dump signal, while `hardLimit` allows setting a hard limit to act as a ceiling for the soft limit.
 
-```yaml
+```yml
 coreDump:
   enabled: true
   softLimit: <bytes>
@@ -193,7 +193,7 @@ Please refer to https://git-scm.com/docs/git-config#_values for a list of accept
 
 **Example**
 
-```yaml
+```yml
 gitConfig:
   alias.st: status
   core.autocrlf: input
@@ -213,7 +213,7 @@ Configure the [GitHub Gitpod](https://github.com/apps/gitpod-io) app. At this ti
 
 **Example**
 
-```yaml
+```yml
 github:
   prebuilds:
     master: true
@@ -341,20 +341,20 @@ To see a list of Gitpod-provided images, please see [gitpod-io/workspace-images]
 
 _With a public image_
 
-```yaml
+```yml
 image: ubuntu:latest
 ```
 
 _With a custom image_
 
-```yaml
+```yml
 image:
   file: .gitpod.Dockerfile
 ```
 
 _With an optional context_
 
-```yaml
+```yml
 image:
   file: .gitpod.Dockerfile
   context: ./docker-content
@@ -451,7 +451,7 @@ Define a list of plugins which should be installed for the given JetBrains IDE w
 
 **Example**
 
-```yaml
+```yml
 jetbrains:
   intellij:
     plugins:
@@ -475,7 +475,7 @@ Define whether Gitpod enables prebuilds for a specific JetBrains IDE.
 
 **Example**
 
-```yaml
+```yml
 jetbrains:
   intellij:
     prebuilds:
@@ -508,7 +508,7 @@ Configure JVM options for a specific JetBrains IDE.
 
 **Example**
 
-```yaml
+```yml
 jetbrains:
   intellij:
     vmoptions: "-Xmx4g"
@@ -528,7 +528,7 @@ Configure how Gitpod treats various ports your application may listen on. You ca
 
 **Example**
 
-```yaml
+```yml
 ports:
   - name: Website
     port: 3000
@@ -624,7 +624,7 @@ Define how Gitpod prepares & builds your project and how it can start the projec
 
 **Example**
 
-```yaml
+```yml
 tasks:
   - before: sh ./scripts/setup.sh
     init: npm install
@@ -751,7 +751,7 @@ Defines the repository with the main `.gitpod.yml` file and makes it possible to
 
 **Example**
 
-```yaml
+```yml
 mainConfiguration: https://github.com/gitpod-io/demo-multi-repo-frontend
 ```
 
@@ -785,7 +785,7 @@ By default, extensions will use the latest available version unless you use a sp
 
 **Example**
 
-```yaml
+```yml
 vscode:
   extensions:
     - svelte.svelte-vscode
@@ -809,6 +809,6 @@ In most cases, this is not needed. If you work on an older Go project, please se
 
 **Example**
 
-```yaml
+```yml
 workspaceLocation: "."
 ```

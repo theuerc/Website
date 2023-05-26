@@ -134,7 +134,7 @@ In the terminal type gp init.
 
 The created files will be automatically opened in the editor. Let’s change the config so that it starts two tasks in separate terminals:
 
-```yaml
+```yml
 image:
   file: Dockerfile
 

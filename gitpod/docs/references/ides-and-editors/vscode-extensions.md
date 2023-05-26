@@ -31,7 +31,7 @@ Your project's `.gitpod.yml` is updated automatically and lists the given extens
 
 Here is an example of what a `.gitpod.yml` with installed extensions may look like:
 
-```yaml
+```yml
 vscode:
   extensions:
     - svelte.svelte-vscode

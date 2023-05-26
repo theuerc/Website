@@ -81,7 +81,7 @@ Now you can start changing the application and of course committing to your repo
 
 Here’s the contents:
 
-```yaml
+```yml
 ports:
     - port: 3000
     protocol: "http"

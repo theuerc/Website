@@ -32,7 +32,7 @@ Prebuilds are typically configured using an `init` [task](/docs/configure/worksp
 
 In the example below, the `init` task installs npm packages into the node_modules directory of the workspace. The `command` task runs 'npm start' on every workspace startup.
 
-```yaml
+```yml
 tasks:
   - init: |
       npm install
@@ -148,7 +148,7 @@ Additionally, you can enable prebuilds for all branches (`branches`) and for pul
 
 > **Note:** The Gitpod GitHub app has no equivalent for GitLab or Bitbucket yet, so this entire section is GitHub-specific for now.
 
-```yaml
+```yml
 github:
   prebuilds:
     # enable for the default branch (defaults to true)
@@ -178,7 +178,7 @@ By default, Gitpod registers itself as a check to pull requests - much like a co
 The default behavior, however, would not make the checks fail when the prebuild failed.
 This can be enabled with the following snippet:
 
-```yaml
+```yml
 github:
   prebuilds:
     addCheck: prevent-merge-on-error
@@ -186,7 +186,7 @@ github:
 
 You can disable this behaviour in the `.gitpod.yml` file in your default branch:
 
-```yaml
+```yml
 github:
   prebuilds:
     addCheck: false
@@ -198,7 +198,7 @@ Gitpod can add a comment with an "Open in Gitpod" button to your pull requests.
 
 You can enable this behaviour in the `.gitpod.yml` file in your default branch:
 
-```yaml
+```yml
 github:
   prebuilds:
     addComment: true
@@ -211,7 +211,7 @@ This approach produces fewer GitHub notifications, but can also create a concurr
 
 You can enable this behaviour in the `.gitpod.yml` file in your default branch:
 
-```yaml
+```yml
 github:
   prebuilds:
     addBadge: true
@@ -224,7 +224,7 @@ If you don't want the comments to be added, disable them using `addComment: fals
 
 It is not necessarily best practice to have user specific environment variables in a prebuild `init` block, but sometimes there are build time requirements that mean certain tokens need setting or files need creating. Environment variables defined within your Gitpod Variables preferences are not imported by default, but they can be accessed with the following command within a `before` or `init` block:
 
-```yaml
+```yml
 tasks:
   - init: |
       eval $(command gp env -e)

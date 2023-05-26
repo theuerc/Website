@@ -36,7 +36,7 @@ With Gitpod you can open a preview for HTML files while you are coding. You can 
 
 You can also automate this in your [`.gitpod.yml`](/docs/references/gitpod-yml) file, so that every time you start a new workspace your preview is ready to go. For example:
 
-```yaml
+```yml
 tasks:
   - name: Start web server
     init: python -m http.server 8000

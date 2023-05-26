@@ -26,7 +26,7 @@ RUN sudo apt-get -q update && \
 
 Next, create a file called [.gitpod.yml](/docs/references/gitpod-yml) and add the following to it:
 
-```YAML
+```yml
 image:
   file: .gitpod.Dockerfile
 ```
@@ -50,7 +50,7 @@ RUN sudo apt-get -q update && \
 
 Next, modify your `.gitpod.yml` like so:
 
-```YAML
+```yml
 image:
   file: .gitpod.Dockerfile
 

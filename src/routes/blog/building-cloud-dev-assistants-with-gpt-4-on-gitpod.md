@@ -406,7 +406,7 @@ To run our Temporal workflow to insert these tokens, we'll need be running Tempo
 
 For that, our `.gitpod.yml` file can ensure we've got a running system:
 
-```yaml
+```yml
 image:
   file: .gitpod.Dockerfile
 vscode:
