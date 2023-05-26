@@ -117,7 +117,7 @@ Alternatively, continuing the example above I can inject my OAuth Client secret,
 doppler setup --no-interactive && doppler run --mount ../client_secret.json --mount-template oauth2_client_secret.json  -- doppler run --mount-template jwks_secret --mount ../jwks_secret -- doppler run -- uvicorn main:app --reload
 ```
 
-Again, note the `--` used to separate our commands between the template mounting and actual execution of our binary. As each of these is written as a separate task within our `.gitpod.yaml`, we’ll need to again do the `doppler setup –no-interactive` to set our configuration in the user’s home directory, just in case our task gets executed first.
+Again, note the `--` used to separate our commands between the template mounting and actual execution of our binary. As each of these is written as a separate task within our `.gitpod.yml`, we’ll need to again do the `doppler setup –no-interactive` to set our configuration in the user’s home directory, just in case our task gets executed first.
 
 Because our secret gets injected at run time, **if we need to rotate our secrets, it's as simple as setting the new value in the Doppler UI.**
 

@@ -404,7 +404,7 @@ With this, we're ready to run our workflow on a [set of URLs](https://github.com
 
 To run our Temporal workflow to insert these tokens, we'll need be running Temporal in our development environment. The [repository](https://github.com/burningion/demo-gpt-4-temporal/) already has this configured.
 
-For that, our `.gitpod.yaml` file can ensure we've got a running system:
+For that, our `.gitpod.yml` file can ensure we've got a running system:
 
 ```yaml
 image:

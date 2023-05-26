@@ -130,7 +130,7 @@ If we look at Github for our commit, we should now see a verified badge next to 
   <img src="/images/blog/signing-git-commits-on-gitpod-with-1-password/verified-commit.webp" alt="Verified commit on Github"  />
 </figure>
 
-To enable git commit signing every time we open our repository, must set our git preferences in `.gitpod.yaml` as a task, and again, ensure have set an environment variable for our `SSH_SIGNING_KEY` in our [environment variables](https://gitpod.io/variables):
+To enable git commit signing every time we open our repository, must set our git preferences in `.gitpod.yml` as a task, and again, ensure have set an environment variable for our `SSH_SIGNING_KEY` in our [environment variables](https://gitpod.io/variables):
 
 ```yaml
 tasks:
