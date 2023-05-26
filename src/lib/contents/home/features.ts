@@ -243,22 +243,10 @@ export const collaborationFeatures: Feature[] = [
  *
  */
 
-export const worksOnAnyMachineFeatureForOnboarding: Feature = {
-  title: `Works on <t style="text-decoration-line: line-through; color: #999795;">my</t> any machine`,
-  paragraph:
-    "With a single click, developers can spin up a perfectly configured workspace in a container in the cloud - independent of the device, operating system, or IDE they use.",
-  image: {
-    src: "/images/features/works-on-any-machine.webp",
-    alt: "Works on any machine",
-    width: "100%",
-    height: "100%",
-  },
-};
-
 export const onboardDevsWithOneClick: Feature = {
   title: "Onboard developers with one click",
   paragraph:
-    "Developers are ready-to-code at the click of the button. Internal and external developers become effective on day 1.",
+    "With a single click, developers can spin up perfectly configured environments and start coding immediately.",
   lottie: {
     src: "/lottie/edit_workspace.json",
     id: "edit_workspace",
@@ -266,18 +254,39 @@ export const onboardDevsWithOneClick: Feature = {
 };
 
 export const debugFasterThenEver: Feature = {
-  title: "Debug faster than ever",
+  title: "Reproducible and controllable environments",
   paragraph:
-    "Reduce the number of support requests in half and decrease the time spent on them to mere minutes.",
+    "CDEs enable developers to work with the same tools, libraries, and dependencies, regardless of operating system, device or IDE they use.",
   terminal: {
     source: terminalSource,
   },
 };
 
+export const oneCofigToRuleThemAll: Feature = {
+  title: "One config to rule them all",
+  paragraph:
+    "Shared development setup and isolated environments means less time worry about configuration drift and broken dev environments.",
+  image: {
+    src: "/images/features/cloud-automation.webp",
+    darkSrc: "/images/features/cloud-automation-dark.webp",
+    alt: "All your data secured",
+    width: "65%",
+    height: "50%",
+  },
+};
+
+export const quicklyRampContractors: Feature = {
+  title: "Quickly ramp contractors",
+  paragraph:
+    "Stop worrying about access management, environment setups or shipping managed devices. CDEs enable anyone working on your product to access the exact same setup as a full-time developer.",
+  previewComponent: Workspaces,
+};
+
 export const onboardFeatures: Feature[] = [
-  worksOnAnyMachineFeatureForOnboarding,
   onboardDevsWithOneClick,
+  quicklyRampContractors,
   debugFasterThenEver,
+  oneCofigToRuleThemAll,
 ];
 
 /**Software Supply Chain Security Features,
