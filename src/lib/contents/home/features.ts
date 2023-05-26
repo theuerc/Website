@@ -313,6 +313,7 @@ export const allYourDataSecured: Feature = {
     "Source code is centrally and safely stored in the cloud, never locally. Additionally, all data is encrypted at rest and connections to CDEs are encrypted in transit.",
   image: {
     src: "/images/features/encoded-data.webp",
+    darkSrc: "/images/features/encoded-data-dark.webp",
     alt: "Secure data movement",
     width: "90%",
     height: "90%",
