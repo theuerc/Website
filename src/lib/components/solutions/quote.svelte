@@ -32,8 +32,8 @@
       >
         {@html quote}<span class="text-violet">”</span>
       </p>
-      <p class="mt-x-small">
-        <span class="font-semibold text-important">{name},</span>
+      <p class="mt-x-small text-base">
+        <span class="font-bold text-important">{name},</span>
         {jobTitle}
       </p>
     </div>

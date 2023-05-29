@@ -97,6 +97,11 @@
             >Supply chain security</FooterLink
           >
         </li>
+        <li>
+          <FooterLink href="/solutions/increased-productivity"
+            >Productivity</FooterLink
+          >
+        </li>
       </Section>
       <Section title="Industries">
         <li>

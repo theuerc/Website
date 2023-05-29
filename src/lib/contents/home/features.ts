@@ -400,10 +400,58 @@ export const featureCards: {
         src: "/svg/icons/cloud.svg",
         alt: "Cloud Icon",
       },
-      // link: {
-      //   href: "/contact/get-demo",
-      //   text: "Get a demo",
-      // },
     },
   },
+];
+
+/**Increased Productivity Features,
+ * Using on /solutions/increased-productivity page
+ *
+ */
+
+export const worksOnAnyMachineFeatureForProductivity: Feature = {
+  title: `Works on <t style="text-decoration-line: line-through; color: #999795;">my</t> any machine`,
+  paragraph: `CDEs enable developers to work with the same tools, libraries, and dependencies, regardless of operating system, device or IDE they use.`,
+  previewComponent: Workspaces,
+};
+
+export const parallelDevelopmentForProductivity: Feature = {
+  title: "Onboard developers with one click",
+  paragraph:
+    "With a single click, developers can spin up perfectly configured environments and start coding immediately.",
+  lottie: {
+    src: "/lottie/edit_workspace.json",
+    id: "edit_workspace",
+  },
+};
+
+export const collaborationMadeEasierForProductivity: Feature = {
+  title: "Collaboration made easier",
+  paragraph:
+    "Seamlessly share dev environment configurations, changes to configurations, or real-time projects for easier collaboration.",
+  lottie: {
+    src: "/lottie/share_workspace.json",
+    id: "share-workspace",
+  },
+};
+
+export const previewWorkspacesAcrossTeams: Feature = {
+  title: "Preview work across any team",
+  paragraph:
+    "QA, PMs, Designers alike, can easily jump into a CDE and preview changes to shorten feedback cycles between teams.",
+  image: {
+    src: "/images/features/multiple-workspaces.webp",
+    darkSrc: "/images/features/multiple-workspaces-dark.webp",
+    alt: "Multiple workspaces",
+    width: "85%",
+    height: "75%",
+  },
+};
+
+export const increasedProductivityFeatures: Feature[] = [
+  worksOnAnyMachineFeatureForProductivity,
+  parallelDevelopmentForProductivity,
+  oneCofigToRuleThemAll,
+  collaborationMadeEasierForProductivity,
+  previewWorkspacesAcrossTeams,
 ];

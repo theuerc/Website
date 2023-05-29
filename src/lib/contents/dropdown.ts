@@ -4,19 +4,24 @@ export const resourcesLinks: {
   description: string;
 }[] = [
   {
-    text: "Security",
+    text: "Onboarding",
+    href: "/solutions/onboarding",
+    description: "Quickly become ready-to-code.",
+  },
+  {
+    text: "Productivity",
+    href: "/solutions/increased-productivity",
+    description: "Create more productive teams.",
+  },
+  {
+    text: "Supply chain security",
     href: "/solutions/supply-chain-security",
-    description: "Secure your software supply chain.",
+    description: "Secure your software supply chains.",
   },
   {
     text: "Collaboration",
     href: "/solutions/collaboration",
     description: "How Gitpod improves collaboration.",
-  },
-  {
-    text: "Onboarding",
-    href: "/solutions/onboarding",
-    description: "Onboarding developers to new projects quickly.",
   },
 ];
 
