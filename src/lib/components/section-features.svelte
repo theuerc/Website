@@ -22,7 +22,7 @@
   <div class="text-center" class:top={!type} class:mb-small={type}>
     <h2>{title}</h2>
     {#if text}
-      <p class="text-large">{text}</p>
+      <p class="text-large">{@html text}</p>
     {/if}
   </div>
   {#if type === "box"}

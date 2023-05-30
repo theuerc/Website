@@ -271,7 +271,6 @@ export const oneCofigToRuleThemAll: Feature = {
     darkSrc: "/images/features/cloud-automation-dark.webp",
     alt: "All your data secured",
     width: "65%",
-    height: "50%",
   },
 };
 

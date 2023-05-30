@@ -6,7 +6,7 @@
   import { onboardFeatures } from "$lib/contents/home/features";
   import Quotes from "$lib/components/quotes.svelte";
   import { quotes } from "$lib/contents/customers";
-  import Features from "$lib/components/features.svelte";
+  import SectionFeatures from "$lib/components/section-features.svelte";
   import OpenGraph from "$lib/components/open-graph.svelte";
   import Section from "$lib/components/section.svelte";
   import Quote from "$lib/components/solutions/quote.svelte";
@@ -49,12 +49,10 @@
 <div class="mt-xxx-large mb-x-large sm:mb-0">
   <AnimatedLogos title="Speeding up 900k+ developers at teams like" />
 </div>
-<Section id="new-hire-to-coding-in-under-an-hour">
-  <h3 class="text-center text-3xl sm:text-5xl font-bold">
-    Productive teams on day one
-  </h3>
-  <Features features={onboardFeatures} class="!mt-x-large" />
-</Section>
+<SectionFeatures
+  title="Productive teams on day one"
+  features={onboardFeatures}
+/>
 <Section>
   <Quotes {quotes} class="max-w-7xl mx-auto" />
 </Section>

@@ -6,7 +6,7 @@
   import { testimonials } from "$lib/contents/home/index";
   import { collaborationFeatures } from "$lib/contents/home/features";
 
-  import Features from "$lib/components/features.svelte";
+  import SectionFeatures from "$lib/components/section-features.svelte";
   import Testimonials from "$lib/components/index/testimonials.svelte";
   import OpenGraph from "$lib/components/open-graph.svelte";
   import Section from "$lib/components/section.svelte";
@@ -49,20 +49,18 @@
 <div class="mt-xxx-large mb-24 sm:mb-0">
   <AnimatedLogos />
 </div>
-<Section id="frictionless-collaboration">
-  <h3 class="text-center text-3xl sm:text-5xl font-bold">
-    Frictionless collaboration
-  </h3>
-  <p
-    class="text-center text-lg sm:text-2xl lg:pt-x-large mb-x-small mx-auto max-w-2xl"
-  >
-    Learn <a href="/customers/quizlet"
-      >how Quizlet enhanced collaboration with designers and product managers
-      using Gitpod</a
-    >.
-  </p>
-</Section>
-<Features features={collaborationFeatures} class="!mt-x-large" />
+<SectionFeatures
+  title="Frictionless collaboration"
+  text="<p
+  class='text-center text-lg sm:text-2xl lg:pt-x-large mb-x-small mx-auto max-w-2xl'
+>
+  Learn <a href='/customers/quizlet'
+    >how Quizlet enhanced collaboration with designers and product managers
+    using Gitpod</a
+  >.
+</p>"
+  features={collaborationFeatures}
+/>
 <Section>
   <Testimonials
     title="Trusted by the best developer teams"

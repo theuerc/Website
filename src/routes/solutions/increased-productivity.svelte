@@ -5,7 +5,7 @@
 <script lang="ts">
   import { increasedProductivityFeatures } from "$lib/contents/home/features";
 
-  import Features from "$lib/components/features.svelte";
+  import SectionFeatures from "$lib/components/section-features.svelte";
   import Quotes from "$lib/components/quotes.svelte";
   import { quotes } from "$lib/contents/customers";
   import OpenGraph from "$lib/components/open-graph.svelte";
@@ -47,13 +47,10 @@
 </div>
 
 <Titles />
-
-<Section id="producitivty-features">
-  <h3 class="text-center text-3xl sm:text-5xl font-bold">
-    Create at the speed you need
-  </h3>
-</Section>
-<Features features={increasedProductivityFeatures} class="!mt-x-large" />
+<SectionFeatures
+  title="Create at the speed you need"
+  features={increasedProductivityFeatures}
+/>
 <Section>
   <Quotes {quotes} class="max-w-7xl mx-auto" />
 </Section>
