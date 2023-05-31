@@ -199,15 +199,15 @@
 
 <OpenGraph
   data={{
-    description: "We'll help you find the best plan for your business.",
-    title: "Talk to an expert - Book a demo",
+    description: "Let's talk about how we can work together!",
+    title: "Contact sales | Gitpod",
   }}
 />
 
 {#if isEmailSent}
   <div bind:this={sectionStart} data-analytics={`{"dnt":true}`}>
     <Header
-      title="Thanks for contacting us"
+      title="Thanks for contacting Gitpod!"
       text="We'll get back to you shortly."
       tight={true}
       textClassNames="max-w-2xl mx-auto text-large"
@@ -216,8 +216,8 @@
   </div>
 {:else}
   <Header
-    title="Talk to an expert"
-    text="Want to get a custom demo or find the best plan for your company? We'd love to chat."
+    title="Contact Sales"
+    text="Let's talk about how we can work together!"
     tight={true}
     textAlign="left"
     centered={false}

@@ -209,7 +209,7 @@
 {#if isEmailSent}
   <div bind:this={sectionStart} data-analytics={`{"dnt":true}`}>
     <Header
-      title="Thanks for contacting us"
+      title="Thanks for contacting Gitpod!"
       text="We'll get back to you shortly."
       tight={true}
       titleClasses="!mb-xx-small"
@@ -220,8 +220,7 @@
 {:else}
   <Header
     title="Contact Support"
-    text="Need help with any question or issue? Please get in contact and we'll get
-  onto it right away."
+    text="Need help with any question or issue? Reach out and we'll get on it straight away!"
     tight={true}
     textClassNames="max-w-2xl mx-auto text-large"
   />

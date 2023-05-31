@@ -32,7 +32,7 @@ export const contactActions: Card[] = [
       transform: "scale(1.1)",
     },
     title: "Community",
-    text: "Connect with the community to get help for common requests.",
+    text: "Connect with the community to get support for common requests.",
     link: {
       text: "Open community",
       href: "/community",
@@ -44,7 +44,7 @@ export const contactActions: Card[] = [
       alt: "Docs",
     },
     title: "Docs",
-    text: "Learn more about how to become always ready-to-code.",
+    text: "Learn more about Gitpod CDEs and becoming ready-to-code.",
     link: {
       text: "Open documentation",
       href: "/docs",
@@ -86,7 +86,7 @@ export const licenseFormsQuestions = [
 ];
 
 export const list: string[] = [
-  "5h weekly productivity gain per engineer",
+  "5 hour per week productivity gain per developer",
   "4x faster time from zero to first PR",
   "61% cost savings compared to a VDI solution",
 ];

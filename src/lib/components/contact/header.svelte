@@ -41,7 +41,7 @@
   <div>
     <h1 class="mb-x-small">Get a demo</h1>
     <p class="text-large mb-small">
-      And learn how your engineering organisation can scale with Gitpod.
+      Learn how your engineering teams can scale with Gitpod CDEs.
     </p>
     <TickList {list} textClassNames="text-large" />
   </div>

@@ -18,8 +18,8 @@
 />
 
 <Header
-  title="How can we help you?"
-  text="Get in touch and let us know how we can help."
+  title="How can we help?"
+  text="Get in touch and we’ll find the right person to support you."
   tight={true}
   fullWidth={true}
 >

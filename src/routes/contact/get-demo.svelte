@@ -4,8 +4,6 @@
 
 <script lang="ts">
   import Header from "$lib/components/contact/header.svelte";
-
-  import Titles from "$lib/components/index/titles.svelte";
   import UsedBy from "$lib/components/index/used-by.svelte";
   import OpenGraph from "$lib/components/open-graph.svelte";
 </script>
@@ -21,6 +19,4 @@
 
 <Header />
 
-<Titles />
-
-<UsedBy title="Speeding up 900K+ developers in teams like" isCard={false} />
+<UsedBy title="Used by 900K+ developers" class="py-small" />
