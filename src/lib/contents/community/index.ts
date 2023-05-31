@@ -85,7 +85,7 @@ export const letsCollaborateActions: Card[] = [
 export const overviewCards = [
   {
     title: "Learn",
-    text: "Learn how to optimize your Gitpod setup and improve your dev workflows. Deep-dive into the projects our community is building on Gitpod.",
+    text: "Learn how to optimize your Gitpod CDE setup and improve your dev workflows. Deep-dive into the projects our community is building on Gitpod.",
   },
   {
     title: "Connect",

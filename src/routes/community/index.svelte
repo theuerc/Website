@@ -26,9 +26,9 @@
 />
 
 <Hero
-  class="!mb-0 !mt-small lg:!mt-x-large !pb-micro"
+  class="!mb-0 !mt-small lg:!mt-x-large !pb-micro !text-h2"
   title="Welcome to our community!"
-  text="Our community is a space to learn about Gitpod, connect with others and build cool projects. We’re happy to have you!"
+  text="Our community is a space to learn about Gitpod CDEs, connect with other developers and build cool projects. We're happy to have you!"
   btnPrimary={{ href: "https://www.gitpod.io/chat", text: "Join now" }}
 />
 
