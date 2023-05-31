@@ -5,7 +5,7 @@ import fs from "fs";
 const fallbackStars = 10600;
 
 const startDate = new Date("Apr 28 2023 00:00:00 EST");
-const endDate = new Date("May 30 2023 06:00:00 EST");
+const endDate = new Date("June 02 2023 06:00:00 EST");
 
 const USE_CACHE = process.env.USE_CACHE;
 const CACHE_PATH = path.resolve("stars-cache.json");
