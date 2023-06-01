@@ -340,8 +340,7 @@ export const secureDataMovement: Feature = {
     src: "/images/features/secure-data.webp",
     darkSrc: "/images/features/secure-data-dark.webp",
     alt: "Secure data movement",
-    width: "75%",
-    height: "75%",
+    width: "50%",
   },
   moreButton: {
     href: "https://app.safebase.io/portal/71ccd717-aa2d-4a1e-942e-c768d37e9e0c/preview?product=default",
