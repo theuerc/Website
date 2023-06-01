@@ -1,6 +1,7 @@
 ---
 section: workspaces
 title: Collaboration & Sharing of Gitpod workspaces
+description: Learn about the different options available for collaborating and sharing Gitpod workspaces with teammates and colleagues. Also learn about Gitpod snapshots, a point-in-time capture of a workspace state.
 ---
 
 <script context="module">

@@ -1,6 +1,7 @@
 ---
 section: help/contribute
 title: Submitting a pull request
+description: Guidance for submitting a pull request to Gitpod.
 ---
 
 <script context="module">

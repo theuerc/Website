@@ -1,6 +1,7 @@
 ---
 section: help/contribute
 title: Contribute Features & Patches
+description: Guidance for contributing features and patches to Gitpod.
 ---
 
 <script context="module">

@@ -1,6 +1,7 @@
 ---
 section: integrations
 title: Integrations
+description: Gitpod integrates with many tools and services to make your development workflow more efficient.
 ---
 
 <script context="module">

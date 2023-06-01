@@ -1,6 +1,7 @@
 ---
 section: workspaces
 title: Multi-repo
+description: Configure Gitpod to clone multiple repositories into a single workspace.
 ---
 
 <script context="module">
@@ -9,7 +10,7 @@ title: Multi-repo
 
 # Multi-repo
 
-> {title} is currently in [Beta](/docs/help/public-roadmap/release-cycle) · [Send feedback](https://github.com/gitpod-io/gitpod/issues/8623).
+> Multi-Repo is currently in [Beta](/docs/help/public-roadmap/release-cycle) · [Send feedback](https://github.com/gitpod-io/gitpod/issues/8623).
 
 If your software project is comprised of multiple source control repositories it is possible to configure Gitpod to clone these additional repositories through the configuration keys of `additionalRepositories` and `mainConfiguration` in the [.gitpod.yml](/docs/references/gitpod-yml) file which removes the need to run multiple workspaces, and makes it easier to configure services which need to be aware of each other.
 

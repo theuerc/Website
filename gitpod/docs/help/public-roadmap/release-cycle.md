@@ -1,6 +1,7 @@
 ---
 section: public-roadmap
 title: Release Cycle
+description: Learn how Gitpod releases updates and manages their release cycle.
 ---
 
 <script context="module">

@@ -1,6 +1,7 @@
 ---
 section: user-settings
 title: User settings
+description: Learn how to configure your personal Gitpod experience. Customize options like SSH keys, browser plugins, and dotfiles.
 ---
 
 <script context="module">

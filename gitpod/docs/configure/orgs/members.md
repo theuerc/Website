@@ -1,6 +1,7 @@
 ---
 section: orgs
 title: Members
+description: Learn how to manage members in your organization. Also learn about member roles and permissions.
 ---
 
 # Organization Members

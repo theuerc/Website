@@ -1,6 +1,7 @@
 ---
 section: integrations
 title: Tailscale
+description: Learn about Tailscale integration with Gitpod.
 ---
 
 <script context="module">

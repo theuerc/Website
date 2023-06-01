@@ -1,6 +1,7 @@
 ---
 section: authentication
 title: Bitbucket Server Integration
+description: Gitpod works with public, private, or internal repositories on your own instance of Bitbucket Server v7.20 or later.
 ---
 
 <script context="module">

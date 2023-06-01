@@ -1,6 +1,7 @@
 ---
 section: help/contribute
 title: Contribute
+description: Learn how you can contribute to Gitpod through documentation updates, features, patches, content creation and more.
 ---
 
 <script context="module">

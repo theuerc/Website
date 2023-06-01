@@ -1,6 +1,7 @@
 ---
 section: orgs
 title: Policies
+description: Organizational policies allow you to configure and manage common settings across all workspaces within your Gitpod organization.
 ---
 
 # Policies

@@ -1,6 +1,7 @@
 ---
 section: integrations
 title: JetBrains Gateway
+description: Learn about JetBrains Gateway integration with Gitpod.
 ---
 
 <script context="module">

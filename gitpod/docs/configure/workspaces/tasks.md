@@ -1,6 +1,7 @@
 ---
 section: workspaces
 title: Tasks
+description: Learn how to automate the setup of your project with Gitpod tasks. This can include installing dependencies or your favorite IDE Extensions/Plugins, compiling code, and starting your development server.
 ---
 
 <script context="module">

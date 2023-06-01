@@ -1,6 +1,7 @@
 ---
 section: authentication
 title: GitLab
+description: You can integrate any public or private repository on GitLab with Gitpod.
 ---
 
 <script context="module">

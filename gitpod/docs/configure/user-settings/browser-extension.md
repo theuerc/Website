@@ -1,6 +1,7 @@
 ---
 section: user-settings
 title: Browser Extension
+description: Learn how to use the Gitpod browser extension to quickly spin up Gitpod workspaces from any GitHub, GitLab or Bitbucket repository.
 ---
 
 <script context="module">

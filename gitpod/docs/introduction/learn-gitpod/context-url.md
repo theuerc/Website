@@ -1,6 +1,7 @@
 ---
 section: learn-gitpod
 title: Context URL
+description: Learn about Gitpod context URLs and how they determine the configuration and automation while starting a Gitpod workspace.
 ---
 
 <script context="module">

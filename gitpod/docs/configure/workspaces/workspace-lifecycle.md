@@ -1,6 +1,7 @@
 ---
 section: workspaces
 title: Workspace Lifecycle
+description: Gitpod brings a new way to think about your development environment. Rather than a single local environment that you keep up-to-date, with Gitpod you can have as many workspaces as you need. This page describes the lifecycle of a Gitpod workspace.
 ---
 
 <script context="module">
@@ -21,6 +22,7 @@ The state of the workspace is indicated by the color of the workspace indicator.
 4. 🔴 **Stopped** - Workspace no longer accessible. File system preserved for restart.
 
 > **Important:**
+>
 > - Only files in the `/workspace` directory are kept between state transitions.
 > - Any changes made to `/workspace` from a [custom Dockerfile](/docs/configure/workspaces/workspace-image#use-a-custom-dockerfile) will be overwritten/overlaid by a mount.
 

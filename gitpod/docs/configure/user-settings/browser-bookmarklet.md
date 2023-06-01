@@ -1,6 +1,7 @@
 ---
 section: user-settings
 title: Browser Bookmarklet
+description: Learn how to use a browser bookmarklet to quickly spin up Gitpod workspaces from any GitHub, GitLab or Bitbucket repository.
 ---
 
 <script context="module">

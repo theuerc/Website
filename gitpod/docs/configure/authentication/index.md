@@ -1,6 +1,7 @@
 ---
 section: authentication
 title: Authentication
+description: Gitpod allows you to work with any public or private repository on GitLab, GitHub, and Bitbucket.
 ---
 
 <script context="module">

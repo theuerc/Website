@@ -1,6 +1,7 @@
 ---
 section: gitpod-yml
 title: .gitpod.yml
+description: Learn how to configure Gitpod workspaces using the .gitpod.yml file. This file contains properties for configuring Docker images, Prebuilds, VS Code extensions, JetBrains plugins, tasks and more.
 ---
 
 <script context="module">

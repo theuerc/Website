@@ -1,6 +1,7 @@
 ---
 section: orgs
 title: Organizations
+description: Organizations allow you to manage users, projects, prebuilds and policies across multiple Gitpod workspaces.
 ---
 
 <script context="module">

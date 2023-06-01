@@ -1,6 +1,7 @@
 ---
 section: user-settings
 title: SSH
+description: Secure Shell Protocol (SSH) is the basis for connecting to your Gitpod workspace when using VS Code Desktop, JetBrains Gateway, or accessing via CLIs from a local machine.
 ---
 
 <script context="module">

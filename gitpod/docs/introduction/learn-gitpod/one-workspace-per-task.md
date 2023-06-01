@@ -1,6 +1,7 @@
 ---
 section: learn-gitpod
 title: One workspace per task
+description: Learn how you can use one Gitpod workspace per task to keep your development environments clean and focused.
 ---
 
 <script context="module">

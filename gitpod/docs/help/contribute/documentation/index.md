@@ -1,6 +1,7 @@
 ---
 section: help/contribute
 title: Contribute Documentation
+description: Guidance for contributing updates and improvements to the Gitpod documentation which helps others learn and adopt Gitpod.
 ---
 
 <script context="module">

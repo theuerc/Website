@@ -1,6 +1,7 @@
 ---
 section: security
 title: Security FAQ
+description: Frequently asked questions about Gitpod security.
 ---
 
 <script context="module">

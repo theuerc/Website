@@ -1,6 +1,7 @@
 ---
 section: workspaces
 title: Workspace Image
+description: Learn how to use different workspaces images available in Gitpod. The workspace image defines the base environment from which your workspaces are created. Or, you can create and use your own custom workspace images.
 ---
 
 <script context="module">

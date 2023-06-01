@@ -1,6 +1,7 @@
 ---
 section: workspaces
 title: Ports
+description: Gitpod supports exposing HTTP ports via a custom domain that is associated with your workspace. You can also use port forwarding, so that you do not need to update your application if it already references the localhost hostname.
 ---
 
 <script context="module">

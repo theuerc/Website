@@ -1,6 +1,7 @@
 ---
 section: projects
 title: Environment Variables
+description: Learn how to set and use environment variables for your Gitpod projects.
 ---
 
 <script context="module">

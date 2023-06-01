@@ -1,6 +1,7 @@
 ---
 section: projects
 title: Last Successful Prebuild
+description: Learn about last successful prebuild in Gitpod which reuses older prebuilds to create new ones faster.
 ---
 
 <script context="module">

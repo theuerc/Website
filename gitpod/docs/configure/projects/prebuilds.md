@@ -1,24 +1,12 @@
 ---
 section: projects
 title: Gitpod Prebuilds
+description: Learn how to configure prebuilds for your Gitpod projects. Prebuilds reduce wait time,by installing dependencies or running builds before you start a new workspace.
 ---
 
 <script context="module">
   export const prerender = true;
 </script>
-
-<script lang="ts">
-  import OpenGraph from "$lib/components/open-graph.svelte";
-</script>
-
-<OpenGraph
-data={{
-    description:
-      "Learn how to configure prebuilds for your Gitpod projects.",
-    title: "Gitpod Prebuilds",
-    keywords: "prebuilds, Gitpod, faster workspace start, faster workspace init, faster workspace creation",
-  }}
-/>
 
 # Prebuilds
 

@@ -1,6 +1,7 @@
 ---
 section: authentication
 title: GitHub
+description: You can integrate any public or private repository on GitHub with Gitpod.
 ---
 
 <script context="module">

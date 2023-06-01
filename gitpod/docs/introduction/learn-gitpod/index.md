@@ -1,6 +1,7 @@
 ---
 section: learn-gitpod
 title: Learn Gitpod
+description: Learn how to use Gitpod for your development workflows, including tips and best practices.
 ---
 
 <script context="module">

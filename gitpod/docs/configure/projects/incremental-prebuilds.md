@@ -1,6 +1,7 @@
 ---
 section: projects
 title: Incremental Prebuilds
+description: Learn about incremental prebuilds in Gitpod which reuses older prebuilds to create new ones faster.
 ---
 
 <script context="module">

@@ -1,6 +1,7 @@
 ---
 section: billing
 title: Billing
+description: Learn how Gitpod charges for usage and manages your organization's billing.
 ---
 
 <script context="module">

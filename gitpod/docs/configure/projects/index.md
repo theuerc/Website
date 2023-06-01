@@ -1,6 +1,7 @@
 ---
 section: projects
 title: Projects
+description: Learn how to manage projects in your organization. Also learn about project roles and permissions. It allows configuring settings like environment variables and prebuilds for repositories in your organization.
 ---
 
 <script context="module">

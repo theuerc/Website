@@ -1,6 +1,7 @@
 ---
 section:
 title: Configure Gitpod
+description: Learn how to configure Gitpod workspaces and projects to customize your development environment.
 ---
 
 <script context="module">

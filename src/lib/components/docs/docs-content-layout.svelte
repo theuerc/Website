@@ -29,9 +29,9 @@
 
 <OpenGraph
   data={{
-    title: title ? title : "Gitpod Documentation",
+    title: title ? `${title} - Gitpod Docs` : "Gitpod Documentation",
     description: description
-      ? description
+      ? `Gitpod Documentation: ${description}`
       : "Explore the documentation to learn more about Gitpod",
   }}
 />

@@ -1,6 +1,7 @@
 ---
 section: help/contribute
 title: Contribute Content
+description: Guidance for contributing content that helps others learn and adopt Gitpod. Share your tips, tricks, experiences and project use cases through blog posts, videos and presentations.
 ---
 
 <script context="module">

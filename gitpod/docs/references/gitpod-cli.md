@@ -1,6 +1,7 @@
 ---
 section: gp-cli
 title: Gitpod CLI
+description: Learn about the Gitpod CLI, a CLI tool used inside Gitpod workspaces. Also, learn about how you can use it to manage your workspaces and smooth your developer experience.
 ---
 
 <script context="module">

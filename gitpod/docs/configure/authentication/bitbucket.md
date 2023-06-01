@@ -1,6 +1,7 @@
 ---
 section: authentication
 title: Bitbucket
+description: You can integrate any public or private repository on Bitbucket with Gitpod.
 ---
 
 <script context="module">

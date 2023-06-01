@@ -1,6 +1,7 @@
 ---
 section: user-settings
 title: Dotfiles
+description: Learn how to configure Gitpod to use your own dotfiles for all your workspaces and how to write a custom installation script according to your personal preferences.
 ---
 
 <script context="module">

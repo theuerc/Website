@@ -1,6 +1,7 @@
 ---
 section: authentication
 title: GitHub Enterprise
+description: You can integrate any public or private repository on GitHub Enterprise with Gitpod.
 ---
 
 <script context="module">

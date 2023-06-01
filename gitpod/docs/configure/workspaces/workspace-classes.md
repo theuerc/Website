@@ -1,6 +1,7 @@
 ---
 section: workspaces
 title: Workspace classes
+description: Learn about the available workspace classes in Gitpod and how to configure your workspaces to use them. You can choose between standard or large workspace classes.
 ---
 
 <script context="module">

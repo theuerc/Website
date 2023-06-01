@@ -1,6 +1,7 @@
 ---
 section: workspaces
 title: Workspaces
+description: Learn how to configure and manage workspaces in Gitpod. Workspaces are ephemeral development environments that are created on demand and can be shared with others to collaborate.
 ---
 
 <script context="module">

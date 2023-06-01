@@ -1,6 +1,7 @@
 ---
 section: user-settings
 title: Access Tokens
+description: Access Tokens are secrets that allow you to interact with Gitpod through Gitpod APIs.
 ---
 
 <script context="module">

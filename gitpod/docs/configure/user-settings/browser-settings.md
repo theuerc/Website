@@ -1,6 +1,7 @@
 ---
 section: user-settings
 title: Browser settings
+description: Learn how to configure browser settings for an optimal Gitpod experience on Browser.
 ---
 
 <script context="module">

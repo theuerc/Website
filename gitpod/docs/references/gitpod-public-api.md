@@ -1,6 +1,7 @@
 ---
 section: gitpod-public-api
 title: Gitpod public API
+description: Learn about Gitpod API and how to use it. The Gitpod public API grants direct access to Gitpod data for integration into 3rd party applications. It is in Alpha release right now.
 ---
 
 <script lang="ts">
