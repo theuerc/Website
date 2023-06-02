@@ -126,7 +126,16 @@ export const post: RequestHandler = async ({ request }) => {
             body: { message: "Please include url and path in props" },
             status: 400,
           };
-        if (!body.props.url.startsWith("https://www.gitpod.io")) {
+        // If application is not running in Dev Mode and URL is not from gitpod.io then return error and also return error if url doesnt contains gitpod-kumquat.netlify.app
+        if (
+          !import.meta.env.DEV /* For Dev mode */ &&
+          !body.props.url.startsWith(
+            "https://www.gitpod.io"
+          ) /* For Production */ &&
+          !body.props.url.includes(
+            "gitpod-kumquat.netlify.app"
+          ) /* For Staging */
+        ) {
           return {
             body: { message: "Invalid URL provided" },
             status: 400,
