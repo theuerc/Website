@@ -39,6 +39,9 @@ const config = {
   preview: {
     port: 3000,
   },
+  define: {
+    "process.env.SEGMENT_KEY": JSON.stringify(process.env.SEGMENT_KEY),
+  },
 };
 
 export default config;
