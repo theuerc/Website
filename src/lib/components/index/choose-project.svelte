@@ -119,7 +119,7 @@
     display: none;
   }
 
-  @media (min-width: 683px) {
+  @media (min-width: 1058px) {
     .desktop {
       display: initial;
     }
