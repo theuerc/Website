@@ -35,8 +35,8 @@ The default Gitpod workspace image default is [workspace-full](https://github.co
 
 Along with other languages and tools, this base image includes:
 
-- [Node.js](https://nodejs.org/en/) `v16.18.1` (`node -v`)
-- [Node Package Manager - npm](https://www.npmjs.com/) `v8.19.2` (`npm -v`)
+- [Node.js](https://nodejs.org/en/) `v18.16.0` (`node -v`)
+- [Node Package Manager - npm](https://www.npmjs.com/) `9.5.1` (`npm -v`)
 - [Node Version Manager - nvm](https://nvm.sh) `0.39.0` (`nvm -v`)
 
 > **Note:** We discuss how to set up a [custom base image](/docs/introduction/languages/javascript#setting-up-a-custom-dockerfile) later in the guide.
