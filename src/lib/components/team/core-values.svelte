@@ -19,7 +19,7 @@
     >
     <div class="grid grid-cols-1 md:grid-cols-2 max-w-3xl gap-micro">
       {#each coreValues as card}
-        <Card {card} />
+        <Card {card} textAlign="left" />
       {/each}
     </div>
   </div>
