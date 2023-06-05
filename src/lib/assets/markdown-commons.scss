@@ -68,6 +68,10 @@
     @apply border-l border-solid border-divider;
   }
 
+  th {
+    line-height: 1.5rem;
+  }
+
   tr + tr {
     @apply border-t border-solid border-divider;
   }
