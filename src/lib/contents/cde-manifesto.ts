@@ -2,6 +2,7 @@ import type {
   ManifestoBenefit,
   ManifestoListItem,
 } from "$lib/types/cloud-dev-environments";
+import type { FeatureTitle } from "$lib/types/feature-title";
 import type { Testimonial } from "../types/testimonial";
 
 export const ManifestoItems: ManifestoListItem[] = [
@@ -107,5 +108,24 @@ export const Quotes = [
     text: "It works on my machine but not on anyone else's. Why is it so difficult to share and collaborate on my projects?",
     img: "/images/avatars/bob.png",
     alt: "portrait of fictional character Bob",
+  },
+];
+
+export const featureTitles: FeatureTitle[] = [
+  {
+    main: "Equitable",
+    sub: "Lowers the barrier to software development.",
+  },
+  {
+    main: "On-demand",
+    sub: "Instantly available and seemingly infinite. ",
+  },
+  {
+    main: "Extensible",
+    sub: "Modular and powerful enough for any use case. ",
+  },
+  {
+    main: "Consistent",
+    sub: "Reproducible and controllable environments.",
   },
 ];

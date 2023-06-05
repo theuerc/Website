@@ -4,6 +4,7 @@
 
   export let featureTitle: FeatureTitleProps;
   export let featureTitlePadding: string;
+  export let customTitle: boolean;
   const { main, sub, third, swap, showLeftKumquat, showRightKumquat } =
     featureTitle;
 </script>
@@ -26,21 +27,42 @@
       class="absolute hidden -z-10 md:block top-[110px] lgx:top-[82px] right-[-60px] lgx:right-[-112px] h-16 lgx:h-32 lgx:w-36"
     />
   {/if}
-  <h2 class="h2 !mb-0">
-    <div class={swap ? "text-medium font-normal text-body" : ""}>
-      {main}
-    </div>
-    <div
-      class="{!swap
-        ? 'text-medium font-normal text-body'
-        : ''} mt-macro sm:mt-micro"
-    >
-      {sub}
-    </div>
-    {#if third}
-      <div class="text-medium font-normal text-body">
-        {third}
+  <!-- This is being used on /CDE -->
+  {#if customTitle}
+    <div class="h4 font-bold text-important !mb-0 text-left">
+      <div class={swap ? "text-base font-normal text-body" : ""}>
+        {main}
       </div>
-    {/if}
-  </h2>
+      <div
+        class="{!swap
+          ? 'text-base font-normal text-body'
+          : ''} mt-macro sm:mt-micro"
+      >
+        {sub}
+      </div>
+      {#if third}
+        <div class="text-base font-normal text-body">
+          {third}
+        </div>
+      {/if}
+    </div>
+  {:else}
+    <h2 class="h2 !mb-0">
+      <div class={swap ? "text-medium font-normal text-body" : ""}>
+        {main}
+      </div>
+      <div
+        class="{!swap
+          ? 'text-medium font-normal text-body'
+          : ''} mt-macro sm:mt-micro"
+      >
+        {sub}
+      </div>
+      {#if third}
+        <div class="text-medium font-normal text-body">
+          {third}
+        </div>
+      {/if}
+    </h2>
+  {/if}
 </Card>

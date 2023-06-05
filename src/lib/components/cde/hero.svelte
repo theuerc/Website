@@ -1,71 +1,56 @@
 <script lang="ts">
   import Section from "$lib/components/section.svelte";
   import LinkButton from "$lib/components/ui-library/link-button";
-  import ButtonsWrapper from "$lib/components/buttons-wrapper.svelte";
-
-  type Link = {
-    text: string;
-    href: string;
-    onClickHandler?: () => void;
-  };
-
-  export let subtitle: string = "";
-  export let title: string;
-  export let text: string;
-  export let image: {
-    src: string;
-    alt: string;
-    darkSrc?: string;
-  };
-  export let btnPrimary: Link;
-  export let btnSecondary: Link = null;
-  const { src, alt, darkSrc } = image;
 </script>
 
-<Section class="flex items-center justify-between text-left">
-  <div class="text-box mx-auto lg:mx-0 max-w-[700px]">
-    {#if subtitle}
-      <p class="h5 font-bold text-sub mb-xx-small">{subtitle}</p>
-    {/if}
-    <h1 class="h1 !mb-micro md:!mb-xx-small">{title}</h1>
-    <p class="mx-0 max-w-lg text-large mb-x-small">
-      {text}
-    </p>
-    <ButtonsWrapper class="justify-start">
-      {#if btnPrimary}
-        <LinkButton
-          size="large"
-          variant="primary"
-          href={btnPrimary.href}
-          on:click={btnPrimary.onClickHandler}
-        >
-          {btnPrimary.text}
-        </LinkButton>
-      {/if}
-      {#if btnSecondary}
-        <LinkButton
-          variant="cta"
-          size="large"
-          href={btnSecondary.href}
-          on:click={btnPrimary.onClickHandler}
-        >
-          {btnSecondary.text}
-        </LinkButton>
-      {/if}
-    </ButtonsWrapper>
+<style>
+  /* Apply below css if width screen size is greater than 960px */
+  @media (min-width: 929px) {
+    strong {
+      position: relative;
+    }
+    strong::before {
+      /* Highlight color */
+      background-color: #ffe4bc;
+      content: "";
+      position: absolute;
+      width: calc(100% + 2px);
+      height: 50%;
+      bottom: 0;
+      z-index: -1;
+    }
+    @media screen and (prefers-color-scheme: dark) {
+      strong::before {
+        height: 100%;
+        width: calc(100%);
+      }
+    }
+  }
+</style>
+
+<Section>
+  <div class="max-w-4xl mx-auto">
+    <div
+      class="text-important text-3xl md:text-5xl !leading-[3rem] md:!leading-[4rem]"
+    >
+      <strong class="md:dark:text-black md:text-important"
+        >Cloud development environments</strong
+      ><br />
+      are
+      <strong class="md:dark:text-black md:text-important"
+        >on-demand and pre-configured</strong
+      >
+      with all tools, libraries and dependencies required to be
+      <strong class="md:dark:text-black md:text-important">ready-to-code</strong
+      >.
+    </div>
+
+    <LinkButton
+      href="/contact/get-demo"
+      variant="primary"
+      size="large"
+      class="mt-5 md:mt-8 text-center"
+      >Get a demo
+    </LinkButton>
   </div>
-  <img
-    class="transform xl:-translate-y-[30%] xl:-translate-x-[20%] xl:scale-150 max-w-lg -z-10 hidden lg:block {darkSrc
-      ? 'dark:lg:hidden'
-      : ''} w-[35vw]"
-    {src}
-    {alt}
-  />
-  {#if darkSrc}
-    <img
-      class="max-w-lg -z-10 hidden dark:lg:block w-[35vw] transfrom xl:-translate-y-[30%] xl:-translate-x-[20%] xl:scale-150"
-      src={darkSrc}
-      {alt}
-    />
-  {/if}
 </Section>

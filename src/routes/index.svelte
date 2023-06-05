@@ -6,6 +6,8 @@
   import { testimonials } from "$lib/contents/home/index";
   import { features, otherFeatures } from "$lib/contents/home/features";
 
+  import Section from "$lib/components/section.svelte";
+  import LinkButton from "$lib/components/ui-library/link-button";
   import Features from "$lib/components/features.svelte";
   import ChooseProject from "$lib/components/index/choose-project.svelte";
   import Hero from "$lib/components/index/hero.svelte";
@@ -50,6 +52,29 @@
 <div id="choose-project-observer-target-bottom">
   <SectionScreenshot />
 </div>
+<Section
+  class="translate-y-6 md:translate-y-[5.5rem] items-center mx-auto w-full md:w-11/12"
+>
+  <h3 class="text-left sm:text-center text-2xl sm:text-5xl font-bold">
+    What's a cloud development environment?
+  </h3>
+  <p
+    class="text-left sm:text-center text-lg sm:text-2xl my-micro mx-auto max-w-4xl"
+  >
+    CDEs are on-demand development environments that are pre-configured with all
+    tools, libraries and dependencies needed to write and review code.
+  </p>
+  <div
+    class="text-left md:text-center m-auto mb-x-small space-x-0 md:space-x-2 space-y-2 md:space-y-0 mt-0 md:mt-8"
+  >
+    <LinkButton variant="primary" size="large" href="/cde"
+      >Learn more about CDEs</LinkButton
+    >
+    <LinkButton variant="gray" size="large" href="https://gitpod.io/workspaces"
+      >Try now</LinkButton
+    >
+  </div>
+</Section>
 <Features {features} />
 <IntegrateDontDictate class="py-small" />
 <Features features={otherFeatures} />
