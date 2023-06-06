@@ -9,10 +9,8 @@
     .highlighter {
       background-color: #ffe4bc;
     }
-    @media screen and (prefers-color-scheme: dark) {
-      .highlighter {
-        background-color: #514f4d;
-      }
+    :global(body.dark) .highlighter {
+      background-color: #514f4d;
     }
   }
 
@@ -29,22 +27,20 @@
       bottom: 0;
       z-index: -1;
     }
-    @media screen and (prefers-color-scheme: dark) {
-      .highlighter::before {
-        background-color: #514f4d;
-      }
+    :global(body.dark) .highlighter::before {
+      background-color: #514f4d;
     }
   }
 </style>
 
 <Section class="mb-xx-large md:mb-[200px]">
-  <div class="max-w-4xl mx-auto">
+  <div class="w-80 md:w-full md:max-w-4xl mx-auto">
     <div
-      class="text-important text-3xl md:text-5xl !leading-[3rem] md:!leading-[4rem]"
+      class="text-important text-2xl md:text-5xl !leading-[2.3rem] md:!leading-[4rem]"
     >
       <span class="text-important highlighter font-bold"
         >Cloud development environments</span
-      ><br />
+      > <br class="hidden md:block" />
       are
       <span class="text-important highlighter font-bold"
         >on-demand and pre-configured</span
