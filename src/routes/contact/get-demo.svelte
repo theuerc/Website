@@ -19,4 +19,4 @@
 
 <Header />
 
-<UsedBy title="Used by 900K+ developers" class="py-small" />
+<UsedBy title="Used by 1M+ developers" class="py-small" />

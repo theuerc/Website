@@ -51,7 +51,7 @@
   />
 </div>
 <div class="mt-x-large md:mt-xxx-large mb-x-large sm:mb-0">
-  <AnimatedLogos title="Securing 900K+ developers in organizations like" />
+  <AnimatedLogos title="Securing 1M+ developers in organizations like" />
 </div>
 
 <SectionFeatures

@@ -14,14 +14,14 @@
 <OpenGraph
   data={{
     description:
-      "Gitpod is secure and trusted by over 900K developers and companies that are movingtheir dev environments to the cloud.",
+      "Gitpod is secure and trusted by over 1M developers and companies that are movingtheir dev environments to the cloud.",
     title: "Security at Gitpod",
   }}
 />
 
 <Header
   title="Security at Gitpod"
-  text="Gitpod is trusted by over 900K developers and companies that are moving
+  text="Gitpod is trusted by over 1M developers and companies that are moving
   their dev environments to the cloud."
   textClassNames="text-large max-w-2xl mx-auto mb-x-small"
   tight={true}
@@ -45,7 +45,7 @@
   </div>
 </Header>
 
-<UsedBy title="Used by 900K+ developers" class="py-small" />
+<UsedBy title="Used by 1M+ developers" class="py-small" />
 <div id="program">
   <Program />
 </div>

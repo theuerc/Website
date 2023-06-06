@@ -23,7 +23,7 @@
 
 <section class="my-small lg:my-0 lg:pl-12 lgx:pl-24">
   <h2 class="h5 text-center">
-    Empowering 900k+ developers at organizations like
+    Empowering 1M+ developers at organizations like
   </h2>
   <div class="grid max-w-md mx-auto gap-x-small gap-y-8 mt-x-small">
     {#each [...brands] as brand}

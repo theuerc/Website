@@ -47,7 +47,7 @@
   />
 </div>
 <div class="mt-xxx-large mb-x-large sm:mb-0">
-  <AnimatedLogos title="Speeding up 900k+ developers at teams like" />
+  <AnimatedLogos title="Speeding up 1M+ developers at teams like" />
 </div>
 <SectionFeatures
   title="Productive teams on day one"

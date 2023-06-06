@@ -32,7 +32,7 @@
     });
   });
 
-  export let title = "Trusted by 900K+ developers";
+  export let title = "Trusted by 1M+ developers";
 </script>
 
 <style lang="postcss">
