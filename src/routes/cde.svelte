@@ -23,7 +23,6 @@
 <Hero />
 <Titles />
 <IntegrateDontDictate class="py-small" />
-<!-- Intersection observer target to trigger the strike through animation. -->
 <div id="choose-project-observer-target-top" />
 <ChooseProject />
 <div id="choose-project-observer-target-bottom">
