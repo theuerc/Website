@@ -31,6 +31,8 @@ Gitpod Public SaaS:
 | Lacework, Inc                | United States of America | Threat Detection Solution                                                |
 | StrongDM, Inc                | United States of America | Access Management Platform                                               |
 | Metabase, Inc                | United States of America | Business Analytics and Reporting Service                                 |
+| Hex Technologies, Inc        | United States of America | Data Platform for Data Science and Analytics                             |
+| Mixpanel, Inc                | United States of America | Event Analytics Service                                                  |
 
 Gitpod Dedicated:
 
