@@ -30,7 +30,7 @@ You can start a workspace with VS Code Desktop directly from [Gitpod Dashboard](
 ### Open VS Code Desktop from VS Code Browser
 
 1. Start a new Gitpod workspace
-2. Open the command palette (<Keybind>CtrlCmd + Shift + P</Keybind>)
+2. Open the command palette (<Keybind>F1</Keybind> or <Keybind>CtrlCmd + Shift + P</Keybind>)
 3. Type "Open in VS Code" and hit <Keybind>Enter</Keybind>
 
 You will now be redirected to VS Code Desktop.
