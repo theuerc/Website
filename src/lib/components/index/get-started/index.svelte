@@ -31,7 +31,7 @@
       class="p-xx-small sm:py-small basis-[50%] sm:px-x-small xl:p-medium text-center"
       size="small"
     >
-      <LinkGitRepository />
+      <LinkGitRepository {exampleFlagValue} />
     </Card>
 
     {#if exampleFlagValue}
