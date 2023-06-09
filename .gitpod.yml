@@ -22,7 +22,7 @@ tasks:
     init: npm install
     command: |
       cp .env.example .env
-      npm run dev 
+      npm run dev
   - name: Forward Cypress Base URL
     command: |
       export CYPRESS_BASE_URL=$(gp url 3000)

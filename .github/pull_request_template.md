@@ -26,7 +26,7 @@ Fixes #
 - [ ] Check all buttons and calls-to-action to ensure they are leading to the correct pages
 - [ ] Ensure that the website is mobile responsive and functions properly on different devices
 - [ ] Ensure that page is optimal for Light/Dark Mode. ⇒ Text/Media Changes
-  
+
 
 ## [Priority: High] Content Testing
 
