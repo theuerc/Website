@@ -87,7 +87,7 @@
       </Section>
       <Section title="Solutions">
         <li>
-          <FooterLink href="/solutions/collaboration">Collaboration</FooterLink>
+          <FooterLink href="/solutions/developers">Developers</FooterLink>
         </li>
         <li>
           <FooterLink href="/solutions/onboarding">Onboarding</FooterLink>

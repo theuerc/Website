@@ -3,6 +3,7 @@
   import Section from "../section.svelte";
   let clazz = "";
   export { clazz as class };
+  export let title = "Integrate with your existing development infrastructure";
 </script>
 
 <style lang="postcss">
@@ -29,7 +30,7 @@
 <Card size="medium" class="m-auto shadow-highlight w-11/12 md:w-10/12">
   <Section class="text-center {clazz}" {...$$restProps}>
     <h2 class="text-2xl sm:text-[32px] text-center sm:text-left sm:ml-16 mb-4">
-      Integrate with your existing development infrastructure
+      {title}
     </h2>
     <div
       class="flex flex-wrap items-center mx-auto justify-evenly mb-6 ml-6 mr-6"

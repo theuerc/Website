@@ -3,7 +3,7 @@
 </script>
 
 <script lang="ts">
-  import { platformTeamsFeatures } from "$lib/contents/home/features";
+  import { developersFeatures } from "$lib/contents/home/features";
   import { testimonials } from "$lib/contents/home/index";
   import Testimonials from "$lib/components/index/testimonials.svelte";
   import SectionFeatures from "$lib/components/section-features.svelte";
@@ -18,10 +18,10 @@
 <OpenGraph
   data={{
     description:
-      "Learn how the most productive platform teams use cloud development environments with Gitpod",
-    title: "Solution: How CDEs help platform teams - Gitpod",
+      "Learn how cloud development environments can help developers work more efficiently with Gitpod",
+    title: "Solution: How CDEs help developers - Gitpod",
     keywords:
-      "cloud development environment, cde, remote development, developer experience, automation, platform teams, secure developer environment",
+      "cloud development environment, cde, remote development, developer experience, automation, developers, secure developer environment",
   }}
 />
 
@@ -30,35 +30,37 @@
     class="items-center justify-between max-w-7xl py-micro md:py-xx-large mx-auto my-macro"
   >
     <h2 class="h1 !mb-micro md:!mb-x-small max-w-2xl">
-      Automate and secure development platforms
+      Extensible and fast, development.
     </h2>
-    <p class="text-large max-w-xl mb-xx-small">
-      Gitpod CDEs provide platform teams ways to easily manage configuration and
-      extend security policies from a single source of truth.
+    <p class="text-large max-w-md mb-xx-small">
+      Develop quickly, and more securely, regardless of task.
     </p>
   </div>
   <Quote
-    quote="Gitpod reduces developer downtime to nearly zero. We  modernize our development environment and increase internal developer satisfaction by 45%.&nbsp;"
+    quote="With Gitpod, I can review any PR in a coding environment where I can edit, build and test the contribution, by just prepending <span class='text-dark-grey inline-block px-micro mt-macro bg-tertiary rounded-xl justify-center text-lg font-normal'><code>gitpod.io/#</code></span>"
     author={{
-      name: "Roger Goldfinger",
-      jobTitle: "Senior Staff Software Engineer at Quizlet",
+      name: "Johannes Schickling",
+      jobTitle: "Co-founder at Prisma",
     }}
-    svgClazz="h-10 w-32"
+    svgClazz="h-20 w-20"
   />
 </div>
 <div class="mt-xx-large sm:mt-xxx-large mb-xx-large sm:mb-0">
-  <AnimatedLogos title="Securing up 1M+ developers at organizations like" />
+  <AnimatedLogos title="Empowering 1M+ developers" />
 </div>
 <SectionFeatures
-  title="Empowering the most productive teams"
-  features={platformTeamsFeatures}
+  title="More time building, less time troubleshooting"
+  features={developersFeatures}
 />
 
-<IntegrateDontDictate class="py-small" />
+<IntegrateDontDictate
+  class="py-small"
+  title="Customize your development experience"
+/>
 
 <Section>
   <Testimonials
-    title="Trusted by the most secure software teams"
+    title="Empowering the most productive developers"
     class="-mb-20"
     {testimonials}
   />

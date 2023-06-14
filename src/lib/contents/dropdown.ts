@@ -9,8 +9,8 @@ export const resourcesLinks: {
     description: "Quickly become ready-to-code.",
   },
   {
-    text: "Collaboration",
-    href: "/solutions/collaboration",
+    text: "Developers",
+    href: "/solutions/developers",
     description: "Spend more time building product.",
   },
   {

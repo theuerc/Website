@@ -31,7 +31,7 @@ export const worksOnAnyMachineFeature: Feature = {
   previewComponent: Workspaces,
   moreButton: {
     text: "Improve collaboration",
-    href: "/solutions/collaboration",
+    href: "/solutions/developers",
   },
 };
 
@@ -194,48 +194,6 @@ export const devsDontCareAboutMachines: Feature = {
 export const dedicatedFeatures: Feature[] = [
   maximizeControl,
   devsDontCareAboutMachines,
-];
-
-/**Collaboration Features,
- * Using on /solutions/collaboration page
- *
- */
-
-export const parallelDevelopment: Feature = {
-  title: "A new workspace with a single click",
-  paragraph:
-    "Multiple ephemeral workspaces. Enable anyone on your team to work on fixing bugs, implementing features, reviewing pull request, all at the same time.",
-  lottie: {
-    src: "/lottie/edit_workspace.json",
-    id: "edit_workspace",
-  },
-};
-
-export const teamsCodeTogether: Feature = {
-  title: "Share workspaces in realtime",
-  paragraph:
-    "Collaborate on tasks without making changes to your dev environment. Share running workspaces for pair programming, use port forwarding or share a snapshot as a copy of your workspace with teammates.",
-  lottie: {
-    src: "/lottie/share_workspace.json",
-    id: "share-workspace",
-  },
-};
-
-export const worksOnAnyMachineFeatureForCollaboration: Feature = {
-  title: `Works on <t style="text-decoration-line: line-through; color: #999795;">my</t> any machine`,
-  paragraph: `No more "works on my machine" issues.</br></br> Gitpod creates an identical developer experience for everyone, on every machine.`,
-  image: {
-    src: "/images/features/works-on-any-machine.webp",
-    alt: "Works on any machine",
-    width: "100%",
-    height: "100%",
-  },
-};
-
-export const collaborationFeatures: Feature[] = [
-  parallelDevelopment,
-  teamsCodeTogether,
-  worksOnAnyMachineFeatureForCollaboration,
 ];
 
 /**Onboarding Features,
@@ -455,7 +413,7 @@ export const increasedProductivityFeatures: Feature[] = [
 ];
 
 /**Platform Teams Features,
- * Using on /for/platform-teams
+ * Using on /solutions/platform-teams
  *
  */
 
@@ -505,4 +463,56 @@ export const platformTeamsFeatures: Feature[] = [
   noBrokenDevEnvironments,
   efficientForLargeApplications,
   mitigateExfiltrationRisk,
+];
+
+/**Developers Solutions Page Features,
+ * Using on /solutions/developers
+ *
+ */
+
+export const onboardInMinutes: Feature = {
+  title: "Onboard in minutes, anywhere",
+  paragraph:
+    "With a single click, developers can spin up perfectly configured environments and start coding immediately, no matter where they're located.",
+  lottie: {
+    src: "/lottie/edit_workspace.json",
+    id: "edit_workspace",
+  },
+};
+
+export const onDemandGlobally: Feature = {
+  title: "On-demand, globally",
+  paragraph:
+    "Accessible from anywhere, Gitpod CDE’s spin-up in seconds, with the same configuration as your teammate across the world, no matter the device your on.",
+  image: {
+    src: "/images/features/multiple-workspaces.webp",
+    darkSrc: "/images/features/multiple-workspaces-dark.webp",
+    alt: "Multiple workspaces",
+    width: "85%",
+    height: "75%",
+  },
+};
+
+export const whereTeamsCodeTogether: Feature = {
+  title: "Where teams code together",
+  paragraph:
+    "Collaborate on tasks without making changes to your dev environment. Share running workspaces for pair programming, use port forwarding or share a snapshot as a copy of your workspace with teammates.",
+  lottie: {
+    src: "/lottie/share_workspace.json",
+    id: "share-workspace",
+  },
+};
+
+export const worksOnAnyMachineDeveloperFeature: Feature = {
+  title: `Works on <t style="text-decoration-line: line-through; color: #999795;">my</t> any machine`,
+  paragraph:
+    "CDEs enable developers to work with the same tools, libraries, and dependencies, regardless of operating system, device or IDE they use.",
+  previewComponent: Workspaces,
+};
+
+export const developersFeatures: Feature[] = [
+  onboardInMinutes,
+  onDemandGlobally,
+  whereTeamsCodeTogether,
+  worksOnAnyMachineDeveloperFeature,
 ];
