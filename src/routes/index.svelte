@@ -79,7 +79,7 @@
 <IntegrateDontDictate class="py-small" />
 <Features features={otherFeatures} />
 <Testimonials
-  title="Empowering the most productive teams"
+  title="Trusted by the most secure software teams"
   class="-mb-20"
   {testimonials}
 />

@@ -453,3 +453,56 @@ export const increasedProductivityFeatures: Feature[] = [
   collaborationMadeEasierForProductivity,
   previewWorkspacesAcrossTeams,
 ];
+
+/**Platform Teams Features,
+ * Using on /for/platform-teams
+ *
+ */
+
+export const centralConfigSecretsManagement: Feature = {
+  title: "Central config and secrets management",
+  paragraph:
+    "Platform teams can enforce organizational security policies within CDEs. Manage and share dev environment configurations and secrets data from one place.",
+  image: {
+    src: "/images/features/cloud-automation.webp",
+    darkSrc: "/images/features/cloud-automation-dark.webp",
+    alt: "All your data secured",
+    width: "60%",
+  },
+};
+
+export const noBrokenDevEnvironments: Feature = {
+  title: "No more broken environments",
+  paragraph:
+    "From homegrown remote development environments to VDIs, they all have custom configs and are difficult to manage. Gitpod CDEs can spin up in seconds, with the same config as a develop across the world.",
+  previewComponent: Workspaces,
+};
+
+export const efficientForLargeApplications: Feature = {
+  title: "Efficient for even the largest applications",
+  paragraph:
+    "Gitpod CDEs are available on-demand, when you need them and spun-down when you don’t. They’re powerful enough to handle any size application without draining your resources.",
+  terminal: {
+    source: terminalSource,
+  },
+};
+
+export const mitigateExfiltrationRisk: Feature = {
+  title: "Mitigate exfiltration risk",
+  paragraph:
+    "Source code is stored in the cloud, reducing the risk of external actors compromising your codebase and kept away from difficult to control laptops.",
+  image: {
+    src: "/images/features/encoded-data.webp",
+    darkSrc: "/images/features/encoded-data-dark.webp",
+    alt: "Secure data movement",
+    width: "90%",
+    height: "90%",
+  },
+};
+
+export const platformTeamsFeatures: Feature[] = [
+  centralConfigSecretsManagement,
+  noBrokenDevEnvironments,
+  efficientForLargeApplications,
+  mitigateExfiltrationRisk,
+];

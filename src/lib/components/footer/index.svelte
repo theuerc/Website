@@ -93,13 +93,18 @@
           <FooterLink href="/solutions/onboarding">Onboarding</FooterLink>
         </li>
         <li>
-          <FooterLink href="/solutions/supply-chain-security"
-            >Supply chain security</FooterLink
+          <FooterLink href="/solutions/platform-teams"
+            >Platform teams</FooterLink
           >
         </li>
         <li>
           <FooterLink href="/solutions/increased-productivity"
             >Productivity</FooterLink
+          >
+        </li>
+        <li>
+          <FooterLink href="/solutions/supply-chain-security"
+            >Supply chain security</FooterLink
           >
         </li>
       </Section>
