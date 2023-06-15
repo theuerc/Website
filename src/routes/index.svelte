@@ -43,6 +43,10 @@
   <link rel="preload" as="image" href="/images/index/vim.webp" />
   <link rel="preload" as="image" href="/images/index/webstorm.webp" />
   <link rel="preload" as="image" href="/images/index/rider.webp" />
+
+  <!-- Preload Top Most (Hero) Images -->
+  <link rel="preload" as="image" href="/images/illustration-large.webp" />
+  <link rel="preload" as="image" href="/images/illustrattion-large-dark.webp" />
 </svelte:head>
 
 <Hero />
