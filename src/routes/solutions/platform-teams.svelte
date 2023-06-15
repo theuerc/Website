@@ -30,7 +30,7 @@
     class="items-center justify-between max-w-7xl py-micro md:py-xx-large mx-auto my-macro"
   >
     <h2 class="h1 !mb-micro md:!mb-x-small max-w-2xl">
-      Automate and secure development platforms
+      Secure and automated development platforms
     </h2>
     <p class="text-large max-w-xl mb-xx-small">
       Gitpod CDEs provide platform teams ways to easily manage configuration and
@@ -47,7 +47,7 @@
   />
 </div>
 <div class="mt-xx-large sm:mt-xxx-large mb-xx-large sm:mb-0">
-  <AnimatedLogos title="Securing up 1M+ developers at organizations like" />
+  <AnimatedLogos title="Securing 1M+ developers at organizations like" />
 </div>
 <SectionFeatures
   title="Empowering the most productive teams"

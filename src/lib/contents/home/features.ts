@@ -432,7 +432,7 @@ export const centralConfigSecretsManagement: Feature = {
 export const noBrokenDevEnvironments: Feature = {
   title: "No more broken environments",
   paragraph:
-    "From homegrown remote development environments to VDIs, they all have custom configs and are difficult to manage. Gitpod CDEs can spin up in seconds, with the same config as a develop across the world.",
+    "From homegrown remote development environments to VDIs, they all have custom configs and are difficult to manage. Gitpod CDEs can spin up in seconds, with the same config as a developer across the world.",
   previewComponent: Workspaces,
 };
 
@@ -483,7 +483,7 @@ export const onboardInMinutes: Feature = {
 export const onDemandGlobally: Feature = {
   title: "On-demand, globally",
   paragraph:
-    "Accessible from anywhere, Gitpod CDE’s spin-up in seconds, with the same configuration as your teammate across the world, no matter the device your on.",
+    "Accessible from anywhere, Gitpod CDE's spin-up in seconds with the same configuration as your teammate across the world, no matter the device your on.",
   image: {
     src: "/images/features/multiple-workspaces.webp",
     darkSrc: "/images/features/multiple-workspaces-dark.webp",
