@@ -33,3 +33,15 @@ export const getFeatureFlag = (
   // return the default value until the feature flag value is fetched
   return defaultValue;
 };
+
+/* The getStartedExampleFlagStatusValue variable stores & exports the value of the home_example_launch_workspaces_card feature flag.
+ * The getFeatureFlag() function retrieves the value of the specified feature flag.
+ * The feature flag is set to false by default, but is overridden by the value of the feature flag stored in local storage.
+ * The value of the feature flag is also set to the value of the exampleFlagValue variable.
+ */
+
+export let getStartedExampleFlagStatusValue = getFeatureFlag(
+  "home_example_launch_workspaces_card",
+  false,
+  async (value) => (getStartedExampleFlagStatusValue = value)
+);

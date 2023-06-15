@@ -6,6 +6,7 @@ import type { AnalyticsPayload, PageProps } from "$lib/types/analytics";
 const writeKey = process.env.SEGMENT_KEY || "";
 
 const allowedEvents = [
+  "component_loaded",
   "email_submitted",
   "extension_installed",
   "extension_uninstalled",
