@@ -29,10 +29,7 @@ export const post: RequestHandler = async ({ request }) => {
   }
   const agent = request.headers.get("user-agent") || "";
 
-  const date = new Date();
-  const today = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`;
-
-  const toHashString = ip + agent + today;
+  const toHashString = ip + agent;
 
   const hash = await generateHash(toHashString);
 
