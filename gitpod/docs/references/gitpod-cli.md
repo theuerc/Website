@@ -62,7 +62,7 @@ gp init -i
 
 > The `gp validate` command is currently in [Beta](/docs/help/public-roadmap/release-cycle) · [Send feedback](https://github.com/gitpod-io/gitpod/issues/7671).
 
-Validates the workspace configuration in `.gitpod.yml` and workspace images.
+Learn more about [gp validate](/docs/configure/workspaces#validate-your-gitpod-configuration) in the docs.
 
 ```sh
 gp validate
