@@ -516,3 +516,76 @@ export const developersFeatures: Feature[] = [
   whereTeamsCodeTogether,
   worksOnAnyMachineDeveloperFeature,
 ];
+
+/**Dedicated Page Features,
+ * Using on /dedicated
+ *
+ */
+
+export const enterpriseReady: Feature = {
+  title: "Enterprise-ready",
+  paragraph:
+    "SSO, custom SLAs and dedicated support experts with help you scale Cloud Development Environments for your organization.",
+  lottie: {
+    src: "/lottie/edit_workspace.json",
+    id: "edit_workspace",
+  },
+};
+
+export const limitedOverHead: Feature = {
+  title: "Limited overhead",
+  paragraph:
+    "Faster startup times and lower latency with dedicated resources exclusively available for your organization.",
+  terminal: {
+    source: terminalSource,
+  },
+};
+
+export const enhancedSecurity: Feature = {
+  title: "Enhanced security",
+  paragraph:
+    "Isolated, single-tenant installations ensure source code, dependencies and dev environments are private and protected.",
+  image: {
+    src: "/images/features/encoded-data.webp",
+    darkSrc: "/images/features/encoded-data-dark.webp",
+    alt: "Secure data movement",
+    width: "90%",
+    height: "90%",
+  },
+};
+
+export const privateResourceAccess: Feature = {
+  title: "Private resource access",
+  paragraph:
+    "Running within your VPC enables access to resources that aren’t exposed to the internet.",
+  terminal: {
+    source: linuxSource,
+    dark: true,
+    shadow: false,
+    narrow: true,
+    skipToEnd: true,
+  },
+};
+export const compliantDataMovement: Feature = {
+  title: "Compliant data movement",
+  paragraph:
+    "Gitpod is GDPR compliant, SOC 2 Type II compliant and provides clients with Data Processing Agreements (DPA) incorporating the Standard Contractual Clauses (SCC) for International Data Transfers.",
+  image: {
+    src: "/images/features/secure-data.webp",
+    darkSrc: "/images/features/secure-data-dark.webp",
+    alt: "Secure data movement",
+    width: "50%",
+  },
+  moreButton: {
+    href: "https://app.safebase.io/portal/71ccd717-aa2d-4a1e-942e-c768d37e9e0c/preview?product=default",
+    text: "View trust center",
+  },
+};
+
+export const dedicatedPageFeatures: Feature[] = [
+  enhancedSecurity,
+  limitedOverHead,
+  privateResourceAccess,
+  enterpriseReady,
+  compliantDataMovement,
+];
