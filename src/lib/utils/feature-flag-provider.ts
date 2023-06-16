@@ -40,8 +40,10 @@ export const getFeatureFlag = (
  * The value of the feature flag is also set to the value of the exampleFlagValue variable.
  */
 
-export let getStartedExampleFlagStatusValue = getFeatureFlag(
+// See Example on https://github.com/gitpod-io/website/blob/3f0a826def808e8c3ad7214ef581d90d5ebf2b6f/src/lib/components/index/get-started/index.svelte#L6
+
+/* export let getStartedExampleFlagStatusValue = getFeatureFlag(
   "home_example_launch_workspaces_card",
   false,
   async (value) => (getStartedExampleFlagStatusValue = value)
-);
+); */
