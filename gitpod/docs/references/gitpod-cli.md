@@ -318,6 +318,22 @@ Here's an example which will make port `3000` private:
 gp ports visibility 3000:private
 ```
 
+### protocol
+
+By default ports running in the workspace are assumed to be HTTP. You can dynamically configure (without a workspace restart) a port to use HTTPS with the `gp ports protocol` command.
+
+For example, to convert port `3000` to `https`:
+
+```sh
+gp ports protocol 3000:https
+```
+
+For example, to convert port `3000` to `http`:
+
+```sh
+gp ports protocol 3000:http
+```
+
 ## top
 
 Displays the current workspace's class info along with the used and available CPU and memory.
