@@ -1,7 +1,7 @@
 ---
 author: Siddhant-K-code, burningion, pawlean
 date: 19 June 2023 00:00:00 UTC
-excerpt: Sourcegraph Cody, a cutting-edge code intelligence tool, and Gitpod, come together to provide developers with a seamless and highly efficient coding experience. By integrating Sourcegraph Cody into Gitpod, developers can unlock many intelligent code completion features, advanced code search capabilities, and context-specific suggestions, all within their development environment.
+excerpt: Sourcegraph Cody, a cutting-edge AI coding assistant, and Gitpod, come together to provide developers with a seamless and highly efficient coding experience. By integrating Sourcegraph Cody into Gitpod, developers can unlock many intelligent code completion features, advanced code search capabilities, and context-specific suggestions, all within their development environment.
 slug: boosting-developer-productivity-unleashing-the-power-of-sourcegraph-cody-in-gitpod
 tags: ["Engineering", "Developer experience"]
 image: teaser.webp
