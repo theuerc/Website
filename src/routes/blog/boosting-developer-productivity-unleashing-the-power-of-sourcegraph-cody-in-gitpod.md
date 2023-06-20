@@ -15,7 +15,7 @@ title: "Boosting Developer Productivity: Unleashing the Power of Sourcegraph Cod
 
 ## Understanding Sourcegraph Cody:
 
-Sourcegraph Cody is an Open Source LLM enhanced code navigation and search tool that leverages the power of Sourcegraph's code intelligence capabilities. It provides developers with a comprehensive overview of their codebase, enabling them to navigate and explore code seamlessly. With its advanced search functionality, developers can find references, definitions, and usages of symbols across the entire codebase. Cody also offers rich contextual information, such as documentation, examples, and usage patterns, empowering developers to comprehend code quickly and effectively.
+Sourcegraph Cody is an open source LLM-enhanced AI coding assistant that leverages the power of Sourcegraph's code intelligence capabilities. It provides developers with a comprehensive overview of their codebase, enabling them to navigate and explore code seamlessly. With its advanced search functionality, developers can find references, definitions, and usages of symbols across the entire codebase. Cody also offers rich contextual information, such as documentation, examples, and usage patterns, empowering developers to comprehend code quickly and effectively.
 
 ## The Power of Integration:
 
@@ -81,7 +81,7 @@ Once it returned the files suggested, I wanted to know more about specific funct
 
 <figure>
 <img class="shadow-medium w-full rounded-lg mt-x-small" alt="Sourcegraph Cody Result for Explain Selected code" src="/images/blog/boosting-developer-productivity-unleashing-the-power-of-sourcegraph-cody-in-gitpod/explain-code.webp">
-    <figcaption>Selected chunk of code with Cody Recipe of "Explain selected code (high level)"</figcaption>
+    <figcaption>Selected chunk of code with Cody's Recipe of "Explain selected code (high level)"</figcaption>
 </figure>
 
 ### Get Contextual Documentation for Codebase 📑
@@ -90,7 +90,7 @@ There are hardly any docs in this particular code file, as engineers I'm sure we
 
 <figure>
 <img class="shadow-medium w-full rounded-lg mt-x-small" alt="Sourcegraph Cody Result for Generate Docs" src="/images/blog/boosting-developer-productivity-unleashing-the-power-of-sourcegraph-cody-in-gitpod/generate-docs.webp">
-    <figcaption>Selected chunk of code with Cody Recipe of "Generate Docs"</figcaption>
+    <figcaption>Selected chunk of code with Cody's Recipe of "Generate Docs"</figcaption>
 </figure>
 
 After asking a few questions, I trusted Cody to try and write the whole onboarding guide which was good but still required some polishing up.
