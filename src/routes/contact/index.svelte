@@ -32,7 +32,7 @@
         card={action}
         btnSize="normal"
         titleClassNames="h4"
-        class="px-xx-small lg:px-macro lgx:px-3 2xl:p-x-small"
+        class="px-xx-small lg:px-macro lgx:px-x-small"
       />
     {/each}
   </div>

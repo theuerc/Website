@@ -14,7 +14,7 @@
   export let headingLevel: "h3" | "h2" = "h3";
   export let titleClassNames: "h2" | "h3" | "h4" | "h5" = "h4";
   export let iconClassNames: string = "h-16 w-20";
-  export let btnClassNames: string = "mt-x-small";
+  export let btnClassNames: string = "mt-xx-small";
   export let variant: "primary" | "secondary" | "cta" = "cta";
   export let btnSize: ButtonSizes = "medium";
   export let styles: string = "";
