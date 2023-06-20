@@ -1,8 +1,9 @@
 import * as configcat from "configcat-js-ssr";
 import { getOrSetCookieId } from "$lib/components/segment.svelte";
+import { PUBLIC_CONFIGCAT_KEY } from "$env/static/public";
 
 const configCatClient = configcat.getClient(
-  import.meta.env.VITE_CONFIGCAT_KEY,
+  PUBLIC_CONFIGCAT_KEY,
   configcat.PollingMode.LazyLoad,
   {
     cacheTimeToLiveSeconds: 3 * 60, // => 3 minutes
