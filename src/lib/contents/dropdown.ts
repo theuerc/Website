@@ -46,7 +46,7 @@ export const docsLinks: {
     description: "Latest updates and feature releases.",
   },
   {
-    text: "Screencasts",
+    text: "Videos",
     href: "/screencasts",
     description: "Watch videos to learn how to get started.",
   },

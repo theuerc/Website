@@ -52,11 +52,11 @@
           >
         </li>
         <li>
-          <FooterLink href="/cde">CDE</FooterLink>
+          <FooterLink href="/cde">CDEs</FooterLink>
         </li>
         <li><FooterLink href="/pricing">Pricing</FooterLink></li>
-        <li><FooterLink href="/customers">Customers</FooterLink></li>
         <li><FooterLink href="/support">Support</FooterLink></li>
+        <li><FooterLink href="/customers">Customers</FooterLink></li>
         <li>
           <FooterLink
             href="https://github.com/gitpod-io/gitpod/issues/new?assignees=&labels=type%3A+bug&template=bug_report.yml"
@@ -73,28 +73,27 @@
         </li>
       </Section>
       <Section title="Resources">
-        <li><FooterLink href="/docs">Documentation</FooterLink></li>
-        <li><FooterLink href="/community">Community</FooterLink></li>
-        <li><FooterLink href="/blog">Blog</FooterLink></li>
+        <li><FooterLink href="/docs">Docs</FooterLink></li>
         <li><FooterLink href="/changelog">Changelog</FooterLink></li>
-        <li>
-          <FooterLink href="/screencasts/getting-started-with-gitpod"
-            >Screencasts</FooterLink
-          >
-        </li>
+        <li><FooterLink href="/blog">Blog</FooterLink></li>
         <li><FooterLink href="/guides">Guides</FooterLink></li>
+        <li><FooterLink href="/screencasts">Videos</FooterLink></li>
+        <li><FooterLink href="/community">Community</FooterLink></li>
         <li><FooterLink href="/events">Events</FooterLink></li>
+        <li>
+          <FooterLink href="/for/opensource">Open Source</FooterLink>
+        </li>
+        <li>
+          <FooterLink href="/for/education">Education</FooterLink>
+        </li>
       </Section>
       <Section title="Solutions">
-        <li>
-          <FooterLink href="/solutions/developers">Developers</FooterLink>
-        </li>
         <li>
           <FooterLink href="/solutions/onboarding">Onboarding</FooterLink>
         </li>
         <li>
-          <FooterLink href="/solutions/platform-teams"
-            >Platform teams</FooterLink
+          <FooterLink href="/solutions/supply-chain-security"
+            >Supply chain security</FooterLink
           >
         </li>
         <li>
@@ -103,37 +102,18 @@
           >
         </li>
         <li>
-          <FooterLink href="/solutions/supply-chain-security"
-            >Supply chain security</FooterLink
-          >
-        </li>
-      </Section>
-      <Section title="Industries">
-        <li>
-          <FooterLink href="/for/enterprise" class="flex items-center"
-            >Enterprise</FooterLink
-          >
+          <FooterLink href="/solutions/developers">Developers</FooterLink>
         </li>
         <li>
-          <FooterLink href="/for/startups" class="flex items-center">
-            Startups
-          </FooterLink>
-        </li>
-        <li>
-          <FooterLink href="/for/opensource" class="flex items-center"
-            >Open Source</FooterLink
-          >
-        </li>
-        <li>
-          <FooterLink href="/for/education" class="flex items-center"
-            >Education</FooterLink
+          <FooterLink href="/solutions/platform-teams"
+            >Platform teams</FooterLink
           >
         </li>
       </Section>
       <Section title="Compare">
         <li>
           <FooterLink href="/vs/local-development"
-            >Local Development
+            >Local development
           </FooterLink>
         </li>
         <li>

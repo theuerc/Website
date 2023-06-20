@@ -96,7 +96,7 @@
       <NavItem
         navItem={{
           href: "/cde",
-          label: "CDE",
+          label: "CDEs",
         }}
       />
       <li>
