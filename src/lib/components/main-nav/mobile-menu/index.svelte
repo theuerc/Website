@@ -94,7 +94,7 @@
     {#if !docsDropdownShown && !resourcesDropdownShown}
       <NavItem
         navItem={{
-          href: "/for/enterprise",
+          href: "/discover/enterprise",
           label: "Enterprise",
         }}
       />

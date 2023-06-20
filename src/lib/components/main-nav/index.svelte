@@ -107,7 +107,7 @@
       </li>
       <NavItem
         navItem={{
-          href: "/for/enterprise",
+          href: "/discover/enterprise",
           label: "Enterprise",
           highlight: false,
         }}

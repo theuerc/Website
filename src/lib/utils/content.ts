@@ -14,7 +14,7 @@ export const getCustomers = async () => {
 
 export const getEducationCustomers = async () => {
   const customers = await Promise.all(
-    Object.entries(import.meta.glob("/src/routes/for/education/*.md")).map(
+    Object.entries(import.meta.glob("/src/routes/discover/education/*.md")).map(
       async ([path, page]) => {
         const { metadata } = await page();
         const filename = path.split("/").pop();

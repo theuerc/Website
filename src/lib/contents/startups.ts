@@ -61,7 +61,7 @@ export const programBenefits: Card[] = [
       alt: "2x",
     },
     title: "Double up",
-    text: 'If your startup is affiliated with <a href="/for/startups/organisations">an approved VC, incubator or accelerator</a> we will extend the program from 1 year to 2 years.',
+    text: 'If your startup is affiliated with <a href="/discover/startups/organisations">an approved VC, incubator or accelerator</a> we will extend the program from 1 year to 2 years.',
   },
   {
     icon: {
@@ -80,7 +80,7 @@ export const faqs: FAQ = {
       title:
         "How do I know if my accelerator/incubator/VC firm is part of Gitpod for Startups?",
       content:
-        'Please check this list <a href="/for/startups/organisations">of organisations</a>. You still get one year at a 50% discount, even if you don\'t find your organisation on the list.',
+        'Please check this list <a href="/discover/startups/organisations">of organisations</a>. You still get one year at a 50% discount, even if you don\'t find your organisation on the list.',
     },
     {
       title: "What happens after the end of the program?",

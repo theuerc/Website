@@ -18,7 +18,7 @@
 
   const generateURL = (post: BlogPost) => {
     if (post && post.href) return post.href;
-    if (type === "education") return `/for/education/${post.slug}`;
+    if (type === "education") return `/discover/education/${post.slug}`;
     return `/${type}/${post.slug}`;
   };
 

@@ -78,7 +78,7 @@ https://community.gitpod.io/* https://www.gitpod.io/chat 301!
 /docs/languages-and-frameworks /docs/languages
 /docs/languages/pandas /docs/languages/python#pandas
 /docs/php-in-gitpod /docs/languages/php
-/docs/professional-open-source /for/opensource
+/docs/professional-open-source /discover/opensource
 /docs/python_in_gitpod /docs/python-in-gitpod
 /docs/python-in-gitpod /docs/languages/python
 /docs/r-in-gitpod /docs/languages/r
@@ -114,8 +114,8 @@ https://community.gitpod.io/* https://www.gitpod.io/chat 301!
 /gitpod-vs-github-codespaces /vs/github-codespaces
 /changelog/introducing-teams-&-projects /changelog/introducing-teams-and-projects
 /github-teacher-toolbox /pricing
-/customers/4geeks /for/education/4geeks
-/customers/bruno-rocha /for/education/bruno-rocha
+/customers/4geeks /discover/education/4geeks
+/customers/bruno-rocha /discover/education/bruno-rocha
 /docs/self-hosted/latest/reference-architecture/production-ready-single-cluster /docs/configure/self-hosted/latest/reference-architecture/single-cluster-ref-arch
 /docs/self-hosted/latest/support-patches /docs/configure/self-hosted/latest/config-patches
 /docs/self-hosted/latest/getting-started#step-4-install-gitpod /docs/configure/self-hosted/latest/installing-gitpod#install-gitpod
@@ -281,7 +281,7 @@ docs/ides-and-editors/jetbrains-gateway /docs/integrations/jetbrains-gateway
 /docs/integrations/jetbrains /docs/integrations/jetbrains-gateway
 /docs/editors /docs/references/ides-and-editors
 /changelog/november-changelog /changelog/november-gitpod-release-2022
-/github-student-developer-pack /for/education
+/github-student-developer-pack /discover/education
 /enterprise-license /pricing
 /vs/coder /
 /docs/configure/teams /docs/configure/orgs
@@ -299,3 +299,10 @@ docs/configure/billing/team-plans /docs/configure/billing/org-plans
 /solutions/collaboration /solutions/developers
 /docs/editors/vscode /docs/references/ides-and-editors/vscode
 /videos /screencasts
+/for/education /discover/education
+/for/education/4geeks /discover/education/4geeks
+/for/education/bruno-rocha /discover/education/bruno-rocha
+/for/startups /discover/startups
+/for/enterprise /discover/enterprise
+/for/opensource /discover/opensource
+/for/startups/organisations /discover/startups/organisations

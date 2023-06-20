@@ -122,7 +122,7 @@ With more and more contributions coming in as Pull Requests, the maintainers of 
 
 > Reviewing pull requests is delightful because they are prebuilt and ready for review!”
 
-The team at Gitpod is proud to support the open source community and projects through our product. We’re doing everything we can to streamline the experience for contributors to develop open source projects. We launched [Gitpod for Open Source](/for/opensource) to let open source contributors use Gitpod without usage limits on any public repository. We’ve also launched an Open Source Sustainability Fund [[1](/blog/gitpod-open-source-sustainability-fund)] with an initial investment of USD 30.000 and give our employees the chance to donate $1.500USD to open source projects of their choice for successful referrals of new hires.
+The team at Gitpod is proud to support the open source community and projects through our product. We’re doing everything we can to streamline the experience for contributors to develop open source projects. We launched [Gitpod for Open Source](/discover/opensource) to let open source contributors use Gitpod without usage limits on any public repository. We’ve also launched an Open Source Sustainability Fund [[1](/blog/gitpod-open-source-sustainability-fund)] with an initial investment of USD 30.000 and give our employees the chance to donate $1.500USD to open source projects of their choice for successful referrals of new hires.
 
 We’re thankful for the collaboration with Redwood and the interview with Tom Preston-Werner and team that led to this case study.
 

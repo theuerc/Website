@@ -69,10 +69,10 @@ Workspace classes and the new pricing are now generally available for all Gitpod
 
 ### Gitpod for startups, students, and open source
 
-[Gitpod for Open Source](/for/opensource) users will now receive 2,500 credits per month on their free plan.
+[Gitpod for Open Source](/discover/opensource) users will now receive 2,500 credits per month on their free plan.
 
-[Gitpod for Startups](/for/startups) participants will receive a discount of 50% on their team usage. Existing Gitpod for Startups participants can continue using their old plans.
+[Gitpod for Startups](/discover/startups) participants will receive a discount of 50% on their team usage. Existing Gitpod for Startups participants can continue using their old plans.
 
-[Students and educators](/for/education) are encouraged to check out the generous new free and paid offerings described above. Our pricing plans which require student verification have been discontinued. Existing paid student plans will keep working.
+[Students and educators](/discover/education) are encouraged to check out the generous new free and paid offerings described above. Our pricing plans which require student verification have been discontinued. Existing paid student plans will keep working.
 
 PS: we’ve also announced Gitpod Dedicated, a fully-isolated, private installation of Gitpod managed by us. [Read blog post](/blog/introducing-gitpod-dedicated).

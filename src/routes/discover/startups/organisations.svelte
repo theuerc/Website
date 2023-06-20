@@ -28,7 +28,7 @@
 >
   <LinkButton
     slot="content"
-    href="/for/startups"
+    href="/discover/startups"
     class="mt-x-small"
     variant="primary"
     size="large">View Startup program</LinkButton

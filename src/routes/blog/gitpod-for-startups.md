@@ -40,7 +40,7 @@ So we think you'll benefit from saying goodbye to local development early on, wh
 
 ## The benefits
 
-Use Gitpod at a 50% discount for at least 1 year with unlimited users and usage. For your whole team, no matter how big you scale and how many engineers you hire during that time. If you’re affiliated with one of these [organisations](/for/startups/organisations), you’ll even get the benefits for 2 years.
+Use Gitpod at a 50% discount for at least 1 year with unlimited users and usage. For your whole team, no matter how big you scale and how many engineers you hire during that time. If you’re affiliated with one of these [organisations](/discover/startups/organisations), you’ll even get the benefits for 2 years.
 
 ## Who is eligible?
 
@@ -48,7 +48,7 @@ Your startup is eligible if it was founded less than 3y ago, has raised a maximu
 
 ## How do I apply?
 
-Check out our [website](/for/startups) for more details and the link to the application form. Once you’re part of the program, you’ll get the chance for a personal onboarding call with our community engineers.
+Check out our [website](/discover/startups) for more details and the link to the application form. Once you’re part of the program, you’ll get the chance for a personal onboarding call with our community engineers.
 
 Want to share program details with your colleagues or other startups? This [Notion page](https://bit.ly/Gitpod-for-startups-notion) might be handy.
 

@@ -81,10 +81,10 @@
         <li><FooterLink href="/community">Community</FooterLink></li>
         <li><FooterLink href="/events">Events</FooterLink></li>
         <li>
-          <FooterLink href="/for/opensource">Open Source</FooterLink>
+          <FooterLink href="/discover/opensource">Open Source</FooterLink>
         </li>
         <li>
-          <FooterLink href="/for/education">Education</FooterLink>
+          <FooterLink href="/discover/education">Education</FooterLink>
         </li>
       </Section>
       <Section title="Solutions">

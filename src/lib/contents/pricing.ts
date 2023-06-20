@@ -61,7 +61,7 @@ export const empowermentFeatures: Card[] = [
     text: "Professional open source developers can apply for our OSS program.",
     link: {
       text: "Apply today",
-      href: "/for/opensource",
+      href: "/discover/opensource",
     },
   },
   {
@@ -69,7 +69,7 @@ export const empowermentFeatures: Card[] = [
     text: "Startups can get all our services at a 50% discount, for up to 2 years, no matter how fast your developers and workloads scale.",
     link: {
       text: "View Startup Program",
-      href: "/for/startups",
+      href: "/discover/startups",
     },
   },
 ];
@@ -724,7 +724,7 @@ export const pricingFAQ: FAQ = {
     {
       title: "Can I always use Gitpod for free?",
       content:
-        '<p> Yes! Gitpod is always for free for public and private repositories for up to 50h per month. If you need more hours or would like to unlock more features, you can upgrade your subscription at any time. If you’re a professional open-source developer and need more hours, you can apply to our free <a href="/for/opensource">Professional Open Source plan</a> </p>',
+        '<p> Yes! Gitpod is always for free for public and private repositories for up to 50h per month. If you need more hours or would like to unlock more features, you can upgrade your subscription at any time. If you’re a professional open-source developer and need more hours, you can apply to our free <a href="/discover/opensource">Professional Open Source plan</a> </p>',
     },
     {
       title: "How can I pay?",
