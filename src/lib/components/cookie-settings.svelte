@@ -33,6 +33,10 @@
         domain: ".gitpod.io",
       });
     } else {
+      Cookies.set(cookies.TARGETING, `${targetingChecked}`, {
+        expires: 365,
+        domain: ".gitpod.io",
+      });
       Cookies.remove(cookies.TARGETING);
     }
     handleClose();
