@@ -27,9 +27,9 @@
     : 'text-body'}"
   on:click={() => (shown = !shown)}
 >
-  <p class={shown ? "left-0 ml-6" : ""}>Resources</p>
+  <p class={shown ? "left-0 ml-3" : ""}>Resources</p>
   <Arrow
-    class="absolute right-0 mr-6 h-3 w-3 transform {shown
+    class="absolute right-0 mr-8 h-3 w-3 transform {shown
       ? 'left-0 ml-4 rotate-90'
       : '-rotate-90'}"
     fillClass={shown ? "fill-important" : "fill-body"}
@@ -84,7 +84,7 @@
   </div>
 
   <p
-    class="py-macro border-none -mx-micro px-micro no-underline text-lg text-important font-bold bg-sand-light  dark:bg-dark-grey"
+    class="py-macro border-none -mx-micro px-micro no-underline text-lg text-important font-bold bg-sand-light dark:bg-dark-grey"
   >
     Templates
   </p>
@@ -99,7 +99,7 @@
     class="flex text-lg font-normal"
     href="/docs/introduction/getting-started/quickstart"
   >
-    <FullArrowRight width="12" heightt="12" />
+    <FullArrowRight width="12" class="mr-1" />
     <p>&nbsp;view all</p>
   </a>
 {/if}

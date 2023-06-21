@@ -89,6 +89,8 @@
         class="grid grid-cols-2 pt-x-small pb-x-small max-w-3xl"
         bind:this={linksGrid}
       >
+        <p class="font-bold text-grey text-base ml-6">Use cases</p>
+        <p class="font-bold text-grey text-base ml-6">Personas</p>
         {#each resourcesLinks as { href, text, description }}
           <a
             class="

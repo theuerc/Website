@@ -136,3 +136,43 @@ export const mobileDiscoverLinks: {
     description: "How to use Gitpod with any project",
   },
 ];
+
+export const mobileUseCasesLinks: {
+  text: string;
+  href: string;
+  description: string;
+}[] = [
+  {
+    text: "Onboarding",
+    href: "/solutions/onboarding",
+    description: "Quickly become ready-to-code.",
+  },
+
+  {
+    text: "Productivity",
+    href: "/solutions/increased-productivity",
+    description: "Create more productive teams.",
+  },
+  {
+    text: "Supply chain security",
+    href: "/solutions/supply-chain-security",
+    description: "Secure your software supply chains.",
+  },
+];
+
+export const mobilePersonasLinks: {
+  text: string;
+  href: string;
+  description: string;
+}[] = [
+  {
+    text: "Developers",
+    href: "/solutions/developers",
+    description: "Spend more time building product.",
+  },
+  {
+    text: "Platform teams",
+    href: "/solutions/platform-teams",
+    description: "Automate and secure your platforms.",
+  },
+];
