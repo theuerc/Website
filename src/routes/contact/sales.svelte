@@ -222,10 +222,10 @@
     textAlign="left"
     centered={false}
   />
-  <div class="wrapper flex flex-col lg:flex-row">
+  <div class="wrapper flex flex-col md:flex-row gap-x-xx-large">
     <Card
       size="small"
-      class="shadow-normal p-xx-small sm:py-small sm:px-x-small md:p-medium lg:mb-xxx-large md:min-w-[650px] !max-w-[832px]"
+      class="shadow-normal p-xx-small sm:py-small sm:px-x-small md:p-medium lg:mb-xxx-large max-w-[710px]"
       styles="margin-top: 0"
       style="flex: 0 0 65%;"
     >
@@ -259,7 +259,7 @@
                 <div>
                   <Input
                     hasError={isFormDirty && !formData.name.valid}
-                    label="Full Name*"
+                    label="Full name*"
                     id="name"
                     name="full-name"
                     bind:value={formData.name.value}
@@ -310,7 +310,7 @@
                 </div>
                 <div class="flex flex-col justify-end">
                   <Select
-                    placeholder="Total number of engineers"
+                    placeholder="Total number of engineers*"
                     hasError={isFormDirty && !formData.noOfEngineers.valid}
                     name="noOfEngineers"
                     bind:value={formData.noOfEngineers.value}
@@ -357,7 +357,7 @@
                           e.target.validity.valid;
                       }}
                       options={dedicatedCloudPlatforms}
-                      placeholder="Which cloud infrastructure do you use?"
+                      placeholder="Cloud infrastructure*"
                     />
                   {/if}
                 </div>

@@ -188,7 +188,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-small">
         <div>
           <Input
-            label="Full Name*"
+            label="Full name*"
             hasError={isFormDirty && !formData.name.valid}
             name="full-name"
             id="full-name"
@@ -264,7 +264,7 @@
                 e.target.validity.valid;
             }}
             options={cloudPlatforms}
-            placeholder="Which cloud infrastructure do you use?"
+            placeholder="Cloud infrastructure*"
           />
         </div>
         <div>

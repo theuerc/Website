@@ -315,7 +315,7 @@
                         e.target.validity.valid;
                     }}
                     options={dedicatedCloudPlatforms}
-                    placeholder="Which cloud infrastructure do you use?"
+                    placeholder="Cloud infrastructure*"
                     class="max-w-md"
                   />
                 </div>

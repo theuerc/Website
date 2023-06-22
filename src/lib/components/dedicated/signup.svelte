@@ -221,7 +221,7 @@
         <InputsHalf>
           <div class="flex flex-col justify-end">
             <Select
-              label="Cloud infrastructure"
+              label="Cloud infrastructure*"
               hasError={isFormDirty && !formData.cloudInfrastructure.valid}
               name="cloudInfrastructure"
               bind:value={formData.cloudInfrastructure.value}
