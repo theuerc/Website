@@ -217,6 +217,13 @@ export const MENU: MenuEntry[] = [
       false,
       []
     ),
+    M(
+      "Browser Terminal",
+      "references/ides-and-editors/browser-terminal",
+      false,
+      [],
+      "beta"
+    ),
     M("FAQs", "references/ides-and-editors/faqs", false, []),
   ]),
   M("Integrations", "integrations", false, [
