@@ -128,7 +128,7 @@
         </div>
       </InputsHalf>
       <div>
-        <p class="text-sm max-w-lg">
+        <p class="!text-sm max-w-lg">
           By submitting this form, I confirm that I acknowledge the collection
           and processing of personal data by Gitpod, as further described in the <a
             class="!underline"
