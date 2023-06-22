@@ -8,9 +8,10 @@
     "svelte"
   ],
   "scripts": {
-    "dev": "vite dev --host 0.0.0.0",
-    "build": "npm run build:postcss && USE_CACHE=true vite build",
+    "dev:postcss": "postcss src/lib/assets/global.css -o static/global.css && postcss src/lib/assets/styles.scss -o static/styles.css",
+    "dev": "npm run dev:postcss && vite dev --host 0.0.0.0",
     "build:postcss": "NODE_ENV=production postcss src/lib/assets/global.css -o static/global.css && NODE_ENV=production postcss src/lib/assets/styles.scss -o static/styles.css",
+    "build": "npm run build:postcss && USE_CACHE=true vite build",
     "deploy": "npm run build",
     "start": "vite preview",
     "validate": "svelte-kit sync && svelte-check",
