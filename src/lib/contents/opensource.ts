@@ -167,7 +167,7 @@ export const cards: Card[] = [
   {
     icon: openVscodeSvelte,
     transform: "scale(1.5)",
-    title: "OpenVS Code",
+    title: "OpenVSCode",
     text: "A version of VS Code that runs a server on a remote machine and allows access through a modern web browser.",
     link: {
       href: "https://github.com/gitpod-io/openvscode-server",

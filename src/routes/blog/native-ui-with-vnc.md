@@ -16,7 +16,7 @@ url: https://medium.com/gitpod/developing-native-ui-applications-in-gitpod-15af2
 
 Gitpod is a web-based IDE. As such one would think it only works for web-based projects or anything else that does not require a native UI. However, there’s still a plethora of native UI applications around and many of them are here to stay. In this article we’ll go through how to use Gitpod for developing native desktop UI applications.
 
-![VSCode in Gitpod](../../../static/images/blog/native-ui-with-vnc/virtual-x-sever-running-on-a-remote-desktop-client.png)
+![VS Code in Gitpod](../../../static/images/blog/native-ui-with-vnc/virtual-x-sever-running-on-a-remote-desktop-client.png)
 
 A few days ago [Gero introduced Docker builds to Gitpod](/blog/docker-in-gitpod) with which you can bring your own Dockerfile (instead of a pre-built image), and Gitpod will build the image for you. We’ll use that feature to setup a cloud-based developer environment for native UI applications.
 

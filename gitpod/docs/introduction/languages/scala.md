@@ -125,7 +125,7 @@ image:
   file: .gitpod.Dockerfile
 ```
 
-## VSCode Extensions
+## VS Code Extensions
 
 ### Scala Syntax (official)
 

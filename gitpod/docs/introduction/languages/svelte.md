@@ -66,7 +66,7 @@ In order to make live reload work we need to add a bit of configuration as speci
 
 </div>
 
-## VSCode Extensions
+## VS Code Extensions
 
 ### Svelte for VS Code
 

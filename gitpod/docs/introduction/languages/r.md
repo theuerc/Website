@@ -30,7 +30,7 @@ image:
 
 Then commit and push both files to your repository. After that, every new Gitpod workspace created for your project will have R pre-installed.
 
-## VSCode Extensions
+## VS Code Extensions
 
 ### R Extension
 

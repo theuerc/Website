@@ -56,9 +56,9 @@ Here are a few Rust example projects that are already automated with Gitpod:
 
 </div>
 
-## VSCode Extensions
+## VS Code Extensions
 
-The most popular Rust VSCode extensions are already pre-installed in Gitpod. But here are a few "nice to have" extensions you may choose to install as well.
+The most popular Rust VS Code extensions are already pre-installed in Gitpod. But here are a few "nice to have" extensions you may choose to install as well.
 
 In order to install one of these extensions for your repository, simply head to Gitpod's [Extensions panel](/docs/references/ides-and-editors/vscode-extensions) (find it in the IDE's left vertical menu), then search for the desired extension by name, and install it for your project. This will add an entry to your [.gitpod.yml](/docs/references/gitpod-yml) file that ensures all future Gitpod workspaces for your repository will already have this extension pre-installed.
 
@@ -78,7 +78,7 @@ The Rust Test Explorer makes it easy to run Rust tests.
     <figcaption>A crates extension demo</figcaption>
 </figure>
 
-The VSCode extension Crates makes it easier to manage your Cargo dependency versions.
+The VS Code extension Crates makes it easier to manage your Cargo dependency versions.
 
 ### Search Crates.io
 

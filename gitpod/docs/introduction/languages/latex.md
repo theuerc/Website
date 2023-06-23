@@ -65,7 +65,7 @@ tasks:
 
 This will start a watcher process that automatically recompiles your `*.tex` files when they are changed. Note: The watcher process will start in a separate Terminal on every workspace start.
 
-## VSCode Extensions
+## VS Code Extensions
 
 ### TexLab
 

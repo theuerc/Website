@@ -41,7 +41,7 @@ RUN npm i -g vue-cli
 
 > Please note: If you don't already have one please run [`gp init`](/docs/references/gitpod-cli#init) which should generate two files [.gitpod.yml](/docs/references/gitpod-yml) and [.gitpod.Dockerfile](/docs/configure/workspaces/workspace-image)
 
-## VSCode Extensions
+## VS Code Extensions
 
 ### Vetur
 

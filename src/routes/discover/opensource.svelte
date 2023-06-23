@@ -64,7 +64,7 @@
   list={[
     "You are a maintainer, core contributor to a well-established free software or open-source project.",
     "You regularly contribute to free software or open source communities in other ways (e.g. producing regular content like blog posts, videos, live streams, translations, or organizing meet-ups, conferences, hackathons, etc).",
-    "You are an author, core contributor of extensions for editors such as VSCode, VIM, Emacs, et al. or of developer tools such as build systems, programming languages, compilers, and editor tooling such as Language Server Protocol (LSP) implementations.",
+    "You are an author, core contributor of extensions for editors such as VS Code, VIM, Emacs, et al. or of developer tools such as build systems, programming languages, compilers, and editor tooling such as Language Server Protocol (LSP) implementations.",
     "A significant part of your income (employment or via community support) is from maintaining or producing open source work.",
   ]}
   link={{

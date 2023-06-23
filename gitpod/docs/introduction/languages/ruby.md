@@ -53,7 +53,7 @@ Here are a few Ruby example projects that are already automated with Gitpod:
 
  </div>
 
-## VSCode Extensions
+## VS Code Extensions
 
 Here are a few useful extensions that you'll likely want to install in your Ruby project.
 

@@ -49,7 +49,7 @@ To run your code after it has been compiled run `dotnet <FILE>` where `<FILE>` i
 
 Alternatively, you can also run your application in so-called watch-mode. In such configuration the application will recompile and rerun itself every time you save any source file belonging to the project. To run your code in watch-mode use `dotnet watch --project <FILE> run` where `<FILE>` is the path to the C# or F# project file you want to compile and run.
 
-## Useful VSCode Extensions
+## Useful VS Code Extensions
 
 ### C#
 
@@ -67,7 +67,7 @@ vscode:
 
 ### F#
 
-The [Ionide-fsharp](https://ionide.io/) extensin gives F# developers the following features:
+The [Ionide-fsharp](https://ionide.io/) extension gives F# developers the following features:
 
 - A Widget for your F# needs
 - Auto completion

@@ -24,7 +24,8 @@ In particular, this opens up any environment or framework that assumes localhost
 
 As a preview release, not all of the features are implemented, most notably the tunneling is 1-way only: local -> workspace.
 
-> 💡 **Notice:** A lot has improved on local-companion and the port-forwarding aspect since the publication of this blog post. You could also simply open a Gitpod workspace in [VSCode Desktop](https://www.gitpod.io/docs/references/ides-and-editors/vscode#open-a-workspace-in-vs-code-desktop) or any other supported local editor client and your ports would be automatically forwarded for you! See the below links to learn more:
+> 💡 **Notice:** A lot has improved on local-companion and the port-forwarding aspect since the publication of this blog post. You could also simply open a Gitpod workspace in [VS Code Desktop](https://www.gitpod.io/docs/references/ides-and-editors/vscode#open-a-workspace-in-vs-code-desktop) or any other supported local editor client and your ports would be automatically forwarded for you! See the below links to learn more:
+>
 > - https://www.gitpod.io/docs/references/ides-and-editors#supported-ideeditors
 > - https://www.gitpod.io/docs/configure/workspaces/ports#port-forwarding
 

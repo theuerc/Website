@@ -128,4 +128,4 @@ Host *.gitpod.io
 ```
 
 - Save the file.
-- Now try connecting via SSH or VSCode-Desktop again.
+- Now try connecting via SSH or VS Code Desktop again.

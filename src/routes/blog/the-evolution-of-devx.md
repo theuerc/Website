@@ -74,7 +74,7 @@ VS Code with all my extensions ran slow despite it being relatively light compar
 
 Tech has constantly been talking about the power of the cloud in recent years. As Chris Aniszczyk describes in his post, ["Cloud Native predictions for 2021 and beyond."](https://www.aniszczyk.org/2021/01/19/cloud-native-predictions-for-2021-and-beyond/):
 
-> “The future will hold that the development lifecycle (code, build, debug) will happen mostly in the cloud versus your local Emacs or VSCode setup. You will end up getting a full dev environment setup for every pull request, pre-configured and connected to their deployment to aid your development and debugging needs.”
+> “The future will hold that the development lifecycle (code, build, debug) will happen mostly in the cloud versus your local Emacs or VS Code setup. You will end up getting a full dev environment setup for every pull request, pre-configured and connected to their deployment to aid your development and debugging needs.”
 
 Sounds like a dream, huh? The next generation of IDEs is already here! You can do this right now with Gitpod and GitHub Codespaces beta. The constant innovation excites me the most about tech in general; it’s truly magical to see how developer experience will continue to shape our tool kit as developers. As long as we can imagine it, it is possible and isn’t that exciting?
 

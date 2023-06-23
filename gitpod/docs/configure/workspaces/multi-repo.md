@@ -74,11 +74,11 @@ mainConfiguration: https://github.com/gitpod-io/demo-multi-repo-frontend
 
 Try it out at https://github.com/gitpod-io/demo-multi-repo-backend
 
-## Adding additional repo folders to VSCode Explorer
+## Adding additional repo folders to VS Code Explorer
 
-![VSCode workspace folders](.../../../static/images/docs/vscode-workspace-folders.png)
+![VS Code workspace folders](.../../../static/images/docs/vscode-workspace-folders.png)
 
-You might want to see the [`additionalRepositories`](#cloning-additional-repositories) on your VSCode.
+You might want to see the [`additionalRepositories`](#cloning-additional-repositories) on your VS Code.
 
 To do so:
 

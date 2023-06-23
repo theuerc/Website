@@ -29,7 +29,7 @@ To install the Dart SDK in Gitpod one must add the following to your [.gitpod.Do
 RUN brew tap dart-lang/dart && brew install dart
 ```
 
-## VSCode Extensions
+## VS Code Extensions
 
 ### Dart
 

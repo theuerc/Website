@@ -23,7 +23,7 @@ Here are a few Bash example projects that are already automated with Gitpod:
 
 </div>
 
-## VSCode Extensions
+## VS Code Extensions
 
 ### ShellCheck
 

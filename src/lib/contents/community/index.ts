@@ -231,8 +231,8 @@ export const contributionHighlights: Record<string, ContentCard[]> = {
     {
       badge: "Community office hours",
       contributor: "Sébastien Blanc",
-      title: "Build a VSCode extension with Gitpod and Aiven",
-      text: "Sébastien shows us how you can use Gitpod and Aiven to easily build VSCode Extensions",
+      title: "Build a VS Code extension with Gitpod and Aiven",
+      text: "Sébastien shows us how you can use Gitpod and Aiven to easily build VS Code Extensions",
       link: {
         href: "https://twitter.com/sebi2706/status/1615640594071654401",
         text: "View Tweet",

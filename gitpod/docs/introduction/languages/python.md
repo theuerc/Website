@@ -42,9 +42,9 @@ To see a minimal project with Pandas installed and configured, please check out 
 
 Pandas Team has their official docs on how to use Gitpod for Pandas development. Please check out [Pandas Team's Gitpod guide](https://pandas.pydata.org/docs/dev/development/contributing_gitpod.html).
 
-## Jupyter Notebooks in VSCode
+## Jupyter Notebooks in VS Code
 
-For the best experience with Jupyter, please open your Gitpod workspaces in [VSCode Desktop](/docs/references/ides-and-editors/vscode).
+For the best experience with Jupyter, please open your Gitpod workspaces in [VS Code Desktop](/docs/references/ides-and-editors/vscode).
 
 ## Python Versions
 
@@ -87,9 +87,9 @@ statistics = True
 
 You'll need to refresh the browser in order to update these rule. [Source](https://github.com/gitpod-io/gitpod/issues/640#issuecomment-506622491).
 
-## VSCode Extensions
+## VS Code Extensions
 
-While the most popular Python VSCode extensions are built into Gitpod, here are a few "nice to have" extensions that you can use as well.
+While the most popular Python VS Code extensions are built into Gitpod, here are a few "nice to have" extensions that you can use as well.
 
 ### ARepl for Python
 
@@ -224,6 +224,6 @@ To see a basic repository with Python debugging enabled, please check out [gitpo
 
 ## Further Reading
 
-- **_[VSCode documentation for Python debugging](https://code.visualstudio.com/docs/python/debugging)_** All the information there should also apply to Gitpod as well.
+- **_[VS Code documentation for Python debugging](https://code.visualstudio.com/docs/python/debugging)_** All the information there should also apply to Gitpod as well.
 - **_[Troubleshooting Matplotlib/TK](https://github.com/gitpod-io/gitpod/issues/795)_** Here is how to troubleshoot Matplotlib/TK issues for Python GUI applications.
 - **_[Debugging Django](https://community.gitpod.io/t/django-debugging/381/6)_** This is how to debug Django applications in Gitpod.

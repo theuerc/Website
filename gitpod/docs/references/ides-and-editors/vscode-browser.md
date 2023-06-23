@@ -34,7 +34,7 @@ You can upload files to your workspace by dragging and dropping them into the ed
 
 ## FAQs
 
-## Is it possible to intercept shortcuts like cmd+w in VSCode browser?
+## Is it possible to intercept shortcuts like cmd+w in VS Code browser?
 
 It is not possible to intercept <Keybind>Cmd + W</Keybind> directly in browsers like Chrome or Firefox, as it would require overriding the native keyboard shortcut.
 

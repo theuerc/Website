@@ -42,7 +42,7 @@ As you may know, [we provide Insiders builds](https://github.com/gitpod-io/openv
 
 These [GitHub actions](https://github.com/gitpod-io/openvscode-releases) run daily to update OpenVSCode Server with the latest upstream changes, run integration and smoke tests, and make a GitHub pre-release along with publishing the updated [docker image](https://hub.docker.com/r/gitpod/openvscode-server) to Docker Hub under the Insiders tag.
 
-This release process allows OpenVSCode Server to get the latest updates from the upstream VS Code code and make new stable releases on the same day as VS Code. We also use the same release process with our VS Code Insiders version that we use inside Gitpod, which enables Gitpod users to go into their gitpod settings and swap their [IDE configuration for the VSCode Insiders](https://gitpod.io/preferences) with the latest features and fixes from VSCode.
+This release process allows OpenVSCode Server to get the latest updates from the upstream VS Code code and make new stable releases on the same day as VS Code. We also use the same release process with our VS Code Insiders version that we use inside Gitpod, which enables Gitpod users to go into their gitpod settings and swap their [IDE configuration for the VS Code Insiders](https://gitpod.io/preferences) with the latest features and fixes from VS Code.
 
 ## The Future of OpenVSCode Server
 

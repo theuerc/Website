@@ -243,6 +243,6 @@ Here are a few Go example projects that are already automated with Gitpod:
 
 ## Further Reading
 
-- [VSCode/Go Documentation](https://code.visualstudio.com/docs/languages/go) The stuff here also applies to Gitpod!
+- [VS Code/Go Documentation](https://code.visualstudio.com/docs/languages/go) The stuff here also applies to Gitpod!
 - [JetBrains/GoLand Documentation](https://www.jetbrains.com/help/go) The stuff here also applies to Gitpod!
-- [VSCode/Go debugging](https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code) VSCode's Documentation on Go debugging
+- [VS Code/Go debugging](https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code) VS Code's Documentation on Go debugging
