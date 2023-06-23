@@ -113,9 +113,22 @@ You can add as many environment variables as you wish.
 The repository pattern of each variable determines in what workspace it will be available.
 Repository patterns follow the `owner/repository` pattern. You can use a wildcard on either of the two, e.g. `gitpod-io/*` would make that variable available in all repositories owned by `gitpod-io`.
 Conversely `*/vscode` would make that variable available on all repositories called `vscode`; this is especially useful for forks.
-Subsequently `*/*` makes that variable available in every workspace.
+Subsequently `*/*` makes that variable available in all of those workspace.
 
-> **Beware:** while the variable values are stored encrypted, they are available as plain text inside a workspace. Be careful when sharing your live workspace or when using `*/*` as repository pattern.
+Note that for GitLab, which allows to have nested group/repository structures like `owner/some-group/sub-group/repo`, the number of segments in the pattern has to match the number of segments in the repository name. This constraint exists to avoid surpises and leaking of content into unexpected repositories. For matching arbitrary segments to the right, there is a dedicated pattern: `**`.
+
+Some example patterns and results for the mentioned `owner/some-group/sub-group/repo` repository:
+
+- `*/**`: ✅
+- `*/*`: ❌
+- `owner/some-group/*/*`: ✅
+- `owner/some-group/*`: ❌
+- `owner/some-group/**`: ✅
+- `owner/**`: ✅
+- `owner/some-group/sub-group/repo`: ✅
+- `*/some-group/sub-group/repo`: ✅
+
+> **Beware:** While the variable values are stored encrypted, they are available as plain text inside a workspace. Be careful when sharing your live workspace or when using `*/*` or `*/**` as repository pattern.
 
 ## Project-Specific Environment Variables
 
