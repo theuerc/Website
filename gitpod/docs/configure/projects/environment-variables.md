@@ -115,12 +115,12 @@ Repository patterns follow the `owner/repository` pattern. You can use a wildcar
 Conversely `*/vscode` would make that variable available on all repositories called `vscode`; this is especially useful for forks.
 Subsequently `*/*` makes that variable available in all of those workspace.
 
-Note that for GitLab, which allows to have nested group/repository structures like `owner/some-group/sub-group/repo`, the number of segments in the pattern has to match the number of segments in the repository name. This constraint exists to avoid surpises and leaking of content into unexpected repositories. For matching arbitrary segments to the right, there is a dedicated pattern: `**`.
+**Note**: For GitLab, which allows to have nested group/repository structures like `owner/some-group/sub-group/repo`, the number of segments in the pattern has to match the number of segments in the repository name. This constraint exists to avoid surpises and leaking of content into unexpected repositories. For matching arbitrary segments to the right, there is a dedicated pattern: `**`.
 
-Some example patterns and results for the mentioned `owner/some-group/sub-group/repo` repository:
+Some example patterns (**for GitLab**) and results for the mentioned `owner/some-group/sub-group/repo` repository:
 
 - `*/**`: ✅
-- `*/*`: ❌
+- `*/*`: ❌ _(for GitLab)_
 - `owner/some-group/*/*`: ✅
 - `owner/some-group/*`: ❌
 - `owner/some-group/**`: ✅
