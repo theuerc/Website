@@ -30,8 +30,8 @@ There is one major feature that I want to show in more detail since you can't tr
 
 <h2>New Admin UI</h2>
 
-This release ships with a new web UI for administrative tasks. The UI is particularly handy when providing support fo users.
-It allows for easy listing and searching of users and worksapces.
+This release ships with a new web UI for administrative tasks. The UI is particularly handy when providing support for users.
+It allows for easy listing and searching of users and workspaces.
 When selecting a user, the UI will show the user's details and workspaces, as you can in the following screenshot:
 
 ![Gitpod Admin UI](../../../static/images/blog/gitpod-self-hosted-0.4.0/sh-userdetails2.png)
